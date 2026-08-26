@@ -1,7 +1,7 @@
 {
   "reconciliation": {
-    "id": "3c993459-621c-461f-9819-e6ccbd04fd38",
-    "createdAt": "2026-08-26T14:18:40.110Z",
+    "id": "b332df49-da9b-4562-a54e-f96c51eb524a",
+    "createdAt": "2026-08-26T19:58:44.599Z",
     "strategyVersion": "cascade-v1",
     "modelUsed": "gemini-3.6-flash"
   },
@@ -10,7 +10,7 @@
     "title": "Compra puntual de insumos administrativos"
   },
   "offer": {
-    "id": "e3fb5f4e-9bf0-4f2b-b5c8-76fab16d0877",
+    "id": "193f74e5-c25e-4929-b05e-5e09ba7140fd",
     "providerName": "Oficenter Norte SA",
     "quoteCode": "COT-OFN-2026-051",
     "quoteDate": "2026-05-20",
@@ -24,7 +24,7 @@
       "strategy": "deterministic",
       "warnings": [],
       "modelUsed": null,
-      "durationMs": 23.344600000000355,
+      "durationMs": 21.351599999999962,
       "sourceHash": "d4bb3b0cc0cbde18c05ff5195da12fa7d2f44351ac984e32c35f9bd33a3ca16c",
       "inputTokens": 0,
       "outputTokens": 0,
@@ -40,8 +40,8 @@
       "llmBatches": 1,
       "offerLines": 7,
       "inputTokens": 2124,
-      "prefilterMs": 555.6296999999995,
-      "outputTokens": 1601,
+      "prefilterMs": 556.3078999999998,
+      "outputTokens": 2005,
       "resolvedByLlm": 6,
       "resolvedByAlias": 0,
       "prefilterQueries": 1,
@@ -161,7 +161,7 @@
       "confidence": 0.95,
       "quantityDelta": 20,
       "priceTotal": 156000,
-      "reasoning": "Coincide plenamente en tipo de cinta, transparencia y medida de 48mm.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial)",
+      "reasoning": "Cinta transparente de embalaje de 48mm coincide con la cinta adhesiva de 48mm pedida.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -249,7 +249,7 @@
       "confidence": 0.92,
       "quantityDelta": 0,
       "priceTotal": 90000,
-      "reasoning": "Lapicera de tinta azul equivale exactamente a boligrafo azul.. mismo producto y misma cantidad",
+      "reasoning": "Lapicera tinta azul equivale a boligrafo azul.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -290,54 +290,10 @@
     },
     {
       "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
-      "priceTotal": 520000,
-      "reasoning": "El paquete de papel blanco A4 de 75g equivale a la resma de papel A4 de 75g.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.8939,
-          "lineNo": 1,
-          "description": "Resma papel A4 75g"
-        },
-        {
-          "score": 0.7381,
-          "lineNo": 6,
-          "description": "Cuaderno tapa dura A4"
-        },
-        {
-          "score": 0.7332,
-          "lineNo": 3,
-          "description": "Carpeta plastica A4"
-        },
-        {
-          "score": 0.6616,
-          "lineNo": 4,
-          "description": "Marcador permanente negro"
-        },
-        {
-          "score": 0.6603,
-          "lineNo": 2,
-          "description": "Boligrafo azul"
-        }
-      ],
-      "requisitionLineNo": 1,
-      "requestedDescription": "Resma papel A4 75g",
-      "requestedQuantity": 100,
-      "requestedUnit": "unidad",
-      "offerLineNo": 1,
-      "offeredDescription": "Paquete de papel blanco tamanio A4 75 gramos",
-      "offeredQuantity": 100,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
+      "confidence": 0.92,
       "quantityDelta": 0,
       "priceTotal": 148000,
-      "reasoning": "Folder plastico para hojas A4 es sinonimo de carpeta plastica A4.. mismo producto y misma cantidad",
+      "reasoning": "Folder plastico para hojas A4 es equivalente a carpeta plastica A4.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -380,8 +336,52 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
+      "priceTotal": 520000,
+      "reasoning": "Paquete de papel A4 75g es equivalente a resma de papel A4 75g.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8939,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        },
+        {
+          "score": 0.7381,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.7332,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6616,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.6603,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        }
+      ],
+      "requisitionLineNo": 1,
+      "requestedDescription": "Resma papel A4 75g",
+      "requestedQuantity": 100,
+      "requestedUnit": "unidad",
+      "offerLineNo": 1,
+      "offeredDescription": "Paquete de papel blanco tamanio A4 75 gramos",
+      "offeredQuantity": 100,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
       "priceTotal": 47500,
-      "reasoning": "Rotulador indeleble negro es equivalente a marcador permanente negro.. mismo producto y misma cantidad",
+      "reasoning": "Rotulador indeleble negro equivale a marcador permanente negro.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -425,7 +425,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 168000,
-      "reasoning": "Cuaderno A4 con tapa rigida equivale a cuaderno tapa dura A4.. mismo producto y misma cantidad",
+      "reasoning": "Tapa rigida equivale a tapa dura para cuaderno A4.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [

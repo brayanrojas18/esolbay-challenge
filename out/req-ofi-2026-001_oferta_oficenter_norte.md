@@ -56,13 +56,13 @@ Ordenada poniendo primero lo que requiere atencion.
 
 | Item pedido | Linea ofertada | Estado | Cant. pedida | Cant. ofrecida | Delta | Confianza | Motivo |
 |---|---|---|---:|---:|---:|---:|---|
-| #5 Cinta adhesiva transparente 48mm | L5 Rollo cinta transparente de embalaje 48 mm | Cantidad parcial | 100 | 120 | +20 | 0.95 | Coincide plenamente en tipo de cinta, transparencia y medida de 48mm.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial) |
+| #5 Cinta adhesiva transparente 48mm | L5 Rollo cinta transparente de embalaje 48 mm | Cantidad parcial | 100 | 120 | +20 | 0.95 | Cinta transparente de embalaje de 48mm coincide con la cinta adhesiva de 48mm pedida.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial) |
 | - | L7 Corrector liquido formato lapicera 7 ml | Sobrante | - | 60 | - | 0.30 | el LLM determino que ninguno de los candidatos corresponde a esta linea |
-| #2 Boligrafo azul | L2 Lapicera tinta azul punta media | Coincidencia | 500 | 500 | - | 0.92 | Lapicera de tinta azul equivale exactamente a boligrafo azul.. mismo producto y misma cantidad |
-| #1 Resma papel A4 75g | L1 Paquete de papel blanco tamanio A4 75 gramos | Coincidencia | 100 | 100 | - | 0.95 | El paquete de papel blanco A4 de 75g equivale a la resma de papel A4 de 75g.. mismo producto y misma cantidad |
-| #3 Carpeta plastica A4 | L3 Folder plastico para hojas A4 | Coincidencia | 200 | 200 | - | 0.95 | Folder plastico para hojas A4 es sinonimo de carpeta plastica A4.. mismo producto y misma cantidad |
-| #4 Marcador permanente negro | L4 Rotulador indeleble color negro | Coincidencia | 50 | 50 | - | 0.95 | Rotulador indeleble negro es equivalente a marcador permanente negro.. mismo producto y misma cantidad |
-| #6 Cuaderno tapa dura A4 | L6 Cuaderno A4 con tapa rigida | Coincidencia | 40 | 40 | - | 0.95 | Cuaderno A4 con tapa rigida equivale a cuaderno tapa dura A4.. mismo producto y misma cantidad |
+| #2 Boligrafo azul | L2 Lapicera tinta azul punta media | Coincidencia | 500 | 500 | - | 0.92 | Lapicera tinta azul equivale a boligrafo azul.. mismo producto y misma cantidad |
+| #3 Carpeta plastica A4 | L3 Folder plastico para hojas A4 | Coincidencia | 200 | 200 | - | 0.92 | Folder plastico para hojas A4 es equivalente a carpeta plastica A4.. mismo producto y misma cantidad |
+| #1 Resma papel A4 75g | L1 Paquete de papel blanco tamanio A4 75 gramos | Coincidencia | 100 | 100 | - | 0.95 | Paquete de papel A4 75g es equivalente a resma de papel A4 75g.. mismo producto y misma cantidad |
+| #4 Marcador permanente negro | L4 Rotulador indeleble color negro | Coincidencia | 50 | 50 | - | 0.95 | Rotulador indeleble negro equivale a marcador permanente negro.. mismo producto y misma cantidad |
+| #6 Cuaderno tapa dura A4 | L6 Cuaderno A4 con tapa rigida | Coincidencia | 40 | 40 | - | 0.95 | Tapa rigida equivale a tapa dura para cuaderno A4.. mismo producto y misma cantidad |
 
 ## Trazabilidad
 
@@ -75,7 +75,7 @@ Ordenada poniendo primero lo que requiere atencion.
 | Llamadas al LLM | 0 |
 | Lotes | 0 |
 | Tokens entrada / salida | 0 / 0 |
-| Duracion | 23 ms |
+| Duracion | 21 ms |
 | SHA-256 del archivo | `d4bb3b0cc0cbde18...` |
 
 Sin avisos de extraccion.
@@ -91,7 +91,7 @@ Sin avisos de extraccion.
 | Resueltas por similitud lexica | 0 |
 | Conflictos resueltos | 0 |
 | Llamadas al LLM | 1 en 1 lotes |
-| Tokens entrada / salida | 2124 / 1601 |
+| Tokens entrada / salida | 2124 / 2005 |
 
 ### Volumen
 
@@ -101,4 +101,4 @@ Con el prefiltro vectorial fueron **1 query indexada** (HNSW + distancia coseno,
 
 ---
 
-Conciliacion `3c993459-621c-461f-9819-e6ccbd04fd38` generada el 26/8/2026, 10:18:40.
+Conciliacion `b332df49-da9b-4562-a54e-f96c51eb524a` generada el 26/8/2026, 03:58:44.

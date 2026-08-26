@@ -1,7 +1,7 @@
 {
   "reconciliation": {
-    "id": "8e418ab7-0812-4fc3-9242-72d474f57e8a",
-    "createdAt": "2026-08-26T14:25:42.717Z",
+    "id": "0d67b980-f3bd-4dc1-a39e-a6a2ffe822c8",
+    "createdAt": "2026-08-26T20:04:16.695Z",
     "strategyVersion": "cascade-v1",
     "modelUsed": "gemini-3.6-flash"
   },
@@ -10,7 +10,7 @@
     "title": "Compra anual de insumos de mantenimiento y operaciones"
   },
   "offer": {
-    "id": "5093a64d-0281-4516-a0d7-6d4f37c055a7",
+    "id": "7fdd2bfd-dc99-49af-aff9-d3d146ebfb1c",
     "providerName": "Mantenimiento Integral Sur SRL",
     "quoteCode": "COT-MIS-2026-407",
     "quoteDate": "2026-05-23",
@@ -24,10 +24,10 @@
       "strategy": "llm+deterministic",
       "warnings": [],
       "modelUsed": "gemini-3.6-flash",
-      "durationMs": 81472.22020000001,
+      "durationMs": 67190.33289999998,
       "sourceHash": "a009565846fb3feb877e29952c293940f5046bd6941ac622b3af2dc6cb4e8252",
       "inputTokens": 7484,
-      "outputTokens": 29851,
+      "outputTokens": 32244,
       "sourceFormat": "pdf",
       "sourceFilename": "oferta_mantenimiento_integral.pdf"
     }
@@ -40,8 +40,8 @@
       "llmBatches": 18,
       "offerLines": 177,
       "inputTokens": 52730,
-      "prefilterMs": 1047.1341999999713,
-      "outputTokens": 34066,
+      "prefilterMs": 1093.8907999999938,
+      "outputTokens": 32651,
       "resolvedByLlm": 172,
       "resolvedByAlias": 0,
       "prefilterQueries": 1,
@@ -3178,52 +3178,8 @@
       "status": "semantic_match",
       "confidence": 0.9,
       "quantityDelta": 0,
-      "priceTotal": 865280,
-      "reasoning": "Fuente para placa LED de 40W coincide técnicamente con driver panel LED de 40W.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
-      "needsReview": true,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.847,
-          "lineNo": 44,
-          "description": "Driver panel LED 40W"
-        },
-        {
-          "score": 0.7968,
-          "lineNo": 220,
-          "description": "Soldador electrico 40W"
-        },
-        {
-          "score": 0.7676,
-          "lineNo": 48,
-          "description": "Fuente switching 12V 5A"
-        },
-        {
-          "score": 0.7635,
-          "lineNo": 37,
-          "description": "Panel LED 60x60 40W"
-        },
-        {
-          "score": 0.761,
-          "lineNo": 45,
-          "description": "Aplique emergencia LED"
-        }
-      ],
-      "requisitionLineNo": 44,
-      "requestedDescription": "Driver panel LED 40W",
-      "requestedQuantity": 80,
-      "requestedUnit": "unidad",
-      "offerLineNo": 44,
-      "offeredDescription": "Fuente para placa LED 40 W",
-      "offeredQuantity": 80,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "semantic_match",
-      "confidence": 0.9,
-      "quantityDelta": 0,
       "priceTotal": 349200,
-      "reasoning": "Mecha widia es la denominacion comercial equivalente a broca para pared o mamposteria de 6mm.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "Mecha widia es el nombre comercial para broca de pared o mampostería en 6mm.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3264,54 +3220,98 @@
     },
     {
       "status": "semantic_match",
-      "confidence": 0.93,
+      "confidence": 0.92,
       "quantityDelta": 0,
-      "priceTotal": 186240,
-      "reasoning": "Primer limpiador PVC de 125ml corresponde al limpiador para PVC de 125ml solicitado.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "priceTotal": 865280,
+      "reasoning": "Fuente para placa LED de 40W equivale a driver para panel LED de 40W.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.9492,
-          "lineNo": 77,
-          "description": "Limpiador PVC 125ml"
+          "score": 0.847,
+          "lineNo": 44,
+          "description": "Driver panel LED 40W"
         },
         {
-          "score": 0.8743,
-          "lineNo": 76,
-          "description": "Adhesivo PVC 125ml"
+          "score": 0.7968,
+          "lineNo": 220,
+          "description": "Soldador electrico 40W"
         },
         {
-          "score": 0.6971,
-          "lineNo": 59,
-          "description": "Codo PVC 1/2"
+          "score": 0.7676,
+          "lineNo": 48,
+          "description": "Fuente switching 12V 5A"
         },
         {
-          "score": 0.6964,
-          "lineNo": 143,
-          "description": "Limpiador desinfectante 5L"
+          "score": 0.7635,
+          "lineNo": 37,
+          "description": "Panel LED 60x60 40W"
         },
         {
-          "score": 0.6812,
-          "lineNo": 63,
-          "description": "Union doble PVC 1/2"
+          "score": 0.761,
+          "lineNo": 45,
+          "description": "Aplique emergencia LED"
         }
       ],
-      "requisitionLineNo": 77,
-      "requestedDescription": "Limpiador PVC 125ml",
+      "requisitionLineNo": 44,
+      "requestedDescription": "Driver panel LED 40W",
       "requestedQuantity": 80,
-      "requestedUnit": "pomo",
-      "offerLineNo": 77,
-      "offeredDescription": "Primer limpiador PVC 125 ml",
+      "requestedUnit": "unidad",
+      "offerLineNo": 44,
+      "offeredDescription": "Fuente para placa LED 40 W",
       "offeredQuantity": 80,
-      "offeredUnit": "pomo"
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "semantic_match",
+      "confidence": 0.92,
+      "quantityDelta": 0,
+      "priceTotal": 249600,
+      "reasoning": "Corresponde al candado de 40 mm solicitado.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "needsReview": true,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9401,
+          "lineNo": 110,
+          "description": "Candado 40mm"
+        },
+        {
+          "score": 0.8548,
+          "lineNo": 111,
+          "description": "Candado 50mm"
+        },
+        {
+          "score": 0.7931,
+          "lineNo": 112,
+          "description": "Cierre pasador zincado"
+        },
+        {
+          "score": 0.7339,
+          "lineNo": 114,
+          "description": "Rueda fija 50mm"
+        },
+        {
+          "score": 0.7223,
+          "lineNo": 220,
+          "description": "Soldador electrico 40W"
+        }
+      ],
+      "requisitionLineNo": 110,
+      "requestedDescription": "Candado 40mm",
+      "requestedQuantity": 100,
+      "requestedUnit": "unidad",
+      "offerLineNo": 110,
+      "offeredDescription": "Cierre candado 40 mm",
+      "offeredQuantity": 100,
+      "offeredUnit": "unidad"
     },
     {
       "status": "semantic_match",
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 325920,
-      "reasoning": "Coinciden perfectamente la seccion de 4mm2 y el color verde amarillo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "Conductor flexible equivale a cable unipolar, coincidiendo en seccion de 4mm2 y color verde amarillo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3355,7 +3355,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 624000,
-      "reasoning": "Modulo toma electrica doble 10A blanco equivale a tomacorriente doble 10A blanco.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "Modulo toma electrica doble 10A blanco es equivalente a tomacorriente doble 10A blanco.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3399,7 +3399,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 2328000,
-      "reasoning": "Terminal anillo y terminal ojal son sinonimos para el mismo tipo de conector.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "Terminal anillo es sinonimo de terminal ojal aislado rojo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3443,7 +3443,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 279360,
-      "reasoning": "Tecla e interruptor son sinonimos para el mismo producto de embutir doble.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "Tecla doble embutir es la denominacion comercial equivalente a interruptor doble embutir.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3487,7 +3487,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 245440,
-      "reasoning": "Llave de paso esférica equivale a válvula esférica de 3/4 pulgada.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "Llave de paso esferica y valvula esferica de 3/4 son el mismo producto.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3530,8 +3530,52 @@
       "status": "semantic_match",
       "confidence": 0.95,
       "quantityDelta": 0,
+      "priceTotal": 186240,
+      "reasoning": "Primer limpiador para PVC 125ml corresponde al limpiador PVC 125ml.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "needsReview": true,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9492,
+          "lineNo": 77,
+          "description": "Limpiador PVC 125ml"
+        },
+        {
+          "score": 0.8743,
+          "lineNo": 76,
+          "description": "Adhesivo PVC 125ml"
+        },
+        {
+          "score": 0.6971,
+          "lineNo": 59,
+          "description": "Codo PVC 1/2"
+        },
+        {
+          "score": 0.6964,
+          "lineNo": 143,
+          "description": "Limpiador desinfectante 5L"
+        },
+        {
+          "score": 0.6812,
+          "lineNo": 63,
+          "description": "Union doble PVC 1/2"
+        }
+      ],
+      "requisitionLineNo": 77,
+      "requestedDescription": "Limpiador PVC 125ml",
+      "requestedQuantity": 80,
+      "requestedUnit": "pomo",
+      "offerLineNo": 77,
+      "offeredDescription": "Primer limpiador PVC 125 ml",
+      "offeredQuantity": 80,
+      "offeredUnit": "pomo"
+    },
+    {
+      "status": "semantic_match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
       "priceTotal": 291200,
-      "reasoning": "Arandela lisa 1/4 equivale a arandela plana 1/4.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "Arandela lisa 1/4 es equivalente a arandela plana 1/4.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3574,52 +3618,8 @@
       "status": "semantic_match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 249600,
-      "reasoning": "Cierre candado de 40mm corresponde al candado de 40mm solicitado.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
-      "needsReview": true,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9401,
-          "lineNo": 110,
-          "description": "Candado 40mm"
-        },
-        {
-          "score": 0.8548,
-          "lineNo": 111,
-          "description": "Candado 50mm"
-        },
-        {
-          "score": 0.7931,
-          "lineNo": 112,
-          "description": "Cierre pasador zincado"
-        },
-        {
-          "score": 0.7339,
-          "lineNo": 114,
-          "description": "Rueda fija 50mm"
-        },
-        {
-          "score": 0.7223,
-          "lineNo": 220,
-          "description": "Soldador electrico 40W"
-        }
-      ],
-      "requisitionLineNo": 110,
-      "requestedDescription": "Candado 40mm",
-      "requestedQuantity": 100,
-      "requestedUnit": "unidad",
-      "offerLineNo": 110,
-      "offeredDescription": "Cierre candado 40 mm",
-      "offeredQuantity": 100,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "semantic_match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
       "priceTotal": 387030,
-      "reasoning": "Coincide en esmalte sintetico, color rojo seguridad y presentacion de 4L.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "Coincide en tipo de producto (esmalte sintetico), color (rojo seguridad) y presentacion (4L).. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3663,7 +3663,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 299520,
-      "reasoning": "IPA es la sigla de alcohol isopropilico y coincide en volumen de 1 L.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "IPA es la abreviatura de alcohol isopropílico, coinciden en la presentación de 1L.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3706,52 +3706,8 @@
       "status": "semantic_match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 374400,
-      "reasoning": "Mango y cabo de aluminio de 1.4m hacen referencia al mismo producto y especificacion.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
-      "needsReview": true,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.8959,
-          "lineNo": 154,
-          "description": "Cabo aluminio 1.4m"
-        },
-        {
-          "score": 0.7692,
-          "lineNo": 207,
-          "description": "Nivel aluminio 60cm"
-        },
-        {
-          "score": 0.7262,
-          "lineNo": 214,
-          "description": "Escalera tijera aluminio 6 escalones"
-        },
-        {
-          "score": 0.717,
-          "lineNo": 215,
-          "description": "Escalera extensible aluminio 24 escalones"
-        },
-        {
-          "score": 0.6931,
-          "lineNo": 199,
-          "description": "Llave francesa 12 pulgadas"
-        }
-      ],
-      "requisitionLineNo": 154,
-      "requestedDescription": "Cabo aluminio 1.4m",
-      "requestedQuantity": 150,
-      "requestedUnit": "unidad",
-      "offerLineNo": 154,
-      "offeredDescription": "Mango aluminio 1.4 m",
-      "offeredQuantity": 150,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "semantic_match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
       "priceTotal": 815360,
-      "reasoning": "Casco de obra amarillo equivale a casco de seguridad amarillo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "reasoning": "Casco de obra equivale a casco de seguridad y coincide el color amarillo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
       "needsReview": true,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3791,47 +3747,91 @@
       "offeredUnit": "unidad"
     },
     {
+      "status": "semantic_match",
+      "confidence": 0.96,
+      "quantityDelta": 0,
+      "priceTotal": 374400,
+      "reasoning": "Mango y cabo de aluminio de 1.4m describen el mismo producto.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador",
+      "needsReview": true,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8959,
+          "lineNo": 154,
+          "description": "Cabo aluminio 1.4m"
+        },
+        {
+          "score": 0.7692,
+          "lineNo": 207,
+          "description": "Nivel aluminio 60cm"
+        },
+        {
+          "score": 0.7262,
+          "lineNo": 214,
+          "description": "Escalera tijera aluminio 6 escalones"
+        },
+        {
+          "score": 0.717,
+          "lineNo": 215,
+          "description": "Escalera extensible aluminio 24 escalones"
+        },
+        {
+          "score": 0.6931,
+          "lineNo": 199,
+          "description": "Llave francesa 12 pulgadas"
+        }
+      ],
+      "requisitionLineNo": 154,
+      "requestedDescription": "Cabo aluminio 1.4m",
+      "requestedQuantity": 150,
+      "requestedUnit": "unidad",
+      "offerLineNo": 154,
+      "offeredDescription": "Mango aluminio 1.4 m",
+      "offeredQuantity": 150,
+      "offeredUnit": "unidad"
+    },
+    {
       "status": "partial_quantity",
       "confidence": 0.9,
-      "quantityDelta": -50,
-      "priceTotal": 493245,
-      "reasoning": "Esparrago roscado y varilla roscada son terminos equivalentes para la misma especificacion de 3/8.. el proveedor ofrece 150 de las 200 pedidas (faltan 50)",
+      "quantityDelta": 160,
+      "priceTotal": 4385952,
+      "reasoning": "Grapa omega equivale a abrazadera omega en medida de 3/4 pulgada.. el proveedor ofrece 960 contra 800 pedidas (160 de mas, probable presentacion comercial)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.8852,
-          "lineNo": 91,
-          "description": "Varilla roscada 3/8"
+          "score": 0.7555,
+          "lineNo": 95,
+          "description": "Abrazadera omega 3/4"
         },
         {
-          "score": 0.7989,
+          "score": 0.6614,
+          "lineNo": 94,
+          "description": "Abrazadera metalica 3/4"
+        },
+        {
+          "score": 0.6479,
+          "lineNo": 60,
+          "description": "Codo PVC 3/4"
+        },
+        {
+          "score": 0.646,
+          "lineNo": 66,
+          "description": "Valvula esferica 3/4"
+        },
+        {
+          "score": 0.6388,
           "lineNo": 90,
           "description": "Varilla roscada 1/4"
-        },
-        {
-          "score": 0.7533,
-          "lineNo": 82,
-          "description": "Tornillo autoperforante 8x1.5"
-        },
-        {
-          "score": 0.7514,
-          "lineNo": 89,
-          "description": "Tuerca hexagonal 1/4"
-        },
-        {
-          "score": 0.7398,
-          "lineNo": 81,
-          "description": "Tornillo autoperforante 8x1"
         }
       ],
-      "requisitionLineNo": 91,
-      "requestedDescription": "Varilla roscada 3/8",
-      "requestedQuantity": 200,
+      "requisitionLineNo": 95,
+      "requestedDescription": "Abrazadera omega 3/4",
+      "requestedQuantity": 800,
       "requestedUnit": "unidad",
-      "offerLineNo": 91,
-      "offeredDescription": "Esparrago roscado 3/8",
-      "offeredQuantity": 150,
+      "offerLineNo": 95,
+      "offeredDescription": "Grapa omega 3/4",
+      "offeredQuantity": 960,
       "offeredUnit": "unidad"
     },
     {
@@ -3839,7 +3839,7 @@
       "confidence": 0.9,
       "quantityDelta": -40,
       "priceTotal": 279360,
-      "reasoning": "Sanitizante limpiador es equivalente funcional a limpiador desinfectante de 5L.. el proveedor ofrece 120 de las 160 pedidas (faltan 40)",
+      "reasoning": "Sanitizante limpiador equivale a limpiador desinfectante 5L.. el proveedor ofrece 120 de las 160 pedidas (faltan 40)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -3880,98 +3880,10 @@
     },
     {
       "status": "partial_quantity",
-      "confidence": 0.9,
-      "quantityDelta": 80,
-      "priceTotal": 1885680,
-      "reasoning": "Gafa de proteccion cristal corresponde a anteojo de seguridad transparente.. el proveedor ofrece 480 contra 400 pedidas (80 de mas, probable presentacion comercial)",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.8593,
-          "lineNo": 171,
-          "description": "Anteojo seguridad transparente"
-        },
-        {
-          "score": 0.8377,
-          "lineNo": 172,
-          "description": "Anteojo seguridad gris"
-        },
-        {
-          "score": 0.77,
-          "lineNo": 173,
-          "description": "Protector auditivo tipo copa"
-        },
-        {
-          "score": 0.7481,
-          "lineNo": 175,
-          "description": "Casco seguridad blanco"
-        },
-        {
-          "score": 0.7377,
-          "lineNo": 178,
-          "description": "Respirador media cara"
-        }
-      ],
-      "requisitionLineNo": 171,
-      "requestedDescription": "Anteojo seguridad transparente",
-      "requestedQuantity": 400,
-      "requestedUnit": "unidad",
-      "offerLineNo": 158,
-      "offeredDescription": "Gafa proteccion cristal",
-      "offeredQuantity": 480,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "partial_quantity",
-      "confidence": 0.92,
-      "quantityDelta": -50,
-      "priceTotal": 445230,
-      "reasoning": "Ducto pasacable es equivalente a canaleta PVC en la medida 40x20.. el proveedor ofrece 150 de las 200 pedidas (faltan 50)",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9118,
-          "lineNo": 13,
-          "description": "Canaleta PVC 40x20 blanca"
-        },
-        {
-          "score": 0.8582,
-          "lineNo": 12,
-          "description": "Canaleta PVC 20x10 blanca"
-        },
-        {
-          "score": 0.7169,
-          "lineNo": 56,
-          "description": "Cano PVC agua 1/2"
-        },
-        {
-          "score": 0.7084,
-          "lineNo": 58,
-          "description": "Cano PVC agua 1 pulgada"
-        },
-        {
-          "score": 0.7061,
-          "lineNo": 11,
-          "description": "Cable unipolar 4mm2 verde amarillo"
-        }
-      ],
-      "requisitionLineNo": 13,
-      "requestedDescription": "Canaleta PVC 40x20 blanca",
-      "requestedQuantity": 200,
-      "requestedUnit": "metro",
-      "offerLineNo": 13,
-      "offeredDescription": "Ducto polipropileno pasacable 40x20 blanca",
-      "offeredQuantity": 150,
-      "offeredUnit": "metro"
-    },
-    {
-      "status": "partial_quantity",
       "confidence": 0.92,
       "quantityDelta": 50,
       "priceTotal": 561630,
-      "reasoning": "Tuberia de PVC presion equivale a cano de PVC agua de 3/4 pulgada.. el proveedor ofrece 300 contra 250 pedidas (50 de mas, probable presentacion comercial)",
+      "reasoning": "Tuberia PVC presion de 3/4 equivale a cano PVC agua de 3/4.. el proveedor ofrece 300 contra 250 pedidas (50 de mas, probable presentacion comercial)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4013,9 +3925,53 @@
     {
       "status": "partial_quantity",
       "confidence": 0.92,
+      "quantityDelta": 80,
+      "priceTotal": 1885680,
+      "reasoning": "Gafa de protección cristal equivale a anteojo de seguridad transparente.. el proveedor ofrece 480 contra 400 pedidas (80 de mas, probable presentacion comercial)",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8593,
+          "lineNo": 171,
+          "description": "Anteojo seguridad transparente"
+        },
+        {
+          "score": 0.8377,
+          "lineNo": 172,
+          "description": "Anteojo seguridad gris"
+        },
+        {
+          "score": 0.77,
+          "lineNo": 173,
+          "description": "Protector auditivo tipo copa"
+        },
+        {
+          "score": 0.7481,
+          "lineNo": 175,
+          "description": "Casco seguridad blanco"
+        },
+        {
+          "score": 0.7377,
+          "lineNo": 178,
+          "description": "Respirador media cara"
+        }
+      ],
+      "requisitionLineNo": 171,
+      "requestedDescription": "Anteojo seguridad transparente",
+      "requestedQuantity": 400,
+      "requestedUnit": "unidad",
+      "offerLineNo": 158,
+      "offeredDescription": "Gafa proteccion cristal",
+      "offeredQuantity": 480,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "partial_quantity",
+      "confidence": 0.94,
       "quantityDelta": -25,
       "priceTotal": 212940,
-      "reasoning": "Rejilla de desague de acero inoxidable equivale a la rejilla de piso de acero inoxidable.. el proveedor ofrece 75 de las 100 pedidas (faltan 25)",
+      "reasoning": "Rejilla de desague de acero inoxidable equivale a rejilla de piso de acero inoxidable.. el proveedor ofrece 75 de las 100 pedidas (faltan 25)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4056,98 +4012,54 @@
     },
     {
       "status": "partial_quantity",
-      "confidence": 0.92,
-      "quantityDelta": 160,
-      "priceTotal": 4385952,
-      "reasoning": "Grapa omega y abrazadera omega son sinonimos comerciales para la medida 3/4.. el proveedor ofrece 960 contra 800 pedidas (160 de mas, probable presentacion comercial)",
+      "confidence": 0.95,
+      "quantityDelta": -50,
+      "priceTotal": 445230,
+      "reasoning": "Ducto pasacable equivale a canaleta, coincidiendo en dimensiones 40x20 y color blanco.. el proveedor ofrece 150 de las 200 pedidas (faltan 50)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.7555,
-          "lineNo": 95,
-          "description": "Abrazadera omega 3/4"
+          "score": 0.9118,
+          "lineNo": 13,
+          "description": "Canaleta PVC 40x20 blanca"
         },
         {
-          "score": 0.6614,
-          "lineNo": 94,
-          "description": "Abrazadera metalica 3/4"
+          "score": 0.8582,
+          "lineNo": 12,
+          "description": "Canaleta PVC 20x10 blanca"
         },
         {
-          "score": 0.6479,
-          "lineNo": 60,
-          "description": "Codo PVC 3/4"
+          "score": 0.7169,
+          "lineNo": 56,
+          "description": "Cano PVC agua 1/2"
         },
         {
-          "score": 0.646,
-          "lineNo": 66,
-          "description": "Valvula esferica 3/4"
+          "score": 0.7084,
+          "lineNo": 58,
+          "description": "Cano PVC agua 1 pulgada"
         },
         {
-          "score": 0.6388,
-          "lineNo": 90,
-          "description": "Varilla roscada 1/4"
+          "score": 0.7061,
+          "lineNo": 11,
+          "description": "Cable unipolar 4mm2 verde amarillo"
         }
       ],
-      "requisitionLineNo": 95,
-      "requestedDescription": "Abrazadera omega 3/4",
-      "requestedQuantity": 800,
-      "requestedUnit": "unidad",
-      "offerLineNo": 95,
-      "offeredDescription": "Grapa omega 3/4",
-      "offeredQuantity": 960,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "partial_quantity",
-      "confidence": 0.92,
-      "quantityDelta": 100,
-      "priceTotal": 3350880,
-      "reasoning": "Pano de piso de algodon es equivalente a trapo de piso de algodon.. el proveedor ofrece 600 contra 500 pedidas (100 de mas, probable presentacion comercial)",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.8591,
-          "lineNo": 152,
-          "description": "Trapo piso algodon"
-        },
-        {
-          "score": 0.6875,
-          "lineNo": 163,
-          "description": "Fibra verde limpieza"
-        },
-        {
-          "score": 0.6827,
-          "lineNo": 162,
-          "description": "Esponja abrasiva"
-        },
-        {
-          "score": 0.6795,
-          "lineNo": 155,
-          "description": "Escoba interior"
-        },
-        {
-          "score": 0.6699,
-          "lineNo": 78,
-          "description": "Rejilla piso acero inoxidable"
-        }
-      ],
-      "requisitionLineNo": 152,
-      "requestedDescription": "Trapo piso algodon",
-      "requestedQuantity": 500,
-      "requestedUnit": "unidad",
-      "offerLineNo": 152,
-      "offeredDescription": "Pano piso algodon",
-      "offeredQuantity": 600,
-      "offeredUnit": "unidad"
+      "requisitionLineNo": 13,
+      "requestedDescription": "Canaleta PVC 40x20 blanca",
+      "requestedQuantity": 200,
+      "requestedUnit": "metro",
+      "offerLineNo": 13,
+      "offeredDescription": "Ducto polipropileno pasacable 40x20 blanca",
+      "offeredQuantity": 150,
+      "offeredUnit": "metro"
     },
     {
       "status": "partial_quantity",
       "confidence": 0.95,
       "quantityDelta": 8,
       "priceTotal": 679776,
-      "reasoning": "Interruptor automatico de 2 polos equivale a llave termomagnetica bipolar de 32A.. el proveedor ofrece 48 contra 40 pedidas (8 de mas, probable presentacion comercial)",
+      "reasoning": "Interruptor automatico 2 polos equivale a llave termomagnetica bipolar de 32A.. el proveedor ofrece 48 contra 40 pedidas (8 de mas, probable presentacion comercial)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4323,7 +4235,7 @@
       "confidence": 0.95,
       "quantityDelta": -38,
       "priceTotal": 587059.2,
-      "reasoning": "Equivalencia directa entre acople y conector corrugado de 1 pulgada.. el proveedor ofrece 112 de las 150 pedidas (faltan 38)",
+      "reasoning": "Acople para corrugado de 1 pulgada equivale a conector corrugado de 1 pulgada.. el proveedor ofrece 112 de las 150 pedidas (faltan 38)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4367,7 +4279,7 @@
       "confidence": 0.95,
       "quantityDelta": -30,
       "priceTotal": 168489,
-      "reasoning": "Llave de paso esférica equivale a válvula esférica de 1/2 pulgada.. el proveedor ofrece 90 de las 120 pedidas (faltan 30)",
+      "reasoning": "Llave de paso esferica y valvula esferica de 1/2 son el mismo producto.. el proveedor ofrece 90 de las 120 pedidas (faltan 30)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4409,53 +4321,53 @@
     {
       "status": "partial_quantity",
       "confidence": 0.95,
-      "quantityDelta": 20,
-      "priceTotal": 711360,
-      "reasoning": "Pegamento para PVC de 125ml es exactamente adhesivo para PVC de 125ml.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial)",
+      "quantityDelta": -50,
+      "priceTotal": 493245,
+      "reasoning": "Espárrago roscado y varilla roscada son denominaciones equivalentes para el mismo producto en 3/8.. el proveedor ofrece 150 de las 200 pedidas (faltan 50)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.9729,
-          "lineNo": 76,
-          "description": "Adhesivo PVC 125ml"
+          "score": 0.8852,
+          "lineNo": 91,
+          "description": "Varilla roscada 3/8"
         },
         {
-          "score": 0.8918,
-          "lineNo": 77,
-          "description": "Limpiador PVC 125ml"
+          "score": 0.7989,
+          "lineNo": 90,
+          "description": "Varilla roscada 1/4"
         },
         {
-          "score": 0.7312,
-          "lineNo": 129,
-          "description": "Pegamento contacto 1L"
+          "score": 0.7533,
+          "lineNo": 82,
+          "description": "Tornillo autoperforante 8x1.5"
         },
         {
-          "score": 0.7265,
-          "lineNo": 63,
-          "description": "Union doble PVC 1/2"
+          "score": 0.7514,
+          "lineNo": 89,
+          "description": "Tuerca hexagonal 1/4"
         },
         {
-          "score": 0.71,
-          "lineNo": 59,
-          "description": "Codo PVC 1/2"
+          "score": 0.7398,
+          "lineNo": 81,
+          "description": "Tornillo autoperforante 8x1"
         }
       ],
-      "requisitionLineNo": 76,
-      "requestedDescription": "Adhesivo PVC 125ml",
-      "requestedQuantity": 100,
-      "requestedUnit": "pomo",
-      "offerLineNo": 76,
-      "offeredDescription": "Pegamento para PVC 125 ml",
-      "offeredQuantity": 120,
-      "offeredUnit": "pomo"
+      "requisitionLineNo": 91,
+      "requestedDescription": "Varilla roscada 3/8",
+      "requestedQuantity": 200,
+      "requestedUnit": "unidad",
+      "offerLineNo": 91,
+      "offeredDescription": "Esparrago roscado 3/8",
+      "offeredQuantity": 150,
+      "offeredUnit": "unidad"
     },
     {
       "status": "partial_quantity",
       "confidence": 0.95,
       "quantityDelta": -50,
       "priceTotal": 631800,
-      "reasoning": "Corresponde a la hoja de sierra manual de 24 dientes (24T).. el proveedor ofrece 150 de las 200 pedidas (faltan 50)",
+      "reasoning": "Corresponde a la hoja de sierra manual de 24 dientes (24T) requerida.. el proveedor ofrece 150 de las 200 pedidas (faltan 50)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4499,7 +4411,7 @@
       "confidence": 0.95,
       "quantityDelta": 24,
       "priceTotal": 557107.2,
-      "reasoning": "Rueda rigida es equivalente a Rueda fija de 50mm.. el proveedor ofrece 144 contra 120 pedidas (24 de mas, probable presentacion comercial)",
+      "reasoning": "'Rueda rigida' es equivalente a rueda fija de 50mm.. el proveedor ofrece 144 contra 120 pedidas (24 de mas, probable presentacion comercial)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4543,7 +4455,7 @@
       "confidence": 0.95,
       "quantityDelta": -8,
       "priceTotal": 405460,
-      "reasoning": "Latex acrilico uso interno gris claro 20 L es equivalente a Pintura latex interior gris claro 20L.. el proveedor ofrece 22 de las 30 pedidas (faltan 8)",
+      "reasoning": "Latex acrilico uso interno gris claro de 20L equivale exactamente a la pintura latex interior gris claro 20L.. el proveedor ofrece 22 de las 30 pedidas (faltan 8)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4585,9 +4497,53 @@
     {
       "status": "partial_quantity",
       "confidence": 0.95,
+      "quantityDelta": 100,
+      "priceTotal": 3350880,
+      "reasoning": "Paño de piso de algodón equivale a trapo de piso de algodón.. el proveedor ofrece 600 contra 500 pedidas (100 de mas, probable presentacion comercial)",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8591,
+          "lineNo": 152,
+          "description": "Trapo piso algodon"
+        },
+        {
+          "score": 0.6875,
+          "lineNo": 163,
+          "description": "Fibra verde limpieza"
+        },
+        {
+          "score": 0.6827,
+          "lineNo": 162,
+          "description": "Esponja abrasiva"
+        },
+        {
+          "score": 0.6795,
+          "lineNo": 155,
+          "description": "Escoba interior"
+        },
+        {
+          "score": 0.6699,
+          "lineNo": 78,
+          "description": "Rejilla piso acero inoxidable"
+        }
+      ],
+      "requisitionLineNo": 152,
+      "requestedDescription": "Trapo piso algodon",
+      "requestedQuantity": 500,
+      "requestedUnit": "unidad",
+      "offerLineNo": 152,
+      "offeredDescription": "Pano piso algodon",
+      "offeredQuantity": 600,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "partial_quantity",
+      "confidence": 0.95,
       "quantityDelta": 2,
       "priceTotal": 1806140,
-      "reasoning": "Taladro de impacto de 650 W equivale a taladro percutor de 650 W.. el proveedor ofrece 14 contra 12 pedidas (2 de mas, probable presentacion comercial)",
+      "reasoning": "Taladro de impacto equivale a taladro percutor y coincide la potencia de 650 W.. el proveedor ofrece 14 contra 12 pedidas (2 de mas, probable presentacion comercial)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4628,54 +4584,54 @@
     },
     {
       "status": "partial_quantity",
-      "confidence": 0.98,
-      "quantityDelta": -50,
-      "priceTotal": 837720,
-      "reasoning": "Coincide exactamente en lubricante aerosol multiuso y volumen de 400ml.. el proveedor ofrece 150 de las 200 pedidas (faltan 50)",
+      "confidence": 0.96,
+      "quantityDelta": 20,
+      "priceTotal": 711360,
+      "reasoning": "Pegamento para PVC 125ml coincide exactamente con adhesivo PVC 125ml.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.993,
-          "lineNo": 130,
-          "description": "Aerosol lubricante multiuso 400ml"
+          "score": 0.9729,
+          "lineNo": 76,
+          "description": "Adhesivo PVC 125ml"
         },
         {
-          "score": 0.748,
-          "lineNo": 165,
-          "description": "Desodorante ambiente aerosol 360ml"
+          "score": 0.8918,
+          "lineNo": 77,
+          "description": "Limpiador PVC 125ml"
         },
         {
-          "score": 0.7127,
-          "lineNo": 159,
-          "description": "Pulverizador manual 1L"
+          "score": 0.7312,
+          "lineNo": 129,
+          "description": "Pegamento contacto 1L"
         },
         {
-          "score": 0.6875,
-          "lineNo": 74,
-          "description": "Sellador roscas anaerobico"
+          "score": 0.7265,
+          "lineNo": 63,
+          "description": "Union doble PVC 1/2"
         },
         {
-          "score": 0.6831,
-          "lineNo": 153,
-          "description": "Repuesto mopa microfibra"
+          "score": 0.71,
+          "lineNo": 59,
+          "description": "Codo PVC 1/2"
         }
       ],
-      "requisitionLineNo": 130,
-      "requestedDescription": "Aerosol lubricante multiuso 400ml",
-      "requestedQuantity": 200,
-      "requestedUnit": "unidad",
-      "offerLineNo": 130,
-      "offeredDescription": "Lubricante aerosol multiuso 400 ml",
-      "offeredQuantity": 150,
-      "offeredUnit": "unidad"
+      "requisitionLineNo": 76,
+      "requestedDescription": "Adhesivo PVC 125ml",
+      "requestedQuantity": 100,
+      "requestedUnit": "pomo",
+      "offerLineNo": 76,
+      "offeredDescription": "Pegamento para PVC 125 ml",
+      "offeredQuantity": 120,
+      "offeredUnit": "pomo"
     },
     {
       "status": "partial_quantity",
       "confidence": 0.98,
       "quantityDelta": 6,
       "priceTotal": 331740,
-      "reasoning": "Coincide en tipo de producto (removedor de pintura en gel) y volumen de 1 L.. el proveedor ofrece 36 contra 30 pedidas (6 de mas, probable presentacion comercial)",
+      "reasoning": "Mismo producto y presentación: removedor de pintura en gel de 1L.. el proveedor ofrece 36 contra 30 pedidas (6 de mas, probable presentacion comercial)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4719,7 +4675,7 @@
       "confidence": 0.98,
       "quantityDelta": 20,
       "priceTotal": 423072,
-      "reasoning": "Cono de transito reflectivo de 70 cm equivale a cono vial reflectivo de 70 cm.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial)",
+      "reasoning": "Cono de transito equivale a cono vial y coinciden las especificaciones de 70 cm y reflectivo.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial)",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -4756,6 +4712,50 @@
       "offerLineNo": 163,
       "offeredDescription": "Cono transito reflectivo 70 cm",
       "offeredQuantity": 120,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "partial_quantity",
+      "confidence": 0.99,
+      "quantityDelta": -50,
+      "priceTotal": 837720,
+      "reasoning": "Coincidencia exacta en lubricante multiuso en aerosol de 400ml.. el proveedor ofrece 150 de las 200 pedidas (faltan 50)",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.993,
+          "lineNo": 130,
+          "description": "Aerosol lubricante multiuso 400ml"
+        },
+        {
+          "score": 0.748,
+          "lineNo": 165,
+          "description": "Desodorante ambiente aerosol 360ml"
+        },
+        {
+          "score": 0.7127,
+          "lineNo": 159,
+          "description": "Pulverizador manual 1L"
+        },
+        {
+          "score": 0.6875,
+          "lineNo": 74,
+          "description": "Sellador roscas anaerobico"
+        },
+        {
+          "score": 0.6831,
+          "lineNo": 153,
+          "description": "Repuesto mopa microfibra"
+        }
+      ],
+      "requisitionLineNo": 130,
+      "requestedDescription": "Aerosol lubricante multiuso 400ml",
+      "requestedQuantity": 200,
+      "requestedUnit": "unidad",
+      "offerLineNo": 130,
+      "offeredDescription": "Lubricante aerosol multiuso 400 ml",
+      "offeredQuantity": 150,
       "offeredUnit": "unidad"
     },
     {
@@ -4982,88 +4982,44 @@
       "status": "match",
       "confidence": 0.88,
       "quantityDelta": 0,
-      "priceTotal": 954720,
-      "reasoning": "Esparrago roscado 1/4 es equivalente en uso a varilla roscada 1/4.. mismo producto y misma cantidad",
+      "priceTotal": 995220,
+      "reasoning": "Cubeta de pintura plástica es equivalente a la bandeja plástica de pintar.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.8614,
-          "lineNo": 90,
-          "description": "Varilla roscada 1/4"
+          "score": 0.882,
+          "lineNo": 137,
+          "description": "Bandeja pintura plastica"
         },
         {
-          "score": 0.8277,
-          "lineNo": 89,
-          "description": "Tuerca hexagonal 1/4"
+          "score": 0.8186,
+          "lineNo": 158,
+          "description": "Balde plastico 12L"
         },
         {
-          "score": 0.8016,
-          "lineNo": 91,
-          "description": "Varilla roscada 3/8"
+          "score": 0.7419,
+          "lineNo": 135,
+          "description": "Pincel 3 pulgadas"
         },
         {
-          "score": 0.8001,
-          "lineNo": 88,
-          "description": "Arandela plana 1/4"
-        },
-        {
-          "score": 0.7643,
-          "lineNo": 94,
-          "description": "Abrazadera metalica 3/4"
-        }
-      ],
-      "requisitionLineNo": 90,
-      "requestedDescription": "Varilla roscada 1/4",
-      "requestedQuantity": 300,
-      "requestedUnit": "unidad",
-      "offerLineNo": 90,
-      "offeredDescription": "Esparrago roscado 1/4",
-      "offeredQuantity": 300,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.9,
-      "quantityDelta": 0,
-      "priceTotal": 528840,
-      "reasoning": "Caja de paso plastica equivale a caja de derivacion PVC 10x10.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9035,
-          "lineNo": 14,
-          "description": "Caja derivacion PVC 10x10"
-        },
-        {
-          "score": 0.7921,
-          "lineNo": 15,
-          "description": "Caja estanca IP65"
-        },
-        {
-          "score": 0.7779,
-          "lineNo": 22,
-          "description": "Tomacorriente doble 10A blanco"
-        },
-        {
-          "score": 0.775,
-          "lineNo": 79,
-          "description": "Tapa inspeccion PVC"
-        },
-        {
-          "score": 0.7691,
+          "score": 0.7347,
           "lineNo": 216,
           "description": "Caja herramientas plastica 20 pulgadas"
+        },
+        {
+          "score": 0.7341,
+          "lineNo": 134,
+          "description": "Pincel 2 pulgadas"
         }
       ],
-      "requisitionLineNo": 14,
-      "requestedDescription": "Caja derivacion PVC 10x10",
-      "requestedQuantity": 150,
+      "requisitionLineNo": 137,
+      "requestedDescription": "Bandeja pintura plastica",
+      "requestedQuantity": 60,
       "requestedUnit": "unidad",
-      "offerLineNo": 14,
-      "offeredDescription": "Caja de paso plastica 10x10",
-      "offeredQuantity": 150,
+      "offerLineNo": 137,
+      "offeredDescription": "Cubeta pintura plastica",
+      "offeredQuantity": 60,
       "offeredUnit": "unidad"
     },
     {
@@ -5071,7 +5027,7 @@
       "confidence": 0.9,
       "quantityDelta": 0,
       "priceTotal": 419040,
-      "reasoning": "Luminaria autónoma de emergencia LED corresponde al aplique de emergencia LED pedida.. mismo producto y misma cantidad",
+      "reasoning": "Luminaria autónoma de emergencia LED corresponde a aplique de emergencia LED.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5115,7 +5071,7 @@
       "confidence": 0.9,
       "quantityDelta": 0,
       "priceTotal": 277680,
-      "reasoning": "Señal luminosa de salida de emergencia equivale a cartel de salida de emergencia LED.. mismo producto y misma cantidad",
+      "reasoning": "Señal luminosa de salida de emergencia corresponde a cartel de salida de emergencia LED.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5159,7 +5115,7 @@
       "confidence": 0.9,
       "quantityDelta": 0,
       "priceTotal": 811890,
-      "reasoning": "Curva y codo de PVC de 1/2 pulgada cumplen la misma funcion de desviacion.. mismo producto y misma cantidad",
+      "reasoning": "Curva de PVC de 1/2 equivale al accesorio codo PVC de 1/2.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5203,7 +5159,7 @@
       "confidence": 0.9,
       "quantityDelta": 0,
       "priceTotal": 837200,
-      "reasoning": "Curva y codo de PVC de 3/4 pulgada cumplen la misma funcion de desviacion.. mismo producto y misma cantidad",
+      "reasoning": "Curva de PVC de 3/4 equivale al accesorio codo PVC de 3/4.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5247,7 +5203,7 @@
       "confidence": 0.9,
       "quantityDelta": 0,
       "priceTotal": 586656,
-      "reasoning": "Cupla de union de PVC equivale a union doble de PVC en la misma medida (1/2 pulgada).. mismo producto y misma cantidad",
+      "reasoning": "Cupla de union y union doble PVC de 1/2 son sinonimos.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5291,7 +5247,7 @@
       "confidence": 0.9,
       "quantityDelta": 0,
       "priceTotal": 558480,
-      "reasoning": "Cupla de union de PVC equivale a union doble de PVC en la misma medida (3/4 pulgada).. mismo producto y misma cantidad",
+      "reasoning": "Cupla de union y union doble PVC de 3/4 son sinonimos.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5328,50 +5284,6 @@
       "offerLineNo": 64,
       "offeredDescription": "Cupla union PVC 3/4",
       "offeredQuantity": 100,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.9,
-      "quantityDelta": 0,
-      "priceTotal": 178092,
-      "reasoning": "Tapa de registro de PVC es equivalente funcional y terminologico de tapa de inspeccion de PVC.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9193,
-          "lineNo": 79,
-          "description": "Tapa inspeccion PVC"
-        },
-        {
-          "score": 0.8059,
-          "lineNo": 14,
-          "description": "Caja derivacion PVC 10x10"
-        },
-        {
-          "score": 0.7743,
-          "lineNo": 63,
-          "description": "Union doble PVC 1/2"
-        },
-        {
-          "score": 0.7731,
-          "lineNo": 64,
-          "description": "Union doble PVC 3/4"
-        },
-        {
-          "score": 0.7544,
-          "lineNo": 60,
-          "description": "Codo PVC 3/4"
-        }
-      ],
-      "requisitionLineNo": 79,
-      "requestedDescription": "Tapa inspeccion PVC",
-      "requestedQuantity": 60,
-      "requestedUnit": "unidad",
-      "offerLineNo": 79,
-      "offeredDescription": "Tapa registro PVC",
-      "offeredQuantity": 60,
       "offeredUnit": "unidad"
     },
     {
@@ -5422,8 +5334,52 @@
       "status": "match",
       "confidence": 0.9,
       "quantityDelta": 0,
+      "priceTotal": 954720,
+      "reasoning": "Esparrago roscado 1/4 es equivalente a varilla roscada 1/4.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8614,
+          "lineNo": 90,
+          "description": "Varilla roscada 1/4"
+        },
+        {
+          "score": 0.8277,
+          "lineNo": 89,
+          "description": "Tuerca hexagonal 1/4"
+        },
+        {
+          "score": 0.8016,
+          "lineNo": 91,
+          "description": "Varilla roscada 3/8"
+        },
+        {
+          "score": 0.8001,
+          "lineNo": 88,
+          "description": "Arandela plana 1/4"
+        },
+        {
+          "score": 0.7643,
+          "lineNo": 94,
+          "description": "Abrazadera metalica 3/4"
+        }
+      ],
+      "requisitionLineNo": 90,
+      "requestedDescription": "Varilla roscada 1/4",
+      "requestedQuantity": 300,
+      "requestedUnit": "unidad",
+      "offerLineNo": 90,
+      "offeredDescription": "Esparrago roscado 1/4",
+      "offeredQuantity": 300,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.9,
+      "quantityDelta": 0,
       "priceTotal": 3928500,
-      "reasoning": "Grapa metalica y abrazadera metalica son denominaciones equivalentes para la medida 1/2.. mismo producto y misma cantidad",
+      "reasoning": "Grapa metálica es equivalente a abrazadera metálica en medida de 1/2 pulgada.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5467,7 +5423,7 @@
       "confidence": 0.9,
       "quantityDelta": 0,
       "priceTotal": 4555200,
-      "reasoning": "Grapa metalica y abrazadera metalica son terminos equivalentes para la medida 3/4.. mismo producto y misma cantidad",
+      "reasoning": "Grapa metálica es equivalente a abrazadera metálica en medida de 3/4 pulgada.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5511,7 +5467,7 @@
       "confidence": 0.9,
       "quantityDelta": 0,
       "priceTotal": 425880,
-      "reasoning": "Mecha widia equivale a broca para pared de 8mm.. mismo producto y misma cantidad",
+      "reasoning": "Mecha widia es el nombre comercial para broca de pared o mampostería en 8mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5554,52 +5510,8 @@
       "status": "match",
       "confidence": 0.9,
       "quantityDelta": 0,
-      "priceTotal": 176280,
-      "reasoning": "Coincide en producto de enduido/masilla interior y peso de 20kg.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9422,
-          "lineNo": 124,
-          "description": "Enduido interior 20kg"
-        },
-        {
-          "score": 0.7578,
-          "lineNo": 125,
-          "description": "Masilla plastica multiuso 1kg"
-        },
-        {
-          "score": 0.7279,
-          "lineNo": 116,
-          "description": "Pintura latex interior blanca 20L"
-        },
-        {
-          "score": 0.7019,
-          "lineNo": 117,
-          "description": "Pintura latex interior gris claro 20L"
-        },
-        {
-          "score": 0.6745,
-          "lineNo": 158,
-          "description": "Balde plastico 12L"
-        }
-      ],
-      "requisitionLineNo": 124,
-      "requestedDescription": "Enduido interior 20kg",
-      "requestedQuantity": 50,
-      "requestedUnit": "balde",
-      "offerLineNo": 124,
-      "offeredDescription": "Masilla enduido 20 kg",
-      "offeredQuantity": 50,
-      "offeredUnit": "balde"
-    },
-    {
-      "status": "match",
-      "confidence": 0.9,
-      "quantityDelta": 0,
       "priceTotal": 288672,
-      "reasoning": "Coincide en masilla plastica/poliester multiuso y peso de 1kg.. mismo producto y misma cantidad",
+      "reasoning": "Mismo tipo de masilla plastica/poliester multiuso de 1kg.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5642,52 +5554,8 @@
       "status": "match",
       "confidence": 0.9,
       "quantityDelta": 0,
-      "priceTotal": 995220,
-      "reasoning": "Cubeta de pintura equivale a la bandeja plastica de pintura.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.882,
-          "lineNo": 137,
-          "description": "Bandeja pintura plastica"
-        },
-        {
-          "score": 0.8186,
-          "lineNo": 158,
-          "description": "Balde plastico 12L"
-        },
-        {
-          "score": 0.7419,
-          "lineNo": 135,
-          "description": "Pincel 3 pulgadas"
-        },
-        {
-          "score": 0.7347,
-          "lineNo": 216,
-          "description": "Caja herramientas plastica 20 pulgadas"
-        },
-        {
-          "score": 0.7341,
-          "lineNo": 134,
-          "description": "Pincel 2 pulgadas"
-        }
-      ],
-      "requisitionLineNo": 137,
-      "requestedDescription": "Bandeja pintura plastica",
-      "requestedQuantity": 60,
-      "requestedUnit": "unidad",
-      "offerLineNo": 137,
-      "offeredDescription": "Cubeta pintura plastica",
-      "offeredQuantity": 60,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.9,
-      "quantityDelta": 0,
       "priceTotal": 524160,
-      "reasoning": "Film protector equivale al nylon de cobertura con identicas medidas de 4x5 m.. mismo producto y misma cantidad",
+      "reasoning": "Film protector equivale a nylon de cobertura, coincide en medidas (4x5m).. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5730,176 +5598,132 @@
       "status": "match",
       "confidence": 0.9,
       "quantityDelta": 0,
-      "priceTotal": 6115200,
-      "reasoning": "Guante tejido con puntos corresponde tecnicamente a guante moteado, coincidiendo el talle M.. mismo producto y misma cantidad",
+      "priceTotal": 1664000,
+      "reasoning": "Hipoclorito es la denominacion tecnica de lavandina en presentacion 5L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.8849,
-          "lineNo": 166,
-          "description": "Guante moteado talle M"
+          "score": 0.8724,
+          "lineNo": 142,
+          "description": "Lavandina 5L"
         },
         {
-          "score": 0.8466,
-          "lineNo": 167,
-          "description": "Guante moteado talle L"
+          "score": 0.8359,
+          "lineNo": 143,
+          "description": "Limpiador desinfectante 5L"
         },
         {
-          "score": 0.8254,
-          "lineNo": 160,
-          "description": "Guante limpieza latex talle M"
+          "score": 0.8012,
+          "lineNo": 141,
+          "description": "Detergente concentrado 5L"
         },
         {
-          "score": 0.7829,
-          "lineNo": 161,
-          "description": "Guante limpieza latex talle L"
+          "score": 0.7939,
+          "lineNo": 146,
+          "description": "Jabon liquido manos 5L"
         },
         {
-          "score": 0.7667,
-          "lineNo": 170,
-          "description": "Guante cuero descarne"
+          "score": 0.7849,
+          "lineNo": 144,
+          "description": "Limpiavidrios 5L"
         }
       ],
-      "requisitionLineNo": 166,
-      "requestedDescription": "Guante moteado talle M",
-      "requestedQuantity": 600,
-      "requestedUnit": "par",
-      "offerLineNo": 156,
-      "offeredDescription": "Guante tejido con puntos talle M",
-      "offeredQuantity": 600,
-      "offeredUnit": "par"
+      "requisitionLineNo": 142,
+      "requestedDescription": "Lavandina 5L",
+      "requestedQuantity": 200,
+      "requestedUnit": "bidon",
+      "offerLineNo": 142,
+      "offeredDescription": "Hipoclorito 5 L",
+      "offeredQuantity": 200,
+      "offeredUnit": "bidon"
     },
     {
       "status": "match",
       "confidence": 0.9,
       "quantityDelta": 0,
-      "priceTotal": 6372900,
-      "reasoning": "Guante tejido con puntos equivale a guante moteado, coincidiendo el talle L.. mismo producto y misma cantidad",
+      "priceTotal": 455520,
+      "reasoning": "Cuchilla retractil es equivalente a cutter y coincide la especificacion de reforzado.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.88,
-          "lineNo": 167,
-          "description": "Guante moteado talle L"
+          "score": 0.8488,
+          "lineNo": 204,
+          "description": "Cutter reforzado"
         },
         {
-          "score": 0.848,
-          "lineNo": 166,
-          "description": "Guante moteado talle M"
+          "score": 0.6923,
+          "lineNo": 205,
+          "description": "Repuesto hoja cutter 18mm"
         },
         {
-          "score": 0.8285,
-          "lineNo": 161,
-          "description": "Guante limpieza latex talle L"
+          "score": 0.6921,
+          "lineNo": 104,
+          "description": "Hoja sierra manual 24T"
         },
         {
-          "score": 0.7965,
-          "lineNo": 160,
-          "description": "Guante limpieza latex talle M"
+          "score": 0.6886,
+          "lineNo": 218,
+          "description": "Linterna LED recargable"
         },
         {
-          "score": 0.7726,
-          "lineNo": 170,
-          "description": "Guante cuero descarne"
+          "score": 0.6886,
+          "lineNo": 114,
+          "description": "Rueda fija 50mm"
         }
       ],
-      "requisitionLineNo": 167,
-      "requestedDescription": "Guante moteado talle L",
-      "requestedQuantity": 600,
-      "requestedUnit": "par",
-      "offerLineNo": 157,
-      "offeredDescription": "Guante tejido con puntos talle L",
-      "offeredQuantity": 600,
-      "offeredUnit": "par"
+      "requisitionLineNo": 204,
+      "requestedDescription": "Cutter reforzado",
+      "requestedQuantity": 100,
+      "requestedUnit": "unidad",
+      "offerLineNo": 168,
+      "offeredDescription": "Cuchilla retractil reforzada",
+      "offeredQuantity": 100,
+      "offeredUnit": "unidad"
     },
     {
       "status": "match",
       "confidence": 0.92,
       "quantityDelta": 0,
-      "priceTotal": 851760,
-      "reasoning": "Ducto pasacable es equivalente a canaleta PVC en la medida 20x10.. mismo producto y misma cantidad",
+      "priceTotal": 528840,
+      "reasoning": "Caja de paso equivale a caja de derivacion, coincidiendo en dimensiones 10x10.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.9081,
-          "lineNo": 12,
-          "description": "Canaleta PVC 20x10 blanca"
-        },
-        {
-          "score": 0.855,
-          "lineNo": 13,
-          "description": "Canaleta PVC 40x20 blanca"
-        },
-        {
-          "score": 0.7364,
+          "score": 0.9035,
           "lineNo": 14,
           "description": "Caja derivacion PVC 10x10"
         },
         {
-          "score": 0.7248,
-          "lineNo": 56,
-          "description": "Cano PVC agua 1/2"
-        },
-        {
-          "score": 0.7178,
-          "lineNo": 58,
-          "description": "Cano PVC agua 1 pulgada"
-        }
-      ],
-      "requisitionLineNo": 12,
-      "requestedDescription": "Canaleta PVC 20x10 blanca",
-      "requestedQuantity": 300,
-      "requestedUnit": "metro",
-      "offerLineNo": 12,
-      "offeredDescription": "Ducto polipropileno pasacable 20x10 blanca",
-      "offeredQuantity": 300,
-      "offeredUnit": "metro"
-    },
-    {
-      "status": "match",
-      "confidence": 0.92,
-      "quantityDelta": 0,
-      "priceTotal": 433008,
-      "reasoning": "Gabinete estanco IP65 es la misma especificacion que caja estanca IP65.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9513,
+          "score": 0.7921,
           "lineNo": 15,
           "description": "Caja estanca IP65"
         },
         {
-          "score": 0.7274,
-          "lineNo": 42,
-          "description": "Fotocelula exterior"
+          "score": 0.7779,
+          "lineNo": 22,
+          "description": "Tomacorriente doble 10A blanco"
         },
         {
-          "score": 0.7118,
-          "lineNo": 40,
-          "description": "Reflector LED exterior 100W IP65"
+          "score": 0.775,
+          "lineNo": 79,
+          "description": "Tapa inspeccion PVC"
         },
         {
-          "score": 0.711,
-          "lineNo": 171,
-          "description": "Anteojo seguridad transparente"
-        },
-        {
-          "score": 0.7049,
-          "lineNo": 54,
-          "description": "Interruptor simple embutir"
+          "score": 0.7691,
+          "lineNo": 216,
+          "description": "Caja herramientas plastica 20 pulgadas"
         }
       ],
-      "requisitionLineNo": 15,
-      "requestedDescription": "Caja estanca IP65",
-      "requestedQuantity": 120,
+      "requisitionLineNo": 14,
+      "requestedDescription": "Caja derivacion PVC 10x10",
+      "requestedQuantity": 150,
       "requestedUnit": "unidad",
-      "offerLineNo": 15,
-      "offeredDescription": "Gabinete estanco IP65",
-      "offeredQuantity": 120,
+      "offerLineNo": 14,
+      "offeredDescription": "Caja de paso plastica 10x10",
+      "offeredQuantity": 150,
       "offeredUnit": "unidad"
     },
     {
@@ -5950,8 +5774,96 @@
       "status": "match",
       "confidence": 0.92,
       "quantityDelta": 0,
+      "priceTotal": 1366560,
+      "reasoning": "Rollo aislante negra equivale a cinta aisladora negra.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9169,
+          "lineNo": 28,
+          "description": "Cinta aisladora negra"
+        },
+        {
+          "score": 0.8029,
+          "lineNo": 29,
+          "description": "Cinta aisladora roja"
+        },
+        {
+          "score": 0.7446,
+          "lineNo": 189,
+          "description": "Cinta peligro amarillo negro"
+        },
+        {
+          "score": 0.7198,
+          "lineNo": 4,
+          "description": "Cable unipolar 1.5mm2 negro"
+        },
+        {
+          "score": 0.7131,
+          "lineNo": 139,
+          "description": "Cinta enmascarar 48mm"
+        }
+      ],
+      "requisitionLineNo": 28,
+      "requestedDescription": "Cinta aisladora negra",
+      "requestedQuantity": 300,
+      "requestedUnit": "rollo",
+      "offerLineNo": 28,
+      "offeredDescription": "Rollo aislante negra",
+      "offeredQuantity": 300,
+      "offeredUnit": "rollo"
+    },
+    {
+      "status": "match",
+      "confidence": 0.92,
+      "quantityDelta": 0,
+      "priceTotal": 365496,
+      "reasoning": "Rollo aislante roja equivale a cinta aisladora roja.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.924,
+          "lineNo": 29,
+          "description": "Cinta aisladora roja"
+        },
+        {
+          "score": 0.8068,
+          "lineNo": 28,
+          "description": "Cinta aisladora negra"
+        },
+        {
+          "score": 0.7629,
+          "lineNo": 33,
+          "description": "Terminal ojal aislado rojo"
+        },
+        {
+          "score": 0.7269,
+          "lineNo": 1,
+          "description": "Cable unipolar 1.5mm2 rojo"
+        },
+        {
+          "score": 0.7232,
+          "lineNo": 9,
+          "description": "Cable unipolar 4mm2 rojo"
+        }
+      ],
+      "requisitionLineNo": 29,
+      "requestedDescription": "Cinta aisladora roja",
+      "requestedQuantity": 80,
+      "requestedUnit": "rollo",
+      "offerLineNo": 29,
+      "offeredDescription": "Rollo aislante roja",
+      "offeredQuantity": 80,
+      "offeredUnit": "rollo"
+    },
+    {
+      "status": "match",
+      "confidence": 0.92,
+      "quantityDelta": 0,
       "priceTotal": 468000,
-      "reasoning": "Tuberia de PVC presion equivale a cano de PVC agua de 1/2 pulgada.. mismo producto y misma cantidad",
+      "reasoning": "Tuberia PVC presion de 1/2 equivale a cano PVC agua de 1/2.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -5995,7 +5907,7 @@
       "confidence": 0.92,
       "quantityDelta": 0,
       "priceTotal": 368160,
-      "reasoning": "Tuberia de PVC presion equivale a cano de PVC agua de 1 pulgada.. mismo producto y misma cantidad",
+      "reasoning": "Tuberia PVC presion de 1 pulgada equivale a cano PVC agua de 1 pulgada.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6038,272 +5950,184 @@
       "status": "match",
       "confidence": 0.92,
       "quantityDelta": 0,
-      "priceTotal": 353565,
-      "reasoning": "Desague sifonado de polipropileno para lavatorio es equivalente a sifon plastico de lavatorio.. mismo producto y misma cantidad",
+      "priceTotal": 197298,
+      "reasoning": "Griferia de lavatorio y canilla lavatorio con cierre ceramico son equivalentes.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.9264,
-          "lineNo": 71,
-          "description": "Sifon plastico lavatorio"
-        },
-        {
-          "score": 0.762,
+          "score": 0.9519,
           "lineNo": 69,
           "description": "Canilla lavatorio cierre ceramico"
         },
         {
-          "score": 0.7231,
+          "score": 0.8282,
+          "lineNo": 71,
+          "description": "Sifon plastico lavatorio"
+        },
+        {
+          "score": 0.7468,
           "lineNo": 72,
           "description": "Flotante deposito inodoro"
         },
         {
-          "score": 0.7217,
+          "score": 0.7318,
+          "lineNo": 65,
+          "description": "Valvula esferica 1/2"
+        },
+        {
+          "score": 0.7281,
+          "lineNo": 70,
+          "description": "Canilla servicio bronce 1/2"
+        }
+      ],
+      "requisitionLineNo": 69,
+      "requestedDescription": "Canilla lavatorio cierre ceramico",
+      "requestedQuantity": 60,
+      "requestedUnit": "unidad",
+      "offerLineNo": 69,
+      "offeredDescription": "Griferia para lavatorio cierre ceramico",
+      "offeredQuantity": 60,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.92,
+      "quantityDelta": 0,
+      "priceTotal": 1562670,
+      "reasoning": "El PTFE es politetrafluoroetileno, conocido comercialmente como teflon.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.7752,
+          "lineNo": 75,
+          "description": "Cinta teflon"
+        },
+        {
+          "score": 0.6489,
+          "lineNo": 28,
+          "description": "Cinta aisladora negra"
+        },
+        {
+          "score": 0.639,
+          "lineNo": 29,
+          "description": "Cinta aisladora roja"
+        },
+        {
+          "score": 0.6276,
+          "lineNo": 189,
+          "description": "Cinta peligro amarillo negro"
+        },
+        {
+          "score": 0.6252,
+          "lineNo": 86,
+          "description": "Tarugo nylon 8mm"
+        }
+      ],
+      "requisitionLineNo": 75,
+      "requestedDescription": "Cinta teflon",
+      "requestedQuantity": 300,
+      "requestedUnit": "rollo",
+      "offerLineNo": 75,
+      "offeredDescription": "Rollo PTFE",
+      "offeredQuantity": 300,
+      "offeredUnit": "rollo"
+    },
+    {
+      "status": "match",
+      "confidence": 0.92,
+      "quantityDelta": 0,
+      "priceTotal": 178092,
+      "reasoning": "Tapa de registro de PVC equivale a tapa de inspeccion de PVC.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9193,
           "lineNo": 79,
           "description": "Tapa inspeccion PVC"
         },
         {
-          "score": 0.7083,
+          "score": 0.8059,
+          "lineNo": 14,
+          "description": "Caja derivacion PVC 10x10"
+        },
+        {
+          "score": 0.7743,
           "lineNo": 63,
           "description": "Union doble PVC 1/2"
+        },
+        {
+          "score": 0.7731,
+          "lineNo": 64,
+          "description": "Union doble PVC 3/4"
+        },
+        {
+          "score": 0.7544,
+          "lineNo": 60,
+          "description": "Codo PVC 3/4"
         }
       ],
-      "requisitionLineNo": 71,
-      "requestedDescription": "Sifon plastico lavatorio",
-      "requestedQuantity": 90,
-      "requestedUnit": "unidad",
-      "offerLineNo": 71,
-      "offeredDescription": "Desague sifonado polipropileno lavatorio",
-      "offeredQuantity": 90,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.92,
-      "quantityDelta": 0,
-      "priceTotal": 1067040,
-      "reasoning": "Traba roscas sellador anaerobico es equivalente a sellador de roscas anaerobico.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9482,
-          "lineNo": 74,
-          "description": "Sellador roscas anaerobico"
-        },
-        {
-          "score": 0.6657,
-          "lineNo": 126,
-          "description": "Sellador siliconado transparente 280ml"
-        },
-        {
-          "score": 0.6592,
-          "lineNo": 76,
-          "description": "Adhesivo PVC 125ml"
-        },
-        {
-          "score": 0.6584,
-          "lineNo": 89,
-          "description": "Tuerca hexagonal 1/4"
-        },
-        {
-          "score": 0.658,
-          "lineNo": 127,
-          "description": "Sellador siliconado blanco 280ml"
-        }
-      ],
-      "requisitionLineNo": 74,
-      "requestedDescription": "Sellador roscas anaerobico",
+      "requisitionLineNo": 79,
+      "requestedDescription": "Tapa inspeccion PVC",
       "requestedQuantity": 60,
-      "requestedUnit": "tubo",
-      "offerLineNo": 74,
-      "offeredDescription": "Traba rosca selladora anaerobico",
+      "requestedUnit": "unidad",
+      "offerLineNo": 79,
+      "offeredDescription": "Tapa registro PVC",
       "offeredQuantity": 60,
-      "offeredUnit": "tubo"
-    },
-    {
-      "status": "match",
-      "confidence": 0.92,
-      "quantityDelta": 0,
-      "priceTotal": 203700,
-      "reasoning": "Anclaje nylon 6mm es sinonimo comercial de tarugo nylon 6mm.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.8194,
-          "lineNo": 85,
-          "description": "Tarugo nylon 6mm"
-        },
-        {
-          "score": 0.76,
-          "lineNo": 83,
-          "description": "Tornillo madera 6x1"
-        },
-        {
-          "score": 0.756,
-          "lineNo": 86,
-          "description": "Tarugo nylon 8mm"
-        },
-        {
-          "score": 0.7524,
-          "lineNo": 87,
-          "description": "Tarugo nylon 10mm"
-        },
-        {
-          "score": 0.7456,
-          "lineNo": 99,
-          "description": "Broca pared 6mm"
-        }
-      ],
-      "requisitionLineNo": 85,
-      "requestedDescription": "Tarugo nylon 6mm",
-      "requestedQuantity": 6000,
-      "requestedUnit": "unidad",
-      "offerLineNo": 85,
-      "offeredDescription": "Anclaje nylon 6 mm",
-      "offeredQuantity": 6000,
       "offeredUnit": "unidad"
     },
     {
       "status": "match",
       "confidence": 0.92,
       "quantityDelta": 0,
-      "priceTotal": 262080,
-      "reasoning": "Anclaje nylon 8mm es sinonimo comercial de tarugo nylon 8mm.. mismo producto y misma cantidad",
+      "priceTotal": 176280,
+      "reasoning": "Mismo producto de enduido/masilla en balde de 20kg.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.8186,
-          "lineNo": 86,
-          "description": "Tarugo nylon 8mm"
+          "score": 0.9422,
+          "lineNo": 124,
+          "description": "Enduido interior 20kg"
         },
         {
-          "score": 0.7727,
-          "lineNo": 81,
-          "description": "Tornillo autoperforante 8x1"
+          "score": 0.7578,
+          "lineNo": 125,
+          "description": "Masilla plastica multiuso 1kg"
         },
         {
-          "score": 0.7577,
-          "lineNo": 82,
-          "description": "Tornillo autoperforante 8x1.5"
+          "score": 0.7279,
+          "lineNo": 116,
+          "description": "Pintura latex interior blanca 20L"
         },
         {
-          "score": 0.7536,
-          "lineNo": 85,
-          "description": "Tarugo nylon 6mm"
+          "score": 0.7019,
+          "lineNo": 117,
+          "description": "Pintura latex interior gris claro 20L"
         },
         {
-          "score": 0.7533,
-          "lineNo": 84,
-          "description": "Tornillo madera 8x2"
+          "score": 0.6745,
+          "lineNo": 158,
+          "description": "Balde plastico 12L"
         }
       ],
-      "requisitionLineNo": 86,
-      "requestedDescription": "Tarugo nylon 8mm",
-      "requestedQuantity": 6000,
-      "requestedUnit": "unidad",
-      "offerLineNo": 86,
-      "offeredDescription": "Anclaje nylon 8 mm",
-      "offeredQuantity": 6000,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.92,
-      "quantityDelta": 0,
-      "priceTotal": 142590,
-      "reasoning": "Anclaje nylon 10mm es sinonimo comercial de tarugo nylon 10mm.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.8162,
-          "lineNo": 87,
-          "description": "Tarugo nylon 10mm"
-        },
-        {
-          "score": 0.7557,
-          "lineNo": 85,
-          "description": "Tarugo nylon 6mm"
-        },
-        {
-          "score": 0.7547,
-          "lineNo": 86,
-          "description": "Tarugo nylon 8mm"
-        },
-        {
-          "score": 0.7375,
-          "lineNo": 25,
-          "description": "Ficha hembra 10A"
-        },
-        {
-          "score": 0.7363,
-          "lineNo": 24,
-          "description": "Ficha macho 10A"
-        }
-      ],
-      "requisitionLineNo": 87,
-      "requestedDescription": "Tarugo nylon 10mm",
-      "requestedQuantity": 3000,
-      "requestedUnit": "unidad",
-      "offerLineNo": 87,
-      "offeredDescription": "Anclaje nylon 10 mm",
-      "offeredQuantity": 3000,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.92,
-      "quantityDelta": 0,
-      "priceTotal": 1664000,
-      "reasoning": "Hipoclorito es la denominacion del principio activo de la lavandina y coincide en 5L.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.8724,
-          "lineNo": 142,
-          "description": "Lavandina 5L"
-        },
-        {
-          "score": 0.8359,
-          "lineNo": 143,
-          "description": "Limpiador desinfectante 5L"
-        },
-        {
-          "score": 0.8012,
-          "lineNo": 141,
-          "description": "Detergente concentrado 5L"
-        },
-        {
-          "score": 0.7939,
-          "lineNo": 146,
-          "description": "Jabon liquido manos 5L"
-        },
-        {
-          "score": 0.7849,
-          "lineNo": 144,
-          "description": "Limpiavidrios 5L"
-        }
-      ],
-      "requisitionLineNo": 142,
-      "requestedDescription": "Lavandina 5L",
-      "requestedQuantity": 200,
-      "requestedUnit": "bidon",
-      "offerLineNo": 142,
-      "offeredDescription": "Hipoclorito 5 L",
-      "offeredQuantity": 200,
-      "offeredUnit": "bidon"
+      "requisitionLineNo": 124,
+      "requestedDescription": "Enduido interior 20kg",
+      "requestedQuantity": 50,
+      "requestedUnit": "balde",
+      "offerLineNo": 124,
+      "offeredDescription": "Masilla enduido 20 kg",
+      "offeredQuantity": 50,
+      "offeredUnit": "balde"
     },
     {
       "status": "match",
       "confidence": 0.92,
       "quantityDelta": 0,
       "priceTotal": 3244800,
-      "reasoning": "Higienico jumbo industrial de 300m es equivalente a papel higienico industrial 300m.. mismo producto y misma cantidad",
+      "reasoning": "Higienico jumbo industrial equivale a papel higienico industrial 300m.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6346,228 +6170,140 @@
       "status": "match",
       "confidence": 0.92,
       "quantityDelta": 0,
-      "priceTotal": 476658,
-      "reasoning": "Escoba uso interno es totalmente equivalente a escoba interior.. mismo producto y misma cantidad",
+      "priceTotal": 6115200,
+      "reasoning": "Guante tejido con puntos es sinónimo de guante moteado en talle M.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.9187,
-          "lineNo": 155,
-          "description": "Escoba interior"
+          "score": 0.8849,
+          "lineNo": 166,
+          "description": "Guante moteado talle M"
         },
         {
-          "score": 0.8227,
-          "lineNo": 156,
-          "description": "Escoba exterior dura"
+          "score": 0.8466,
+          "lineNo": 167,
+          "description": "Guante moteado talle L"
         },
         {
-          "score": 0.7707,
-          "lineNo": 163,
-          "description": "Fibra verde limpieza"
+          "score": 0.8254,
+          "lineNo": 160,
+          "description": "Guante limpieza latex talle M"
         },
         {
-          "score": 0.7452,
-          "lineNo": 152,
-          "description": "Trapo piso algodon"
+          "score": 0.7829,
+          "lineNo": 161,
+          "description": "Guante limpieza latex talle L"
         },
         {
-          "score": 0.7449,
-          "lineNo": 162,
-          "description": "Esponja abrasiva"
+          "score": 0.7667,
+          "lineNo": 170,
+          "description": "Guante cuero descarne"
         }
       ],
-      "requisitionLineNo": 155,
-      "requestedDescription": "Escoba interior",
-      "requestedQuantity": 180,
-      "requestedUnit": "unidad",
-      "offerLineNo": 155,
-      "offeredDescription": "Escoba uso interno",
-      "offeredQuantity": 180,
-      "offeredUnit": "unidad"
+      "requisitionLineNo": 166,
+      "requestedDescription": "Guante moteado talle M",
+      "requestedQuantity": 600,
+      "requestedUnit": "par",
+      "offerLineNo": 156,
+      "offeredDescription": "Guante tejido con puntos talle M",
+      "offeredQuantity": 600,
+      "offeredUnit": "par"
     },
     {
       "status": "match",
       "confidence": 0.92,
       "quantityDelta": 0,
-      "priceTotal": 1081600,
-      "reasoning": "Gafa de proteccion gris equivale a anteojo de seguridad gris.. mismo producto y misma cantidad",
+      "priceTotal": 6372900,
+      "reasoning": "Guante tejido con puntos es sinónimo de guante moteado en talle L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.9305,
-          "lineNo": 172,
-          "description": "Anteojo seguridad gris"
+          "score": 0.88,
+          "lineNo": 167,
+          "description": "Guante moteado talle L"
         },
         {
-          "score": 0.82,
-          "lineNo": 171,
-          "description": "Anteojo seguridad transparente"
+          "score": 0.848,
+          "lineNo": 166,
+          "description": "Guante moteado talle M"
         },
         {
-          "score": 0.7576,
-          "lineNo": 173,
-          "description": "Protector auditivo tipo copa"
+          "score": 0.8285,
+          "lineNo": 161,
+          "description": "Guante limpieza latex talle L"
         },
         {
-          "score": 0.7405,
-          "lineNo": 175,
-          "description": "Casco seguridad blanco"
+          "score": 0.7965,
+          "lineNo": 160,
+          "description": "Guante limpieza latex talle M"
         },
         {
-          "score": 0.7326,
-          "lineNo": 178,
-          "description": "Respirador media cara"
+          "score": 0.7726,
+          "lineNo": 170,
+          "description": "Guante cuero descarne"
         }
       ],
-      "requisitionLineNo": 172,
-      "requestedDescription": "Anteojo seguridad gris",
-      "requestedQuantity": 200,
-      "requestedUnit": "unidad",
-      "offerLineNo": 159,
-      "offeredDescription": "Gafa proteccion gris",
-      "offeredQuantity": 200,
-      "offeredUnit": "unidad"
+      "requisitionLineNo": 167,
+      "requestedDescription": "Guante moteado talle L",
+      "requestedQuantity": 600,
+      "requestedUnit": "par",
+      "offerLineNo": 157,
+      "offeredDescription": "Guante tejido con puntos talle L",
+      "offeredQuantity": 600,
+      "offeredUnit": "par"
     },
     {
       "status": "match",
-      "confidence": 0.92,
+      "confidence": 0.93,
       "quantityDelta": 0,
-      "priceTotal": 1006860,
-      "reasoning": "Casco de obra blanco es sinonimo de casco de seguridad blanco.. mismo producto y misma cantidad",
+      "priceTotal": 1067040,
+      "reasoning": "Traba roscas anaerobico es equivalente a sellador de roscas anaerobico.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.8699,
-          "lineNo": 175,
-          "description": "Casco seguridad blanco"
+          "score": 0.9482,
+          "lineNo": 74,
+          "description": "Sellador roscas anaerobico"
         },
         {
-          "score": 0.7702,
-          "lineNo": 176,
-          "description": "Casco seguridad amarillo"
+          "score": 0.6657,
+          "lineNo": 126,
+          "description": "Sellador siliconado transparente 280ml"
         },
         {
-          "score": 0.6982,
-          "lineNo": 171,
-          "description": "Anteojo seguridad transparente"
+          "score": 0.6592,
+          "lineNo": 76,
+          "description": "Adhesivo PVC 125ml"
         },
         {
-          "score": 0.6848,
-          "lineNo": 15,
-          "description": "Caja estanca IP65"
+          "score": 0.6584,
+          "lineNo": 89,
+          "description": "Tuerca hexagonal 1/4"
         },
         {
-          "score": 0.6837,
-          "lineNo": 178,
-          "description": "Respirador media cara"
+          "score": 0.658,
+          "lineNo": 127,
+          "description": "Sellador siliconado blanco 280ml"
         }
       ],
-      "requisitionLineNo": 175,
-      "requestedDescription": "Casco seguridad blanco",
-      "requestedQuantity": 120,
-      "requestedUnit": "unidad",
-      "offerLineNo": 160,
-      "offeredDescription": "Casco obra blanco",
-      "offeredQuantity": 120,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.92,
-      "quantityDelta": 0,
-      "priceTotal": 455520,
-      "reasoning": "Cuchilla retractil reforzada equivale a cutter reforzado.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.8488,
-          "lineNo": 204,
-          "description": "Cutter reforzado"
-        },
-        {
-          "score": 0.6923,
-          "lineNo": 205,
-          "description": "Repuesto hoja cutter 18mm"
-        },
-        {
-          "score": 0.6921,
-          "lineNo": 104,
-          "description": "Hoja sierra manual 24T"
-        },
-        {
-          "score": 0.6886,
-          "lineNo": 218,
-          "description": "Linterna LED recargable"
-        },
-        {
-          "score": 0.6886,
-          "lineNo": 114,
-          "description": "Rueda fija 50mm"
-        }
-      ],
-      "requisitionLineNo": 204,
-      "requestedDescription": "Cutter reforzado",
-      "requestedQuantity": 100,
-      "requestedUnit": "unidad",
-      "offerLineNo": 168,
-      "offeredDescription": "Cuchilla retractil reforzada",
-      "offeredQuantity": 100,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.92,
-      "quantityDelta": 0,
-      "priceTotal": 50544,
-      "reasoning": "Escalera plegable de aluminio de 6 escalones corresponde a la escalera tipo tijera de 6 escalones solicitada.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.953,
-          "lineNo": 214,
-          "description": "Escalera tijera aluminio 6 escalones"
-        },
-        {
-          "score": 0.8762,
-          "lineNo": 215,
-          "description": "Escalera extensible aluminio 24 escalones"
-        },
-        {
-          "score": 0.761,
-          "lineNo": 207,
-          "description": "Nivel aluminio 60cm"
-        },
-        {
-          "score": 0.7315,
-          "lineNo": 27,
-          "description": "Zapatilla electrica 6 tomas"
-        },
-        {
-          "score": 0.722,
-          "lineNo": 192,
-          "description": "Destornillador plano 6mm"
-        }
-      ],
-      "requisitionLineNo": 214,
-      "requestedDescription": "Escalera tijera aluminio 6 escalones",
-      "requestedQuantity": 12,
-      "requestedUnit": "unidad",
-      "offerLineNo": 172,
-      "offeredDescription": "Escalera plegable aluminio 6 escalones",
-      "offeredQuantity": 12,
-      "offeredUnit": "unidad"
+      "requisitionLineNo": 74,
+      "requestedDescription": "Sellador roscas anaerobico",
+      "requestedQuantity": 60,
+      "requestedUnit": "tubo",
+      "offerLineNo": 74,
+      "offeredDescription": "Traba rosca selladora anaerobico",
+      "offeredQuantity": 60,
+      "offeredUnit": "tubo"
     },
     {
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 441350,
-      "reasoning": "Coincide en seccion de 1.5 mm2 y color rojo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 1.5 mm2, el color rojo y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6611,7 +6347,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 509600,
-      "reasoning": "Coincide en seccion de 1.5 mm2 y color azul; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 1.5 mm2, el color azul y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6655,7 +6391,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 407400,
-      "reasoning": "Coincide en seccion de 1.5 mm2 y color verde amarillo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 1.5 mm2, el color verde amarillo y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6699,7 +6435,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 465920,
-      "reasoning": "Coincide en seccion de 1.5 mm2 y color negro; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 1.5 mm2, el color negro y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6743,7 +6479,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 865725,
-      "reasoning": "Coincide en seccion de 2.5 mm2 y color rojo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 2.5 mm2, el color rojo y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6787,7 +6523,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 982800,
-      "reasoning": "Coincide en seccion de 2.5 mm2 y color azul; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 2.5 mm2, el color azul y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6831,7 +6567,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 488880,
-      "reasoning": "Coincide en seccion de 2.5 mm2 y color verde amarillo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 2.5 mm2, el color verde amarillo y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6875,7 +6611,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 567840,
-      "reasoning": "Coincide en seccion de 2.5 mm2 y color negro; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 2.5 mm2, el color negro y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6919,7 +6655,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 380240,
-      "reasoning": "Coincide en seccion de 4 mm2 y color rojo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 4 mm2, el color rojo y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -6963,7 +6699,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 436800,
-      "reasoning": "Coincide en seccion de 4 mm2 y color azul; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden perfectamente la seccion de 4 mm2, el color azul y la equivalencia del tipo de cable.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7006,8 +6742,96 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
+      "priceTotal": 851760,
+      "reasoning": "Ducto pasacable equivale a canaleta, coincidiendo en dimensiones 20x10 y color blanco.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9081,
+          "lineNo": 12,
+          "description": "Canaleta PVC 20x10 blanca"
+        },
+        {
+          "score": 0.855,
+          "lineNo": 13,
+          "description": "Canaleta PVC 40x20 blanca"
+        },
+        {
+          "score": 0.7364,
+          "lineNo": 14,
+          "description": "Caja derivacion PVC 10x10"
+        },
+        {
+          "score": 0.7248,
+          "lineNo": 56,
+          "description": "Cano PVC agua 1/2"
+        },
+        {
+          "score": 0.7178,
+          "lineNo": 58,
+          "description": "Cano PVC agua 1 pulgada"
+        }
+      ],
+      "requisitionLineNo": 12,
+      "requestedDescription": "Canaleta PVC 20x10 blanca",
+      "requestedQuantity": 300,
+      "requestedUnit": "metro",
+      "offerLineNo": 12,
+      "offeredDescription": "Ducto polipropileno pasacable 20x10 blanca",
+      "offeredQuantity": 300,
+      "offeredUnit": "metro"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 433008,
+      "reasoning": "Gabinete estanco equivale a caja estanca, coincidiendo en especificacion de proteccion IP65.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9513,
+          "lineNo": 15,
+          "description": "Caja estanca IP65"
+        },
+        {
+          "score": 0.7274,
+          "lineNo": 42,
+          "description": "Fotocelula exterior"
+        },
+        {
+          "score": 0.7118,
+          "lineNo": 40,
+          "description": "Reflector LED exterior 100W IP65"
+        },
+        {
+          "score": 0.711,
+          "lineNo": 171,
+          "description": "Anteojo seguridad transparente"
+        },
+        {
+          "score": 0.7049,
+          "lineNo": 54,
+          "description": "Interruptor simple embutir"
+        }
+      ],
+      "requisitionLineNo": 15,
+      "requestedDescription": "Caja estanca IP65",
+      "requestedQuantity": 120,
+      "requestedUnit": "unidad",
+      "offerLineNo": 15,
+      "offeredDescription": "Gabinete estanco IP65",
+      "offeredQuantity": 120,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
       "priceTotal": 457600,
-      "reasoning": "Interruptor automatico de 2 polos equivale a llave termomagnetica bipolar de 10A.. mismo producto y misma cantidad",
+      "reasoning": "Interruptor automatico 2 polos equivale a llave termomagnetica bipolar de 10A.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7051,7 +6875,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 710040,
-      "reasoning": "Interruptor automatico de 2 polos equivale a llave termomagnetica bipolar de 16A.. mismo producto y misma cantidad",
+      "reasoning": "Interruptor automatico 2 polos equivale a llave termomagnetica bipolar de 16A.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7095,7 +6919,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 836160,
-      "reasoning": "Interruptor automatico de 2 polos equivale a llave termomagnetica bipolar de 25A.. mismo producto y misma cantidad",
+      "reasoning": "Interruptor automatico 2 polos equivale a llave termomagnetica bipolar de 25A.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7139,7 +6963,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 356720,
-      "reasoning": "Protector diferencial de 2 polos es equivalente a disyuntor diferencial bipolar de 25A 30mA.. mismo producto y misma cantidad",
+      "reasoning": "Protector diferencial 2 polos equivale a disyuntor diferencial bipolar de 25A 30mA.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7183,7 +7007,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 266750,
-      "reasoning": "Protector diferencial 2 polos de 40A 30mA equivale a disyuntor diferencial bipolar 40A 30mA.. mismo producto y misma cantidad",
+      "reasoning": "Protector diferencial 2 polos 40A 30mA es equivalente a disyuntor diferencial bipolar 40A 30mA.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7227,7 +7051,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 211848,
-      "reasoning": "Modulo toma electrica industrial 16A equivale a tomacorriente industrial 16A.. mismo producto y misma cantidad",
+      "reasoning": "Modulo toma electrica industrial 16A es equivalente a tomacorriente industrial 16A.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7271,7 +7095,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 477360,
-      "reasoning": "Plug macho 10A es equivalente a ficha macho 10A.. mismo producto y misma cantidad",
+      "reasoning": "Plug macho 10A es la denominacion comercial equivalente a ficha macho 10A.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7358,96 +7182,8 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 1366560,
-      "reasoning": "Rollo aislante negra es equivalente a cinta aisladora negra.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9169,
-          "lineNo": 28,
-          "description": "Cinta aisladora negra"
-        },
-        {
-          "score": 0.8029,
-          "lineNo": 29,
-          "description": "Cinta aisladora roja"
-        },
-        {
-          "score": 0.7446,
-          "lineNo": 189,
-          "description": "Cinta peligro amarillo negro"
-        },
-        {
-          "score": 0.7198,
-          "lineNo": 4,
-          "description": "Cable unipolar 1.5mm2 negro"
-        },
-        {
-          "score": 0.7131,
-          "lineNo": 139,
-          "description": "Cinta enmascarar 48mm"
-        }
-      ],
-      "requisitionLineNo": 28,
-      "requestedDescription": "Cinta aisladora negra",
-      "requestedQuantity": 300,
-      "requestedUnit": "rollo",
-      "offerLineNo": 28,
-      "offeredDescription": "Rollo aislante negra",
-      "offeredQuantity": 300,
-      "offeredUnit": "rollo"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
-      "priceTotal": 365496,
-      "reasoning": "Rollo aislante roja es equivalente a cinta aisladora roja.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.924,
-          "lineNo": 29,
-          "description": "Cinta aisladora roja"
-        },
-        {
-          "score": 0.8068,
-          "lineNo": 28,
-          "description": "Cinta aisladora negra"
-        },
-        {
-          "score": 0.7629,
-          "lineNo": 33,
-          "description": "Terminal ojal aislado rojo"
-        },
-        {
-          "score": 0.7269,
-          "lineNo": 1,
-          "description": "Cable unipolar 1.5mm2 rojo"
-        },
-        {
-          "score": 0.7232,
-          "lineNo": 9,
-          "description": "Cable unipolar 4mm2 rojo"
-        }
-      ],
-      "requisitionLineNo": 29,
-      "requestedDescription": "Cinta aisladora roja",
-      "requestedQuantity": 80,
-      "requestedUnit": "rollo",
-      "offerLineNo": 29,
-      "offeredDescription": "Rollo aislante roja",
-      "offeredQuantity": 80,
-      "offeredUnit": "rollo"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
       "priceTotal": 1048320,
-      "reasoning": "Brida plastica 200mm es equivalente a precinto plastico 200mm.. mismo producto y misma cantidad",
+      "reasoning": "Brida plastica 200mm es la denominacion tecnica equivalente a precinto plastico 200mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7491,7 +7227,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 781335,
-      "reasoning": "Brida plastica es equivalente a precinto plastico y coincide en medida de 300mm.. mismo producto y misma cantidad",
+      "reasoning": "Brida plastica es equivalente a precinto plastico de 300mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7535,7 +7271,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 592800,
-      "reasoning": "Regleta de conexion equivale a bornera con la misma cantidad de polos y medida.. mismo producto y misma cantidad",
+      "reasoning": "Regleta de conexion equivale a bornera de 12 polos y 10mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7623,7 +7359,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 35618.4,
-      "reasoning": "Tester digital y multimetro digital representan el mismo instrumento de medicion.. mismo producto y misma cantidad",
+      "reasoning": "Tester digital es sinonimo de multimetro digital basico.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7666,52 +7402,8 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 1872000,
-      "reasoning": "Lampara tubular LED T8 es equivalente a tubo LED T8 con identicas especificaciones.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9741,
-          "lineNo": 36,
-          "description": "Tubo LED T8 18W luz fria"
-        },
-        {
-          "score": 0.8714,
-          "lineNo": 39,
-          "description": "Lampara LED E27 18W"
-        },
-        {
-          "score": 0.7775,
-          "lineNo": 38,
-          "description": "Lampara LED E27 12W"
-        },
-        {
-          "score": 0.7454,
-          "lineNo": 45,
-          "description": "Aplique emergencia LED"
-        },
-        {
-          "score": 0.7348,
-          "lineNo": 213,
-          "description": "Cargador bateria 18V"
-        }
-      ],
-      "requisitionLineNo": 36,
-      "requestedDescription": "Tubo LED T8 18W luz fria",
-      "requestedQuantity": 500,
-      "requestedUnit": "unidad",
-      "offerLineNo": 36,
-      "offeredDescription": "Lampara tubular LED T8 18 W luz fria",
-      "offeredQuantity": 500,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
       "priceTotal": 647475,
-      "reasoning": "Placa luminosa LED 60x60 equivale a panel LED 60x60 de 40W.. mismo producto y misma cantidad",
+      "reasoning": "Placa luminosa LED equivale a panel LED 60x60 de 40W.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7755,7 +7447,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 582400,
-      "reasoning": "Proyector LED de uso externo equivale a reflector LED exterior de 100W IP65.. mismo producto y misma cantidad",
+      "reasoning": "Proyector LED uso externo equivale a reflector LED exterior 100W IP65.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7799,7 +7491,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 342216,
-      "reasoning": "Detector de presencia de pared equivale a sensor de movimiento de pared.. mismo producto y misma cantidad",
+      "reasoning": "Detector de presencia para pared es sinónimo de sensor de movimiento de pared.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7843,7 +7535,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 279240,
-      "reasoning": "Célula fotoeléctrica para uso externo es equivalente a fotocélula exterior.. mismo producto y misma cantidad",
+      "reasoning": "Célula fotoeléctrica de uso externo equivale a fotocélula exterior.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7886,52 +7578,8 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 926350,
-      "reasoning": "Portalamp E27 es una variación descriptiva directa de porta lámpara E27.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.8349,
-          "lineNo": 43,
-          "description": "Porta lampara E27"
-        },
-        {
-          "score": 0.7304,
-          "lineNo": 38,
-          "description": "Lampara LED E27 12W"
-        },
-        {
-          "score": 0.7062,
-          "lineNo": 39,
-          "description": "Lampara LED E27 18W"
-        },
-        {
-          "score": 0.6686,
-          "lineNo": 45,
-          "description": "Aplique emergencia LED"
-        },
-        {
-          "score": 0.6535,
-          "lineNo": 46,
-          "description": "Cartel salida emergencia LED"
-        }
-      ],
-      "requisitionLineNo": 43,
-      "requestedDescription": "Porta lampara E27",
-      "requestedQuantity": 100,
-      "requestedUnit": "unidad",
-      "offerLineNo": 43,
-      "offeredDescription": "Portalamp E27",
-      "offeredQuantity": 100,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
       "priceTotal": 205640,
-      "reasoning": "Tira LED 12V 5m es exactamente equivalente a cinta LED 12V 5m.. mismo producto y misma cantidad",
+      "reasoning": "Tira LED de 12V 5m y cinta LED de 12V 5m son exactamente el mismo producto.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -7974,52 +7622,8 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 116064,
-      "reasoning": "Fuente conmutada es la traducción técnica de fuente switching, con misma especificación 12V 5A.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.939,
-          "lineNo": 48,
-          "description": "Fuente switching 12V 5A"
-        },
-        {
-          "score": 0.7052,
-          "lineNo": 213,
-          "description": "Cargador bateria 18V"
-        },
-        {
-          "score": 0.6972,
-          "lineNo": 38,
-          "description": "Lampara LED E27 12W"
-        },
-        {
-          "score": 0.6857,
-          "lineNo": 54,
-          "description": "Interruptor simple embutir"
-        },
-        {
-          "score": 0.6849,
-          "lineNo": 15,
-          "description": "Caja estanca IP65"
-        }
-      ],
-      "requisitionLineNo": 48,
-      "requestedDescription": "Fuente switching 12V 5A",
-      "requestedQuantity": 30,
-      "requestedUnit": "unidad",
-      "offerLineNo": 48,
-      "offeredDescription": "Fuente conmutada 12 V 5 A",
-      "offeredQuantity": 30,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
       "priceTotal": 1964250,
-      "reasoning": "Caño flexible corrugado liviano de 3/4 equivale al tubo corrugado liviano de 3/4.. mismo producto y misma cantidad",
+      "reasoning": "Caño flexible corrugado liviano de 3/4 equivale a tubo corrugado liviano de 3/4.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8063,7 +7667,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1366560,
-      "reasoning": "Caño flexible corrugado pesado de 1 pulgada equivale al tubo corrugado pesado de 1 pulgada.. mismo producto y misma cantidad",
+      "reasoning": "Caño flexible corrugado pesado de 1 pulgada equivale a tubo corrugado pesado de 1 pulgada.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8107,7 +7711,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 913740,
-      "reasoning": "Equivalencia directa entre acople y conector corrugado de 3/4 pulgadas.. mismo producto y misma cantidad",
+      "reasoning": "Acople para corrugado de 3/4 equivale a conector corrugado de 3/4.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8151,7 +7755,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1067040,
-      "reasoning": "Tecla e interruptor son sinonimos para el mismo producto de embutir simple.. mismo producto y misma cantidad",
+      "reasoning": "Tecla simple embutir es la denominacion comercial equivalente a interruptor simple embutir.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8195,7 +7799,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 849720,
-      "reasoning": "Coincidencia exacta de producto (Tee de PVC) y medida (1/2 pulgada).. mismo producto y misma cantidad",
+      "reasoning": "Tee y T PVC de 1/2 pulgada son la misma pieza.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8239,7 +7843,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 734760,
-      "reasoning": "Coincidencia exacta de producto (Tee de PVC) y medida (3/4 pulgada).. mismo producto y misma cantidad",
+      "reasoning": "Tee y T PVC de 3/4 pulgada son la misma pieza.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8283,7 +7887,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 487134,
-      "reasoning": "Conexión flexible sanitaria equivale a flexible sanitario de 40 cm.. mismo producto y misma cantidad",
+      "reasoning": "Conexion flexible sanitaria de 40 cm coincide en tipo y medida.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8327,7 +7931,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 401856,
-      "reasoning": "Conexión flexible sanitaria equivale a flexible sanitario de 60 cm.. mismo producto y misma cantidad",
+      "reasoning": "Conexion flexible sanitaria de 60 cm coincide en tipo y medida.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8370,52 +7974,8 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 197298,
-      "reasoning": "Grifería para lavatorio equivale a canilla de lavatorio con cierre cerámico.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9519,
-          "lineNo": 69,
-          "description": "Canilla lavatorio cierre ceramico"
-        },
-        {
-          "score": 0.8282,
-          "lineNo": 71,
-          "description": "Sifon plastico lavatorio"
-        },
-        {
-          "score": 0.7468,
-          "lineNo": 72,
-          "description": "Flotante deposito inodoro"
-        },
-        {
-          "score": 0.7318,
-          "lineNo": 65,
-          "description": "Valvula esferica 1/2"
-        },
-        {
-          "score": 0.7281,
-          "lineNo": 70,
-          "description": "Canilla servicio bronce 1/2"
-        }
-      ],
-      "requisitionLineNo": 69,
-      "requestedDescription": "Canilla lavatorio cierre ceramico",
-      "requestedQuantity": 60,
-      "requestedUnit": "unidad",
-      "offerLineNo": 69,
-      "offeredDescription": "Griferia para lavatorio cierre ceramico",
-      "offeredQuantity": 60,
-      "offeredUnit": "unidad"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
       "priceTotal": 309504,
-      "reasoning": "Grifo de servicio equivale a canilla de servicio en bronce de 1/2 pulgada.. mismo producto y misma cantidad",
+      "reasoning": "Grifo de servicio y canilla de servicio de bronce 1/2 son el mismo producto.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8458,8 +8018,52 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
+      "priceTotal": 353565,
+      "reasoning": "Desague sifonado de lavatorio equivale a sifon plastico para lavatorio.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9264,
+          "lineNo": 71,
+          "description": "Sifon plastico lavatorio"
+        },
+        {
+          "score": 0.762,
+          "lineNo": 69,
+          "description": "Canilla lavatorio cierre ceramico"
+        },
+        {
+          "score": 0.7231,
+          "lineNo": 72,
+          "description": "Flotante deposito inodoro"
+        },
+        {
+          "score": 0.7217,
+          "lineNo": 79,
+          "description": "Tapa inspeccion PVC"
+        },
+        {
+          "score": 0.7083,
+          "lineNo": 63,
+          "description": "Union doble PVC 1/2"
+        }
+      ],
+      "requisitionLineNo": 71,
+      "requestedDescription": "Sifon plastico lavatorio",
+      "requestedQuantity": 90,
+      "requestedUnit": "unidad",
+      "offerLineNo": 71,
+      "offeredDescription": "Desague sifonado polipropileno lavatorio",
+      "offeredQuantity": 90,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
       "priceTotal": 318864,
-      "reasoning": "Valvula flotante de deposito de inodoro es el mismo producto que flotante de deposito de inodoro.. mismo producto y misma cantidad",
+      "reasoning": "Valvula flotante de deposito de inodoro es equivalente a flotante deposito inodoro.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8502,96 +8106,8 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 365496,
-      "reasoning": "Conjunto de reparacion para mochila de inodoro es sinonimo de kit de reparacion para mochila de inodoro.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9911,
-          "lineNo": 73,
-          "description": "Kit reparacion mochila inodoro"
-        },
-        {
-          "score": 0.7215,
-          "lineNo": 188,
-          "description": "Recarga botiquin completa"
-        },
-        {
-          "score": 0.7031,
-          "lineNo": 72,
-          "description": "Flotante deposito inodoro"
-        },
-        {
-          "score": 0.6728,
-          "lineNo": 71,
-          "description": "Sifon plastico lavatorio"
-        },
-        {
-          "score": 0.6586,
-          "lineNo": 187,
-          "description": "Botiquin primeros auxilios"
-        }
-      ],
-      "requisitionLineNo": 73,
-      "requestedDescription": "Kit reparacion mochila inodoro",
-      "requestedQuantity": 80,
-      "requestedUnit": "kit",
-      "offerLineNo": 73,
-      "offeredDescription": "Conjunto reparacion mochila inodoro",
-      "offeredQuantity": 80,
-      "offeredUnit": "kit"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
-      "priceTotal": 1562670,
-      "reasoning": "PTFE es el material conocido comercialmente como teflon; rollo PTFE corresponde a cinta teflon.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.7752,
-          "lineNo": 75,
-          "description": "Cinta teflon"
-        },
-        {
-          "score": 0.6489,
-          "lineNo": 28,
-          "description": "Cinta aisladora negra"
-        },
-        {
-          "score": 0.639,
-          "lineNo": 29,
-          "description": "Cinta aisladora roja"
-        },
-        {
-          "score": 0.6276,
-          "lineNo": 189,
-          "description": "Cinta peligro amarillo negro"
-        },
-        {
-          "score": 0.6252,
-          "lineNo": 86,
-          "description": "Tarugo nylon 8mm"
-        }
-      ],
-      "requisitionLineNo": 75,
-      "requestedDescription": "Cinta teflon",
-      "requestedQuantity": 300,
-      "requestedUnit": "rollo",
-      "offerLineNo": 75,
-      "offeredDescription": "Rollo PTFE",
-      "offeredQuantity": 300,
-      "offeredUnit": "rollo"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
       "priceTotal": 237650,
-      "reasoning": "Fijacion autoperforante 8x1 equivale a tornillo autoperforante 8x1.. mismo producto y misma cantidad",
+      "reasoning": "Fijacion autoperforante 8x1 es equivalente a tornillo autoperforante 8x1.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8635,7 +8151,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 291200,
-      "reasoning": "Fijacion autoperforante 8x1.5 equivale a tornillo autoperforante 8x1.5.. mismo producto y misma cantidad",
+      "reasoning": "Fijacion autoperforante 8x1.5 es equivalente a tornillo autoperforante 8x1.5.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8679,7 +8195,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 244440,
-      "reasoning": "Fijacion para madera 6x1 equivale a tornillo madera 6x1.. mismo producto y misma cantidad",
+      "reasoning": "Fijacion para madera 6x1 es equivalente a tornillo madera 6x1.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8723,7 +8239,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 116480,
-      "reasoning": "Fijacion para madera 8x2 equivale a tornillo madera 8x2.. mismo producto y misma cantidad",
+      "reasoning": "Fijacion para madera 8x2 es equivalente a tornillo madera 8x2.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8766,8 +8282,184 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
+      "priceTotal": 203700,
+      "reasoning": "Anclaje nylon 6mm es equivalente a tarugo nylon 6mm.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8194,
+          "lineNo": 85,
+          "description": "Tarugo nylon 6mm"
+        },
+        {
+          "score": 0.76,
+          "lineNo": 83,
+          "description": "Tornillo madera 6x1"
+        },
+        {
+          "score": 0.756,
+          "lineNo": 86,
+          "description": "Tarugo nylon 8mm"
+        },
+        {
+          "score": 0.7524,
+          "lineNo": 87,
+          "description": "Tarugo nylon 10mm"
+        },
+        {
+          "score": 0.7456,
+          "lineNo": 99,
+          "description": "Broca pared 6mm"
+        }
+      ],
+      "requisitionLineNo": 85,
+      "requestedDescription": "Tarugo nylon 6mm",
+      "requestedQuantity": 6000,
+      "requestedUnit": "unidad",
+      "offerLineNo": 85,
+      "offeredDescription": "Anclaje nylon 6 mm",
+      "offeredQuantity": 6000,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 262080,
+      "reasoning": "Anclaje nylon 8mm es equivalente a tarugo nylon 8mm.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8186,
+          "lineNo": 86,
+          "description": "Tarugo nylon 8mm"
+        },
+        {
+          "score": 0.7727,
+          "lineNo": 81,
+          "description": "Tornillo autoperforante 8x1"
+        },
+        {
+          "score": 0.7577,
+          "lineNo": 82,
+          "description": "Tornillo autoperforante 8x1.5"
+        },
+        {
+          "score": 0.7536,
+          "lineNo": 85,
+          "description": "Tarugo nylon 6mm"
+        },
+        {
+          "score": 0.7533,
+          "lineNo": 84,
+          "description": "Tornillo madera 8x2"
+        }
+      ],
+      "requisitionLineNo": 86,
+      "requestedDescription": "Tarugo nylon 8mm",
+      "requestedQuantity": 6000,
+      "requestedUnit": "unidad",
+      "offerLineNo": 86,
+      "offeredDescription": "Anclaje nylon 8 mm",
+      "offeredQuantity": 6000,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 142590,
+      "reasoning": "Anclaje nylon 10mm es equivalente a tarugo nylon 10mm.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8162,
+          "lineNo": 87,
+          "description": "Tarugo nylon 10mm"
+        },
+        {
+          "score": 0.7557,
+          "lineNo": 85,
+          "description": "Tarugo nylon 6mm"
+        },
+        {
+          "score": 0.7547,
+          "lineNo": 86,
+          "description": "Tarugo nylon 8mm"
+        },
+        {
+          "score": 0.7375,
+          "lineNo": 25,
+          "description": "Ficha hembra 10A"
+        },
+        {
+          "score": 0.7363,
+          "lineNo": 24,
+          "description": "Ficha macho 10A"
+        }
+      ],
+      "requisitionLineNo": 87,
+      "requestedDescription": "Tarugo nylon 10mm",
+      "requestedQuantity": 3000,
+      "requestedUnit": "unidad",
+      "offerLineNo": 87,
+      "offeredDescription": "Anclaje nylon 10 mm",
+      "offeredQuantity": 3000,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 305550,
+      "reasoning": "Tuerca HEX 1/4 es equivalente a tuerca hexagonal 1/4.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9767,
+          "lineNo": 89,
+          "description": "Tuerca hexagonal 1/4"
+        },
+        {
+          "score": 0.8225,
+          "lineNo": 88,
+          "description": "Arandela plana 1/4"
+        },
+        {
+          "score": 0.7737,
+          "lineNo": 94,
+          "description": "Abrazadera metalica 3/4"
+        },
+        {
+          "score": 0.7645,
+          "lineNo": 95,
+          "description": "Abrazadera omega 3/4"
+        },
+        {
+          "score": 0.7625,
+          "lineNo": 90,
+          "description": "Varilla roscada 1/4"
+        }
+      ],
+      "requisitionLineNo": 89,
+      "requestedDescription": "Tuerca hexagonal 1/4",
+      "requestedQuantity": 5000,
+      "requestedUnit": "unidad",
+      "offerLineNo": 89,
+      "offeredDescription": "Tuerca HEX 1/4",
+      "offeredQuantity": 5000,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
       "priceTotal": 15475200,
-      "reasoning": "Corresponde exactamente al mismo producto remache pop de 4mm con especificacion de material aluminio.. mismo producto y misma cantidad",
+      "reasoning": "Coincide plenamente en tipo de producto (remache pop) y medida (4mm).. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8811,7 +8503,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1048320,
-      "reasoning": "Mecha y broca son equivalentes, coincidiendo la especificacion HSS y diametro 4mm.. mismo producto y misma cantidad",
+      "reasoning": "Mecha y broca son sinónimos; coinciden en tipo HSS y diámetro 4mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8855,7 +8547,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1041780,
-      "reasoning": "Mecha y broca son equivalentes, coincidiendo el tipo HSS y el diametro de 6mm.. mismo producto y misma cantidad",
+      "reasoning": "Mecha y broca son sinónimos; coinciden en tipo HSS y diámetro 6mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8899,7 +8591,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 711360,
-      "reasoning": "Mecha y broca son sinonimos, coincidiendo tipo HSS y diametro de 8mm.. mismo producto y misma cantidad",
+      "reasoning": "Mecha y broca son sinónimos; coinciden en tipo HSS y diámetro 8mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8943,7 +8635,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1675440,
-      "reasoning": "Bisagra standard de 2 pulgadas equivale a la bisagra comun de 2 pulgadas requerida.. mismo producto y misma cantidad",
+      "reasoning": "Bisagra standard equivale a bisagra común y 2 in equivale a 2 pulgadas.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -8987,7 +8679,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1382250,
-      "reasoning": "Bisagra standard de 3 pulgadas equivale a la bisagra comun de 3 pulgadas requerida.. mismo producto y misma cantidad",
+      "reasoning": "Bisagra standard equivale a bisagra común y 3 in equivale a 3 pulgadas.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9031,7 +8723,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 211848,
-      "reasoning": "Cierre candado 50 mm es equivalente a Candado 50mm.. mismo producto y misma cantidad",
+      "reasoning": "El producto ofertado 'Cierre candado 50 mm' equivale al candado de 50mm solicitado.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9075,7 +8767,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 477360,
-      "reasoning": "Pasador zincado coincide con Cierre pasador zincado.. mismo producto y misma cantidad",
+      "reasoning": "Coincide plenamente con el cierre pasador zincado requerido.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9119,7 +8811,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 394596,
-      "reasoning": "Rueda pivotante es equivalente a Rueda giratoria de 50mm.. mismo producto y misma cantidad",
+      "reasoning": "'Rueda pivotante' es la denominacion comercial equivalente a rueda giratoria de 50mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9163,7 +8855,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1422720,
-      "reasoning": "Latex acrilico uso interno blanca 20 L es equivalente a Pintura latex interior blanca 20L.. mismo producto y misma cantidad",
+      "reasoning": "Latex acrilico uso interno blanco de 20L coincide con la pintura latex interior blanca 20L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9207,7 +8899,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1738880,
-      "reasoning": "Sintetico brillante blanco 4 L es equivalente a Esmalte sintetico blanco 4L.. mismo producto y misma cantidad",
+      "reasoning": "Sintetico brillante blanco de 4L equivale a esmalte sintetico blanco 4L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9251,7 +8943,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 460750,
-      "reasoning": "Sintetico brillante negro 4 L es equivalente a Esmalte sintetico negro 4L.. mismo producto y misma cantidad",
+      "reasoning": "Sintetico brillante negro de 4L equivale a esmalte sintetico negro 4L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9295,7 +8987,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 474240,
-      "reasoning": "Sintetico brillante amarillo seguridad 4 L es equivalente a Esmalte sintetico amarillo seguridad 4L.. mismo producto y misma cantidad",
+      "reasoning": "Sintetico brillante amarillo seguridad de 4L equivale a esmalte sintetico amarillo seguridad 4L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9339,7 +9031,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 632320,
-      "reasoning": "Coincide en pintura para demarcacion, color amarillo y presentacion de 10L.. mismo producto y misma cantidad",
+      "reasoning": "Coincide el producto de demarcacion en color amarillo y volumen de 10L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9383,7 +9075,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 178092,
-      "reasoning": "Coincide en convertidor antioxido, color gris y volumen de 4L.. mismo producto y misma cantidad",
+      "reasoning": "Coincide el producto antioxido/convertidor, color gris y tamano de 4L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9427,7 +9119,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1976000,
-      "reasoning": "Coincide en sellador siliconado transparente/cristal y volumen de 280ml.. mismo producto y misma cantidad",
+      "reasoning": "Cristal equivale a transparente, coincidiendo en sellador siliconado y volumen de 280ml.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9471,7 +9163,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 2211600,
-      "reasoning": "Coincide en sellador de silicona blanco y contenido de 280ml.. mismo producto y misma cantidad",
+      "reasoning": "Coinciden en sellador siliconado, color blanco y medida de 280ml.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9514,96 +9206,8 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 587808,
-      "reasoning": "Coincide en pegamento/adhesivo de montaje de 300ml.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9759,
-          "lineNo": 128,
-          "description": "Adhesivo montaje 300ml"
-        },
-        {
-          "score": 0.763,
-          "lineNo": 126,
-          "description": "Sellador siliconado transparente 280ml"
-        },
-        {
-          "score": 0.7603,
-          "lineNo": 127,
-          "description": "Sellador siliconado blanco 280ml"
-        },
-        {
-          "score": 0.7179,
-          "lineNo": 129,
-          "description": "Pegamento contacto 1L"
-        },
-        {
-          "score": 0.7037,
-          "lineNo": 76,
-          "description": "Adhesivo PVC 125ml"
-        }
-      ],
-      "requisitionLineNo": 128,
-      "requestedDescription": "Adhesivo montaje 300ml",
-      "requestedQuantity": 120,
-      "requestedUnit": "cartucho",
-      "offerLineNo": 128,
-      "offeredDescription": "Pegamento montaje 300 ml",
-      "offeredQuantity": 120,
-      "offeredUnit": "cartucho"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
-      "priceTotal": 342216,
-      "reasoning": "Coincide en adhesivo/pegamento de contacto y volumen de 1L.. mismo producto y misma cantidad",
-      "needsReview": false,
-      "decidedBy": "vector+llm",
-      "candidates": [
-        {
-          "score": 0.9657,
-          "lineNo": 129,
-          "description": "Pegamento contacto 1L"
-        },
-        {
-          "score": 0.7419,
-          "lineNo": 76,
-          "description": "Adhesivo PVC 125ml"
-        },
-        {
-          "score": 0.7244,
-          "lineNo": 133,
-          "description": "Removedor pintura gel 1L"
-        },
-        {
-          "score": 0.712,
-          "lineNo": 128,
-          "description": "Adhesivo montaje 300ml"
-        },
-        {
-          "score": 0.6995,
-          "lineNo": 122,
-          "description": "Pintura demarcacion amarilla 10L"
-        }
-      ],
-      "requisitionLineNo": 129,
-      "requestedDescription": "Pegamento contacto 1L",
-      "requestedQuantity": 70,
-      "requestedUnit": "lata",
-      "offerLineNo": 129,
-      "offeredDescription": "Adhesivo contacto 1 L",
-      "offeredQuantity": 70,
-      "offeredUnit": "lata"
-    },
-    {
-      "status": "match",
-      "confidence": 0.95,
-      "quantityDelta": 0,
       "priceTotal": 477360,
-      "reasoning": "Brocha equivale a pincel y la medida 2 in corresponde a 2 pulgadas.. mismo producto y misma cantidad",
+      "reasoning": "Brocha de 2 pulgadas es equivalente a pincel de 2 pulgadas.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9647,7 +9251,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 493245,
-      "reasoning": "Brocha equivale a pincel y la medida 3 in corresponde a 3 pulgadas.. mismo producto y misma cantidad",
+      "reasoning": "Brocha de 3 pulgadas es equivalente a pincel de 3 pulgadas.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9691,7 +9295,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 2277600,
-      "reasoning": "Cinta de pintor es equivalente a cinta de enmascarar de 24 mm.. mismo producto y misma cantidad",
+      "reasoning": "Cinta de pintor es sinónimo de cinta de enmascarar, de 24 mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9735,7 +9339,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1827480,
-      "reasoning": "Cinta de pintor es equivalente a cinta de enmascarar de 48 mm.. mismo producto y misma cantidad",
+      "reasoning": "Cinta de pintor es sinónimo de cinta de enmascarar, de 48 mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9779,7 +9383,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 826440,
-      "reasoning": "Coincide en producto detergente concentrado y presentacion de 5L.. mismo producto y misma cantidad",
+      "reasoning": "Coincide detergente concentrado en presentacion de 5L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9823,7 +9427,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 227136,
-      "reasoning": "Limpia cristales es sinonimo de limpiavidrios y coincide en 5L.. mismo producto y misma cantidad",
+      "reasoning": "Limpia cristales es equivalente a limpiavidrios 5L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9867,7 +9471,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 528840,
-      "reasoning": "Jabon para manos equivale a jabon liquido para manos en presentacion de 5L.. mismo producto y misma cantidad",
+      "reasoning": "Jabon para manos equivale a jabon liquido para manos 5L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9911,7 +9515,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 433008,
-      "reasoning": "Gel alcohol equivale a alcohol en gel de 5L.. mismo producto y misma cantidad",
+      "reasoning": "Gel alcohol equivale a alcohol en gel 5L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -9954,87 +9558,87 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 3911040,
-      "reasoning": "Es el mismo producto con variacion de vocabulario (basura por residuos) y coincidencia exacta en medidas de 80x110.. mismo producto y misma cantidad",
+      "priceTotal": 476658,
+      "reasoning": "Escoba de uso interno equivale a escoba interior.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.9546,
-          "lineNo": 151,
-          "description": "Bolsa residuos consorcio 80x110"
+          "score": 0.9187,
+          "lineNo": 155,
+          "description": "Escoba interior"
         },
         {
-          "score": 0.8255,
-          "lineNo": 150,
-          "description": "Bolsa residuos negra 60x90"
+          "score": 0.8227,
+          "lineNo": 156,
+          "description": "Escoba exterior dura"
         },
         {
-          "score": 0.6974,
-          "lineNo": 31,
-          "description": "Precinto plastico 300mm"
+          "score": 0.7707,
+          "lineNo": 163,
+          "description": "Fibra verde limpieza"
         },
         {
-          "score": 0.6962,
-          "lineNo": 30,
-          "description": "Precinto plastico 200mm"
+          "score": 0.7452,
+          "lineNo": 152,
+          "description": "Trapo piso algodon"
         },
         {
-          "score": 0.6635,
-          "lineNo": 107,
-          "description": "Lija madera grano 80"
+          "score": 0.7449,
+          "lineNo": 162,
+          "description": "Esponja abrasiva"
         }
       ],
-      "requisitionLineNo": 151,
-      "requestedDescription": "Bolsa residuos consorcio 80x110",
-      "requestedQuantity": 800,
-      "requestedUnit": "paquete",
-      "offerLineNo": 151,
-      "offeredDescription": "Bolsa basura consorcio 80x110",
-      "offeredQuantity": 800,
-      "offeredUnit": "paquete"
+      "requisitionLineNo": 155,
+      "requestedDescription": "Escoba interior",
+      "requestedQuantity": 180,
+      "requestedUnit": "unidad",
+      "offerLineNo": 155,
+      "offeredDescription": "Escoba uso interno",
+      "offeredQuantity": 180,
+      "offeredUnit": "unidad"
     },
     {
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
-      "priceTotal": 1105800,
-      "reasoning": "Recambio y repuesto de mopa microfibra son sinonimos directos del mismo producto.. mismo producto y misma cantidad",
+      "priceTotal": 1081600,
+      "reasoning": "Gafa de protección gris equivale a anteojo de seguridad gris.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.9766,
-          "lineNo": 153,
-          "description": "Repuesto mopa microfibra"
+          "score": 0.9305,
+          "lineNo": 172,
+          "description": "Anteojo seguridad gris"
         },
         {
-          "score": 0.7754,
-          "lineNo": 152,
-          "description": "Trapo piso algodon"
+          "score": 0.82,
+          "lineNo": 171,
+          "description": "Anteojo seguridad transparente"
         },
         {
-          "score": 0.7467,
-          "lineNo": 163,
-          "description": "Fibra verde limpieza"
+          "score": 0.7576,
+          "lineNo": 173,
+          "description": "Protector auditivo tipo copa"
         },
         {
-          "score": 0.7427,
-          "lineNo": 162,
-          "description": "Esponja abrasiva"
+          "score": 0.7405,
+          "lineNo": 175,
+          "description": "Casco seguridad blanco"
         },
         {
-          "score": 0.7381,
-          "lineNo": 157,
-          "description": "Secador piso goma 50cm"
+          "score": 0.7326,
+          "lineNo": 178,
+          "description": "Respirador media cara"
         }
       ],
-      "requisitionLineNo": 153,
-      "requestedDescription": "Repuesto mopa microfibra",
+      "requisitionLineNo": 172,
+      "requestedDescription": "Anteojo seguridad gris",
       "requestedQuantity": 200,
       "requestedUnit": "unidad",
-      "offerLineNo": 153,
-      "offeredDescription": "Recambio mopa microfibra",
+      "offerLineNo": 159,
+      "offeredDescription": "Gafa proteccion gris",
       "offeredQuantity": 200,
       "offeredUnit": "unidad"
     },
@@ -10042,8 +9646,52 @@
       "status": "match",
       "confidence": 0.95,
       "quantityDelta": 0,
+      "priceTotal": 1006860,
+      "reasoning": "Casco de obra blanco equivale a casco de seguridad blanco.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8699,
+          "lineNo": 175,
+          "description": "Casco seguridad blanco"
+        },
+        {
+          "score": 0.7702,
+          "lineNo": 176,
+          "description": "Casco seguridad amarillo"
+        },
+        {
+          "score": 0.6982,
+          "lineNo": 171,
+          "description": "Anteojo seguridad transparente"
+        },
+        {
+          "score": 0.6848,
+          "lineNo": 15,
+          "description": "Caja estanca IP65"
+        },
+        {
+          "score": 0.6837,
+          "lineNo": 178,
+          "description": "Respirador media cara"
+        }
+      ],
+      "requisitionLineNo": 175,
+      "requestedDescription": "Casco seguridad blanco",
+      "requestedQuantity": 120,
+      "requestedUnit": "unidad",
+      "offerLineNo": 160,
+      "offeredDescription": "Casco obra blanco",
+      "offeredQuantity": 120,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
       "priceTotal": 890460,
-      "reasoning": "Cinta de advertencia amarillo negro equivale a cinta de peligro amarillo negro.. mismo producto y misma cantidad",
+      "reasoning": "Cinta de advertencia equivale a cinta de peligro y coinciden los colores amarillo y negro.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10087,7 +9735,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 419328,
-      "reasoning": "Flexometro de 5 m equivale a cinta metrica de 5 m.. mismo producto y misma cantidad",
+      "reasoning": "Flexometro es sinonimo de cinta metrica y coincide la longitud de 5 m.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10131,7 +9779,7 @@
       "confidence": 0.95,
       "quantityDelta": 0,
       "priceTotal": 1884480,
-      "reasoning": "Esmeril angular y amoladora angular son terminos equivalentes para la misma herramienta de 115mm.. mismo producto y misma cantidad",
+      "reasoning": "Esmeril angular y amoladora angular de 115mm corresponden exactamente al mismo producto.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10172,10 +9820,186 @@
     },
     {
       "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 50544,
+      "reasoning": "Escalera plegable de aluminio de 6 escalones es equivalente a la escalera tipo tijera solicitada.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.953,
+          "lineNo": 214,
+          "description": "Escalera tijera aluminio 6 escalones"
+        },
+        {
+          "score": 0.8762,
+          "lineNo": 215,
+          "description": "Escalera extensible aluminio 24 escalones"
+        },
+        {
+          "score": 0.761,
+          "lineNo": 207,
+          "description": "Nivel aluminio 60cm"
+        },
+        {
+          "score": 0.7315,
+          "lineNo": 27,
+          "description": "Zapatilla electrica 6 tomas"
+        },
+        {
+          "score": 0.722,
+          "lineNo": 192,
+          "description": "Destornillador plano 6mm"
+        }
+      ],
+      "requisitionLineNo": 214,
+      "requestedDescription": "Escalera tijera aluminio 6 escalones",
+      "requestedQuantity": 12,
+      "requestedUnit": "unidad",
+      "offerLineNo": 172,
+      "offeredDescription": "Escalera plegable aluminio 6 escalones",
+      "offeredQuantity": 12,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.98,
+      "quantityDelta": 0,
+      "priceTotal": 1872000,
+      "reasoning": "Lampara tubular LED T8 es equivalente a tubo LED T8 18W luz fria.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9741,
+          "lineNo": 36,
+          "description": "Tubo LED T8 18W luz fria"
+        },
+        {
+          "score": 0.8714,
+          "lineNo": 39,
+          "description": "Lampara LED E27 18W"
+        },
+        {
+          "score": 0.7775,
+          "lineNo": 38,
+          "description": "Lampara LED E27 12W"
+        },
+        {
+          "score": 0.7454,
+          "lineNo": 45,
+          "description": "Aplique emergencia LED"
+        },
+        {
+          "score": 0.7348,
+          "lineNo": 213,
+          "description": "Cargador bateria 18V"
+        }
+      ],
+      "requisitionLineNo": 36,
+      "requestedDescription": "Tubo LED T8 18W luz fria",
+      "requestedQuantity": 500,
+      "requestedUnit": "unidad",
+      "offerLineNo": 36,
+      "offeredDescription": "Lampara tubular LED T8 18 W luz fria",
+      "offeredQuantity": 500,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.98,
+      "quantityDelta": 0,
+      "priceTotal": 926350,
+      "reasoning": "Portalamp E27 es la abreviatura de porta lámpara E27.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8349,
+          "lineNo": 43,
+          "description": "Porta lampara E27"
+        },
+        {
+          "score": 0.7304,
+          "lineNo": 38,
+          "description": "Lampara LED E27 12W"
+        },
+        {
+          "score": 0.7062,
+          "lineNo": 39,
+          "description": "Lampara LED E27 18W"
+        },
+        {
+          "score": 0.6686,
+          "lineNo": 45,
+          "description": "Aplique emergencia LED"
+        },
+        {
+          "score": 0.6535,
+          "lineNo": 46,
+          "description": "Cartel salida emergencia LED"
+        }
+      ],
+      "requisitionLineNo": 43,
+      "requestedDescription": "Porta lampara E27",
+      "requestedQuantity": 100,
+      "requestedUnit": "unidad",
+      "offerLineNo": 43,
+      "offeredDescription": "Portalamp E27",
+      "offeredQuantity": 100,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.98,
+      "quantityDelta": 0,
+      "priceTotal": 116064,
+      "reasoning": "Fuente conmutada es la denominación en español de fuente switching de 12V 5A.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.939,
+          "lineNo": 48,
+          "description": "Fuente switching 12V 5A"
+        },
+        {
+          "score": 0.7052,
+          "lineNo": 213,
+          "description": "Cargador bateria 18V"
+        },
+        {
+          "score": 0.6972,
+          "lineNo": 38,
+          "description": "Lampara LED E27 12W"
+        },
+        {
+          "score": 0.6857,
+          "lineNo": 54,
+          "description": "Interruptor simple embutir"
+        },
+        {
+          "score": 0.6849,
+          "lineNo": 15,
+          "description": "Caja estanca IP65"
+        }
+      ],
+      "requisitionLineNo": 48,
+      "requestedDescription": "Fuente switching 12V 5A",
+      "requestedQuantity": 30,
+      "requestedUnit": "unidad",
+      "offerLineNo": 48,
+      "offeredDescription": "Fuente conmutada 12 V 5 A",
+      "offeredQuantity": 30,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 162960,
-      "reasoning": "Coincide exactamente en tipo de cable taller y seccion 3x2.5mm2.. mismo producto y misma cantidad",
+      "reasoning": "Cable multipolar uso taller 3x2.5 mm2 coincide exactamente con cable taller 3x2.5mm2.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10218,52 +10042,52 @@
       "status": "match",
       "confidence": 0.98,
       "quantityDelta": 0,
-      "priceTotal": 305550,
-      "reasoning": "Tuerca HEX 1/4 equivale a tuerca hexagonal 1/4.. mismo producto y misma cantidad",
+      "priceTotal": 365496,
+      "reasoning": "Conjunto de reparacion de mochila de inodoro es lo mismo que kit reparacion mochila inodoro.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
         {
-          "score": 0.9767,
-          "lineNo": 89,
-          "description": "Tuerca hexagonal 1/4"
+          "score": 0.9911,
+          "lineNo": 73,
+          "description": "Kit reparacion mochila inodoro"
         },
         {
-          "score": 0.8225,
-          "lineNo": 88,
-          "description": "Arandela plana 1/4"
+          "score": 0.7215,
+          "lineNo": 188,
+          "description": "Recarga botiquin completa"
         },
         {
-          "score": 0.7737,
-          "lineNo": 94,
-          "description": "Abrazadera metalica 3/4"
+          "score": 0.7031,
+          "lineNo": 72,
+          "description": "Flotante deposito inodoro"
         },
         {
-          "score": 0.7645,
-          "lineNo": 95,
-          "description": "Abrazadera omega 3/4"
+          "score": 0.6728,
+          "lineNo": 71,
+          "description": "Sifon plastico lavatorio"
         },
         {
-          "score": 0.7625,
-          "lineNo": 90,
-          "description": "Varilla roscada 1/4"
+          "score": 0.6586,
+          "lineNo": 187,
+          "description": "Botiquin primeros auxilios"
         }
       ],
-      "requisitionLineNo": 89,
-      "requestedDescription": "Tuerca hexagonal 1/4",
-      "requestedQuantity": 5000,
-      "requestedUnit": "unidad",
-      "offerLineNo": 89,
-      "offeredDescription": "Tuerca HEX 1/4",
-      "offeredQuantity": 5000,
-      "offeredUnit": "unidad"
+      "requisitionLineNo": 73,
+      "requestedDescription": "Kit reparacion mochila inodoro",
+      "requestedQuantity": 80,
+      "requestedUnit": "kit",
+      "offerLineNo": 73,
+      "offeredDescription": "Conjunto reparacion mochila inodoro",
+      "offeredQuantity": 80,
+      "offeredUnit": "kit"
     },
     {
       "status": "match",
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 1187280,
-      "reasoning": "Coincide exactamente el tipo de disco para corte de metal y la medida de 115mm.. mismo producto y misma cantidad",
+      "reasoning": "Coincidencia exacta en tipo de disco (corte metal) y medida (115 mm).. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10307,7 +10131,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 705120,
-      "reasoning": "Coincide el uso para desbaste de metal y la medida de 115mm.. mismo producto y misma cantidad",
+      "reasoning": "Es el mismo producto (disco de desbaste para metal de 115 mm) expresado con leve variación léxica.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10351,7 +10175,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 2124300,
-      "reasoning": "Coincide el producto lija al agua y su grano 120.. mismo producto y misma cantidad",
+      "reasoning": "Coincide perfectamente en tipo (lija al agua) y granulometría (grano 120).. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10395,7 +10219,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 2449200,
-      "reasoning": "Coincide el producto lija al agua y su grano 220.. mismo producto y misma cantidad",
+      "reasoning": "Coincide perfectamente en tipo (lija al agua) y granulometría (grano 220).. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10439,7 +10263,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 1466640,
-      "reasoning": "Coincide el producto lija para madera y su grano 80.. mismo producto y misma cantidad",
+      "reasoning": "Coincide perfectamente en tipo (lija para madera) y granulometría (grano 80).. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10483,7 +10307,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 785700,
-      "reasoning": "Angulo escuadra metalico 100x100 coincide con Escuadra metalica 100x100.. mismo producto y misma cantidad",
+      "reasoning": "Coincide en tipo de producto (escuadra metalica) y dimensiones (100x100).. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10526,8 +10350,96 @@
       "status": "match",
       "confidence": 0.98,
       "quantityDelta": 0,
+      "priceTotal": 587808,
+      "reasoning": "Pegamento de montaje equivale a adhesivo de montaje en formato 300ml.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9759,
+          "lineNo": 128,
+          "description": "Adhesivo montaje 300ml"
+        },
+        {
+          "score": 0.763,
+          "lineNo": 126,
+          "description": "Sellador siliconado transparente 280ml"
+        },
+        {
+          "score": 0.7603,
+          "lineNo": 127,
+          "description": "Sellador siliconado blanco 280ml"
+        },
+        {
+          "score": 0.7179,
+          "lineNo": 129,
+          "description": "Pegamento contacto 1L"
+        },
+        {
+          "score": 0.7037,
+          "lineNo": 76,
+          "description": "Adhesivo PVC 125ml"
+        }
+      ],
+      "requisitionLineNo": 128,
+      "requestedDescription": "Adhesivo montaje 300ml",
+      "requestedQuantity": 120,
+      "requestedUnit": "cartucho",
+      "offerLineNo": 128,
+      "offeredDescription": "Pegamento montaje 300 ml",
+      "offeredQuantity": 120,
+      "offeredUnit": "cartucho"
+    },
+    {
+      "status": "match",
+      "confidence": 0.98,
+      "quantityDelta": 0,
+      "priceTotal": 342216,
+      "reasoning": "Adhesivo y pegamento de contacto son equivalentes en presentacion de 1L.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9657,
+          "lineNo": 129,
+          "description": "Pegamento contacto 1L"
+        },
+        {
+          "score": 0.7419,
+          "lineNo": 76,
+          "description": "Adhesivo PVC 125ml"
+        },
+        {
+          "score": 0.7244,
+          "lineNo": 133,
+          "description": "Removedor pintura gel 1L"
+        },
+        {
+          "score": 0.712,
+          "lineNo": 128,
+          "description": "Adhesivo montaje 300ml"
+        },
+        {
+          "score": 0.6995,
+          "lineNo": 122,
+          "description": "Pintura demarcacion amarilla 10L"
+        }
+      ],
+      "requisitionLineNo": 129,
+      "requestedDescription": "Pegamento contacto 1L",
+      "requestedQuantity": 70,
+      "requestedUnit": "lata",
+      "offerLineNo": 129,
+      "offeredDescription": "Adhesivo contacto 1 L",
+      "offeredQuantity": 70,
+      "offeredUnit": "lata"
+    },
+    {
+      "status": "match",
+      "confidence": 0.98,
+      "quantityDelta": 0,
       "priceTotal": 552900,
-      "reasoning": "Coincide exactamente en producto (desengrasante industrial) y presentacion (5 L).. mismo producto y misma cantidad",
+      "reasoning": "Mismo producto: desengrasante industrial en presentación de 5L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10571,7 +10483,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 464256,
-      "reasoning": "Coincide en material (rodillo de lana) y medida de 22 cm.. mismo producto y misma cantidad",
+      "reasoning": "Mismo producto y medida: rodillo de lana de 22 cm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10615,7 +10527,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 237456,
-      "reasoning": "Coincide en tipo de producto desengrasante, aplicacion en cocina y volumen de 5L.. mismo producto y misma cantidad",
+      "reasoning": "Coincide desengrasante de cocina en presentacion de 5L.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10659,7 +10571,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 1513200,
-      "reasoning": "Papel toalla interfoliada equivale a toalla de papel interfoliada.. mismo producto y misma cantidad",
+      "reasoning": "Papel toalla interfoliada equivale a toalla papel interfoliada.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10703,7 +10615,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 4898400,
-      "reasoning": "Bolsa de basura equivale a bolsa de residuos, manteniendo color negro y medida 60x90.. mismo producto y misma cantidad",
+      "reasoning": "Bolsa basura negra equivale a bolsa residuos negra con mismas medidas 60x90.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10746,8 +10658,96 @@
       "status": "match",
       "confidence": 0.98,
       "quantityDelta": 0,
+      "priceTotal": 3911040,
+      "reasoning": "Bolsa de basura y residuos de consorcio 80x110 son equivalentes.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9546,
+          "lineNo": 151,
+          "description": "Bolsa residuos consorcio 80x110"
+        },
+        {
+          "score": 0.8255,
+          "lineNo": 150,
+          "description": "Bolsa residuos negra 60x90"
+        },
+        {
+          "score": 0.6974,
+          "lineNo": 31,
+          "description": "Precinto plastico 300mm"
+        },
+        {
+          "score": 0.6962,
+          "lineNo": 30,
+          "description": "Precinto plastico 200mm"
+        },
+        {
+          "score": 0.6635,
+          "lineNo": 107,
+          "description": "Lija madera grano 80"
+        }
+      ],
+      "requisitionLineNo": 151,
+      "requestedDescription": "Bolsa residuos consorcio 80x110",
+      "requestedQuantity": 800,
+      "requestedUnit": "paquete",
+      "offerLineNo": 151,
+      "offeredDescription": "Bolsa basura consorcio 80x110",
+      "offeredQuantity": 800,
+      "offeredUnit": "paquete"
+    },
+    {
+      "status": "match",
+      "confidence": 0.98,
+      "quantityDelta": 0,
+      "priceTotal": 1105800,
+      "reasoning": "Recambio y repuesto de mopa de microfibra coinciden exactamente.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9766,
+          "lineNo": 153,
+          "description": "Repuesto mopa microfibra"
+        },
+        {
+          "score": 0.7754,
+          "lineNo": 152,
+          "description": "Trapo piso algodon"
+        },
+        {
+          "score": 0.7467,
+          "lineNo": 163,
+          "description": "Fibra verde limpieza"
+        },
+        {
+          "score": 0.7427,
+          "lineNo": 162,
+          "description": "Esponja abrasiva"
+        },
+        {
+          "score": 0.7381,
+          "lineNo": 157,
+          "description": "Secador piso goma 50cm"
+        }
+      ],
+      "requisitionLineNo": 153,
+      "requestedDescription": "Repuesto mopa microfibra",
+      "requestedQuantity": 200,
+      "requestedUnit": "unidad",
+      "offerLineNo": 153,
+      "offeredDescription": "Recambio mopa microfibra",
+      "offeredQuantity": 200,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.98,
+      "quantityDelta": 0,
       "priceTotal": 288672,
-      "reasoning": "Desarmador plano de 4 mm equivale a destornillador plano de 4 mm.. mismo producto y misma cantidad",
+      "reasoning": "Desarmador es sinonimo de destornillador y coincide la medida de plano 4 mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10791,7 +10791,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 336960,
-      "reasoning": "Desarmador plano de 6 mm equivale a destornillador plano de 6 mm.. mismo producto y misma cantidad",
+      "reasoning": "Desarmador es sinonimo de destornillador y coincide la medida de plano 6 mm.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10835,7 +10835,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 339888,
-      "reasoning": "Desarmador Phillips PH1 equivale a destornillador Phillips PH1.. mismo producto y misma cantidad",
+      "reasoning": "Desarmador es sinonimo de destornillador y coincide el tipo Phillips PH1.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10879,7 +10879,7 @@
       "confidence": 0.98,
       "quantityDelta": 0,
       "priceTotal": 391872,
-      "reasoning": "Desarmador Phillips PH2 equivale a destornillador Phillips PH2.. mismo producto y misma cantidad",
+      "reasoning": "Desarmador es sinonimo de destornillador y coincide el tipo Phillips PH2.. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [
@@ -10923,7 +10923,7 @@
       "confidence": 0.99,
       "quantityDelta": 0,
       "priceTotal": 1082520,
-      "reasoning": "Coincide exactamente en material inoxidable, corte y medida de 115mm.. mismo producto y misma cantidad",
+      "reasoning": "Coincidencia exacta en tipo de producto (disco de corte para inoxidable) y medida (115 mm).. mismo producto y misma cantidad",
       "needsReview": false,
       "decidedBy": "vector+llm",
       "candidates": [

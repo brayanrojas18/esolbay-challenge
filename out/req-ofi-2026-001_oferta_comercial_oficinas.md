@@ -68,12 +68,12 @@ Ordenada poniendo primero lo que requiere atencion.
 | Item pedido | Linea ofertada | Estado | Cant. pedida | Cant. ofrecida | Delta | Confianza | Motivo |
 |---|---|---|---:|---:|---:|---:|---|
 | #3 Carpeta plastica A4 | - | No cotizado ⚠ | 200 | - | - | 1.00 | ninguna linea de la oferta corresponde a este item solicitado |
-| #2 Boligrafo azul | L2 Lapicera azul trazo medio economica | Cantidad parcial | 500 | 450 | -50 | 0.92 | Lapicera azul es sinonimo de boligrafo azul.. el proveedor ofrece 450 de las 500 pedidas (faltan 50) |
-| #1 Resma papel A4 75g | L1 Paquete de papel blanco tamanio A4 75 gramos | Cantidad parcial | 100 | 90 | -10 | 0.95 | Equivalencia directa entre paquete de papel y resma A4 de 75g.. el proveedor ofrece 90 de las 100 pedidas (faltan 10) |
+| #2 Boligrafo azul | L2 Lapicera azul trazo medio economica | Cantidad parcial | 500 | 450 | -50 | 0.90 | Lapicera azul es equivalente a boligrafo azul.. el proveedor ofrece 450 de las 500 pedidas (faltan 50) |
+| #1 Resma papel A4 75g | L1 Paquete de papel blanco tamanio A4 75 gramos | Cantidad parcial | 100 | 90 | -10 | 0.95 | Paquete de papel A4 de 75g es equivalente a resma de papel A4 75g.. el proveedor ofrece 90 de las 100 pedidas (faltan 10) |
 | - | L6 Cartucho toner negro compatible | Sobrante | - | 12 | - | 0.27 | el LLM determino que ninguno de los candidatos corresponde a esta linea |
-| #4 Marcador permanente negro | L3 Rotulador indeleble color negro | Coincidencia | 50 | 50 | - | 0.95 | Rotulador indeleble equivale a marcador permanente negro.. mismo producto y misma cantidad |
-| #6 Cuaderno tapa dura A4 | L5 Cuaderno A4 con tapa rigida | Coincidencia | 40 | 40 | - | 0.95 | Tapa rigida equivale a cuaderno tapa dura A4.. mismo producto y misma cantidad |
-| #5 Cinta adhesiva transparente 48mm | L4 Rollo cinta transparente de embalaje 48 mm | Coincidencia | 100 | 100 | - | 0.98 | Mismo producto: cinta adhesiva transparente de 48mm.. mismo producto y misma cantidad |
+| #4 Marcador permanente negro | L3 Rotulador indeleble color negro | Coincidencia | 50 | 50 | - | 0.92 | Rotulador indeleble color negro equivale a marcador permanente negro.. mismo producto y misma cantidad |
+| #5 Cinta adhesiva transparente 48mm | L4 Rollo cinta transparente de embalaje 48 mm | Coincidencia | 100 | 100 | - | 0.95 | Cinta transparente de embalaje de 48mm coincide con la cinta adhesiva transparente de 48mm.. mismo producto y misma cantidad |
+| #6 Cuaderno tapa dura A4 | L5 Cuaderno A4 con tapa rigida | Coincidencia | 40 | 40 | - | 0.95 | Cuaderno A4 con tapa rigida es equivalente a cuaderno tapa dura A4.. mismo producto y misma cantidad |
 
 ## Trazabilidad
 
@@ -85,8 +85,8 @@ Ordenada poniendo primero lo que requiere atencion.
 | Modelo | gemini-3.6-flash |
 | Llamadas al LLM | 1 |
 | Lotes | 1 |
-| Tokens entrada / salida | 500 / 2036 |
-| Duracion | 12939 ms |
+| Tokens entrada / salida | 500 / 1667 |
+| Duracion | 8140 ms |
 | SHA-256 del archivo | `ae8cf44282a44732...` |
 
 Sin avisos de extraccion.
@@ -102,14 +102,14 @@ Sin avisos de extraccion.
 | Resueltas por similitud lexica | 0 |
 | Conflictos resueltos | 0 |
 | Llamadas al LLM | 1 en 1 lotes |
-| Tokens entrada / salida | 1894 / 1102 |
+| Tokens entrada / salida | 1894 / 1162 |
 
 ### Volumen
 
 Conciliar 6 lineas ofertadas contra 6 items solicitados por fuerza bruta serian **36 comparaciones**.
 
-Con el prefiltro vectorial fueron **1 query indexada** (HNSW + distancia coseno, dentro de Postgres) en 548 ms, y el decisor evaluo 5 candidatos por linea en vez de 6.
+Con el prefiltro vectorial fueron **1 query indexada** (HNSW + distancia coseno, dentro de Postgres) en 863 ms, y el decisor evaluo 5 candidatos por linea en vez de 6.
 
 ---
 
-Conciliacion `d01d03ae-394d-4755-ad1d-0630e52d0d82` generada el 26/8/2026, 10:19:09.
+Conciliacion `411a3cc2-8bde-4795-a197-a89f2ad84e3c` generada el 26/8/2026, 03:59:08.

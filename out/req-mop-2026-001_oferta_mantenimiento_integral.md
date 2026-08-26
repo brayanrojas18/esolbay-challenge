@@ -93,14 +93,14 @@ Solicitud **REQ-MOP-2026-001** - Compra anual de insumos de mantenimiento y oper
 
 | Item | Pedido | Ofrecido | Falta |
 |---|---:|---:|---:|
-| #91 Varilla roscada 3/8 | 200 | 150 | 50 |
 | #143 Limpiador desinfectante 5L | 160 | 120 | 40 |
-| #13 Canaleta PVC 40x20 blanca | 200 | 150 | 50 |
 | #78 Rejilla piso acero inoxidable | 100 | 75 | 25 |
+| #13 Canaleta PVC 40x20 blanca | 200 | 150 | 50 |
 | #26 Prolongador electrico 10m | 30 | 22 | 8 |
 | #39 Lampara LED E27 18W | 200 | 150 | 50 |
 | #52 Conector corrugado 1 pulgada | 150 | 112 | 38 |
 | #65 Valvula esferica 1/2 | 120 | 90 | 30 |
+| #91 Varilla roscada 3/8 | 200 | 150 | 50 |
 | #104 Hoja sierra manual 24T | 200 | 150 | 50 |
 | #117 Pintura latex interior gris claro 20L | 30 | 22 | 8 |
 | #130 Aerosol lubricante multiuso 400ml | 200 | 150 | 50 |
@@ -111,20 +111,20 @@ Requieren aprobacion: el proveedor ofrece un producto distinto al pedido.
 
 | Pedido | Ofrecido |
 |---|---|
-| #44 Driver panel LED 40W | Fuente para placa LED 40 W |
 | #99 Broca pared 6mm | Mecha widia 6 mm |
-| #77 Limpiador PVC 125ml | Primer limpiador PVC 125 ml |
+| #44 Driver panel LED 40W | Fuente para placa LED 40 W |
+| #110 Candado 40mm | Cierre candado 40 mm |
 | #11 Cable unipolar 4mm2 verde amarillo | Conductor flexible 4 mm2 verde amarillo |
 | #22 Tomacorriente doble 10A blanco | Modulo toma electrica doble 10 A blanco |
 | #33 Terminal ojal aislado rojo | Terminal anillo aislado rojo |
 | #55 Interruptor doble embutir | Tecla doble embutir |
 | #66 Valvula esferica 3/4 | Llave de paso esferica 3/4 |
+| #77 Limpiador PVC 125ml | Primer limpiador PVC 125 ml |
 | #88 Arandela plana 1/4 | Arandela lisa 1/4 |
-| #110 Candado 40mm | Cierre candado 40 mm |
 | #121 Esmalte sintetico rojo seguridad 4L | Sintetico brillante rojo seguridad 4 L |
 | #132 Alcohol isopropilico 1L | IPA limpieza tecnica 1 L |
-| #154 Cabo aluminio 1.4m | Mango aluminio 1.4 m |
 | #176 Casco seguridad amarillo | Casco obra amarillo |
+| #154 Cabo aluminio 1.4m | Mango aluminio 1.4 m |
 
 ## Oferta procesada
 
@@ -364,183 +364,183 @@ Ordenada poniendo primero lo que requiere atencion.
 | #218 Linterna LED recargable | - | No cotizado ⚠ | 60 | - | - | 1.00 | ninguna linea de la oferta corresponde a este item solicitado |
 | #219 Prolongador industrial 25m | - | No cotizado ⚠ | 20 | - | - | 1.00 | ninguna linea de la oferta corresponde a este item solicitado |
 | #220 Soldador electrico 40W | - | No cotizado ⚠ | 20 | - | - | 1.00 | ninguna linea de la oferta corresponde a este item solicitado |
-| #44 Driver panel LED 40W | L44 Fuente para placa LED 40 W | Equivalente tecnico ⚠ | 80 | 80 | - | 0.90 | Fuente para placa LED de 40W coincide técnicamente con driver panel LED de 40W.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #99 Broca pared 6mm | L99 Mecha widia 6 mm | Equivalente tecnico ⚠ | 150 | 150 | - | 0.90 | Mecha widia es la denominacion comercial equivalente a broca para pared o mamposteria de 6mm.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #77 Limpiador PVC 125ml | L77 Primer limpiador PVC 125 ml | Equivalente tecnico ⚠ | 80 | 80 | - | 0.93 | Primer limpiador PVC de 125ml corresponde al limpiador para PVC de 125ml solicitado.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #11 Cable unipolar 4mm2 verde amarillo | L11 Conductor flexible 4 mm2 verde amarillo | Equivalente tecnico ⚠ | 600 | 600 | - | 0.95 | Coinciden perfectamente la seccion de 4mm2 y el color verde amarillo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #22 Tomacorriente doble 10A blanco | L22 Modulo toma electrica doble 10 A blanco | Equivalente tecnico ⚠ | 250 | 250 | - | 0.95 | Modulo toma electrica doble 10A blanco equivale a tomacorriente doble 10A blanco.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #33 Terminal ojal aislado rojo | L33 Terminal anillo aislado rojo | Equivalente tecnico ⚠ | 1.000 | 1.000 | - | 0.95 | Terminal anillo y terminal ojal son sinonimos para el mismo tipo de conector.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #55 Interruptor doble embutir | L55 Tecla doble embutir | Equivalente tecnico ⚠ | 120 | 120 | - | 0.95 | Tecla e interruptor son sinonimos para el mismo producto de embutir doble.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #66 Valvula esferica 3/4 | L66 Llave de paso esferica 3/4 | Equivalente tecnico ⚠ | 100 | 100 | - | 0.95 | Llave de paso esférica equivale a válvula esférica de 3/4 pulgada.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #88 Arandela plana 1/4 | L88 Arandela lisa 1/4 | Equivalente tecnico ⚠ | 5.000 | 5.000 | - | 0.95 | Arandela lisa 1/4 equivale a arandela plana 1/4.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #110 Candado 40mm | L110 Cierre candado 40 mm | Equivalente tecnico ⚠ | 100 | 100 | - | 0.95 | Cierre candado de 40mm corresponde al candado de 40mm solicitado.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #121 Esmalte sintetico rojo seguridad 4L | L121 Sintetico brillante rojo seguridad 4 L | Equivalente tecnico ⚠ | 30 | 30 | - | 0.95 | Coincide en esmalte sintetico, color rojo seguridad y presentacion de 4L.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #132 Alcohol isopropilico 1L | L132 IPA limpieza tecnica 1 L | Equivalente tecnico ⚠ | 120 | 120 | - | 0.95 | IPA es la sigla de alcohol isopropilico y coincide en volumen de 1 L.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #154 Cabo aluminio 1.4m | L154 Mango aluminio 1.4 m | Equivalente tecnico ⚠ | 150 | 150 | - | 0.95 | Mango y cabo de aluminio de 1.4m hacen referencia al mismo producto y especificacion.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #176 Casco seguridad amarillo | L161 Casco obra amarillo | Equivalente tecnico ⚠ | 80 | 80 | - | 0.95 | Casco de obra amarillo equivale a casco de seguridad amarillo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
-| #91 Varilla roscada 3/8 | L91 Esparrago roscado 3/8 | Cantidad parcial | 200 | 150 | -50 | 0.90 | Esparrago roscado y varilla roscada son terminos equivalentes para la misma especificacion de 3/8.. el proveedor ofrece 150 de las 200 pedidas (faltan 50) |
-| #143 Limpiador desinfectante 5L | L143 Sanitizante limpiador 5 L | Cantidad parcial | 160 | 120 | -40 | 0.90 | Sanitizante limpiador es equivalente funcional a limpiador desinfectante de 5L.. el proveedor ofrece 120 de las 160 pedidas (faltan 40) |
-| #171 Anteojo seguridad transparente | L158 Gafa proteccion cristal | Cantidad parcial | 400 | 480 | +80 | 0.90 | Gafa de proteccion cristal corresponde a anteojo de seguridad transparente.. el proveedor ofrece 480 contra 400 pedidas (80 de mas, probable presentacion comercial) |
-| #13 Canaleta PVC 40x20 blanca | L13 Ducto polipropileno pasacable 40x20 blanca | Cantidad parcial | 200 | 150 | -50 | 0.92 | Ducto pasacable es equivalente a canaleta PVC en la medida 40x20.. el proveedor ofrece 150 de las 200 pedidas (faltan 50) |
-| #57 Cano PVC agua 3/4 | L57 Tuberia PVC presion 3/4 | Cantidad parcial | 250 | 300 | +50 | 0.92 | Tuberia de PVC presion equivale a cano de PVC agua de 3/4 pulgada.. el proveedor ofrece 300 contra 250 pedidas (50 de mas, probable presentacion comercial) |
-| #78 Rejilla piso acero inoxidable | L78 Rejilla de desague acero inoxidable | Cantidad parcial | 100 | 75 | -25 | 0.92 | Rejilla de desague de acero inoxidable equivale a la rejilla de piso de acero inoxidable.. el proveedor ofrece 75 de las 100 pedidas (faltan 25) |
-| #95 Abrazadera omega 3/4 | L95 Grapa omega 3/4 | Cantidad parcial | 800 | 960 | +160 | 0.92 | Grapa omega y abrazadera omega son sinonimos comerciales para la medida 3/4.. el proveedor ofrece 960 contra 800 pedidas (160 de mas, probable presentacion comercial) |
-| #152 Trapo piso algodon | L152 Pano piso algodon | Cantidad parcial | 500 | 600 | +100 | 0.92 | Pano de piso de algodon es equivalente a trapo de piso de algodon.. el proveedor ofrece 600 contra 500 pedidas (100 de mas, probable presentacion comercial) |
-| #19 Llave termomagnetica bipolar 32A | L19 Interruptor automatico 2 polos 32 A | Cantidad parcial | 40 | 48 | +8 | 0.95 | Interruptor automatico de 2 polos equivale a llave termomagnetica bipolar de 32A.. el proveedor ofrece 48 contra 40 pedidas (8 de mas, probable presentacion comercial) |
+| #99 Broca pared 6mm | L99 Mecha widia 6 mm | Equivalente tecnico ⚠ | 150 | 150 | - | 0.90 | Mecha widia es el nombre comercial para broca de pared o mampostería en 6mm.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #44 Driver panel LED 40W | L44 Fuente para placa LED 40 W | Equivalente tecnico ⚠ | 80 | 80 | - | 0.92 | Fuente para placa LED de 40W equivale a driver para panel LED de 40W.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #110 Candado 40mm | L110 Cierre candado 40 mm | Equivalente tecnico ⚠ | 100 | 100 | - | 0.92 | Corresponde al candado de 40 mm solicitado.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #11 Cable unipolar 4mm2 verde amarillo | L11 Conductor flexible 4 mm2 verde amarillo | Equivalente tecnico ⚠ | 600 | 600 | - | 0.95 | Conductor flexible equivale a cable unipolar, coincidiendo en seccion de 4mm2 y color verde amarillo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #22 Tomacorriente doble 10A blanco | L22 Modulo toma electrica doble 10 A blanco | Equivalente tecnico ⚠ | 250 | 250 | - | 0.95 | Modulo toma electrica doble 10A blanco es equivalente a tomacorriente doble 10A blanco.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #33 Terminal ojal aislado rojo | L33 Terminal anillo aislado rojo | Equivalente tecnico ⚠ | 1.000 | 1.000 | - | 0.95 | Terminal anillo es sinonimo de terminal ojal aislado rojo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #55 Interruptor doble embutir | L55 Tecla doble embutir | Equivalente tecnico ⚠ | 120 | 120 | - | 0.95 | Tecla doble embutir es la denominacion comercial equivalente a interruptor doble embutir.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #66 Valvula esferica 3/4 | L66 Llave de paso esferica 3/4 | Equivalente tecnico ⚠ | 100 | 100 | - | 0.95 | Llave de paso esferica y valvula esferica de 3/4 son el mismo producto.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #77 Limpiador PVC 125ml | L77 Primer limpiador PVC 125 ml | Equivalente tecnico ⚠ | 80 | 80 | - | 0.95 | Primer limpiador para PVC 125ml corresponde al limpiador PVC 125ml.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #88 Arandela plana 1/4 | L88 Arandela lisa 1/4 | Equivalente tecnico ⚠ | 5.000 | 5.000 | - | 0.95 | Arandela lisa 1/4 es equivalente a arandela plana 1/4.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #121 Esmalte sintetico rojo seguridad 4L | L121 Sintetico brillante rojo seguridad 4 L | Equivalente tecnico ⚠ | 30 | 30 | - | 0.95 | Coincide en tipo de producto (esmalte sintetico), color (rojo seguridad) y presentacion (4L).. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #132 Alcohol isopropilico 1L | L132 IPA limpieza tecnica 1 L | Equivalente tecnico ⚠ | 120 | 120 | - | 0.95 | IPA es la abreviatura de alcohol isopropílico, coinciden en la presentación de 1L.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #176 Casco seguridad amarillo | L161 Casco obra amarillo | Equivalente tecnico ⚠ | 80 | 80 | - | 0.95 | Casco de obra equivale a casco de seguridad y coincide el color amarillo.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #154 Cabo aluminio 1.4m | L154 Mango aluminio 1.4 m | Equivalente tecnico ⚠ | 150 | 150 | - | 0.96 | Mango y cabo de aluminio de 1.4m describen el mismo producto.. el proveedor lo ofrece como equivalente tecnico: requiere aprobacion del comprador |
+| #95 Abrazadera omega 3/4 | L95 Grapa omega 3/4 | Cantidad parcial | 800 | 960 | +160 | 0.90 | Grapa omega equivale a abrazadera omega en medida de 3/4 pulgada.. el proveedor ofrece 960 contra 800 pedidas (160 de mas, probable presentacion comercial) |
+| #143 Limpiador desinfectante 5L | L143 Sanitizante limpiador 5 L | Cantidad parcial | 160 | 120 | -40 | 0.90 | Sanitizante limpiador equivale a limpiador desinfectante 5L.. el proveedor ofrece 120 de las 160 pedidas (faltan 40) |
+| #57 Cano PVC agua 3/4 | L57 Tuberia PVC presion 3/4 | Cantidad parcial | 250 | 300 | +50 | 0.92 | Tuberia PVC presion de 3/4 equivale a cano PVC agua de 3/4.. el proveedor ofrece 300 contra 250 pedidas (50 de mas, probable presentacion comercial) |
+| #171 Anteojo seguridad transparente | L158 Gafa proteccion cristal | Cantidad parcial | 400 | 480 | +80 | 0.92 | Gafa de protección cristal equivale a anteojo de seguridad transparente.. el proveedor ofrece 480 contra 400 pedidas (80 de mas, probable presentacion comercial) |
+| #78 Rejilla piso acero inoxidable | L78 Rejilla de desague acero inoxidable | Cantidad parcial | 100 | 75 | -25 | 0.94 | Rejilla de desague de acero inoxidable equivale a rejilla de piso de acero inoxidable.. el proveedor ofrece 75 de las 100 pedidas (faltan 25) |
+| #13 Canaleta PVC 40x20 blanca | L13 Ducto polipropileno pasacable 40x20 blanca | Cantidad parcial | 200 | 150 | -50 | 0.95 | Ducto pasacable equivale a canaleta, coincidiendo en dimensiones 40x20 y color blanco.. el proveedor ofrece 150 de las 200 pedidas (faltan 50) |
+| #19 Llave termomagnetica bipolar 32A | L19 Interruptor automatico 2 polos 32 A | Cantidad parcial | 40 | 48 | +8 | 0.95 | Interruptor automatico 2 polos equivale a llave termomagnetica bipolar de 32A.. el proveedor ofrece 48 contra 40 pedidas (8 de mas, probable presentacion comercial) |
 | #26 Prolongador electrico 10m | L26 Alargue electrico 10 m | Cantidad parcial | 30 | 22 | -8 | 0.95 | Alargue electrico 10m es equivalente a prolongador electrico 10m.. el proveedor ofrece 22 de las 30 pedidas (faltan 8) |
 | #38 Lampara LED E27 12W | L38 Bulbo LED E27 12 W | Cantidad parcial | 300 | 360 | +60 | 0.95 | Bulbo LED E27 es equivalente a lampara LED E27 de 12W.. el proveedor ofrece 360 contra 300 pedidas (60 de mas, probable presentacion comercial) |
 | #39 Lampara LED E27 18W | L39 Bulbo LED E27 18 W | Cantidad parcial | 200 | 150 | -50 | 0.95 | Bulbo LED E27 es equivalente a lampara LED E27 de 18W.. el proveedor ofrece 150 de las 200 pedidas (faltan 50) |
-| #52 Conector corrugado 1 pulgada | L52 Acople para corrugado 1 pulgada | Cantidad parcial | 150 | 112 | -38 | 0.95 | Equivalencia directa entre acople y conector corrugado de 1 pulgada.. el proveedor ofrece 112 de las 150 pedidas (faltan 38) |
-| #65 Valvula esferica 1/2 | L65 Llave de paso esferica 1/2 | Cantidad parcial | 120 | 90 | -30 | 0.95 | Llave de paso esférica equivale a válvula esférica de 1/2 pulgada.. el proveedor ofrece 90 de las 120 pedidas (faltan 30) |
-| #76 Adhesivo PVC 125ml | L76 Pegamento para PVC 125 ml | Cantidad parcial | 100 | 120 | +20 | 0.95 | Pegamento para PVC de 125ml es exactamente adhesivo para PVC de 125ml.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial) |
-| #104 Hoja sierra manual 24T | L104 Sierra manual hoja manual 24T | Cantidad parcial | 200 | 150 | -50 | 0.95 | Corresponde a la hoja de sierra manual de 24 dientes (24T).. el proveedor ofrece 150 de las 200 pedidas (faltan 50) |
-| #114 Rueda fija 50mm | L114 Rueda rigida 50 mm | Cantidad parcial | 120 | 144 | +24 | 0.95 | Rueda rigida es equivalente a Rueda fija de 50mm.. el proveedor ofrece 144 contra 120 pedidas (24 de mas, probable presentacion comercial) |
-| #117 Pintura latex interior gris claro 20L | L117 Latex acrilico uso interno gris claro 20 L | Cantidad parcial | 30 | 22 | -8 | 0.95 | Latex acrilico uso interno gris claro 20 L es equivalente a Pintura latex interior gris claro 20L.. el proveedor ofrece 22 de las 30 pedidas (faltan 8) |
-| #209 Taladro percutor 650W | L170 Taladro impacto 650 W | Cantidad parcial | 12 | 14 | +2 | 0.95 | Taladro de impacto de 650 W equivale a taladro percutor de 650 W.. el proveedor ofrece 14 contra 12 pedidas (2 de mas, probable presentacion comercial) |
-| #130 Aerosol lubricante multiuso 400ml | L130 Lubricante aerosol multiuso 400 ml | Cantidad parcial | 200 | 150 | -50 | 0.98 | Coincide exactamente en lubricante aerosol multiuso y volumen de 400ml.. el proveedor ofrece 150 de las 200 pedidas (faltan 50) |
-| #133 Removedor pintura gel 1L | L133 Removedor gel pintura gel 1 L | Cantidad parcial | 30 | 36 | +6 | 0.98 | Coincide en tipo de producto (removedor de pintura en gel) y volumen de 1 L.. el proveedor ofrece 36 contra 30 pedidas (6 de mas, probable presentacion comercial) |
-| #190 Cono vial reflectivo 70cm | L163 Cono transito reflectivo 70 cm | Cantidad parcial | 100 | 120 | +20 | 0.98 | Cono de transito reflectivo de 70 cm equivale a cono vial reflectivo de 70 cm.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial) |
+| #52 Conector corrugado 1 pulgada | L52 Acople para corrugado 1 pulgada | Cantidad parcial | 150 | 112 | -38 | 0.95 | Acople para corrugado de 1 pulgada equivale a conector corrugado de 1 pulgada.. el proveedor ofrece 112 de las 150 pedidas (faltan 38) |
+| #65 Valvula esferica 1/2 | L65 Llave de paso esferica 1/2 | Cantidad parcial | 120 | 90 | -30 | 0.95 | Llave de paso esferica y valvula esferica de 1/2 son el mismo producto.. el proveedor ofrece 90 de las 120 pedidas (faltan 30) |
+| #91 Varilla roscada 3/8 | L91 Esparrago roscado 3/8 | Cantidad parcial | 200 | 150 | -50 | 0.95 | Espárrago roscado y varilla roscada son denominaciones equivalentes para el mismo producto en 3/8.. el proveedor ofrece 150 de las 200 pedidas (faltan 50) |
+| #104 Hoja sierra manual 24T | L104 Sierra manual hoja manual 24T | Cantidad parcial | 200 | 150 | -50 | 0.95 | Corresponde a la hoja de sierra manual de 24 dientes (24T) requerida.. el proveedor ofrece 150 de las 200 pedidas (faltan 50) |
+| #114 Rueda fija 50mm | L114 Rueda rigida 50 mm | Cantidad parcial | 120 | 144 | +24 | 0.95 | 'Rueda rigida' es equivalente a rueda fija de 50mm.. el proveedor ofrece 144 contra 120 pedidas (24 de mas, probable presentacion comercial) |
+| #117 Pintura latex interior gris claro 20L | L117 Latex acrilico uso interno gris claro 20 L | Cantidad parcial | 30 | 22 | -8 | 0.95 | Latex acrilico uso interno gris claro de 20L equivale exactamente a la pintura latex interior gris claro 20L.. el proveedor ofrece 22 de las 30 pedidas (faltan 8) |
+| #152 Trapo piso algodon | L152 Pano piso algodon | Cantidad parcial | 500 | 600 | +100 | 0.95 | Paño de piso de algodón equivale a trapo de piso de algodón.. el proveedor ofrece 600 contra 500 pedidas (100 de mas, probable presentacion comercial) |
+| #209 Taladro percutor 650W | L170 Taladro impacto 650 W | Cantidad parcial | 12 | 14 | +2 | 0.95 | Taladro de impacto equivale a taladro percutor y coincide la potencia de 650 W.. el proveedor ofrece 14 contra 12 pedidas (2 de mas, probable presentacion comercial) |
+| #76 Adhesivo PVC 125ml | L76 Pegamento para PVC 125 ml | Cantidad parcial | 100 | 120 | +20 | 0.96 | Pegamento para PVC 125ml coincide exactamente con adhesivo PVC 125ml.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial) |
+| #133 Removedor pintura gel 1L | L133 Removedor gel pintura gel 1 L | Cantidad parcial | 30 | 36 | +6 | 0.98 | Mismo producto y presentación: removedor de pintura en gel de 1L.. el proveedor ofrece 36 contra 30 pedidas (6 de mas, probable presentacion comercial) |
+| #190 Cono vial reflectivo 70cm | L163 Cono transito reflectivo 70 cm | Cantidad parcial | 100 | 120 | +20 | 0.98 | Cono de transito equivale a cono vial y coinciden las especificaciones de 70 cm y reflectivo.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial) |
+| #130 Aerosol lubricante multiuso 400ml | L130 Lubricante aerosol multiuso 400 ml | Cantidad parcial | 200 | 150 | -50 | 0.99 | Coincidencia exacta en lubricante multiuso en aerosol de 400ml.. el proveedor ofrece 150 de las 200 pedidas (faltan 50) |
 | - | L175 Recambio mopa algodon uso industrial | Sobrante | - | 140 | - | 0.14 | el LLM determino que ninguno de los candidatos corresponde a esta linea |
 | - | L176 Rollo cinta reflectiva rojo blanco | Sobrante | - | 90 | - | 0.16 | el LLM determino que ninguno de los candidatos corresponde a esta linea |
 | - | L174 Organizador metalico de herramientas | Sobrante | - | 12 | - | 0.19 | el LLM determino que ninguno de los candidatos corresponde a esta linea |
 | - | L177 Set puntas para driver de impacto | Sobrante | - | 30 | - | 0.24 | el LLM determino que ninguno de los candidatos corresponde a esta linea |
 | - | L173 Kit carteleria preventiva para planta | Sobrante | - | 15 | - | 0.28 | el LLM determino que ninguno de los candidatos corresponde a esta linea |
-| #90 Varilla roscada 1/4 | L90 Esparrago roscado 1/4 | Coincidencia | 300 | 300 | - | 0.88 | Esparrago roscado 1/4 es equivalente en uso a varilla roscada 1/4.. mismo producto y misma cantidad |
-| #14 Caja derivacion PVC 10x10 | L14 Caja de paso plastica 10x10 | Coincidencia | 150 | 150 | - | 0.90 | Caja de paso plastica equivale a caja de derivacion PVC 10x10.. mismo producto y misma cantidad |
-| #45 Aplique emergencia LED | L45 Luminaria autonoma emergencia LED | Coincidencia | 120 | 120 | - | 0.90 | Luminaria autónoma de emergencia LED corresponde al aplique de emergencia LED pedida.. mismo producto y misma cantidad |
-| #46 Cartel salida emergencia LED | L46 Senal luminosa salida emergencia | Coincidencia | 60 | 60 | - | 0.90 | Señal luminosa de salida de emergencia equivale a cartel de salida de emergencia LED.. mismo producto y misma cantidad |
-| #59 Codo PVC 1/2 | L59 Curva PVC 1/2 | Coincidencia | 300 | 300 | - | 0.90 | Curva y codo de PVC de 1/2 pulgada cumplen la misma funcion de desviacion.. mismo producto y misma cantidad |
-| #60 Codo PVC 3/4 | L60 Curva PVC 3/4 | Coincidencia | 250 | 250 | - | 0.90 | Curva y codo de PVC de 3/4 pulgada cumplen la misma funcion de desviacion.. mismo producto y misma cantidad |
-| #63 Union doble PVC 1/2 | L63 Cupla union PVC 1/2 | Coincidencia | 120 | 120 | - | 0.90 | Cupla de union de PVC equivale a union doble de PVC en la misma medida (1/2 pulgada).. mismo producto y misma cantidad |
-| #64 Union doble PVC 3/4 | L64 Cupla union PVC 3/4 | Coincidencia | 100 | 100 | - | 0.90 | Cupla de union de PVC equivale a union doble de PVC en la misma medida (3/4 pulgada).. mismo producto y misma cantidad |
-| #79 Tapa inspeccion PVC | L79 Tapa registro PVC | Coincidencia | 60 | 60 | - | 0.90 | Tapa de registro de PVC es equivalente funcional y terminologico de tapa de inspeccion de PVC.. mismo producto y misma cantidad |
+| #137 Bandeja pintura plastica | L137 Cubeta pintura plastica | Coincidencia | 60 | 60 | - | 0.88 | Cubeta de pintura plástica es equivalente a la bandeja plástica de pintar.. mismo producto y misma cantidad |
+| #45 Aplique emergencia LED | L45 Luminaria autonoma emergencia LED | Coincidencia | 120 | 120 | - | 0.90 | Luminaria autónoma de emergencia LED corresponde a aplique de emergencia LED.. mismo producto y misma cantidad |
+| #46 Cartel salida emergencia LED | L46 Senal luminosa salida emergencia | Coincidencia | 60 | 60 | - | 0.90 | Señal luminosa de salida de emergencia corresponde a cartel de salida de emergencia LED.. mismo producto y misma cantidad |
+| #59 Codo PVC 1/2 | L59 Curva PVC 1/2 | Coincidencia | 300 | 300 | - | 0.90 | Curva de PVC de 1/2 equivale al accesorio codo PVC de 1/2.. mismo producto y misma cantidad |
+| #60 Codo PVC 3/4 | L60 Curva PVC 3/4 | Coincidencia | 250 | 250 | - | 0.90 | Curva de PVC de 3/4 equivale al accesorio codo PVC de 3/4.. mismo producto y misma cantidad |
+| #63 Union doble PVC 1/2 | L63 Cupla union PVC 1/2 | Coincidencia | 120 | 120 | - | 0.90 | Cupla de union y union doble PVC de 1/2 son sinonimos.. mismo producto y misma cantidad |
+| #64 Union doble PVC 3/4 | L64 Cupla union PVC 3/4 | Coincidencia | 100 | 100 | - | 0.90 | Cupla de union y union doble PVC de 3/4 son sinonimos.. mismo producto y misma cantidad |
 | #80 Manguera reforzada 3/4 | L80 Manguera tramada 3/4 | Coincidencia | 400 | 400 | - | 0.90 | Manguera tramada de 3/4 es equivalente a manguera reforzada de 3/4.. mismo producto y misma cantidad |
-| #93 Abrazadera metalica 1/2 | L93 Grapa metalica 1/2 | Coincidencia | 1.000 | 1.000 | - | 0.90 | Grapa metalica y abrazadera metalica son denominaciones equivalentes para la medida 1/2.. mismo producto y misma cantidad |
-| #94 Abrazadera metalica 3/4 | L94 Grapa metalica 3/4 | Coincidencia | 1.000 | 1.000 | - | 0.90 | Grapa metalica y abrazadera metalica son terminos equivalentes para la medida 3/4.. mismo producto y misma cantidad |
-| #100 Broca pared 8mm | L100 Mecha widia 8 mm | Coincidencia | 150 | 150 | - | 0.90 | Mecha widia equivale a broca para pared de 8mm.. mismo producto y misma cantidad |
-| #124 Enduido interior 20kg | L124 Masilla enduido 20 kg | Coincidencia | 50 | 50 | - | 0.90 | Coincide en producto de enduido/masilla interior y peso de 20kg.. mismo producto y misma cantidad |
-| #125 Masilla plastica multiuso 1kg | L125 Masilla poliester multiuso 1 kg | Coincidencia | 80 | 80 | - | 0.90 | Coincide en masilla plastica/poliester multiuso y peso de 1kg.. mismo producto y misma cantidad |
-| #137 Bandeja pintura plastica | L137 Cubeta pintura plastica | Coincidencia | 60 | 60 | - | 0.90 | Cubeta de pintura equivale a la bandeja plastica de pintura.. mismo producto y misma cantidad |
-| #140 Nylon cobertura 4x5m | L140 Film protector 4x5 m | Coincidencia | 100 | 100 | - | 0.90 | Film protector equivale al nylon de cobertura con identicas medidas de 4x5 m.. mismo producto y misma cantidad |
-| #166 Guante moteado talle M | L156 Guante tejido con puntos talle M | Coincidencia | 600 | 600 | - | 0.90 | Guante tejido con puntos corresponde tecnicamente a guante moteado, coincidiendo el talle M.. mismo producto y misma cantidad |
-| #167 Guante moteado talle L | L157 Guante tejido con puntos talle L | Coincidencia | 600 | 600 | - | 0.90 | Guante tejido con puntos equivale a guante moteado, coincidiendo el talle L.. mismo producto y misma cantidad |
-| #12 Canaleta PVC 20x10 blanca | L12 Ducto polipropileno pasacable 20x10 blanca | Coincidencia | 300 | 300 | - | 0.92 | Ducto pasacable es equivalente a canaleta PVC en la medida 20x10.. mismo producto y misma cantidad |
-| #15 Caja estanca IP65 | L15 Gabinete estanco IP65 | Coincidencia | 120 | 120 | - | 0.92 | Gabinete estanco IP65 es la misma especificacion que caja estanca IP65.. mismo producto y misma cantidad |
+| #90 Varilla roscada 1/4 | L90 Esparrago roscado 1/4 | Coincidencia | 300 | 300 | - | 0.90 | Esparrago roscado 1/4 es equivalente a varilla roscada 1/4.. mismo producto y misma cantidad |
+| #93 Abrazadera metalica 1/2 | L93 Grapa metalica 1/2 | Coincidencia | 1.000 | 1.000 | - | 0.90 | Grapa metálica es equivalente a abrazadera metálica en medida de 1/2 pulgada.. mismo producto y misma cantidad |
+| #94 Abrazadera metalica 3/4 | L94 Grapa metalica 3/4 | Coincidencia | 1.000 | 1.000 | - | 0.90 | Grapa metálica es equivalente a abrazadera metálica en medida de 3/4 pulgada.. mismo producto y misma cantidad |
+| #100 Broca pared 8mm | L100 Mecha widia 8 mm | Coincidencia | 150 | 150 | - | 0.90 | Mecha widia es el nombre comercial para broca de pared o mampostería en 8mm.. mismo producto y misma cantidad |
+| #125 Masilla plastica multiuso 1kg | L125 Masilla poliester multiuso 1 kg | Coincidencia | 80 | 80 | - | 0.90 | Mismo tipo de masilla plastica/poliester multiuso de 1kg.. mismo producto y misma cantidad |
+| #140 Nylon cobertura 4x5m | L140 Film protector 4x5 m | Coincidencia | 100 | 100 | - | 0.90 | Film protector equivale a nylon de cobertura, coincide en medidas (4x5m).. mismo producto y misma cantidad |
+| #142 Lavandina 5L | L142 Hipoclorito 5 L | Coincidencia | 200 | 200 | - | 0.90 | Hipoclorito es la denominacion tecnica de lavandina en presentacion 5L.. mismo producto y misma cantidad |
+| #204 Cutter reforzado | L168 Cuchilla retractil reforzada | Coincidencia | 100 | 100 | - | 0.90 | Cuchilla retractil es equivalente a cutter y coincide la especificacion de reforzado.. mismo producto y misma cantidad |
+| #14 Caja derivacion PVC 10x10 | L14 Caja de paso plastica 10x10 | Coincidencia | 150 | 150 | - | 0.92 | Caja de paso equivale a caja de derivacion, coincidiendo en dimensiones 10x10.. mismo producto y misma cantidad |
 | #27 Zapatilla electrica 6 tomas | L27 Base multiple 6 tomas | Coincidencia | 60 | 60 | - | 0.92 | Base multiple 6 tomas es equivalente a zapatilla electrica 6 tomas.. mismo producto y misma cantidad |
-| #56 Cano PVC agua 1/2 | L56 Tuberia PVC presion 1/2 | Coincidencia | 300 | 300 | - | 0.92 | Tuberia de PVC presion equivale a cano de PVC agua de 1/2 pulgada.. mismo producto y misma cantidad |
-| #58 Cano PVC agua 1 pulgada | L58 Tuberia PVC presion 1 pulgada | Coincidencia | 150 | 150 | - | 0.92 | Tuberia de PVC presion equivale a cano de PVC agua de 1 pulgada.. mismo producto y misma cantidad |
-| #71 Sifon plastico lavatorio | L71 Desague sifonado polipropileno lavatorio | Coincidencia | 90 | 90 | - | 0.92 | Desague sifonado de polipropileno para lavatorio es equivalente a sifon plastico de lavatorio.. mismo producto y misma cantidad |
-| #74 Sellador roscas anaerobico | L74 Traba rosca selladora anaerobico | Coincidencia | 60 | 60 | - | 0.92 | Traba roscas sellador anaerobico es equivalente a sellador de roscas anaerobico.. mismo producto y misma cantidad |
-| #85 Tarugo nylon 6mm | L85 Anclaje nylon 6 mm | Coincidencia | 6.000 | 6.000 | - | 0.92 | Anclaje nylon 6mm es sinonimo comercial de tarugo nylon 6mm.. mismo producto y misma cantidad |
-| #86 Tarugo nylon 8mm | L86 Anclaje nylon 8 mm | Coincidencia | 6.000 | 6.000 | - | 0.92 | Anclaje nylon 8mm es sinonimo comercial de tarugo nylon 8mm.. mismo producto y misma cantidad |
-| #87 Tarugo nylon 10mm | L87 Anclaje nylon 10 mm | Coincidencia | 3.000 | 3.000 | - | 0.92 | Anclaje nylon 10mm es sinonimo comercial de tarugo nylon 10mm.. mismo producto y misma cantidad |
-| #142 Lavandina 5L | L142 Hipoclorito 5 L | Coincidencia | 200 | 200 | - | 0.92 | Hipoclorito es la denominacion del principio activo de la lavandina y coincide en 5L.. mismo producto y misma cantidad |
-| #148 Papel higienico industrial 300m | L148 Higienico jumbo industrial 300 m | Coincidencia | 600 | 600 | - | 0.92 | Higienico jumbo industrial de 300m es equivalente a papel higienico industrial 300m.. mismo producto y misma cantidad |
-| #155 Escoba interior | L155 Escoba uso interno | Coincidencia | 180 | 180 | - | 0.92 | Escoba uso interno es totalmente equivalente a escoba interior.. mismo producto y misma cantidad |
-| #172 Anteojo seguridad gris | L159 Gafa proteccion gris | Coincidencia | 200 | 200 | - | 0.92 | Gafa de proteccion gris equivale a anteojo de seguridad gris.. mismo producto y misma cantidad |
-| #175 Casco seguridad blanco | L160 Casco obra blanco | Coincidencia | 120 | 120 | - | 0.92 | Casco de obra blanco es sinonimo de casco de seguridad blanco.. mismo producto y misma cantidad |
-| #204 Cutter reforzado | L168 Cuchilla retractil reforzada | Coincidencia | 100 | 100 | - | 0.92 | Cuchilla retractil reforzada equivale a cutter reforzado.. mismo producto y misma cantidad |
-| #214 Escalera tijera aluminio 6 escalones | L172 Escalera plegable aluminio 6 escalones | Coincidencia | 12 | 12 | - | 0.92 | Escalera plegable de aluminio de 6 escalones corresponde a la escalera tipo tijera de 6 escalones solicitada.. mismo producto y misma cantidad |
-| #1 Cable unipolar 1.5mm2 rojo | L1 Conductor flexible 1.5 mm2 rojo | Coincidencia | 1.000 | 1.000 | - | 0.95 | Coincide en seccion de 1.5 mm2 y color rojo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #2 Cable unipolar 1.5mm2 azul | L2 Conductor flexible 1.5 mm2 azul | Coincidencia | 1.000 | 1.000 | - | 0.95 | Coincide en seccion de 1.5 mm2 y color azul; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #3 Cable unipolar 1.5mm2 verde amarillo | L3 Conductor flexible 1.5 mm2 verde amarillo | Coincidencia | 800 | 800 | - | 0.95 | Coincide en seccion de 1.5 mm2 y color verde amarillo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #4 Cable unipolar 1.5mm2 negro | L4 Conductor flexible 1.5 mm2 negro | Coincidencia | 800 | 800 | - | 0.95 | Coincide en seccion de 1.5 mm2 y color negro; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #5 Cable unipolar 2.5mm2 rojo | L5 Conductor flexible 2.5 mm2 rojo | Coincidencia | 1.500 | 1.500 | - | 0.95 | Coincide en seccion de 2.5 mm2 y color rojo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #6 Cable unipolar 2.5mm2 azul | L6 Conductor flexible 2.5 mm2 azul | Coincidencia | 1.500 | 1.500 | - | 0.95 | Coincide en seccion de 2.5 mm2 y color azul; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #7 Cable unipolar 2.5mm2 verde amarillo | L7 Conductor flexible 2.5 mm2 verde amarillo | Coincidencia | 1.200 | 1.200 | - | 0.95 | Coincide en seccion de 2.5 mm2 y color verde amarillo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #8 Cable unipolar 2.5mm2 negro | L8 Conductor flexible 2.5 mm2 negro | Coincidencia | 1.200 | 1.200 | - | 0.95 | Coincide en seccion de 2.5 mm2 y color negro; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #9 Cable unipolar 4mm2 rojo | L9 Conductor flexible 4 mm2 rojo | Coincidencia | 800 | 800 | - | 0.95 | Coincide en seccion de 4 mm2 y color rojo; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #10 Cable unipolar 4mm2 azul | L10 Conductor flexible 4 mm2 azul | Coincidencia | 800 | 800 | - | 0.95 | Coincide en seccion de 4 mm2 y color azul; conductor flexible es equivalente a cable unipolar.. mismo producto y misma cantidad |
-| #16 Llave termomagnetica bipolar 10A | L16 Interruptor automatico 2 polos 10 A | Coincidencia | 40 | 40 | - | 0.95 | Interruptor automatico de 2 polos equivale a llave termomagnetica bipolar de 10A.. mismo producto y misma cantidad |
-| #17 Llave termomagnetica bipolar 16A | L17 Interruptor automatico 2 polos 16 A | Coincidencia | 60 | 60 | - | 0.95 | Interruptor automatico de 2 polos equivale a llave termomagnetica bipolar de 16A.. mismo producto y misma cantidad |
-| #18 Llave termomagnetica bipolar 25A | L18 Interruptor automatico 2 polos 25 A | Coincidencia | 60 | 60 | - | 0.95 | Interruptor automatico de 2 polos equivale a llave termomagnetica bipolar de 25A.. mismo producto y misma cantidad |
-| #20 Disyuntor diferencial bipolar 25A 30mA | L20 Protector diferencial 2 polos 25 A 30 mA | Coincidencia | 35 | 35 | - | 0.95 | Protector diferencial de 2 polos es equivalente a disyuntor diferencial bipolar de 25A 30mA.. mismo producto y misma cantidad |
-| #21 Disyuntor diferencial bipolar 40A 30mA | L21 Protector diferencial 2 polos 40 A 30 mA | Coincidencia | 25 | 25 | - | 0.95 | Protector diferencial 2 polos de 40A 30mA equivale a disyuntor diferencial bipolar 40A 30mA.. mismo producto y misma cantidad |
-| #23 Tomacorriente industrial 16A | L23 Modulo toma electrica industrial 16 A | Coincidencia | 80 | 80 | - | 0.95 | Modulo toma electrica industrial 16A equivale a tomacorriente industrial 16A.. mismo producto y misma cantidad |
-| #24 Ficha macho 10A | L24 Plug macho 10 A | Coincidencia | 150 | 150 | - | 0.95 | Plug macho 10A es equivalente a ficha macho 10A.. mismo producto y misma cantidad |
+| #28 Cinta aisladora negra | L28 Rollo aislante negra | Coincidencia | 300 | 300 | - | 0.92 | Rollo aislante negra equivale a cinta aisladora negra.. mismo producto y misma cantidad |
+| #29 Cinta aisladora roja | L29 Rollo aislante roja | Coincidencia | 80 | 80 | - | 0.92 | Rollo aislante roja equivale a cinta aisladora roja.. mismo producto y misma cantidad |
+| #56 Cano PVC agua 1/2 | L56 Tuberia PVC presion 1/2 | Coincidencia | 300 | 300 | - | 0.92 | Tuberia PVC presion de 1/2 equivale a cano PVC agua de 1/2.. mismo producto y misma cantidad |
+| #58 Cano PVC agua 1 pulgada | L58 Tuberia PVC presion 1 pulgada | Coincidencia | 150 | 150 | - | 0.92 | Tuberia PVC presion de 1 pulgada equivale a cano PVC agua de 1 pulgada.. mismo producto y misma cantidad |
+| #69 Canilla lavatorio cierre ceramico | L69 Griferia para lavatorio cierre ceramico | Coincidencia | 60 | 60 | - | 0.92 | Griferia de lavatorio y canilla lavatorio con cierre ceramico son equivalentes.. mismo producto y misma cantidad |
+| #75 Cinta teflon | L75 Rollo PTFE | Coincidencia | 300 | 300 | - | 0.92 | El PTFE es politetrafluoroetileno, conocido comercialmente como teflon.. mismo producto y misma cantidad |
+| #79 Tapa inspeccion PVC | L79 Tapa registro PVC | Coincidencia | 60 | 60 | - | 0.92 | Tapa de registro de PVC equivale a tapa de inspeccion de PVC.. mismo producto y misma cantidad |
+| #124 Enduido interior 20kg | L124 Masilla enduido 20 kg | Coincidencia | 50 | 50 | - | 0.92 | Mismo producto de enduido/masilla en balde de 20kg.. mismo producto y misma cantidad |
+| #148 Papel higienico industrial 300m | L148 Higienico jumbo industrial 300 m | Coincidencia | 600 | 600 | - | 0.92 | Higienico jumbo industrial equivale a papel higienico industrial 300m.. mismo producto y misma cantidad |
+| #166 Guante moteado talle M | L156 Guante tejido con puntos talle M | Coincidencia | 600 | 600 | - | 0.92 | Guante tejido con puntos es sinónimo de guante moteado en talle M.. mismo producto y misma cantidad |
+| #167 Guante moteado talle L | L157 Guante tejido con puntos talle L | Coincidencia | 600 | 600 | - | 0.92 | Guante tejido con puntos es sinónimo de guante moteado en talle L.. mismo producto y misma cantidad |
+| #74 Sellador roscas anaerobico | L74 Traba rosca selladora anaerobico | Coincidencia | 60 | 60 | - | 0.93 | Traba roscas anaerobico es equivalente a sellador de roscas anaerobico.. mismo producto y misma cantidad |
+| #1 Cable unipolar 1.5mm2 rojo | L1 Conductor flexible 1.5 mm2 rojo | Coincidencia | 1.000 | 1.000 | - | 0.95 | Coinciden perfectamente la seccion de 1.5 mm2, el color rojo y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #2 Cable unipolar 1.5mm2 azul | L2 Conductor flexible 1.5 mm2 azul | Coincidencia | 1.000 | 1.000 | - | 0.95 | Coinciden perfectamente la seccion de 1.5 mm2, el color azul y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #3 Cable unipolar 1.5mm2 verde amarillo | L3 Conductor flexible 1.5 mm2 verde amarillo | Coincidencia | 800 | 800 | - | 0.95 | Coinciden perfectamente la seccion de 1.5 mm2, el color verde amarillo y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #4 Cable unipolar 1.5mm2 negro | L4 Conductor flexible 1.5 mm2 negro | Coincidencia | 800 | 800 | - | 0.95 | Coinciden perfectamente la seccion de 1.5 mm2, el color negro y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #5 Cable unipolar 2.5mm2 rojo | L5 Conductor flexible 2.5 mm2 rojo | Coincidencia | 1.500 | 1.500 | - | 0.95 | Coinciden perfectamente la seccion de 2.5 mm2, el color rojo y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #6 Cable unipolar 2.5mm2 azul | L6 Conductor flexible 2.5 mm2 azul | Coincidencia | 1.500 | 1.500 | - | 0.95 | Coinciden perfectamente la seccion de 2.5 mm2, el color azul y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #7 Cable unipolar 2.5mm2 verde amarillo | L7 Conductor flexible 2.5 mm2 verde amarillo | Coincidencia | 1.200 | 1.200 | - | 0.95 | Coinciden perfectamente la seccion de 2.5 mm2, el color verde amarillo y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #8 Cable unipolar 2.5mm2 negro | L8 Conductor flexible 2.5 mm2 negro | Coincidencia | 1.200 | 1.200 | - | 0.95 | Coinciden perfectamente la seccion de 2.5 mm2, el color negro y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #9 Cable unipolar 4mm2 rojo | L9 Conductor flexible 4 mm2 rojo | Coincidencia | 800 | 800 | - | 0.95 | Coinciden perfectamente la seccion de 4 mm2, el color rojo y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #10 Cable unipolar 4mm2 azul | L10 Conductor flexible 4 mm2 azul | Coincidencia | 800 | 800 | - | 0.95 | Coinciden perfectamente la seccion de 4 mm2, el color azul y la equivalencia del tipo de cable.. mismo producto y misma cantidad |
+| #12 Canaleta PVC 20x10 blanca | L12 Ducto polipropileno pasacable 20x10 blanca | Coincidencia | 300 | 300 | - | 0.95 | Ducto pasacable equivale a canaleta, coincidiendo en dimensiones 20x10 y color blanco.. mismo producto y misma cantidad |
+| #15 Caja estanca IP65 | L15 Gabinete estanco IP65 | Coincidencia | 120 | 120 | - | 0.95 | Gabinete estanco equivale a caja estanca, coincidiendo en especificacion de proteccion IP65.. mismo producto y misma cantidad |
+| #16 Llave termomagnetica bipolar 10A | L16 Interruptor automatico 2 polos 10 A | Coincidencia | 40 | 40 | - | 0.95 | Interruptor automatico 2 polos equivale a llave termomagnetica bipolar de 10A.. mismo producto y misma cantidad |
+| #17 Llave termomagnetica bipolar 16A | L17 Interruptor automatico 2 polos 16 A | Coincidencia | 60 | 60 | - | 0.95 | Interruptor automatico 2 polos equivale a llave termomagnetica bipolar de 16A.. mismo producto y misma cantidad |
+| #18 Llave termomagnetica bipolar 25A | L18 Interruptor automatico 2 polos 25 A | Coincidencia | 60 | 60 | - | 0.95 | Interruptor automatico 2 polos equivale a llave termomagnetica bipolar de 25A.. mismo producto y misma cantidad |
+| #20 Disyuntor diferencial bipolar 25A 30mA | L20 Protector diferencial 2 polos 25 A 30 mA | Coincidencia | 35 | 35 | - | 0.95 | Protector diferencial 2 polos equivale a disyuntor diferencial bipolar de 25A 30mA.. mismo producto y misma cantidad |
+| #21 Disyuntor diferencial bipolar 40A 30mA | L21 Protector diferencial 2 polos 40 A 30 mA | Coincidencia | 25 | 25 | - | 0.95 | Protector diferencial 2 polos 40A 30mA es equivalente a disyuntor diferencial bipolar 40A 30mA.. mismo producto y misma cantidad |
+| #23 Tomacorriente industrial 16A | L23 Modulo toma electrica industrial 16 A | Coincidencia | 80 | 80 | - | 0.95 | Modulo toma electrica industrial 16A es equivalente a tomacorriente industrial 16A.. mismo producto y misma cantidad |
+| #24 Ficha macho 10A | L24 Plug macho 10 A | Coincidencia | 150 | 150 | - | 0.95 | Plug macho 10A es la denominacion comercial equivalente a ficha macho 10A.. mismo producto y misma cantidad |
 | #25 Ficha hembra 10A | L25 Conector hembra 10 A | Coincidencia | 150 | 150 | - | 0.95 | Conector hembra 10A es equivalente a ficha hembra 10A.. mismo producto y misma cantidad |
-| #28 Cinta aisladora negra | L28 Rollo aislante negra | Coincidencia | 300 | 300 | - | 0.95 | Rollo aislante negra es equivalente a cinta aisladora negra.. mismo producto y misma cantidad |
-| #29 Cinta aisladora roja | L29 Rollo aislante roja | Coincidencia | 80 | 80 | - | 0.95 | Rollo aislante roja es equivalente a cinta aisladora roja.. mismo producto y misma cantidad |
-| #30 Precinto plastico 200mm | L30 Brida plastica 200 mm | Coincidencia | 200 | 200 | - | 0.95 | Brida plastica 200mm es equivalente a precinto plastico 200mm.. mismo producto y misma cantidad |
-| #31 Precinto plastico 300mm | L31 Brida plastica 300 mm | Coincidencia | 150 | 150 | - | 0.95 | Brida plastica es equivalente a precinto plastico y coincide en medida de 300mm.. mismo producto y misma cantidad |
-| #32 Bornera 12 polos 10mm | L32 Regleta de conexion 12 polos 10 mm | Coincidencia | 100 | 100 | - | 0.95 | Regleta de conexion equivale a bornera con la misma cantidad de polos y medida.. mismo producto y misma cantidad |
+| #30 Precinto plastico 200mm | L30 Brida plastica 200 mm | Coincidencia | 200 | 200 | - | 0.95 | Brida plastica 200mm es la denominacion tecnica equivalente a precinto plastico 200mm.. mismo producto y misma cantidad |
+| #31 Precinto plastico 300mm | L31 Brida plastica 300 mm | Coincidencia | 150 | 150 | - | 0.95 | Brida plastica es equivalente a precinto plastico de 300mm.. mismo producto y misma cantidad |
+| #32 Bornera 12 polos 10mm | L32 Regleta de conexion 12 polos 10 mm | Coincidencia | 100 | 100 | - | 0.95 | Regleta de conexion equivale a bornera de 12 polos y 10mm.. mismo producto y misma cantidad |
 | #34 Terminal pala aislado azul | L34 Terminal faston pala aislado azul | Coincidencia | 1.000 | 1.000 | - | 0.95 | Terminal faston pala es equivalente a terminal pala aislado azul.. mismo producto y misma cantidad |
-| #35 Multimetro digital basico | L35 Tester digital basico | Coincidencia | 12 | 12 | - | 0.95 | Tester digital y multimetro digital representan el mismo instrumento de medicion.. mismo producto y misma cantidad |
-| #36 Tubo LED T8 18W luz fria | L36 Lampara tubular LED T8 18 W luz fria | Coincidencia | 500 | 500 | - | 0.95 | Lampara tubular LED T8 es equivalente a tubo LED T8 con identicas especificaciones.. mismo producto y misma cantidad |
-| #37 Panel LED 60x60 40W | L37 Placa luminosa LED 60x60 40 W | Coincidencia | 150 | 150 | - | 0.95 | Placa luminosa LED 60x60 equivale a panel LED 60x60 de 40W.. mismo producto y misma cantidad |
-| #40 Reflector LED exterior 100W IP65 | L40 Proyector LED uso externo 100 W IP65 | Coincidencia | 80 | 80 | - | 0.95 | Proyector LED de uso externo equivale a reflector LED exterior de 100W IP65.. mismo producto y misma cantidad |
-| #41 Sensor movimiento pared | L41 Detector de presencia pared | Coincidencia | 70 | 70 | - | 0.95 | Detector de presencia de pared equivale a sensor de movimiento de pared.. mismo producto y misma cantidad |
-| #42 Fotocelula exterior | L42 Celula fotoelectrica uso externo | Coincidencia | 50 | 50 | - | 0.95 | Célula fotoeléctrica para uso externo es equivalente a fotocélula exterior.. mismo producto y misma cantidad |
-| #43 Porta lampara E27 | L43 Portalamp E27 | Coincidencia | 100 | 100 | - | 0.95 | Portalamp E27 es una variación descriptiva directa de porta lámpara E27.. mismo producto y misma cantidad |
-| #47 Cinta LED 12V 5m | L47 Tira LED 12 V 5 m | Coincidencia | 40 | 40 | - | 0.95 | Tira LED 12V 5m es exactamente equivalente a cinta LED 12V 5m.. mismo producto y misma cantidad |
-| #48 Fuente switching 12V 5A | L48 Fuente conmutada 12 V 5 A | Coincidencia | 30 | 30 | - | 0.95 | Fuente conmutada es la traducción técnica de fuente switching, con misma especificación 12V 5A.. mismo producto y misma cantidad |
-| #49 Tubo corrugado liviano 3/4 | L49 Canio flexible corrugado liviano 3/4 | Coincidencia | 500 | 500 | - | 0.95 | Caño flexible corrugado liviano de 3/4 equivale al tubo corrugado liviano de 3/4.. mismo producto y misma cantidad |
-| #50 Tubo corrugado pesado 1 pulgada | L50 Canio flexible corrugado pesado 1 pulgada | Coincidencia | 300 | 300 | - | 0.95 | Caño flexible corrugado pesado de 1 pulgada equivale al tubo corrugado pesado de 1 pulgada.. mismo producto y misma cantidad |
-| #51 Conector corrugado 3/4 | L51 Acople para corrugado 3/4 | Coincidencia | 200 | 200 | - | 0.95 | Equivalencia directa entre acople y conector corrugado de 3/4 pulgadas.. mismo producto y misma cantidad |
-| #54 Interruptor simple embutir | L54 Tecla simple embutir | Coincidencia | 180 | 180 | - | 0.95 | Tecla e interruptor son sinonimos para el mismo producto de embutir simple.. mismo producto y misma cantidad |
-| #61 Tee PVC 1/2 | L61 T PVC 1/2 | Coincidencia | 200 | 200 | - | 0.95 | Coincidencia exacta de producto (Tee de PVC) y medida (1/2 pulgada).. mismo producto y misma cantidad |
-| #62 Tee PVC 3/4 | L62 T PVC 3/4 | Coincidencia | 150 | 150 | - | 0.95 | Coincidencia exacta de producto (Tee de PVC) y medida (3/4 pulgada).. mismo producto y misma cantidad |
-| #67 Flexible sanitario 40cm | L67 Conexion flexible sanitaria 40 cm | Coincidencia | 180 | 180 | - | 0.95 | Conexión flexible sanitaria equivale a flexible sanitario de 40 cm.. mismo producto y misma cantidad |
-| #68 Flexible sanitario 60cm | L68 Conexion flexible sanitaria 60 cm | Coincidencia | 120 | 120 | - | 0.95 | Conexión flexible sanitaria equivale a flexible sanitario de 60 cm.. mismo producto y misma cantidad |
-| #69 Canilla lavatorio cierre ceramico | L69 Griferia para lavatorio cierre ceramico | Coincidencia | 60 | 60 | - | 0.95 | Grifería para lavatorio equivale a canilla de lavatorio con cierre cerámico.. mismo producto y misma cantidad |
-| #70 Canilla servicio bronce 1/2 | L70 Grifo de servicio bronce 1/2 | Coincidencia | 80 | 80 | - | 0.95 | Grifo de servicio equivale a canilla de servicio en bronce de 1/2 pulgada.. mismo producto y misma cantidad |
-| #72 Flotante deposito inodoro | L72 Valvula flotante deposito inodoro | Coincidencia | 70 | 70 | - | 0.95 | Valvula flotante de deposito de inodoro es el mismo producto que flotante de deposito de inodoro.. mismo producto y misma cantidad |
-| #73 Kit reparacion mochila inodoro | L73 Conjunto reparacion mochila inodoro | Coincidencia | 80 | 80 | - | 0.95 | Conjunto de reparacion para mochila de inodoro es sinonimo de kit de reparacion para mochila de inodoro.. mismo producto y misma cantidad |
-| #75 Cinta teflon | L75 Rollo PTFE | Coincidencia | 300 | 300 | - | 0.95 | PTFE es el material conocido comercialmente como teflon; rollo PTFE corresponde a cinta teflon.. mismo producto y misma cantidad |
-| #81 Tornillo autoperforante 8x1 | L81 Fijacion autoperforante 8x1 | Coincidencia | 5.000 | 5.000 | - | 0.95 | Fijacion autoperforante 8x1 equivale a tornillo autoperforante 8x1.. mismo producto y misma cantidad |
-| #82 Tornillo autoperforante 8x1.5 | L82 Fijacion autoperforante 8x1.5 | Coincidencia | 5.000 | 5.000 | - | 0.95 | Fijacion autoperforante 8x1.5 equivale a tornillo autoperforante 8x1.5.. mismo producto y misma cantidad |
-| #83 Tornillo madera 6x1 | L83 Fijacion para madera 6x1 | Coincidencia | 4.000 | 4.000 | - | 0.95 | Fijacion para madera 6x1 equivale a tornillo madera 6x1.. mismo producto y misma cantidad |
-| #84 Tornillo madera 8x2 | L84 Fijacion para madera 8x2 | Coincidencia | 4.000 | 4.000 | - | 0.95 | Fijacion para madera 8x2 equivale a tornillo madera 8x2.. mismo producto y misma cantidad |
-| #92 Remache pop 4mm | L92 Remache aluminio pop 4 mm | Coincidencia | 4.000 | 4.000 | - | 0.95 | Corresponde exactamente al mismo producto remache pop de 4mm con especificacion de material aluminio.. mismo producto y misma cantidad |
-| #96 Broca HSS 4mm | L96 Mecha HSS 4 mm | Coincidencia | 200 | 200 | - | 0.95 | Mecha y broca son equivalentes, coincidiendo la especificacion HSS y diametro 4mm.. mismo producto y misma cantidad |
-| #97 Broca HSS 6mm | L97 Mecha HSS 6 mm | Coincidencia | 200 | 200 | - | 0.95 | Mecha y broca son equivalentes, coincidiendo el tipo HSS y el diametro de 6mm.. mismo producto y misma cantidad |
-| #98 Broca HSS 8mm | L98 Mecha HSS 8 mm | Coincidencia | 120 | 120 | - | 0.95 | Mecha y broca son sinonimos, coincidiendo tipo HSS y diametro de 8mm.. mismo producto y misma cantidad |
-| #108 Bisagra comun 2 pulgadas | L108 Bisagra standard 2 in | Coincidencia | 300 | 300 | - | 0.95 | Bisagra standard de 2 pulgadas equivale a la bisagra comun de 2 pulgadas requerida.. mismo producto y misma cantidad |
-| #109 Bisagra comun 3 pulgadas | L109 Bisagra standard 3 in | Coincidencia | 250 | 250 | - | 0.95 | Bisagra standard de 3 pulgadas equivale a la bisagra comun de 3 pulgadas requerida.. mismo producto y misma cantidad |
-| #111 Candado 50mm | L111 Cierre candado 50 mm | Coincidencia | 80 | 80 | - | 0.95 | Cierre candado 50 mm es equivalente a Candado 50mm.. mismo producto y misma cantidad |
-| #112 Cierre pasador zincado | L112 Pasador zincado zincado | Coincidencia | 150 | 150 | - | 0.95 | Pasador zincado coincide con Cierre pasador zincado.. mismo producto y misma cantidad |
-| #113 Rueda giratoria 50mm | L113 Rueda pivotante 50 mm | Coincidencia | 120 | 120 | - | 0.95 | Rueda pivotante es equivalente a Rueda giratoria de 50mm.. mismo producto y misma cantidad |
-| #116 Pintura latex interior blanca 20L | L116 Latex acrilico uso interno blanca 20 L | Coincidencia | 80 | 80 | - | 0.95 | Latex acrilico uso interno blanca 20 L es equivalente a Pintura latex interior blanca 20L.. mismo producto y misma cantidad |
-| #118 Esmalte sintetico blanco 4L | L118 Sintetico brillante blanco 4 L | Coincidencia | 80 | 80 | - | 0.95 | Sintetico brillante blanco 4 L es equivalente a Esmalte sintetico blanco 4L.. mismo producto y misma cantidad |
-| #119 Esmalte sintetico negro 4L | L119 Sintetico brillante negro 4 L | Coincidencia | 50 | 50 | - | 0.95 | Sintetico brillante negro 4 L es equivalente a Esmalte sintetico negro 4L.. mismo producto y misma cantidad |
-| #120 Esmalte sintetico amarillo seguridad 4L | L120 Sintetico brillante amarillo seguridad 4 L | Coincidencia | 40 | 40 | - | 0.95 | Sintetico brillante amarillo seguridad 4 L es equivalente a Esmalte sintetico amarillo seguridad 4L.. mismo producto y misma cantidad |
-| #122 Pintura demarcacion amarilla 10L | L122 Revestimiento para demarcar amarilla 10 L | Coincidencia | 40 | 40 | - | 0.95 | Coincide en pintura para demarcacion, color amarillo y presentacion de 10L.. mismo producto y misma cantidad |
-| #123 Antioxido convertidor gris 4L | L123 Convertidor de oxido gris 4 L | Coincidencia | 60 | 60 | - | 0.95 | Coincide en convertidor antioxido, color gris y volumen de 4L.. mismo producto y misma cantidad |
-| #126 Sellador siliconado transparente 280ml | L126 Silicona selladora cristal 280 ml | Coincidencia | 200 | 200 | - | 0.95 | Coincide en sellador siliconado transparente/cristal y volumen de 280ml.. mismo producto y misma cantidad |
-| #127 Sellador siliconado blanco 280ml | L127 Silicona selladora blanco 280 ml | Coincidencia | 200 | 200 | - | 0.95 | Coincide en sellador de silicona blanco y contenido de 280ml.. mismo producto y misma cantidad |
-| #128 Adhesivo montaje 300ml | L128 Pegamento montaje 300 ml | Coincidencia | 120 | 120 | - | 0.95 | Coincide en pegamento/adhesivo de montaje de 300ml.. mismo producto y misma cantidad |
-| #129 Pegamento contacto 1L | L129 Adhesivo contacto 1 L | Coincidencia | 70 | 70 | - | 0.95 | Coincide en adhesivo/pegamento de contacto y volumen de 1L.. mismo producto y misma cantidad |
-| #134 Pincel 2 pulgadas | L134 Brocha 2 in | Coincidencia | 150 | 150 | - | 0.95 | Brocha equivale a pincel y la medida 2 in corresponde a 2 pulgadas.. mismo producto y misma cantidad |
-| #135 Pincel 3 pulgadas | L135 Brocha 3 in | Coincidencia | 150 | 150 | - | 0.95 | Brocha equivale a pincel y la medida 3 in corresponde a 3 pulgadas.. mismo producto y misma cantidad |
-| #138 Cinta enmascarar 24mm | L138 Cinta de pintor 24 mm | Coincidencia | 500 | 500 | - | 0.95 | Cinta de pintor es equivalente a cinta de enmascarar de 24 mm.. mismo producto y misma cantidad |
-| #139 Cinta enmascarar 48mm | L139 Cinta de pintor 48 mm | Coincidencia | 400 | 400 | - | 0.95 | Cinta de pintor es equivalente a cinta de enmascarar de 48 mm.. mismo producto y misma cantidad |
-| #141 Detergente concentrado 5L | L141 Limpiador detergente concentrado 5 L | Coincidencia | 120 | 120 | - | 0.95 | Coincide en producto detergente concentrado y presentacion de 5L.. mismo producto y misma cantidad |
-| #144 Limpiavidrios 5L | L144 Limpia cristales 5 L | Coincidencia | 80 | 80 | - | 0.95 | Limpia cristales es sinonimo de limpiavidrios y coincide en 5L.. mismo producto y misma cantidad |
-| #146 Jabon liquido manos 5L | L146 Jabon para manos 5 L | Coincidencia | 150 | 150 | - | 0.95 | Jabon para manos equivale a jabon liquido para manos en presentacion de 5L.. mismo producto y misma cantidad |
-| #147 Alcohol en gel 5L | L147 Gel alcohol 5 L | Coincidencia | 120 | 120 | - | 0.95 | Gel alcohol equivale a alcohol en gel de 5L.. mismo producto y misma cantidad |
-| #151 Bolsa residuos consorcio 80x110 | L151 Bolsa basura consorcio 80x110 | Coincidencia | 800 | 800 | - | 0.95 | Es el mismo producto con variacion de vocabulario (basura por residuos) y coincidencia exacta en medidas de 80x110.. mismo producto y misma cantidad |
-| #153 Repuesto mopa microfibra | L153 Recambio mopa microfibra | Coincidencia | 200 | 200 | - | 0.95 | Recambio y repuesto de mopa microfibra son sinonimos directos del mismo producto.. mismo producto y misma cantidad |
-| #189 Cinta peligro amarillo negro | L162 Cinta advertencia amarillo negro | Coincidencia | 300 | 300 | - | 0.95 | Cinta de advertencia amarillo negro equivale a cinta de peligro amarillo negro.. mismo producto y misma cantidad |
-| #206 Cinta metrica 5m | L169 Flexometro 5 m | Coincidencia | 80 | 80 | - | 0.95 | Flexometro de 5 m equivale a cinta metrica de 5 m.. mismo producto y misma cantidad |
-| #210 Amoladora angular 115mm | L171 Esmeril angular 115 mm | Coincidencia | 12 | 12 | - | 0.95 | Esmeril angular y amoladora angular son terminos equivalentes para la misma herramienta de 115mm.. mismo producto y misma cantidad |
-| #53 Cable taller 3x2.5mm2 | L53 Cable multipolar uso taller 3x2.5 mm2 | Coincidencia | 300 | 300 | - | 0.98 | Coincide exactamente en tipo de cable taller y seccion 3x2.5mm2.. mismo producto y misma cantidad |
-| #89 Tuerca hexagonal 1/4 | L89 Tuerca HEX 1/4 | Coincidencia | 5.000 | 5.000 | - | 0.98 | Tuerca HEX 1/4 equivale a tuerca hexagonal 1/4.. mismo producto y misma cantidad |
-| #101 Disco corte metal 115mm | L101 Disco de corte metal 115 mm | Coincidencia | 400 | 400 | - | 0.98 | Coincide exactamente el tipo de disco para corte de metal y la medida de 115mm.. mismo producto y misma cantidad |
-| #102 Disco desbaste metal 115mm | L102 Disco para desbastar metal 115 mm | Coincidencia | 200 | 200 | - | 0.98 | Coincide el uso para desbaste de metal y la medida de 115mm.. mismo producto y misma cantidad |
-| #105 Lija al agua grano 120 | L105 Pliego lija agua grano 120 | Coincidencia | 500 | 500 | - | 0.98 | Coincide el producto lija al agua y su grano 120.. mismo producto y misma cantidad |
-| #106 Lija al agua grano 220 | L106 Pliego lija agua grano 220 | Coincidencia | 500 | 500 | - | 0.98 | Coincide el producto lija al agua y su grano 220.. mismo producto y misma cantidad |
-| #107 Lija madera grano 80 | L107 Pliego lija madera grano 80 | Coincidencia | 300 | 300 | - | 0.98 | Coincide el producto lija para madera y su grano 80.. mismo producto y misma cantidad |
-| #115 Escuadra metalica 100x100 | L115 Angulo escuadra metalico 100x100 | Coincidencia | 200 | 200 | - | 0.98 | Angulo escuadra metalico 100x100 coincide con Escuadra metalica 100x100.. mismo producto y misma cantidad |
-| #131 Desengrasante industrial 5L | L131 Desengrase industrial 5 L | Coincidencia | 100 | 100 | - | 0.98 | Coincide exactamente en producto (desengrasante industrial) y presentacion (5 L).. mismo producto y misma cantidad |
-| #136 Rodillo lana 22cm | L136 Rodillo pelo lana 22 cm | Coincidencia | 120 | 120 | - | 0.98 | Coincide en material (rodillo de lana) y medida de 22 cm.. mismo producto y misma cantidad |
-| #145 Desengrasante cocina 5L | L145 Desengrase cocina 5 L | Coincidencia | 80 | 80 | - | 0.98 | Coincide en tipo de producto desengrasante, aplicacion en cocina y volumen de 5L.. mismo producto y misma cantidad |
-| #149 Toalla papel interfoliada | L149 Papel toalla interfoliada | Coincidencia | 300 | 300 | - | 0.98 | Papel toalla interfoliada equivale a toalla de papel interfoliada.. mismo producto y misma cantidad |
-| #150 Bolsa residuos negra 60x90 | L150 Bolsa basura negra 60x90 | Coincidencia | 1.000 | 1.000 | - | 0.98 | Bolsa de basura equivale a bolsa de residuos, manteniendo color negro y medida 60x90.. mismo producto y misma cantidad |
-| #191 Destornillador plano 4mm | L164 Desarmador plano 4 mm | Coincidencia | 80 | 80 | - | 0.98 | Desarmador plano de 4 mm equivale a destornillador plano de 4 mm.. mismo producto y misma cantidad |
-| #192 Destornillador plano 6mm | L165 Desarmador plano 6 mm | Coincidencia | 80 | 80 | - | 0.98 | Desarmador plano de 6 mm equivale a destornillador plano de 6 mm.. mismo producto y misma cantidad |
-| #193 Destornillador Phillips PH1 | L166 Desarmador Phillips PH1 | Coincidencia | 80 | 80 | - | 0.98 | Desarmador Phillips PH1 equivale a destornillador Phillips PH1.. mismo producto y misma cantidad |
-| #194 Destornillador Phillips PH2 | L167 Desarmador Phillips PH2 | Coincidencia | 80 | 80 | - | 0.98 | Desarmador Phillips PH2 equivale a destornillador Phillips PH2.. mismo producto y misma cantidad |
-| #103 Disco corte inoxidable 115mm | L103 Disco de corte inoxidable 115 mm | Coincidencia | 300 | 300 | - | 0.99 | Coincide exactamente en material inoxidable, corte y medida de 115mm.. mismo producto y misma cantidad |
+| #35 Multimetro digital basico | L35 Tester digital basico | Coincidencia | 12 | 12 | - | 0.95 | Tester digital es sinonimo de multimetro digital basico.. mismo producto y misma cantidad |
+| #37 Panel LED 60x60 40W | L37 Placa luminosa LED 60x60 40 W | Coincidencia | 150 | 150 | - | 0.95 | Placa luminosa LED equivale a panel LED 60x60 de 40W.. mismo producto y misma cantidad |
+| #40 Reflector LED exterior 100W IP65 | L40 Proyector LED uso externo 100 W IP65 | Coincidencia | 80 | 80 | - | 0.95 | Proyector LED uso externo equivale a reflector LED exterior 100W IP65.. mismo producto y misma cantidad |
+| #41 Sensor movimiento pared | L41 Detector de presencia pared | Coincidencia | 70 | 70 | - | 0.95 | Detector de presencia para pared es sinónimo de sensor de movimiento de pared.. mismo producto y misma cantidad |
+| #42 Fotocelula exterior | L42 Celula fotoelectrica uso externo | Coincidencia | 50 | 50 | - | 0.95 | Célula fotoeléctrica de uso externo equivale a fotocélula exterior.. mismo producto y misma cantidad |
+| #47 Cinta LED 12V 5m | L47 Tira LED 12 V 5 m | Coincidencia | 40 | 40 | - | 0.95 | Tira LED de 12V 5m y cinta LED de 12V 5m son exactamente el mismo producto.. mismo producto y misma cantidad |
+| #49 Tubo corrugado liviano 3/4 | L49 Canio flexible corrugado liviano 3/4 | Coincidencia | 500 | 500 | - | 0.95 | Caño flexible corrugado liviano de 3/4 equivale a tubo corrugado liviano de 3/4.. mismo producto y misma cantidad |
+| #50 Tubo corrugado pesado 1 pulgada | L50 Canio flexible corrugado pesado 1 pulgada | Coincidencia | 300 | 300 | - | 0.95 | Caño flexible corrugado pesado de 1 pulgada equivale a tubo corrugado pesado de 1 pulgada.. mismo producto y misma cantidad |
+| #51 Conector corrugado 3/4 | L51 Acople para corrugado 3/4 | Coincidencia | 200 | 200 | - | 0.95 | Acople para corrugado de 3/4 equivale a conector corrugado de 3/4.. mismo producto y misma cantidad |
+| #54 Interruptor simple embutir | L54 Tecla simple embutir | Coincidencia | 180 | 180 | - | 0.95 | Tecla simple embutir es la denominacion comercial equivalente a interruptor simple embutir.. mismo producto y misma cantidad |
+| #61 Tee PVC 1/2 | L61 T PVC 1/2 | Coincidencia | 200 | 200 | - | 0.95 | Tee y T PVC de 1/2 pulgada son la misma pieza.. mismo producto y misma cantidad |
+| #62 Tee PVC 3/4 | L62 T PVC 3/4 | Coincidencia | 150 | 150 | - | 0.95 | Tee y T PVC de 3/4 pulgada son la misma pieza.. mismo producto y misma cantidad |
+| #67 Flexible sanitario 40cm | L67 Conexion flexible sanitaria 40 cm | Coincidencia | 180 | 180 | - | 0.95 | Conexion flexible sanitaria de 40 cm coincide en tipo y medida.. mismo producto y misma cantidad |
+| #68 Flexible sanitario 60cm | L68 Conexion flexible sanitaria 60 cm | Coincidencia | 120 | 120 | - | 0.95 | Conexion flexible sanitaria de 60 cm coincide en tipo y medida.. mismo producto y misma cantidad |
+| #70 Canilla servicio bronce 1/2 | L70 Grifo de servicio bronce 1/2 | Coincidencia | 80 | 80 | - | 0.95 | Grifo de servicio y canilla de servicio de bronce 1/2 son el mismo producto.. mismo producto y misma cantidad |
+| #71 Sifon plastico lavatorio | L71 Desague sifonado polipropileno lavatorio | Coincidencia | 90 | 90 | - | 0.95 | Desague sifonado de lavatorio equivale a sifon plastico para lavatorio.. mismo producto y misma cantidad |
+| #72 Flotante deposito inodoro | L72 Valvula flotante deposito inodoro | Coincidencia | 70 | 70 | - | 0.95 | Valvula flotante de deposito de inodoro es equivalente a flotante deposito inodoro.. mismo producto y misma cantidad |
+| #81 Tornillo autoperforante 8x1 | L81 Fijacion autoperforante 8x1 | Coincidencia | 5.000 | 5.000 | - | 0.95 | Fijacion autoperforante 8x1 es equivalente a tornillo autoperforante 8x1.. mismo producto y misma cantidad |
+| #82 Tornillo autoperforante 8x1.5 | L82 Fijacion autoperforante 8x1.5 | Coincidencia | 5.000 | 5.000 | - | 0.95 | Fijacion autoperforante 8x1.5 es equivalente a tornillo autoperforante 8x1.5.. mismo producto y misma cantidad |
+| #83 Tornillo madera 6x1 | L83 Fijacion para madera 6x1 | Coincidencia | 4.000 | 4.000 | - | 0.95 | Fijacion para madera 6x1 es equivalente a tornillo madera 6x1.. mismo producto y misma cantidad |
+| #84 Tornillo madera 8x2 | L84 Fijacion para madera 8x2 | Coincidencia | 4.000 | 4.000 | - | 0.95 | Fijacion para madera 8x2 es equivalente a tornillo madera 8x2.. mismo producto y misma cantidad |
+| #85 Tarugo nylon 6mm | L85 Anclaje nylon 6 mm | Coincidencia | 6.000 | 6.000 | - | 0.95 | Anclaje nylon 6mm es equivalente a tarugo nylon 6mm.. mismo producto y misma cantidad |
+| #86 Tarugo nylon 8mm | L86 Anclaje nylon 8 mm | Coincidencia | 6.000 | 6.000 | - | 0.95 | Anclaje nylon 8mm es equivalente a tarugo nylon 8mm.. mismo producto y misma cantidad |
+| #87 Tarugo nylon 10mm | L87 Anclaje nylon 10 mm | Coincidencia | 3.000 | 3.000 | - | 0.95 | Anclaje nylon 10mm es equivalente a tarugo nylon 10mm.. mismo producto y misma cantidad |
+| #89 Tuerca hexagonal 1/4 | L89 Tuerca HEX 1/4 | Coincidencia | 5.000 | 5.000 | - | 0.95 | Tuerca HEX 1/4 es equivalente a tuerca hexagonal 1/4.. mismo producto y misma cantidad |
+| #92 Remache pop 4mm | L92 Remache aluminio pop 4 mm | Coincidencia | 4.000 | 4.000 | - | 0.95 | Coincide plenamente en tipo de producto (remache pop) y medida (4mm).. mismo producto y misma cantidad |
+| #96 Broca HSS 4mm | L96 Mecha HSS 4 mm | Coincidencia | 200 | 200 | - | 0.95 | Mecha y broca son sinónimos; coinciden en tipo HSS y diámetro 4mm.. mismo producto y misma cantidad |
+| #97 Broca HSS 6mm | L97 Mecha HSS 6 mm | Coincidencia | 200 | 200 | - | 0.95 | Mecha y broca son sinónimos; coinciden en tipo HSS y diámetro 6mm.. mismo producto y misma cantidad |
+| #98 Broca HSS 8mm | L98 Mecha HSS 8 mm | Coincidencia | 120 | 120 | - | 0.95 | Mecha y broca son sinónimos; coinciden en tipo HSS y diámetro 8mm.. mismo producto y misma cantidad |
+| #108 Bisagra comun 2 pulgadas | L108 Bisagra standard 2 in | Coincidencia | 300 | 300 | - | 0.95 | Bisagra standard equivale a bisagra común y 2 in equivale a 2 pulgadas.. mismo producto y misma cantidad |
+| #109 Bisagra comun 3 pulgadas | L109 Bisagra standard 3 in | Coincidencia | 250 | 250 | - | 0.95 | Bisagra standard equivale a bisagra común y 3 in equivale a 3 pulgadas.. mismo producto y misma cantidad |
+| #111 Candado 50mm | L111 Cierre candado 50 mm | Coincidencia | 80 | 80 | - | 0.95 | El producto ofertado 'Cierre candado 50 mm' equivale al candado de 50mm solicitado.. mismo producto y misma cantidad |
+| #112 Cierre pasador zincado | L112 Pasador zincado zincado | Coincidencia | 150 | 150 | - | 0.95 | Coincide plenamente con el cierre pasador zincado requerido.. mismo producto y misma cantidad |
+| #113 Rueda giratoria 50mm | L113 Rueda pivotante 50 mm | Coincidencia | 120 | 120 | - | 0.95 | 'Rueda pivotante' es la denominacion comercial equivalente a rueda giratoria de 50mm.. mismo producto y misma cantidad |
+| #116 Pintura latex interior blanca 20L | L116 Latex acrilico uso interno blanca 20 L | Coincidencia | 80 | 80 | - | 0.95 | Latex acrilico uso interno blanco de 20L coincide con la pintura latex interior blanca 20L.. mismo producto y misma cantidad |
+| #118 Esmalte sintetico blanco 4L | L118 Sintetico brillante blanco 4 L | Coincidencia | 80 | 80 | - | 0.95 | Sintetico brillante blanco de 4L equivale a esmalte sintetico blanco 4L.. mismo producto y misma cantidad |
+| #119 Esmalte sintetico negro 4L | L119 Sintetico brillante negro 4 L | Coincidencia | 50 | 50 | - | 0.95 | Sintetico brillante negro de 4L equivale a esmalte sintetico negro 4L.. mismo producto y misma cantidad |
+| #120 Esmalte sintetico amarillo seguridad 4L | L120 Sintetico brillante amarillo seguridad 4 L | Coincidencia | 40 | 40 | - | 0.95 | Sintetico brillante amarillo seguridad de 4L equivale a esmalte sintetico amarillo seguridad 4L.. mismo producto y misma cantidad |
+| #122 Pintura demarcacion amarilla 10L | L122 Revestimiento para demarcar amarilla 10 L | Coincidencia | 40 | 40 | - | 0.95 | Coincide el producto de demarcacion en color amarillo y volumen de 10L.. mismo producto y misma cantidad |
+| #123 Antioxido convertidor gris 4L | L123 Convertidor de oxido gris 4 L | Coincidencia | 60 | 60 | - | 0.95 | Coincide el producto antioxido/convertidor, color gris y tamano de 4L.. mismo producto y misma cantidad |
+| #126 Sellador siliconado transparente 280ml | L126 Silicona selladora cristal 280 ml | Coincidencia | 200 | 200 | - | 0.95 | Cristal equivale a transparente, coincidiendo en sellador siliconado y volumen de 280ml.. mismo producto y misma cantidad |
+| #127 Sellador siliconado blanco 280ml | L127 Silicona selladora blanco 280 ml | Coincidencia | 200 | 200 | - | 0.95 | Coinciden en sellador siliconado, color blanco y medida de 280ml.. mismo producto y misma cantidad |
+| #134 Pincel 2 pulgadas | L134 Brocha 2 in | Coincidencia | 150 | 150 | - | 0.95 | Brocha de 2 pulgadas es equivalente a pincel de 2 pulgadas.. mismo producto y misma cantidad |
+| #135 Pincel 3 pulgadas | L135 Brocha 3 in | Coincidencia | 150 | 150 | - | 0.95 | Brocha de 3 pulgadas es equivalente a pincel de 3 pulgadas.. mismo producto y misma cantidad |
+| #138 Cinta enmascarar 24mm | L138 Cinta de pintor 24 mm | Coincidencia | 500 | 500 | - | 0.95 | Cinta de pintor es sinónimo de cinta de enmascarar, de 24 mm.. mismo producto y misma cantidad |
+| #139 Cinta enmascarar 48mm | L139 Cinta de pintor 48 mm | Coincidencia | 400 | 400 | - | 0.95 | Cinta de pintor es sinónimo de cinta de enmascarar, de 48 mm.. mismo producto y misma cantidad |
+| #141 Detergente concentrado 5L | L141 Limpiador detergente concentrado 5 L | Coincidencia | 120 | 120 | - | 0.95 | Coincide detergente concentrado en presentacion de 5L.. mismo producto y misma cantidad |
+| #144 Limpiavidrios 5L | L144 Limpia cristales 5 L | Coincidencia | 80 | 80 | - | 0.95 | Limpia cristales es equivalente a limpiavidrios 5L.. mismo producto y misma cantidad |
+| #146 Jabon liquido manos 5L | L146 Jabon para manos 5 L | Coincidencia | 150 | 150 | - | 0.95 | Jabon para manos equivale a jabon liquido para manos 5L.. mismo producto y misma cantidad |
+| #147 Alcohol en gel 5L | L147 Gel alcohol 5 L | Coincidencia | 120 | 120 | - | 0.95 | Gel alcohol equivale a alcohol en gel 5L.. mismo producto y misma cantidad |
+| #155 Escoba interior | L155 Escoba uso interno | Coincidencia | 180 | 180 | - | 0.95 | Escoba de uso interno equivale a escoba interior.. mismo producto y misma cantidad |
+| #172 Anteojo seguridad gris | L159 Gafa proteccion gris | Coincidencia | 200 | 200 | - | 0.95 | Gafa de protección gris equivale a anteojo de seguridad gris.. mismo producto y misma cantidad |
+| #175 Casco seguridad blanco | L160 Casco obra blanco | Coincidencia | 120 | 120 | - | 0.95 | Casco de obra blanco equivale a casco de seguridad blanco.. mismo producto y misma cantidad |
+| #189 Cinta peligro amarillo negro | L162 Cinta advertencia amarillo negro | Coincidencia | 300 | 300 | - | 0.95 | Cinta de advertencia equivale a cinta de peligro y coinciden los colores amarillo y negro.. mismo producto y misma cantidad |
+| #206 Cinta metrica 5m | L169 Flexometro 5 m | Coincidencia | 80 | 80 | - | 0.95 | Flexometro es sinonimo de cinta metrica y coincide la longitud de 5 m.. mismo producto y misma cantidad |
+| #210 Amoladora angular 115mm | L171 Esmeril angular 115 mm | Coincidencia | 12 | 12 | - | 0.95 | Esmeril angular y amoladora angular de 115mm corresponden exactamente al mismo producto.. mismo producto y misma cantidad |
+| #214 Escalera tijera aluminio 6 escalones | L172 Escalera plegable aluminio 6 escalones | Coincidencia | 12 | 12 | - | 0.95 | Escalera plegable de aluminio de 6 escalones es equivalente a la escalera tipo tijera solicitada.. mismo producto y misma cantidad |
+| #36 Tubo LED T8 18W luz fria | L36 Lampara tubular LED T8 18 W luz fria | Coincidencia | 500 | 500 | - | 0.98 | Lampara tubular LED T8 es equivalente a tubo LED T8 18W luz fria.. mismo producto y misma cantidad |
+| #43 Porta lampara E27 | L43 Portalamp E27 | Coincidencia | 100 | 100 | - | 0.98 | Portalamp E27 es la abreviatura de porta lámpara E27.. mismo producto y misma cantidad |
+| #48 Fuente switching 12V 5A | L48 Fuente conmutada 12 V 5 A | Coincidencia | 30 | 30 | - | 0.98 | Fuente conmutada es la denominación en español de fuente switching de 12V 5A.. mismo producto y misma cantidad |
+| #53 Cable taller 3x2.5mm2 | L53 Cable multipolar uso taller 3x2.5 mm2 | Coincidencia | 300 | 300 | - | 0.98 | Cable multipolar uso taller 3x2.5 mm2 coincide exactamente con cable taller 3x2.5mm2.. mismo producto y misma cantidad |
+| #73 Kit reparacion mochila inodoro | L73 Conjunto reparacion mochila inodoro | Coincidencia | 80 | 80 | - | 0.98 | Conjunto de reparacion de mochila de inodoro es lo mismo que kit reparacion mochila inodoro.. mismo producto y misma cantidad |
+| #101 Disco corte metal 115mm | L101 Disco de corte metal 115 mm | Coincidencia | 400 | 400 | - | 0.98 | Coincidencia exacta en tipo de disco (corte metal) y medida (115 mm).. mismo producto y misma cantidad |
+| #102 Disco desbaste metal 115mm | L102 Disco para desbastar metal 115 mm | Coincidencia | 200 | 200 | - | 0.98 | Es el mismo producto (disco de desbaste para metal de 115 mm) expresado con leve variación léxica.. mismo producto y misma cantidad |
+| #105 Lija al agua grano 120 | L105 Pliego lija agua grano 120 | Coincidencia | 500 | 500 | - | 0.98 | Coincide perfectamente en tipo (lija al agua) y granulometría (grano 120).. mismo producto y misma cantidad |
+| #106 Lija al agua grano 220 | L106 Pliego lija agua grano 220 | Coincidencia | 500 | 500 | - | 0.98 | Coincide perfectamente en tipo (lija al agua) y granulometría (grano 220).. mismo producto y misma cantidad |
+| #107 Lija madera grano 80 | L107 Pliego lija madera grano 80 | Coincidencia | 300 | 300 | - | 0.98 | Coincide perfectamente en tipo (lija para madera) y granulometría (grano 80).. mismo producto y misma cantidad |
+| #115 Escuadra metalica 100x100 | L115 Angulo escuadra metalico 100x100 | Coincidencia | 200 | 200 | - | 0.98 | Coincide en tipo de producto (escuadra metalica) y dimensiones (100x100).. mismo producto y misma cantidad |
+| #128 Adhesivo montaje 300ml | L128 Pegamento montaje 300 ml | Coincidencia | 120 | 120 | - | 0.98 | Pegamento de montaje equivale a adhesivo de montaje en formato 300ml.. mismo producto y misma cantidad |
+| #129 Pegamento contacto 1L | L129 Adhesivo contacto 1 L | Coincidencia | 70 | 70 | - | 0.98 | Adhesivo y pegamento de contacto son equivalentes en presentacion de 1L.. mismo producto y misma cantidad |
+| #131 Desengrasante industrial 5L | L131 Desengrase industrial 5 L | Coincidencia | 100 | 100 | - | 0.98 | Mismo producto: desengrasante industrial en presentación de 5L.. mismo producto y misma cantidad |
+| #136 Rodillo lana 22cm | L136 Rodillo pelo lana 22 cm | Coincidencia | 120 | 120 | - | 0.98 | Mismo producto y medida: rodillo de lana de 22 cm.. mismo producto y misma cantidad |
+| #145 Desengrasante cocina 5L | L145 Desengrase cocina 5 L | Coincidencia | 80 | 80 | - | 0.98 | Coincide desengrasante de cocina en presentacion de 5L.. mismo producto y misma cantidad |
+| #149 Toalla papel interfoliada | L149 Papel toalla interfoliada | Coincidencia | 300 | 300 | - | 0.98 | Papel toalla interfoliada equivale a toalla papel interfoliada.. mismo producto y misma cantidad |
+| #150 Bolsa residuos negra 60x90 | L150 Bolsa basura negra 60x90 | Coincidencia | 1.000 | 1.000 | - | 0.98 | Bolsa basura negra equivale a bolsa residuos negra con mismas medidas 60x90.. mismo producto y misma cantidad |
+| #151 Bolsa residuos consorcio 80x110 | L151 Bolsa basura consorcio 80x110 | Coincidencia | 800 | 800 | - | 0.98 | Bolsa de basura y residuos de consorcio 80x110 son equivalentes.. mismo producto y misma cantidad |
+| #153 Repuesto mopa microfibra | L153 Recambio mopa microfibra | Coincidencia | 200 | 200 | - | 0.98 | Recambio y repuesto de mopa de microfibra coinciden exactamente.. mismo producto y misma cantidad |
+| #191 Destornillador plano 4mm | L164 Desarmador plano 4 mm | Coincidencia | 80 | 80 | - | 0.98 | Desarmador es sinonimo de destornillador y coincide la medida de plano 4 mm.. mismo producto y misma cantidad |
+| #192 Destornillador plano 6mm | L165 Desarmador plano 6 mm | Coincidencia | 80 | 80 | - | 0.98 | Desarmador es sinonimo de destornillador y coincide la medida de plano 6 mm.. mismo producto y misma cantidad |
+| #193 Destornillador Phillips PH1 | L166 Desarmador Phillips PH1 | Coincidencia | 80 | 80 | - | 0.98 | Desarmador es sinonimo de destornillador y coincide el tipo Phillips PH1.. mismo producto y misma cantidad |
+| #194 Destornillador Phillips PH2 | L167 Desarmador Phillips PH2 | Coincidencia | 80 | 80 | - | 0.98 | Desarmador es sinonimo de destornillador y coincide el tipo Phillips PH2.. mismo producto y misma cantidad |
+| #103 Disco corte inoxidable 115mm | L103 Disco de corte inoxidable 115 mm | Coincidencia | 300 | 300 | - | 0.99 | Coincidencia exacta en tipo de producto (disco de corte para inoxidable) y medida (115 mm).. mismo producto y misma cantidad |
 
 ## Trazabilidad
 
@@ -552,8 +552,8 @@ Ordenada poniendo primero lo que requiere atencion.
 | Modelo | gemini-3.6-flash |
 | Llamadas al LLM | 5 |
 | Lotes | 5 |
-| Tokens entrada / salida | 7484 / 29851 |
-| Duracion | 81472 ms |
+| Tokens entrada / salida | 7484 / 32244 |
+| Duracion | 67190 ms |
 | SHA-256 del archivo | `a009565846fb3feb...` |
 
 Sin avisos de extraccion.
@@ -569,25 +569,17 @@ Sin avisos de extraccion.
 | Resueltas por similitud lexica | 0 |
 | Conflictos resueltos | 0 |
 | Llamadas al LLM | 18 en 18 lotes |
-| Tokens entrada / salida | 52730 / 34066 |
+| Tokens entrada / salida | 52730 / 32651 |
 
 ### Volumen
 
 Conciliar 177 lineas ofertadas contra 220 items solicitados por fuerza bruta serian **38.940 comparaciones**.
 
-Con el prefiltro vectorial fueron **1 query indexada** (HNSW + distancia coseno, dentro de Postgres) en 1047 ms, y el decisor evaluo 5 candidatos por linea en vez de 220.
+Con el prefiltro vectorial fueron **1 query indexada** (HNSW + distancia coseno, dentro de Postgres) en 1094 ms, y el decisor evaluo 5 candidatos por linea en vez de 220.
 
 ### Candidatos evaluados en las decisiones no triviales
 
 Cada linea con su top-5 y el score de similitud que devolvio pgvector.
-
-**L44** "Fuente para placa LED 40 W" -> Equivalente tecnico (vectorial + LLM, confianza 0.90)
-
-- `0.847` #44 Driver panel LED 40W **<- elegido**
-- `0.797` #220 Soldador electrico 40W
-- `0.768` #48 Fuente switching 12V 5A
-- `0.763` #37 Panel LED 60x60 40W
-- `0.761` #45 Aplique emergencia LED
 
 **L99** "Mecha widia 6 mm" -> Equivalente tecnico (vectorial + LLM, confianza 0.90)
 
@@ -597,13 +589,21 @@ Cada linea con su top-5 y el score de similitud que devolvio pgvector.
 - `0.706` #85 Tarugo nylon 6mm
 - `0.692` #83 Tornillo madera 6x1
 
-**L77** "Primer limpiador PVC 125 ml" -> Equivalente tecnico (vectorial + LLM, confianza 0.93)
+**L44** "Fuente para placa LED 40 W" -> Equivalente tecnico (vectorial + LLM, confianza 0.92)
 
-- `0.949` #77 Limpiador PVC 125ml **<- elegido**
-- `0.874` #76 Adhesivo PVC 125ml
-- `0.697` #59 Codo PVC 1/2
-- `0.696` #143 Limpiador desinfectante 5L
-- `0.681` #63 Union doble PVC 1/2
+- `0.847` #44 Driver panel LED 40W **<- elegido**
+- `0.797` #220 Soldador electrico 40W
+- `0.768` #48 Fuente switching 12V 5A
+- `0.763` #37 Panel LED 60x60 40W
+- `0.761` #45 Aplique emergencia LED
+
+**L110** "Cierre candado 40 mm" -> Equivalente tecnico (vectorial + LLM, confianza 0.92)
+
+- `0.940` #110 Candado 40mm **<- elegido**
+- `0.855` #111 Candado 50mm
+- `0.793` #112 Cierre pasador zincado
+- `0.734` #114 Rueda fija 50mm
+- `0.722` #220 Soldador electrico 40W
 
 **L11** "Conductor flexible 4 mm2 verde amarillo" -> Equivalente tecnico (vectorial + LLM, confianza 0.95)
 
@@ -645,6 +645,14 @@ Cada linea con su top-5 y el score de similitud que devolvio pgvector.
 - `0.772` #94 Abrazadera metalica 3/4
 - `0.762` #95 Abrazadera omega 3/4
 
+**L77** "Primer limpiador PVC 125 ml" -> Equivalente tecnico (vectorial + LLM, confianza 0.95)
+
+- `0.949` #77 Limpiador PVC 125ml **<- elegido**
+- `0.874` #76 Adhesivo PVC 125ml
+- `0.697` #59 Codo PVC 1/2
+- `0.696` #143 Limpiador desinfectante 5L
+- `0.681` #63 Union doble PVC 1/2
+
 **L88** "Arandela lisa 1/4" -> Equivalente tecnico (vectorial + LLM, confianza 0.95)
 
 - `0.949` #88 Arandela plana 1/4 **<- elegido**
@@ -652,14 +660,6 @@ Cada linea con su top-5 y el score de similitud que devolvio pgvector.
 - `0.754` #94 Abrazadera metalica 3/4
 - `0.743` #95 Abrazadera omega 3/4
 - `0.742` #90 Varilla roscada 1/4
-
-**L110** "Cierre candado 40 mm" -> Equivalente tecnico (vectorial + LLM, confianza 0.95)
-
-- `0.940` #110 Candado 40mm **<- elegido**
-- `0.855` #111 Candado 50mm
-- `0.793` #112 Cierre pasador zincado
-- `0.734` #114 Rueda fija 50mm
-- `0.722` #220 Soldador electrico 40W
 
 **L121** "Sintetico brillante rojo seguridad 4 L" -> Equivalente tecnico (vectorial + LLM, confianza 0.95)
 
@@ -677,14 +677,6 @@ Cada linea con su top-5 y el score de similitud que devolvio pgvector.
 - `0.666` #129 Pegamento contacto 1L
 - `0.665` #131 Desengrasante industrial 5L
 
-**L154** "Mango aluminio 1.4 m" -> Equivalente tecnico (vectorial + LLM, confianza 0.95)
-
-- `0.896` #154 Cabo aluminio 1.4m **<- elegido**
-- `0.769` #207 Nivel aluminio 60cm
-- `0.726` #214 Escalera tijera aluminio 6 escalones
-- `0.717` #215 Escalera extensible aluminio 24 escalones
-- `0.693` #199 Llave francesa 12 pulgadas
-
 **L161** "Casco obra amarillo" -> Equivalente tecnico (vectorial + LLM, confianza 0.95)
 
 - `0.886` #176 Casco seguridad amarillo **<- elegido**
@@ -693,6 +685,14 @@ Cada linea con su top-5 y el score de similitud que devolvio pgvector.
 - `0.706` #178 Respirador media cara
 - `0.704` #171 Anteojo seguridad transparente
 
+**L154** "Mango aluminio 1.4 m" -> Equivalente tecnico (vectorial + LLM, confianza 0.96)
+
+- `0.896` #154 Cabo aluminio 1.4m **<- elegido**
+- `0.769` #207 Nivel aluminio 60cm
+- `0.726` #214 Escalera tijera aluminio 6 escalones
+- `0.717` #215 Escalera extensible aluminio 24 escalones
+- `0.693` #199 Llave francesa 12 pulgadas
+
 ---
 
-Conciliacion `8e418ab7-0812-4fc3-9242-72d474f57e8a` generada el 26/8/2026, 10:25:42.
+Conciliacion `0d67b980-f3bd-4dc1-a39e-a6a2ffe822c8` generada el 26/8/2026, 04:04:16.
