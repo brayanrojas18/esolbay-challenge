@@ -1,0 +1,221 @@
+request_id,item_id,description,quantity,unit
+REQ-MOP-2026-001,1,Cable unipolar 1.5mm2 rojo,1000,metro
+REQ-MOP-2026-001,2,Cable unipolar 1.5mm2 azul,1000,metro
+REQ-MOP-2026-001,3,Cable unipolar 1.5mm2 verde amarillo,800,metro
+REQ-MOP-2026-001,4,Cable unipolar 1.5mm2 negro,800,metro
+REQ-MOP-2026-001,5,Cable unipolar 2.5mm2 rojo,1500,metro
+REQ-MOP-2026-001,6,Cable unipolar 2.5mm2 azul,1500,metro
+REQ-MOP-2026-001,7,Cable unipolar 2.5mm2 verde amarillo,1200,metro
+REQ-MOP-2026-001,8,Cable unipolar 2.5mm2 negro,1200,metro
+REQ-MOP-2026-001,9,Cable unipolar 4mm2 rojo,800,metro
+REQ-MOP-2026-001,10,Cable unipolar 4mm2 azul,800,metro
+REQ-MOP-2026-001,11,Cable unipolar 4mm2 verde amarillo,600,metro
+REQ-MOP-2026-001,12,Canaleta PVC 20x10 blanca,300,metro
+REQ-MOP-2026-001,13,Canaleta PVC 40x20 blanca,200,metro
+REQ-MOP-2026-001,14,Caja derivacion PVC 10x10,150,unidad
+REQ-MOP-2026-001,15,Caja estanca IP65,120,unidad
+REQ-MOP-2026-001,16,Llave termomagnetica bipolar 10A,40,unidad
+REQ-MOP-2026-001,17,Llave termomagnetica bipolar 16A,60,unidad
+REQ-MOP-2026-001,18,Llave termomagnetica bipolar 25A,60,unidad
+REQ-MOP-2026-001,19,Llave termomagnetica bipolar 32A,40,unidad
+REQ-MOP-2026-001,20,Disyuntor diferencial bipolar 25A 30mA,35,unidad
+REQ-MOP-2026-001,21,Disyuntor diferencial bipolar 40A 30mA,25,unidad
+REQ-MOP-2026-001,22,Tomacorriente doble 10A blanco,250,unidad
+REQ-MOP-2026-001,23,Tomacorriente industrial 16A,80,unidad
+REQ-MOP-2026-001,24,Ficha macho 10A,150,unidad
+REQ-MOP-2026-001,25,Ficha hembra 10A,150,unidad
+REQ-MOP-2026-001,26,Prolongador electrico 10m,30,unidad
+REQ-MOP-2026-001,27,Zapatilla electrica 6 tomas,60,unidad
+REQ-MOP-2026-001,28,Cinta aisladora negra,300,rollo
+REQ-MOP-2026-001,29,Cinta aisladora roja,80,rollo
+REQ-MOP-2026-001,30,Precinto plastico 200mm,200,bolsa
+REQ-MOP-2026-001,31,Precinto plastico 300mm,150,bolsa
+REQ-MOP-2026-001,32,Bornera 12 polos 10mm,100,unidad
+REQ-MOP-2026-001,33,Terminal ojal aislado rojo,1000,unidad
+REQ-MOP-2026-001,34,Terminal pala aislado azul,1000,unidad
+REQ-MOP-2026-001,35,Multimetro digital basico,12,unidad
+REQ-MOP-2026-001,36,Tubo LED T8 18W luz fria,500,unidad
+REQ-MOP-2026-001,37,Panel LED 60x60 40W,150,unidad
+REQ-MOP-2026-001,38,Lampara LED E27 12W,300,unidad
+REQ-MOP-2026-001,39,Lampara LED E27 18W,200,unidad
+REQ-MOP-2026-001,40,Reflector LED exterior 100W IP65,80,unidad
+REQ-MOP-2026-001,41,Sensor movimiento pared,70,unidad
+REQ-MOP-2026-001,42,Fotocelula exterior,50,unidad
+REQ-MOP-2026-001,43,Porta lampara E27,100,unidad
+REQ-MOP-2026-001,44,Driver panel LED 40W,80,unidad
+REQ-MOP-2026-001,45,Aplique emergencia LED,120,unidad
+REQ-MOP-2026-001,46,Cartel salida emergencia LED,60,unidad
+REQ-MOP-2026-001,47,Cinta LED 12V 5m,40,rollo
+REQ-MOP-2026-001,48,Fuente switching 12V 5A,30,unidad
+REQ-MOP-2026-001,49,Tubo corrugado liviano 3/4,500,metro
+REQ-MOP-2026-001,50,Tubo corrugado pesado 1 pulgada,300,metro
+REQ-MOP-2026-001,51,Conector corrugado 3/4,200,unidad
+REQ-MOP-2026-001,52,Conector corrugado 1 pulgada,150,unidad
+REQ-MOP-2026-001,53,Cable taller 3x2.5mm2,300,metro
+REQ-MOP-2026-001,54,Interruptor simple embutir,180,unidad
+REQ-MOP-2026-001,55,Interruptor doble embutir,120,unidad
+REQ-MOP-2026-001,56,Cano PVC agua 1/2,300,metro
+REQ-MOP-2026-001,57,Cano PVC agua 3/4,250,metro
+REQ-MOP-2026-001,58,Cano PVC agua 1 pulgada,150,metro
+REQ-MOP-2026-001,59,Codo PVC 1/2,300,unidad
+REQ-MOP-2026-001,60,Codo PVC 3/4,250,unidad
+REQ-MOP-2026-001,61,Tee PVC 1/2,200,unidad
+REQ-MOP-2026-001,62,Tee PVC 3/4,150,unidad
+REQ-MOP-2026-001,63,Union doble PVC 1/2,120,unidad
+REQ-MOP-2026-001,64,Union doble PVC 3/4,100,unidad
+REQ-MOP-2026-001,65,Valvula esferica 1/2,120,unidad
+REQ-MOP-2026-001,66,Valvula esferica 3/4,100,unidad
+REQ-MOP-2026-001,67,Flexible sanitario 40cm,180,unidad
+REQ-MOP-2026-001,68,Flexible sanitario 60cm,120,unidad
+REQ-MOP-2026-001,69,Canilla lavatorio cierre ceramico,60,unidad
+REQ-MOP-2026-001,70,Canilla servicio bronce 1/2,80,unidad
+REQ-MOP-2026-001,71,Sifon plastico lavatorio,90,unidad
+REQ-MOP-2026-001,72,Flotante deposito inodoro,70,unidad
+REQ-MOP-2026-001,73,Kit reparacion mochila inodoro,80,kit
+REQ-MOP-2026-001,74,Sellador roscas anaerobico,60,tubo
+REQ-MOP-2026-001,75,Cinta teflon,300,rollo
+REQ-MOP-2026-001,76,Adhesivo PVC 125ml,100,pomo
+REQ-MOP-2026-001,77,Limpiador PVC 125ml,80,pomo
+REQ-MOP-2026-001,78,Rejilla piso acero inoxidable,100,unidad
+REQ-MOP-2026-001,79,Tapa inspeccion PVC,60,unidad
+REQ-MOP-2026-001,80,Manguera reforzada 3/4,400,metro
+REQ-MOP-2026-001,81,Tornillo autoperforante 8x1,5000,unidad
+REQ-MOP-2026-001,82,Tornillo autoperforante 8x1.5,5000,unidad
+REQ-MOP-2026-001,83,Tornillo madera 6x1,4000,unidad
+REQ-MOP-2026-001,84,Tornillo madera 8x2,4000,unidad
+REQ-MOP-2026-001,85,Tarugo nylon 6mm,6000,unidad
+REQ-MOP-2026-001,86,Tarugo nylon 8mm,6000,unidad
+REQ-MOP-2026-001,87,Tarugo nylon 10mm,3000,unidad
+REQ-MOP-2026-001,88,Arandela plana 1/4,5000,unidad
+REQ-MOP-2026-001,89,Tuerca hexagonal 1/4,5000,unidad
+REQ-MOP-2026-001,90,Varilla roscada 1/4,300,unidad
+REQ-MOP-2026-001,91,Varilla roscada 3/8,200,unidad
+REQ-MOP-2026-001,92,Remache pop 4mm,4000,unidad
+REQ-MOP-2026-001,93,Abrazadera metalica 1/2,1000,unidad
+REQ-MOP-2026-001,94,Abrazadera metalica 3/4,1000,unidad
+REQ-MOP-2026-001,95,Abrazadera omega 3/4,800,unidad
+REQ-MOP-2026-001,96,Broca HSS 4mm,200,unidad
+REQ-MOP-2026-001,97,Broca HSS 6mm,200,unidad
+REQ-MOP-2026-001,98,Broca HSS 8mm,120,unidad
+REQ-MOP-2026-001,99,Broca pared 6mm,150,unidad
+REQ-MOP-2026-001,100,Broca pared 8mm,150,unidad
+REQ-MOP-2026-001,101,Disco corte metal 115mm,400,unidad
+REQ-MOP-2026-001,102,Disco desbaste metal 115mm,200,unidad
+REQ-MOP-2026-001,103,Disco corte inoxidable 115mm,300,unidad
+REQ-MOP-2026-001,104,Hoja sierra manual 24T,200,unidad
+REQ-MOP-2026-001,105,Lija al agua grano 120,500,hoja
+REQ-MOP-2026-001,106,Lija al agua grano 220,500,hoja
+REQ-MOP-2026-001,107,Lija madera grano 80,300,hoja
+REQ-MOP-2026-001,108,Bisagra comun 2 pulgadas,300,unidad
+REQ-MOP-2026-001,109,Bisagra comun 3 pulgadas,250,unidad
+REQ-MOP-2026-001,110,Candado 40mm,100,unidad
+REQ-MOP-2026-001,111,Candado 50mm,80,unidad
+REQ-MOP-2026-001,112,Cierre pasador zincado,150,unidad
+REQ-MOP-2026-001,113,Rueda giratoria 50mm,120,unidad
+REQ-MOP-2026-001,114,Rueda fija 50mm,120,unidad
+REQ-MOP-2026-001,115,Escuadra metalica 100x100,200,unidad
+REQ-MOP-2026-001,116,Pintura latex interior blanca 20L,80,lata
+REQ-MOP-2026-001,117,Pintura latex interior gris claro 20L,30,lata
+REQ-MOP-2026-001,118,Esmalte sintetico blanco 4L,80,lata
+REQ-MOP-2026-001,119,Esmalte sintetico negro 4L,50,lata
+REQ-MOP-2026-001,120,Esmalte sintetico amarillo seguridad 4L,40,lata
+REQ-MOP-2026-001,121,Esmalte sintetico rojo seguridad 4L,30,lata
+REQ-MOP-2026-001,122,Pintura demarcacion amarilla 10L,40,lata
+REQ-MOP-2026-001,123,Antioxido convertidor gris 4L,60,lata
+REQ-MOP-2026-001,124,Enduido interior 20kg,50,balde
+REQ-MOP-2026-001,125,Masilla plastica multiuso 1kg,80,unidad
+REQ-MOP-2026-001,126,Sellador siliconado transparente 280ml,200,cartucho
+REQ-MOP-2026-001,127,Sellador siliconado blanco 280ml,200,cartucho
+REQ-MOP-2026-001,128,Adhesivo montaje 300ml,120,cartucho
+REQ-MOP-2026-001,129,Pegamento contacto 1L,70,lata
+REQ-MOP-2026-001,130,Aerosol lubricante multiuso 400ml,200,unidad
+REQ-MOP-2026-001,131,Desengrasante industrial 5L,100,bidon
+REQ-MOP-2026-001,132,Alcohol isopropilico 1L,120,litro
+REQ-MOP-2026-001,133,Removedor pintura gel 1L,30,lata
+REQ-MOP-2026-001,134,Pincel 2 pulgadas,150,unidad
+REQ-MOP-2026-001,135,Pincel 3 pulgadas,150,unidad
+REQ-MOP-2026-001,136,Rodillo lana 22cm,120,unidad
+REQ-MOP-2026-001,137,Bandeja pintura plastica,60,unidad
+REQ-MOP-2026-001,138,Cinta enmascarar 24mm,500,rollo
+REQ-MOP-2026-001,139,Cinta enmascarar 48mm,400,rollo
+REQ-MOP-2026-001,140,Nylon cobertura 4x5m,100,unidad
+REQ-MOP-2026-001,141,Detergente concentrado 5L,120,bidon
+REQ-MOP-2026-001,142,Lavandina 5L,200,bidon
+REQ-MOP-2026-001,143,Limpiador desinfectante 5L,160,bidon
+REQ-MOP-2026-001,144,Limpiavidrios 5L,80,bidon
+REQ-MOP-2026-001,145,Desengrasante cocina 5L,80,bidon
+REQ-MOP-2026-001,146,Jabon liquido manos 5L,150,bidon
+REQ-MOP-2026-001,147,Alcohol en gel 5L,120,bidon
+REQ-MOP-2026-001,148,Papel higienico industrial 300m,600,rollo
+REQ-MOP-2026-001,149,Toalla papel interfoliada,300,caja
+REQ-MOP-2026-001,150,Bolsa residuos negra 60x90,1000,paquete
+REQ-MOP-2026-001,151,Bolsa residuos consorcio 80x110,800,paquete
+REQ-MOP-2026-001,152,Trapo piso algodon,500,unidad
+REQ-MOP-2026-001,153,Repuesto mopa microfibra,200,unidad
+REQ-MOP-2026-001,154,Cabo aluminio 1.4m,150,unidad
+REQ-MOP-2026-001,155,Escoba interior,180,unidad
+REQ-MOP-2026-001,156,Escoba exterior dura,120,unidad
+REQ-MOP-2026-001,157,Secador piso goma 50cm,120,unidad
+REQ-MOP-2026-001,158,Balde plastico 12L,100,unidad
+REQ-MOP-2026-001,159,Pulverizador manual 1L,120,unidad
+REQ-MOP-2026-001,160,Guante limpieza latex talle M,300,par
+REQ-MOP-2026-001,161,Guante limpieza latex talle L,300,par
+REQ-MOP-2026-001,162,Esponja abrasiva,1000,unidad
+REQ-MOP-2026-001,163,Fibra verde limpieza,1000,unidad
+REQ-MOP-2026-001,164,Cera piso alto transito 5L,80,bidon
+REQ-MOP-2026-001,165,Desodorante ambiente aerosol 360ml,300,unidad
+REQ-MOP-2026-001,166,Guante moteado talle M,600,par
+REQ-MOP-2026-001,167,Guante moteado talle L,600,par
+REQ-MOP-2026-001,168,Guante nitrilo descartable talle M,200,caja
+REQ-MOP-2026-001,169,Guante nitrilo descartable talle L,200,caja
+REQ-MOP-2026-001,170,Guante cuero descarne,300,par
+REQ-MOP-2026-001,171,Anteojo seguridad transparente,400,unidad
+REQ-MOP-2026-001,172,Anteojo seguridad gris,200,unidad
+REQ-MOP-2026-001,173,Protector auditivo tipo copa,150,unidad
+REQ-MOP-2026-001,174,Protector auditivo endoaural descartable,300,caja
+REQ-MOP-2026-001,175,Casco seguridad blanco,120,unidad
+REQ-MOP-2026-001,176,Casco seguridad amarillo,80,unidad
+REQ-MOP-2026-001,177,Barbijo descartable triple capa,300,caja
+REQ-MOP-2026-001,178,Respirador media cara,30,unidad
+REQ-MOP-2026-001,179,Filtro respirador particulas P100,120,par
+REQ-MOP-2026-001,180,Chaleco reflectivo talle M,150,unidad
+REQ-MOP-2026-001,181,Chaleco reflectivo talle L,150,unidad
+REQ-MOP-2026-001,182,Zapato seguridad talle 39,30,par
+REQ-MOP-2026-001,183,Zapato seguridad talle 40,40,par
+REQ-MOP-2026-001,184,Zapato seguridad talle 41,50,par
+REQ-MOP-2026-001,185,Zapato seguridad talle 42,50,par
+REQ-MOP-2026-001,186,Zapato seguridad talle 43,40,par
+REQ-MOP-2026-001,187,Botiquin primeros auxilios,20,unidad
+REQ-MOP-2026-001,188,Recarga botiquin completa,40,kit
+REQ-MOP-2026-001,189,Cinta peligro amarillo negro,300,rollo
+REQ-MOP-2026-001,190,Cono vial reflectivo 70cm,100,unidad
+REQ-MOP-2026-001,191,Destornillador plano 4mm,80,unidad
+REQ-MOP-2026-001,192,Destornillador plano 6mm,80,unidad
+REQ-MOP-2026-001,193,Destornillador Phillips PH1,80,unidad
+REQ-MOP-2026-001,194,Destornillador Phillips PH2,80,unidad
+REQ-MOP-2026-001,195,Alicate corte diagonal,50,unidad
+REQ-MOP-2026-001,196,Pinza universal,50,unidad
+REQ-MOP-2026-001,197,Pinza punta,40,unidad
+REQ-MOP-2026-001,198,Llave francesa 8 pulgadas,40,unidad
+REQ-MOP-2026-001,199,Llave francesa 12 pulgadas,30,unidad
+REQ-MOP-2026-001,200,Juego llaves combinadas 8 a 19mm,25,set
+REQ-MOP-2026-001,201,Juego llaves Allen metricas,30,set
+REQ-MOP-2026-001,202,Martillo carpintero 16oz,40,unidad
+REQ-MOP-2026-001,203,Maza goma 500g,30,unidad
+REQ-MOP-2026-001,204,Cutter reforzado,100,unidad
+REQ-MOP-2026-001,205,Repuesto hoja cutter 18mm,300,pack
+REQ-MOP-2026-001,206,Cinta metrica 5m,80,unidad
+REQ-MOP-2026-001,207,Nivel aluminio 60cm,25,unidad
+REQ-MOP-2026-001,208,Pistola silicona manual,30,unidad
+REQ-MOP-2026-001,209,Taladro percutor 650W,12,unidad
+REQ-MOP-2026-001,210,Amoladora angular 115mm,12,unidad
+REQ-MOP-2026-001,211,Atornillador bateria 18V,10,unidad
+REQ-MOP-2026-001,212,Bateria adicional 18V,10,unidad
+REQ-MOP-2026-001,213,Cargador bateria 18V,6,unidad
+REQ-MOP-2026-001,214,Escalera tijera aluminio 6 escalones,12,unidad
+REQ-MOP-2026-001,215,Escalera extensible aluminio 24 escalones,6,unidad
+REQ-MOP-2026-001,216,Caja herramientas plastica 20 pulgadas,40,unidad
+REQ-MOP-2026-001,217,Carro portaherramientas 7 cajones,6,unidad
+REQ-MOP-2026-001,218,Linterna LED recargable,60,unidad
+REQ-MOP-2026-001,219,Prolongador industrial 25m,20,unidad
+REQ-MOP-2026-001,220,Soldador electrico 40W,20,unidad

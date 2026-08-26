@@ -1,0 +1,4701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suministros Industriales Pampeanos SA - REQ-MOP-2026-001</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #0f172a; --muted: #64748b; --line: #e2e8f0;
+    --panel: #f8fafc; --accent: #1d4ed8; --warn-bg: #fef3c7; --warn-fg: #92400e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a; --fg: #e2e8f0; --muted: #94a3b8; --line: #1e293b;
+      --panel: #1e293b; --accent: #60a5fa; --warn-bg: #422006; --warn-fg: #fcd34d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 4rem;
+    background: var(--bg); color: var(--fg);
+    font: 15px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 .75rem; padding-bottom: .4rem; border-bottom: 2px solid var(--line); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .5rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+  .sub { color: var(--muted); margin: 0 0 1.5rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .75rem; margin: 1rem 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; }
+  .card .k { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .card .v { font-size: 1.5rem; font-weight: 650; margin-top: .2rem; letter-spacing: -.02em; }
+  .card .n { font-size: .8rem; color: var(--muted); }
+  .meta { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.25rem; }
+  .meta dl { display: grid; grid-template-columns: max-content 1fr; gap: .35rem 1.25rem; margin: 0; }
+  .meta dt { color: var(--muted); font-size: .85rem; }
+  .meta dd { margin: 0; }
+  .scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; margin: .75rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+  th { background: var(--panel); text-align: left; font-weight: 600; white-space: nowrap;
+       padding: .6rem .7rem; border-bottom: 2px solid var(--line); position: sticky; top: 0; }
+  td { padding: .5rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .badge { display: inline-block; padding: .1rem .5rem; border-radius: 99px; font-size: .72rem;
+           font-weight: 600; white-space: nowrap; color: var(--c); border: 1px solid var(--c);
+           background: color-mix(in srgb, var(--c) 12%, transparent); }
+  .review { background: color-mix(in srgb, #f59e0b 8%, transparent); }
+  .why { color: var(--muted); font-size: .8rem; max-width: 34rem; }
+  .alert { background: var(--warn-bg); color: var(--warn-fg); border-radius: 10px;
+           padding: .8rem 1.1rem; margin: 1rem 0; font-weight: 550; }
+  .note { color: var(--muted); font-size: .85rem; border-left: 3px solid var(--line); padding-left: .9rem; margin: .75rem 0; }
+  code { background: var(--panel); padding: .1rem .35rem; border-radius: 4px; font-size: .85em; }
+  details { margin: .4rem 0; border: 1px solid var(--line); border-radius: 8px; padding: .5rem .8rem; }
+  summary { cursor: pointer; font-size: .85rem; font-weight: 550; }
+  details ul { margin: .5rem 0 .25rem; padding-left: 1.2rem; font-size: .82rem; color: var(--muted); }
+  .chosen { color: var(--fg); font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .8rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Suministros Industriales Pampeanos SA</h1>
+<p class="sub">
+  Cotizacion COT-SIP-2026-330 &middot; 2026-05-21 &middot;
+  solicitud <strong>REQ-MOP-2026-001</strong> &ndash; Compra anual de insumos de mantenimiento y operaciones
+</p>
+
+<div class="cards">
+  <div class="card">
+    <div class="k">Cobertura</div>
+    <div class="v">100.0%</div>
+    <div class="n">220 de 220 items</div>
+  </div>
+  <div class="card">
+    <div class="k">Total comparable</div>
+    <div class="v">$ 207.221.130,00</div>
+    <div class="n">sin contar sobrantes</div>
+  </div>
+  <div class="card">
+    <div class="k">A revisar</div>
+    <div class="v">0</div>
+    <div class="n">lineas requieren decision</div>
+  </div>
+  <div class="card">
+    <div class="k">No cotizados</div>
+    <div class="v">0</div>
+    <div class="n">items sin oferta</div>
+  </div>
+</div>
+
+<div class="meta">
+  <dl>
+    <dt>Archivo</dt><dd><code>oferta_suministros_industriales.xlsx</code> (XLSX)</dd>
+    <dt>Condiciones</dt><dd>Propuesta anual para reposicion por entregas parciales mensuales. Algunas cantidades responden a presentaciones comerciales.</dd>
+    <dt>Total cotizado</dt><dd>$ 211.025.130,00</dd>
+    <dt>Sobrantes</dt><dd>$ 3.804.000,00</dd>
+  </dl>
+</div>
+
+<p class="note">
+  El <strong>total comparable</strong> es el que sirve para poner a este proveedor contra otro:
+  los sobrantes no se pidieron y sumarlos inflaria la comparacion.
+</p>
+
+<h2>Desglose por estado</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th>Estado</th><th class="num">Lineas</th><th>Que significa</th></tr></thead>
+  <tbody>
+  <tr><td><span class="badge" style="--c:#16a34a">Coincidencia</span></td><td class="num">209</td><td class="why">mismo producto y misma cantidad</td></tr>
+  <tr><td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td><td class="num">11</td><td class="why">mismo producto, cantidad distinta a la pedida</td></tr>
+  <tr><td><span class="badge" style="--c:#64748b">Sobrante</span></td><td class="num">5</td><td class="why">cotizado pero no pedido</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Alertas</h2>
+<div class="alert">0 linea(s) requieren revision del comprador.</div>
+<h3>Cotizados por debajo de lo pedido (6)</h3>
+<div class="scroll"><table><thead><tr><th>Item</th><th class="num">Pedido</th><th class="num">Ofrecido</th><th class="num">Falta</th></tr></thead><tbody>
+<tr><td><strong>#75</strong> Cinta teflon</td><td class="num">300</td><td class="num">270</td><td class="num">30</td></tr>
+<tr><td><strong>#18</strong> Llave termomagnetica bipolar 25A</td><td class="num">60</td><td class="num">54</td><td class="num">6</td></tr>
+<tr><td><strong>#40</strong> Reflector LED exterior 100W IP65</td><td class="num">80</td><td class="num">72</td><td class="num">8</td></tr>
+<tr><td><strong>#118</strong> Esmalte sintetico blanco 4L</td><td class="num">80</td><td class="num">72</td><td class="num">8</td></tr>
+<tr><td><strong>#150</strong> Bolsa residuos negra 60x90</td><td class="num">1.000</td><td class="num">900</td><td class="num">100</td></tr>
+<tr><td><strong>#183</strong> Zapato seguridad talle 40</td><td class="num">40</td><td class="num">36</td><td class="num">4</td></tr>
+</tbody></table></div>
+
+<h2>Tabla conciliada</h2>
+<p class="sub">Ordenada poniendo primero lo que requiere atencion.</p>
+<div class="scroll">
+<table>
+  <thead>
+    <tr>
+      <th>Item pedido</th><th>Linea ofertada</th><th>Estado</th>
+      <th class="num">Pedida</th><th class="num">Ofrecida</th><th class="num">&Delta;</th>
+      <th class="num">Conf.</th><th>Motivo</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><strong>#75</strong> Cinta teflon</td>
+    <td><strong>L75</strong> Rollo PTFE</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">300</td>
+    <td class="num">270</td>
+    <td class="num">-30</td>
+    <td class="num">0.92</td>
+    <td class="why">PTFE es el material del cual esta hecha la cinta teflon.. el proveedor ofrece 270 de las 300 pedidas (faltan 30)</td>
+  </tr>
+  <tr>
+    <td><strong>#171</strong> Anteojo seguridad transparente</td>
+    <td><strong>L171</strong> Gafa proteccion cristal</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">400</td>
+    <td class="num">440</td>
+    <td class="num">+40</td>
+    <td class="num">0.92</td>
+    <td class="why">Gafa proteccion cristal equivale a anteojo de seguridad transparente.. el proveedor ofrece 440 contra 400 pedidas (40 de mas, probable presentacion comercial)</td>
+  </tr>
+  <tr>
+    <td><strong>#18</strong> Llave termomagnetica bipolar 25A</td>
+    <td><strong>L18</strong> Interruptor automatico 2 polos 25 A</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">60</td>
+    <td class="num">54</td>
+    <td class="num">-6</td>
+    <td class="num">0.95</td>
+    <td class="why">Interruptor automatico de 2 polos equivale a la llave termomagnetica bipolar de 25A.. el proveedor ofrece 54 de las 60 pedidas (faltan 6)</td>
+  </tr>
+  <tr>
+    <td><strong>#30</strong> Precinto plastico 200mm</td>
+    <td><strong>L30</strong> Brida plastica 200 mm</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">200</td>
+    <td class="num">220</td>
+    <td class="num">+20</td>
+    <td class="num">0.95</td>
+    <td class="why">Brida plastica de 200mm es la denominacion tecnica equivalente a precinto plastico 200mm.. el proveedor ofrece 220 contra 200 pedidas (20 de mas, probable presentacion comercial)</td>
+  </tr>
+  <tr>
+    <td><strong>#40</strong> Reflector LED exterior 100W IP65</td>
+    <td><strong>L40</strong> Proyector LED uso externo 100 W IP65</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">80</td>
+    <td class="num">72</td>
+    <td class="num">-8</td>
+    <td class="num">0.95</td>
+    <td class="why">Proyector LED exterior equivale a reflector LED exterior y coinciden potencia 100W y proteccion IP65.. el proveedor ofrece 72 de las 80 pedidas (faltan 8)</td>
+  </tr>
+  <tr>
+    <td><strong>#88</strong> Arandela plana 1/4</td>
+    <td><strong>L88</strong> Arandela lisa 1/4</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">5.000</td>
+    <td class="num">5.500</td>
+    <td class="num">+500</td>
+    <td class="num">0.95</td>
+    <td class="why">Arandela lisa es equivalente a arandela plana y coinciden en medida 1/4.. el proveedor ofrece 5500 contra 5000 pedidas (500 de mas, probable presentacion comercial)</td>
+  </tr>
+  <tr>
+    <td><strong>#118</strong> Esmalte sintetico blanco 4L</td>
+    <td><strong>L118</strong> Sintetico brillante blanco 4 L</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">80</td>
+    <td class="num">72</td>
+    <td class="num">-8</td>
+    <td class="num">0.95</td>
+    <td class="why">Sintetico brillante blanco de 4L equivale a esmalte sintetico blanco 4L.. el proveedor ofrece 72 de las 80 pedidas (faltan 8)</td>
+  </tr>
+  <tr>
+    <td><strong>#206</strong> Cinta metrica 5m</td>
+    <td><strong>L206</strong> Flexometro 5 m</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">80</td>
+    <td class="num">88</td>
+    <td class="num">+8</td>
+    <td class="num">0.95</td>
+    <td class="why">Flexómetro es sinónimo técnico de cinta métrica de 5 metros.. el proveedor ofrece 88 contra 80 pedidas (8 de mas, probable presentacion comercial)</td>
+  </tr>
+  <tr>
+    <td><strong>#150</strong> Bolsa residuos negra 60x90</td>
+    <td><strong>L150</strong> Bolsa basura negra 60x90</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">1.000</td>
+    <td class="num">900</td>
+    <td class="num">-100</td>
+    <td class="num">0.96</td>
+    <td class="why">Bolsa de basura negra 60x90 es equivalente a bolsa de residuos negra 60x90.. el proveedor ofrece 900 de las 1000 pedidas (faltan 100)</td>
+  </tr>
+  <tr>
+    <td><strong>#130</strong> Aerosol lubricante multiuso 400ml</td>
+    <td><strong>L130</strong> Lubricante aerosol multiuso 400 ml</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">200</td>
+    <td class="num">220</td>
+    <td class="num">+20</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincide perfectamente con el aerosol lubricante multiuso de 400 ml.. el proveedor ofrece 220 contra 200 pedidas (20 de mas, probable presentacion comercial)</td>
+  </tr>
+  <tr>
+    <td><strong>#183</strong> Zapato seguridad talle 40</td>
+    <td><strong>L183</strong> Calzado de seguridad talle 40</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">40</td>
+    <td class="num">36</td>
+    <td class="num">-4</td>
+    <td class="num">0.98</td>
+    <td class="why">Calzado de seguridad equivale a zapato de seguridad y coincide el talle 40.. el proveedor ofrece 36 de las 40 pedidas (faltan 4)</td>
+  </tr>
+  <tr>
+    <td><span style="color:var(--muted)">&mdash;</span></td>
+    <td><strong>L223</strong> Conductor subterraneo tripolar 3x4 mm2</td>
+    <td><span class="badge" style="--c:#64748b">Sobrante</span></td>
+    <td class="num">-</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.22</td>
+    <td class="why">el LLM determino que ninguno de los candidatos corresponde a esta linea</td>
+  </tr>
+  <tr>
+    <td><span style="color:var(--muted)">&mdash;</span></td>
+    <td><strong>L224</strong> Bulbo LED alta potencia E40 60 W</td>
+    <td><span class="badge" style="--c:#64748b">Sobrante</span></td>
+    <td class="num">-</td>
+    <td class="num">70</td>
+    <td class="num">-</td>
+    <td class="num">0.23</td>
+    <td class="why">el LLM determino que ninguno de los candidatos corresponde a esta linea</td>
+  </tr>
+  <tr>
+    <td><span style="color:var(--muted)">&mdash;</span></td>
+    <td><strong>L222</strong> Baliza industrial LED color ambar</td>
+    <td><span class="badge" style="--c:#64748b">Sobrante</span></td>
+    <td class="num">-</td>
+    <td class="num">20</td>
+    <td class="num">-</td>
+    <td class="num">0.24</td>
+    <td class="why">el LLM determino que ninguno de los candidatos corresponde a esta linea</td>
+  </tr>
+  <tr>
+    <td><span style="color:var(--muted)">&mdash;</span></td>
+    <td><strong>L221</strong> Detector optico de humo 12 V</td>
+    <td><span class="badge" style="--c:#64748b">Sobrante</span></td>
+    <td class="num">-</td>
+    <td class="num">35</td>
+    <td class="num">-</td>
+    <td class="num">0.28</td>
+    <td class="why">el LLM determino que ninguno de los candidatos corresponde a esta linea</td>
+  </tr>
+  <tr>
+    <td><span style="color:var(--muted)">&mdash;</span></td>
+    <td><strong>L225</strong> Kit bridas plasticas colores surtidos</td>
+    <td><span class="badge" style="--c:#64748b">Sobrante</span></td>
+    <td class="num">-</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.29</td>
+    <td class="why">el LLM determino que ninguno de los candidatos corresponde a esta linea</td>
+  </tr>
+  <tr>
+    <td><strong>#14</strong> Caja derivacion PVC 10x10</td>
+    <td><strong>L14</strong> Caja de paso plastica 10x10</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Caja de paso plastica y caja de derivacion PVC de 10x10 son el mismo producto.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#44</strong> Driver panel LED 40W</td>
+    <td><strong>L44</strong> Fuente para placa LED 40 W</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Fuente para placa LED de 40W es el equivalente tecnico a driver para panel LED de 40W.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#45</strong> Aplique emergencia LED</td>
+    <td><strong>L45</strong> Luminaria autonoma emergencia LED</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Luminaria autonoma de emergencia LED corresponde al aplique de emergencia LED.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#46</strong> Cartel salida emergencia LED</td>
+    <td><strong>L46</strong> Senal luminosa salida emergencia</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">60</td>
+    <td class="num">60</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Senal luminosa de salida de emergencia equivale al cartel de salida de emergencia LED.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#59</strong> Codo PVC 1/2</td>
+    <td><strong>L59</strong> Curva PVC 1/2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Curva y codo de PVC de 1/2 pulgada son accesorios equivalentes para cambio de direccion.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#60</strong> Codo PVC 3/4</td>
+    <td><strong>L60</strong> Curva PVC 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">250</td>
+    <td class="num">250</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Curva y codo de PVC de 3/4 pulgada son accesorios de conexion equivalentes.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#90</strong> Varilla roscada 1/4</td>
+    <td><strong>L90</strong> Esparrago roscado 1/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Esparrago roscado equivale a varilla roscada y coinciden en medida 1/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#91</strong> Varilla roscada 3/8</td>
+    <td><strong>L91</strong> Esparrago roscado 3/8</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Espárrago roscado es equivalente a varilla roscada y coincide la medida de 3/8.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#93</strong> Abrazadera metalica 1/2</td>
+    <td><strong>L93</strong> Grapa metalica 1/2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.000</td>
+    <td class="num">1.000</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Grapa metálica es equivalente a abrazadera metálica en medida 1/2.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#94</strong> Abrazadera metalica 3/4</td>
+    <td><strong>L94</strong> Grapa metalica 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.000</td>
+    <td class="num">1.000</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Grapa metálica es equivalente a abrazadera metálica en medida 3/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#95</strong> Abrazadera omega 3/4</td>
+    <td><strong>L95</strong> Grapa omega 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">800</td>
+    <td class="num">800</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Grapa omega es equivalente a abrazadera omega en medida 3/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#99</strong> Broca pared 6mm</td>
+    <td><strong>L99</strong> Mecha widia 6 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Mecha widia corresponde a broca para pared de 6 mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#100</strong> Broca pared 8mm</td>
+    <td><strong>L100</strong> Mecha widia 8 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Mecha widia corresponde a broca para pared de 8 mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#124</strong> Enduido interior 20kg</td>
+    <td><strong>L124</strong> Masilla enduido 20 kg</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">50</td>
+    <td class="num">50</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Coincide en tipo de producto y presentacion de 20 kg.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#125</strong> Masilla plastica multiuso 1kg</td>
+    <td><strong>L125</strong> Masilla poliester multiuso 1 kg</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Es la misma masilla plastica/poliester de uso general de 1 kg.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#137</strong> Bandeja pintura plastica</td>
+    <td><strong>L137</strong> Cubeta pintura plastica</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">60</td>
+    <td class="num">60</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Cubeta de pintura plastica equivale a bandeja de pintura plastica.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#140</strong> Nylon cobertura 4x5m</td>
+    <td><strong>L140</strong> Film protector 4x5 m</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Film protector equivale a nylon de cobertura y coincide la medida de 4x5m.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#178</strong> Respirador media cara</td>
+    <td><strong>L178</strong> Semimascara respiratoria</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Semimascara respiratoria equivale a respirador media cara.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#196</strong> Pinza universal</td>
+    <td><strong>L196</strong> Pinza combinada</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">50</td>
+    <td class="num">50</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Pinza combinada es equivalente comercial de pinza universal.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#197</strong> Pinza punta</td>
+    <td><strong>L197</strong> Alicate de punta fina</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">Alicate de punta fina equivale a la pinza punta solicitada.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#208</strong> Pistola silicona manual</td>
+    <td><strong>L208</strong> Aplicador cartucho manual</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">El aplicador manual de cartuchos equivale a la pistola de silicona manual.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#211</strong> Atornillador bateria 18V</td>
+    <td><strong>L211</strong> Driver bateria 18 V</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">10</td>
+    <td class="num">10</td>
+    <td class="num">-</td>
+    <td class="num">0.90</td>
+    <td class="why">El termino driver a bateria de 18V equivale a atornillador a bateria de 18V.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#12</strong> Canaleta PVC 20x10 blanca</td>
+    <td><strong>L12</strong> Ducto polipropileno pasacable 20x10 blanca</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Equivalencia directa entre ducto pasacable y canaleta PVC de medida 20x10 blanca.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#13</strong> Canaleta PVC 40x20 blanca</td>
+    <td><strong>L13</strong> Ducto polipropileno pasacable 40x20 blanca</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Equivalencia directa entre ducto pasacable y canaleta PVC de medida 40x20 blanca.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#27</strong> Zapatilla electrica 6 tomas</td>
+    <td><strong>L27</strong> Base multiple 6 tomas</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">60</td>
+    <td class="num">60</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Base multiple de 6 tomas es equivalente a zapatilla electrica de 6 tomas.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#28</strong> Cinta aisladora negra</td>
+    <td><strong>L28</strong> Rollo aislante negra</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Rollo aislante negra corresponde a cinta aisladora negra.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#29</strong> Cinta aisladora roja</td>
+    <td><strong>L29</strong> Rollo aislante roja</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Rollo aislante roja corresponde a cinta aisladora roja.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#56</strong> Cano PVC agua 1/2</td>
+    <td><strong>L56</strong> Tuberia PVC presion 1/2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Tuberia de PVC presion de 1/2 pulgada equivale a cano de PVC para agua de 1/2.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#57</strong> Cano PVC agua 3/4</td>
+    <td><strong>L57</strong> Tuberia PVC presion 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">250</td>
+    <td class="num">250</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Tuberia PVC presion 3/4 coincide en material, uso y medida con cano PVC agua 3/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#58</strong> Cano PVC agua 1 pulgada</td>
+    <td><strong>L58</strong> Tuberia PVC presion 1 pulgada</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Tuberia PVC presion 1 pulgada equivale a cano PVC agua 1 pulgada.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#63</strong> Union doble PVC 1/2</td>
+    <td><strong>L63</strong> Cupla union PVC 1/2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Cupla union PVC 1/2 es equivalente a Union doble PVC 1/2.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#64</strong> Union doble PVC 3/4</td>
+    <td><strong>L64</strong> Cupla union PVC 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Cupla union PVC 3/4 es equivalente a Union doble PVC 3/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#80</strong> Manguera reforzada 3/4</td>
+    <td><strong>L80</strong> Manguera tramada 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">400</td>
+    <td class="num">400</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Manguera tramada equivale a manguera reforzada en la medida 3/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#85</strong> Tarugo nylon 6mm</td>
+    <td><strong>L85</strong> Anclaje nylon 6 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">6.000</td>
+    <td class="num">6.000</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Anclaje de nylon es denominado habitualmente tarugo de nylon y coincide el diametro de 6mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#86</strong> Tarugo nylon 8mm</td>
+    <td><strong>L86</strong> Anclaje nylon 8 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">6.000</td>
+    <td class="num">6.000</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Anclaje de nylon es equivalente a tarugo de nylon y coincide el diametro de 8mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#87</strong> Tarugo nylon 10mm</td>
+    <td><strong>L87</strong> Anclaje nylon 10 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">3.000</td>
+    <td class="num">3.000</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Anclaje de nylon es equivalente a tarugo de nylon y coincide el diametro de 10mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#122</strong> Pintura demarcacion amarilla 10L</td>
+    <td><strong>L122</strong> Revestimiento para demarcar amarilla 10 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Corresponde al revestimiento/pintura para demarcacion amarilla de 10 litros.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#142</strong> Lavandina 5L</td>
+    <td><strong>L142</strong> Hipoclorito 5 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">El hipoclorito de sodio es el componente activo de la lavandina y coincide la presentacion de 5L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#156</strong> Escoba exterior dura</td>
+    <td><strong>L156</strong> Escoba patio dura</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">'Escoba patio dura' equivale a 'escoba exterior dura'.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#175</strong> Casco seguridad blanco</td>
+    <td><strong>L175</strong> Casco obra blanco</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Casco de obra blanco equivale a casco de seguridad blanco.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#176</strong> Casco seguridad amarillo</td>
+    <td><strong>L176</strong> Casco obra amarillo</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Casco de obra amarillo equivale a casco de seguridad amarillo.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#177</strong> Barbijo descartable triple capa</td>
+    <td><strong>L177</strong> Mascarilla desc. triple capa</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Mascarilla descartable triple capa equivale a barbijo descartable triple capa.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#207</strong> Nivel aluminio 60cm</td>
+    <td><strong>L207</strong> Nivel burbuja 60 cm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">25</td>
+    <td class="num">25</td>
+    <td class="num">-</td>
+    <td class="num">0.92</td>
+    <td class="why">Nivel de burbuja y nivel de aluminio de 60cm corresponden al mismo instrumento de medición.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#15</strong> Caja estanca IP65</td>
+    <td><strong>L15</strong> Gabinete estanco IP65</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.93</td>
+    <td class="why">Gabinete estanco IP65 coincide plenamente con la caja estanca IP65 requerida.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#79</strong> Tapa inspeccion PVC</td>
+    <td><strong>L79</strong> Tapa registro PVC</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">60</td>
+    <td class="num">60</td>
+    <td class="num">-</td>
+    <td class="num">0.93</td>
+    <td class="why">Tapa registro es equivalente a tapa inspeccion de PVC.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#143</strong> Limpiador desinfectante 5L</td>
+    <td><strong>L143</strong> Sanitizante limpiador 5 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">160</td>
+    <td class="num">160</td>
+    <td class="num">-</td>
+    <td class="num">0.93</td>
+    <td class="why">Sanitizante limpiador es equivalente a limpiador desinfectante en volumen de 5L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#1</strong> Cable unipolar 1.5mm2 rojo</td>
+    <td><strong>L1</strong> Conductor flexible 1.5 mm2 rojo</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.000</td>
+    <td class="num">1.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 1.5mm2 y el color rojo; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#2</strong> Cable unipolar 1.5mm2 azul</td>
+    <td><strong>L2</strong> Conductor flexible 1.5 mm2 azul</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.000</td>
+    <td class="num">1.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 1.5mm2 y el color azul; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#3</strong> Cable unipolar 1.5mm2 verde amarillo</td>
+    <td><strong>L3</strong> Conductor flexible 1.5 mm2 verde amarillo</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">800</td>
+    <td class="num">800</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 1.5mm2 y el color verde amarillo; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#4</strong> Cable unipolar 1.5mm2 negro</td>
+    <td><strong>L4</strong> Conductor flexible 1.5 mm2 negro</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">800</td>
+    <td class="num">800</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 1.5mm2 y el color negro; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#5</strong> Cable unipolar 2.5mm2 rojo</td>
+    <td><strong>L5</strong> Conductor flexible 2.5 mm2 rojo</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.500</td>
+    <td class="num">1.500</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 2.5mm2 y el color rojo; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#6</strong> Cable unipolar 2.5mm2 azul</td>
+    <td><strong>L6</strong> Conductor flexible 2.5 mm2 azul</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.500</td>
+    <td class="num">1.500</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 2.5mm2 y el color azul; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#7</strong> Cable unipolar 2.5mm2 verde amarillo</td>
+    <td><strong>L7</strong> Conductor flexible 2.5 mm2 verde amarillo</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.200</td>
+    <td class="num">1.200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 2.5mm2 y el color verde amarillo; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#8</strong> Cable unipolar 2.5mm2 negro</td>
+    <td><strong>L8</strong> Conductor flexible 2.5 mm2 negro</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.200</td>
+    <td class="num">1.200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 2.5mm2 y el color negro; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#9</strong> Cable unipolar 4mm2 rojo</td>
+    <td><strong>L9</strong> Conductor flexible 4 mm2 rojo</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">800</td>
+    <td class="num">800</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 4mm2 y el color rojo; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#10</strong> Cable unipolar 4mm2 azul</td>
+    <td><strong>L10</strong> Conductor flexible 4 mm2 azul</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">800</td>
+    <td class="num">800</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 4mm2 y el color azul; conductor flexible equivale a cable unipolar.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#11</strong> Cable unipolar 4mm2 verde amarillo</td>
+    <td><strong>L11</strong> Conductor flexible 4 mm2 verde amarillo</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">600</td>
+    <td class="num">600</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden la seccion de 4mm2, el tipo de conductor y los colores verde y amarillo.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#16</strong> Llave termomagnetica bipolar 10A</td>
+    <td><strong>L16</strong> Interruptor automatico 2 polos 10 A</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Interruptor automatico de 2 polos equivale a la llave termomagnetica bipolar de 10A.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#17</strong> Llave termomagnetica bipolar 16A</td>
+    <td><strong>L17</strong> Interruptor automatico 2 polos 16 A</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">60</td>
+    <td class="num">60</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Interruptor automatico de 2 polos equivale a la llave termomagnetica bipolar de 16A.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#19</strong> Llave termomagnetica bipolar 32A</td>
+    <td><strong>L19</strong> Interruptor automatico 2 polos 32 A</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Interruptor automatico de 2 polos equivale a la llave termomagnetica bipolar de 32A.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#20</strong> Disyuntor diferencial bipolar 25A 30mA</td>
+    <td><strong>L20</strong> Protector diferencial 2 polos 25 A 30 mA</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">35</td>
+    <td class="num">35</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Protector diferencial de 2 polos equivale al disyuntor diferencial bipolar de 25A 30mA.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#21</strong> Disyuntor diferencial bipolar 40A 30mA</td>
+    <td><strong>L21</strong> Protector diferencial 2 polos 40 A 30 mA</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">25</td>
+    <td class="num">25</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Protector diferencial 2 polos de 40A 30mA equivale exactamente a disyuntor diferencial bipolar de 40A 30mA.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#22</strong> Tomacorriente doble 10A blanco</td>
+    <td><strong>L22</strong> Modulo toma electrica doble 10 A blanco</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">250</td>
+    <td class="num">250</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Modulo toma electrica doble 10A blanco coincide plenamente con tomacorriente doble 10A blanco.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#23</strong> Tomacorriente industrial 16A</td>
+    <td><strong>L23</strong> Modulo toma electrica industrial 16 A</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Modulo toma electrica industrial 16A es exactamente tomacorriente industrial 16A.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#24</strong> Ficha macho 10A</td>
+    <td><strong>L24</strong> Plug macho 10 A</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Plug macho 10A es la denominacion comercial equivalente a ficha macho 10A.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#25</strong> Ficha hembra 10A</td>
+    <td><strong>L25</strong> Conector hembra 10 A</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Conector hembra 10A equivale a ficha hembra 10A.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#26</strong> Prolongador electrico 10m</td>
+    <td><strong>L26</strong> Alargue electrico 10 m</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Alargue electrico 10m es sinonimo de prolongador electrico 10m.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#31</strong> Precinto plastico 300mm</td>
+    <td><strong>L31</strong> Brida plastica 300 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Brida plastica es equivalente a precinto plastico y coinciden en la medida de 300mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#32</strong> Bornera 12 polos 10mm</td>
+    <td><strong>L32</strong> Regleta de conexion 12 polos 10 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Regleta de conexion es equivalente a bornera y coinciden en 12 polos y 10mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#33</strong> Terminal ojal aislado rojo</td>
+    <td><strong>L33</strong> Terminal anillo aislado rojo</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.000</td>
+    <td class="num">1.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Terminal anillo es equivalente a terminal ojal y coinciden en ser aislado y color rojo.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#34</strong> Terminal pala aislado azul</td>
+    <td><strong>L34</strong> Terminal faston pala aislado azul</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.000</td>
+    <td class="num">1.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Terminal faston pala es equivalente a terminal pala y coinciden en ser aislado y color azul.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#35</strong> Multimetro digital basico</td>
+    <td><strong>L35</strong> Tester digital basico</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">12</td>
+    <td class="num">12</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Tester digital es sinonimo de multimetro digital.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#37</strong> Panel LED 60x60 40W</td>
+    <td><strong>L37</strong> Placa luminosa LED 60x60 40 W</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Placa luminosa LED equivale a panel LED y coinciden formato 60x60 y potencia 40W.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#41</strong> Sensor movimiento pared</td>
+    <td><strong>L41</strong> Detector de presencia pared</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">70</td>
+    <td class="num">70</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Detector de presencia y sensor de movimiento son terminos equivalentes para el mismo producto de pared.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#42</strong> Fotocelula exterior</td>
+    <td><strong>L42</strong> Celula fotoelectrica uso externo</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">50</td>
+    <td class="num">50</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Celula fotoelectrica de uso externo es la descripcion equivalente a fotocelula exterior.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#43</strong> Porta lampara E27</td>
+    <td><strong>L43</strong> Portalamp E27</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Portalamp E27 es una abreviatura directa de porta lampara E27.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#47</strong> Cinta LED 12V 5m</td>
+    <td><strong>L47</strong> Tira LED 12 V 5 m</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Tira LED de 12V 5m es equivalente a cinta LED de 12V 5m.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#48</strong> Fuente switching 12V 5A</td>
+    <td><strong>L48</strong> Fuente conmutada 12 V 5 A</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Fuente conmutada es la traduccion de fuente switching, coincidiendo exactamente en 12V 5A.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#49</strong> Tubo corrugado liviano 3/4</td>
+    <td><strong>L49</strong> Canio flexible corrugado liviano 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">500</td>
+    <td class="num">500</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Canio flexible corrugado liviano 3/4 equivale a tubo corrugado liviano 3/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#50</strong> Tubo corrugado pesado 1 pulgada</td>
+    <td><strong>L50</strong> Canio flexible corrugado pesado 1 pulgada</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Canio flexible corrugado pesado de 1 pulgada equivale a tubo corrugado pesado de 1 pulgada.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#51</strong> Conector corrugado 3/4</td>
+    <td><strong>L51</strong> Acople para corrugado 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Acople y conector para tubo corrugado de 3/4 pulgada son sinonimos comerciales.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#52</strong> Conector corrugado 1 pulgada</td>
+    <td><strong>L52</strong> Acople para corrugado 1 pulgada</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Acople y conector para corrugado de 1 pulgada corresponden al mismo producto.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#54</strong> Interruptor simple embutir</td>
+    <td><strong>L54</strong> Tecla simple embutir</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">180</td>
+    <td class="num">180</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Tecla simple e interruptor simple de embutir son denominaciones equivalentes.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#55</strong> Interruptor doble embutir</td>
+    <td><strong>L55</strong> Tecla doble embutir</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Tecla doble e interruptor doble para embutir refieren al mismo tipo de artefacto.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#61</strong> Tee PVC 1/2</td>
+    <td><strong>L61</strong> T PVC 1/2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">T PVC 1/2 coincide exactamente con Tee PVC 1/2.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#62</strong> Tee PVC 3/4</td>
+    <td><strong>L62</strong> T PVC 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">T PVC 3/4 coincide exactamente con Tee PVC 3/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#65</strong> Valvula esferica 1/2</td>
+    <td><strong>L65</strong> Llave de paso esferica 1/2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Llave de paso esferica 1/2 es sinonimo de Valvula esferica 1/2.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#66</strong> Valvula esferica 3/4</td>
+    <td><strong>L66</strong> Llave de paso esferica 3/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Llave de paso esferica 3/4 es sinonimo de Valvula esferica 3/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#67</strong> Flexible sanitario 40cm</td>
+    <td><strong>L67</strong> Conexion flexible sanitaria 40 cm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">180</td>
+    <td class="num">180</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Conexion flexible sanitaria 40 cm es equivalente a Flexible sanitario 40cm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#68</strong> Flexible sanitario 60cm</td>
+    <td><strong>L68</strong> Conexion flexible sanitaria 60 cm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Conexion flexible sanitaria 60 cm es equivalente a Flexible sanitario 60cm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#69</strong> Canilla lavatorio cierre ceramico</td>
+    <td><strong>L69</strong> Griferia para lavatorio cierre ceramico</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">60</td>
+    <td class="num">60</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Griferia para lavatorio cierre ceramico equivale a Canilla lavatorio cierre ceramico.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#70</strong> Canilla servicio bronce 1/2</td>
+    <td><strong>L70</strong> Grifo de servicio bronce 1/2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Grifo de servicio bronce 1/2 es equivalente a Canilla servicio bronce 1/2.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#71</strong> Sifon plastico lavatorio</td>
+    <td><strong>L71</strong> Desague sifonado polipropileno lavatorio</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">90</td>
+    <td class="num">90</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Desague sifonado de polipropileno equivale a sifon plastico para lavatorio.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#72</strong> Flotante deposito inodoro</td>
+    <td><strong>L72</strong> Valvula flotante deposito inodoro</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">70</td>
+    <td class="num">70</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Valvula flotante equivale a flotante para deposito de inodoro.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#74</strong> Sellador roscas anaerobico</td>
+    <td><strong>L74</strong> Traba rosca selladora anaerobico</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">60</td>
+    <td class="num">60</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Traba rosca anaerobico equivale a sellador de roscas anaerobico.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#78</strong> Rejilla piso acero inoxidable</td>
+    <td><strong>L78</strong> Rejilla de desague acero inoxidable</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Rejilla de desague de acero inoxidable corresponde a rejilla de piso de acero inoxidable.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#81</strong> Tornillo autoperforante 8x1</td>
+    <td><strong>L81</strong> Fijacion autoperforante 8x1</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">5.000</td>
+    <td class="num">5.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Fijacion autoperforante es equivalente a tornillo autoperforante y coinciden exactamente las medidas 8x1.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#82</strong> Tornillo autoperforante 8x1.5</td>
+    <td><strong>L82</strong> Fijacion autoperforante 8x1.5</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">5.000</td>
+    <td class="num">5.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Fijacion autoperforante es equivalente a tornillo autoperforante y coinciden las medidas 8x1.5.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#83</strong> Tornillo madera 6x1</td>
+    <td><strong>L83</strong> Fijacion para madera 6x1</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">4.000</td>
+    <td class="num">4.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Fijacion para madera equivale a tornillo madera y coinciden las medidas 6x1.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#84</strong> Tornillo madera 8x2</td>
+    <td><strong>L84</strong> Fijacion para madera 8x2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">4.000</td>
+    <td class="num">4.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Fijacion para madera equivale a tornillo madera y coinciden las medidas 8x2.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#89</strong> Tuerca hexagonal 1/4</td>
+    <td><strong>L89</strong> Tuerca HEX 1/4</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">5.000</td>
+    <td class="num">5.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Tuerca HEX hace referencia a tuerca hexagonal y coincide en medida 1/4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#92</strong> Remache pop 4mm</td>
+    <td><strong>L92</strong> Remache aluminio pop 4 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">4.000</td>
+    <td class="num">4.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden el producto y la medida de 4 mm para remache pop.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#96</strong> Broca HSS 4mm</td>
+    <td><strong>L96</strong> Mecha HSS 4 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Mecha es sinónimo de broca, coincide material HSS y diámetro 4 mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#97</strong> Broca HSS 6mm</td>
+    <td><strong>L97</strong> Mecha HSS 6 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Mecha es sinónimo de broca, coincide material HSS y diámetro 6 mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#98</strong> Broca HSS 8mm</td>
+    <td><strong>L98</strong> Mecha HSS 8 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Mecha es sinónimo de broca, coincide material HSS y diámetro 8 mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#104</strong> Hoja sierra manual 24T</td>
+    <td><strong>L104</strong> Sierra manual hoja manual 24T</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Corresponde a la hoja de sierra manual de 24 dientes (24T).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#108</strong> Bisagra comun 2 pulgadas</td>
+    <td><strong>L108</strong> Bisagra standard 2 in</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Equivalencia directa entre bisagra standard 2 pulgadas (2 in) y bisagra comun 2 pulgadas.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#109</strong> Bisagra comun 3 pulgadas</td>
+    <td><strong>L109</strong> Bisagra standard 3 in</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">250</td>
+    <td class="num">250</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Equivalencia directa entre bisagra standard 3 pulgadas (3 in) y bisagra comun 3 pulgadas.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#110</strong> Candado 40mm</td>
+    <td><strong>L110</strong> Cierre candado 40 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Corresponde al candado de 40 mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#111</strong> Candado 50mm</td>
+    <td><strong>L111</strong> Cierre candado 50 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coincide en medida y tipo de producto (candado 50mm).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#112</strong> Cierre pasador zincado</td>
+    <td><strong>L112</strong> Pasador zincado zincado</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coincide con el pasador zincado solicitado.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#113</strong> Rueda giratoria 50mm</td>
+    <td><strong>L113</strong> Rueda pivotante 50 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Rueda pivotante es sinonimo de rueda giratoria de 50mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#114</strong> Rueda fija 50mm</td>
+    <td><strong>L114</strong> Rueda rigida 50 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Rueda rigida es equivalente a rueda fija de 50mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#115</strong> Escuadra metalica 100x100</td>
+    <td><strong>L115</strong> Angulo escuadra metalico 100x100</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coincide con la escuadra metalica de 100x100.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#116</strong> Pintura latex interior blanca 20L</td>
+    <td><strong>L116</strong> Latex acrilico uso interno blanca 20 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Latex acrilico uso interno blanco de 20L equivale a pintura latex interior blanca 20L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#117</strong> Pintura latex interior gris claro 20L</td>
+    <td><strong>L117</strong> Latex acrilico uso interno gris claro 20 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Latex acrilico uso interno gris claro 20L equivale a pintura latex interior gris claro 20L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#119</strong> Esmalte sintetico negro 4L</td>
+    <td><strong>L119</strong> Sintetico brillante negro 4 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">50</td>
+    <td class="num">50</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Sintetico brillante negro de 4L equivale a esmalte sintetico negro 4L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#120</strong> Esmalte sintetico amarillo seguridad 4L</td>
+    <td><strong>L120</strong> Sintetico brillante amarillo seguridad 4 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Sintetico brillante amarillo seguridad 4L equivale a esmalte sintetico amarillo seguridad 4L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#121</strong> Esmalte sintetico rojo seguridad 4L</td>
+    <td><strong>L121</strong> Sintetico brillante rojo seguridad 4 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Es el mismo esmalte sintetico rojo seguridad de 4 litros.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#123</strong> Antioxido convertidor gris 4L</td>
+    <td><strong>L123</strong> Convertidor de oxido gris 4 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">60</td>
+    <td class="num">60</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Es el mismo antioxido convertidor de oxido gris de 4 litros.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#126</strong> Sellador siliconado transparente 280ml</td>
+    <td><strong>L126</strong> Silicona selladora cristal 280 ml</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Silicona cristal equivale a sellador siliconado transparente de 280 ml.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#127</strong> Sellador siliconado blanco 280ml</td>
+    <td><strong>L127</strong> Silicona selladora blanco 280 ml</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Es el mismo sellador de silicona blanco de 280 ml.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#128</strong> Adhesivo montaje 300ml</td>
+    <td><strong>L128</strong> Pegamento montaje 300 ml</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Pegamento y adhesivo de montaje de 300 ml son terminos equivalentes.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#129</strong> Pegamento contacto 1L</td>
+    <td><strong>L129</strong> Adhesivo contacto 1 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">70</td>
+    <td class="num">70</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Es el mismo adhesivo/pegamento de contacto de 1 litro.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#131</strong> Desengrasante industrial 5L</td>
+    <td><strong>L131</strong> Desengrase industrial 5 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Es el mismo producto desengrasante industrial presentacion 5L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#132</strong> Alcohol isopropilico 1L</td>
+    <td><strong>L132</strong> IPA limpieza tecnica 1 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">IPA es la sigla habitual para alcohol isopropilico y coincide el volumen de 1L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#134</strong> Pincel 2 pulgadas</td>
+    <td><strong>L134</strong> Brocha 2 in</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Brocha equivale a pincel y 2 in es exactamente 2 pulgadas.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#135</strong> Pincel 3 pulgadas</td>
+    <td><strong>L135</strong> Brocha 3 in</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Brocha equivale a pincel y 3 in es exactamente 3 pulgadas.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#138</strong> Cinta enmascarar 24mm</td>
+    <td><strong>L138</strong> Cinta de pintor 24 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">500</td>
+    <td class="num">500</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Cinta de pintor equivale a cinta de enmascarar y coincide la medida de 24mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#139</strong> Cinta enmascarar 48mm</td>
+    <td><strong>L139</strong> Cinta de pintor 48 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">400</td>
+    <td class="num">400</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Cinta de pintor equivale a cinta de enmascarar y coincide la medida de 48mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#141</strong> Detergente concentrado 5L</td>
+    <td><strong>L141</strong> Limpiador detergente concentrado 5 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden en producto (detergente concentrado) y presentacion de 5L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#148</strong> Papel higienico industrial 300m</td>
+    <td><strong>L148</strong> Higienico jumbo industrial 300 m</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">600</td>
+    <td class="num">600</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Higienico jumbo industrial 300m es papel higienico industrial de 300m.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#152</strong> Trapo piso algodon</td>
+    <td><strong>L152</strong> Pano piso algodon</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">500</td>
+    <td class="num">500</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">'Paño piso' es sinónimo directo de 'trapo piso' de algodón.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#155</strong> Escoba interior</td>
+    <td><strong>L155</strong> Escoba uso interno</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">180</td>
+    <td class="num">180</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">'Escoba uso interno' corresponde exactamente a 'escoba interior'.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#158</strong> Balde plastico 12L</td>
+    <td><strong>L158</strong> Cubeta plastica 12 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">'Cubeta' es sinónimo de 'balde', coincidiendo en material plástico y capacidad (12L).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#159</strong> Pulverizador manual 1L</td>
+    <td><strong>L159</strong> Rociador manual 1 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">'Rociador' es equivalente a 'pulverizador' manual de 1L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#161</strong> Guante limpieza latex talle L</td>
+    <td><strong>L161</strong> Guante aseo latex talle L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coincide el material (látex), talle (L) y la aplicación (aseo equivale a limpieza).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#162</strong> Esponja abrasiva</td>
+    <td><strong>L162</strong> Esponja fibra abrasiva</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.000</td>
+    <td class="num">1.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coincide plenamente en tipo de producto abrasivo y formato esponja.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#163</strong> Fibra verde limpieza</td>
+    <td><strong>L163</strong> Fibra verde</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">1.000</td>
+    <td class="num">1.000</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coincide la descripción de fibra verde de limpieza.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#165</strong> Desodorante ambiente aerosol 360ml</td>
+    <td><strong>L165</strong> Aromatizador ambiente aerosol 360 ml</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Aromatizador de ambiente en aerosol equivale a desodorante de ambiente de 360ml.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#166</strong> Guante moteado talle M</td>
+    <td><strong>L166</strong> Guante tejido con puntos talle M</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">600</td>
+    <td class="num">600</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Guante tejido con puntos es la denominación equivalente para guante moteado talle M.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#167</strong> Guante moteado talle L</td>
+    <td><strong>L167</strong> Guante tejido con puntos talle L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">600</td>
+    <td class="num">600</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Guante tejido con puntos es equivalente a guante moteado en talle L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#168</strong> Guante nitrilo descartable talle M</td>
+    <td><strong>L168</strong> Guante nitrilo examen desc. talle M</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Guante de nitrilo para examen descartable equivale a guante de nitrilo descartable talle M.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#169</strong> Guante nitrilo descartable talle L</td>
+    <td><strong>L169</strong> Guante nitrilo examen desc. talle L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Guante de nitrilo para examen descartable equivale a guante de nitrilo descartable talle L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#172</strong> Anteojo seguridad gris</td>
+    <td><strong>L172</strong> Gafa proteccion gris</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coinciden exactamente el producto anteojo/gafa y el color gris.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#174</strong> Protector auditivo endoaural descartable</td>
+    <td><strong>L174</strong> Proteccion auditiva endoaural desc.</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coincide protector auditivo endoaural descartable.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#179</strong> Filtro respirador particulas P100</td>
+    <td><strong>L179</strong> Cartucho filtro particulas P100</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Coincide la especificacion de filtro/cartucho de particulas P100.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#180</strong> Chaleco reflectivo talle M</td>
+    <td><strong>L180</strong> Chaleco alta visibilidad talle M</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Chaleco alta visibilidad equivale a chaleco reflectivo y coincide el talle M.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#181</strong> Chaleco reflectivo talle L</td>
+    <td><strong>L181</strong> Chaleco alta visibilidad talle L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Chaleco de alta visibilidad equivale a chaleco reflectivo y coincide el talle L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#187</strong> Botiquin primeros auxilios</td>
+    <td><strong>L187</strong> Maletin primeros auxilios</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">20</td>
+    <td class="num">20</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Maletín de primeros auxilios es equivalente a botiquín de primeros auxilios.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#189</strong> Cinta peligro amarillo negro</td>
+    <td><strong>L189</strong> Cinta advertencia amarillo negro</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Cinta de advertencia amarillo negro equivale a cinta de peligro del mismo color.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#195</strong> Alicate corte diagonal</td>
+    <td><strong>L195</strong> Alicate diagonal diagonal</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">50</td>
+    <td class="num">50</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Alicate diagonal diagonal equivale a alicate corte diagonal.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#198</strong> Llave francesa 8 pulgadas</td>
+    <td><strong>L198</strong> Llave ajustable 8 in</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Llave ajustable de 8 in equivale a llave francesa de 8 pulgadas.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#199</strong> Llave francesa 12 pulgadas</td>
+    <td><strong>L199</strong> Llave ajustable 12 in</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Llave ajustable de 12 in equivale a llave francesa de 12 pulgadas.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#202</strong> Martillo carpintero 16oz</td>
+    <td><strong>L202</strong> Martillo una 16oz</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Martillo de uña y martillo carpintero de 16oz son el mismo producto.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#204</strong> Cutter reforzado</td>
+    <td><strong>L204</strong> Cuchilla retractil reforzada</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Cuchilla retráctil reforzada es la denominación estándar para un cutter reforzado.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#209</strong> Taladro percutor 650W</td>
+    <td><strong>L209</strong> Taladro impacto 650 W</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">12</td>
+    <td class="num">12</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Taladro de impacto y taladro percutor de 650W son denominaciones sinónimas.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#212</strong> Bateria adicional 18V</td>
+    <td><strong>L212</strong> Pack bateria 18 V</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">10</td>
+    <td class="num">10</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Pack de bateria de 18V corresponde a bateria adicional de 18V.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#214</strong> Escalera tijera aluminio 6 escalones</td>
+    <td><strong>L214</strong> Escalera plegable aluminio 6 escalones</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">12</td>
+    <td class="num">12</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Escalera plegable de aluminio de 6 escalones coincide con la escalera tijera de aluminio de 6 escalones.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#215</strong> Escalera extensible aluminio 24 escalones</td>
+    <td><strong>L215</strong> Escalera telescopica aluminio 24 escalones</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">6</td>
+    <td class="num">6</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Escalera telescopica de aluminio de 24 escalones es equivalente a la escalera extensible de aluminio de 24 escalones.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#216</strong> Caja herramientas plastica 20 pulgadas</td>
+    <td><strong>L216</strong> Maleta herramientas plastica 20 in</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Maleta plastica de herramientas de 20 pulgadas es el mismo producto que la caja de herramientas plastica de 20 pulgadas.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#217</strong> Carro portaherramientas 7 cajones</td>
+    <td><strong>L217</strong> Gabinete herramientas 7 cajones</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">6</td>
+    <td class="num">6</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Gabinete de herramientas de 7 cajones equivale al carro portaherramientas de 7 cajones.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#219</strong> Prolongador industrial 25m</td>
+    <td><strong>L219</strong> Alargue industrial 25 m</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">20</td>
+    <td class="num">20</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Alargue industrial de 25m es sinonimo de prolongador industrial de 25m.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#220</strong> Soldador electrico 40W</td>
+    <td><strong>L220</strong> Soldador lapiz 40 W</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">20</td>
+    <td class="num">20</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Soldador lapiz de 40W corresponde al soldador electrico tipo lapiz de 40W.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#77</strong> Limpiador PVC 125ml</td>
+    <td><strong>L77</strong> Primer limpiador PVC 125 ml</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.96</td>
+    <td class="why">Primer limpiador PVC equivale a limpiador PVC de 125ml.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#147</strong> Alcohol en gel 5L</td>
+    <td><strong>L147</strong> Gel alcohol 5 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.96</td>
+    <td class="why">Gel alcohol 5L es exactamente alcohol en gel de 5L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#188</strong> Recarga botiquin completa</td>
+    <td><strong>L188</strong> Reposicion botiquin completa</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.96</td>
+    <td class="why">Reposición de botiquín equivale a recarga de botiquín completa.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#190</strong> Cono vial reflectivo 70cm</td>
+    <td><strong>L190</strong> Cono transito reflectivo 70 cm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.96</td>
+    <td class="why">Cono de tránsito equivale a cono vial reflectivo de 70cm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#146</strong> Jabon liquido manos 5L</td>
+    <td><strong>L146</strong> Jabon para manos 5 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.97</td>
+    <td class="why">Jabon para manos 5L corresponde exactamente a jabon liquido para manos 5L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#36</strong> Tubo LED T8 18W luz fria</td>
+    <td><strong>L36</strong> Lampara tubular LED T8 18 W luz fria</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">500</td>
+    <td class="num">500</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Lampara tubular LED equivale a tubo LED y coinciden formato T8, 18W y luz fria.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#38</strong> Lampara LED E27 12W</td>
+    <td><strong>L38</strong> Bulbo LED E27 12 W</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Bulbo LED equivale a lampara LED y coinciden zocalo E27 y potencia 12W.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#39</strong> Lampara LED E27 18W</td>
+    <td><strong>L39</strong> Bulbo LED E27 18 W</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Bulbo LED equivale a lampara LED y coinciden zocalo E27 y potencia 18W.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#53</strong> Cable taller 3x2.5mm2</td>
+    <td><strong>L53</strong> Cable multipolar uso taller 3x2.5 mm2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Cable multipolar uso taller 3x2.5 mm2 es exactamente igual al cable taller 3x2.5mm2.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#73</strong> Kit reparacion mochila inodoro</td>
+    <td><strong>L73</strong> Conjunto reparacion mochila inodoro</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Conjunto de reparacion es sinonimo de kit de reparacion de mochila de inodoro.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#76</strong> Adhesivo PVC 125ml</td>
+    <td><strong>L76</strong> Pegamento para PVC 125 ml</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Pegamento para PVC equivale a adhesivo PVC en la misma medida de 125ml.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#101</strong> Disco corte metal 115mm</td>
+    <td><strong>L101</strong> Disco de corte metal 115 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">400</td>
+    <td class="num">400</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincide exactamente en tipo de disco (corte), material (metal) y medida (115 mm).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#102</strong> Disco desbaste metal 115mm</td>
+    <td><strong>L102</strong> Disco para desbastar metal 115 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincide en tipo de disco (desbaste), material (metal) y medida (115 mm).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#105</strong> Lija al agua grano 120</td>
+    <td><strong>L105</strong> Pliego lija agua grano 120</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">500</td>
+    <td class="num">500</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincide en tipo de producto (lija al agua) y especificacion de grano (120).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#106</strong> Lija al agua grano 220</td>
+    <td><strong>L106</strong> Pliego lija agua grano 220</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">500</td>
+    <td class="num">500</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincide en tipo de producto (lija al agua) y especificacion de grano (220).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#107</strong> Lija madera grano 80</td>
+    <td><strong>L107</strong> Pliego lija madera grano 80</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincide en tipo de producto (lija para madera) y especificacion de grano (80).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#133</strong> Removedor pintura gel 1L</td>
+    <td><strong>L133</strong> Removedor gel pintura gel 1 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coinciden producto removedor de pintura en gel y envase de 1L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#136</strong> Rodillo lana 22cm</td>
+    <td><strong>L136</strong> Rodillo pelo lana 22 cm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coinciden el material rodillo de lana y el tamano de 22 cm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#144</strong> Limpiavidrios 5L</td>
+    <td><strong>L144</strong> Limpia cristales 5 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Limpia cristales es sinonimo directo de limpiavidrios en presentacion de 5L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#145</strong> Desengrasante cocina 5L</td>
+    <td><strong>L145</strong> Desengrase cocina 5 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Desengrase cocina equivale a desengrasante cocina en bidon de 5L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#149</strong> Toalla papel interfoliada</td>
+    <td><strong>L149</strong> Papel toalla interfoliada</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Papel toalla interfoliada equivale directamente a toalla de papel interfoliada.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#151</strong> Bolsa residuos consorcio 80x110</td>
+    <td><strong>L151</strong> Bolsa basura consorcio 80x110</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">800</td>
+    <td class="num">800</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincide en tipo y medida (consorcio 80x110), siendo 'basura' equivalente a 'residuos'.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#153</strong> Repuesto mopa microfibra</td>
+    <td><strong>L153</strong> Recambio mopa microfibra</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">200</td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">'Recambio' es equivalente a 'repuesto' para mopa de microfibra.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#154</strong> Cabo aluminio 1.4m</td>
+    <td><strong>L154</strong> Mango aluminio 1.4 m</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">'Mango' y 'cabo' son sinónimos, coincidiendo material y longitud de 1.4m.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#157</strong> Secador piso goma 50cm</td>
+    <td><strong>L157</strong> Secapiso goma 50 cm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">120</td>
+    <td class="num">120</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">'Secapiso' equivale a 'secador piso', coincidiendo en material (goma) y medida (50cm).. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#160</strong> Guante limpieza latex talle M</td>
+    <td><strong>L160</strong> Guante aseo latex talle M</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">'Aseo' equivale a 'limpieza', coincidiendo exactamente en material (látex) y talle M.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#164</strong> Cera piso alto transito 5L</td>
+    <td><strong>L164</strong> Cera para pisos alto transito 5 L</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Mismo producto, especificación de alto tránsito y presentación de 5L.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#170</strong> Guante cuero descarne</td>
+    <td><strong>L170</strong> Guante descarne cuero descarne</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincide exactamente con guante de cuero descarne.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#173</strong> Protector auditivo tipo copa</td>
+    <td><strong>L173</strong> Proteccion auditiva tipo copa</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">150</td>
+    <td class="num">150</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Es el mismo producto de proteccion auditiva tipo copa.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#182</strong> Zapato seguridad talle 39</td>
+    <td><strong>L182</strong> Calzado de seguridad talle 39</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Calzado de seguridad equivale a zapato de seguridad y coincide el talle 39.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#184</strong> Zapato seguridad talle 41</td>
+    <td><strong>L184</strong> Calzado de seguridad talle 41</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">50</td>
+    <td class="num">50</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Calzado de seguridad equivale a zapato de seguridad y coincide el talle 41.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#185</strong> Zapato seguridad talle 42</td>
+    <td><strong>L185</strong> Calzado de seguridad talle 42</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">50</td>
+    <td class="num">50</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Calzado de seguridad equivale a zapato de seguridad y coincide el talle 42.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#186</strong> Zapato seguridad talle 43</td>
+    <td><strong>L186</strong> Calzado de seguridad talle 43</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Calzado de seguridad equivale a zapato de seguridad y coincide el talle 43.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#191</strong> Destornillador plano 4mm</td>
+    <td><strong>L191</strong> Desarmador plano 4 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Desarmador plano 4 mm es equivalente a destornillador plano 4mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#192</strong> Destornillador plano 6mm</td>
+    <td><strong>L192</strong> Desarmador plano 6 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Desarmador plano 6 mm es equivalente a destornillador plano 6mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#193</strong> Destornillador Phillips PH1</td>
+    <td><strong>L193</strong> Desarmador Phillips PH1</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Desarmador Phillips PH1 es equivalente a destornillador Phillips PH1.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#194</strong> Destornillador Phillips PH2</td>
+    <td><strong>L194</strong> Desarmador Phillips PH2</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">80</td>
+    <td class="num">80</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Desarmador Phillips PH2 es equivalente a destornillador Phillips PH2.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#200</strong> Juego llaves combinadas 8 a 19mm</td>
+    <td><strong>L200</strong> Set llaves combinadas 8 a 19 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">25</td>
+    <td class="num">25</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Set de llaves combinadas 8 a 19 mm equivale al juego de llaves combinadas solicitado.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#201</strong> Juego llaves Allen metricas</td>
+    <td><strong>L201</strong> Set llaves Allen metricas</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincidencia exacta de producto; 'set' y 'juego' son equivalentes.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#203</strong> Maza goma 500g</td>
+    <td><strong>L203</strong> Mazo goma 500g</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">30</td>
+    <td class="num">30</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Mazo de goma y maza de goma de 500g son la misma herramienta.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#205</strong> Repuesto hoja cutter 18mm</td>
+    <td><strong>L205</strong> Hojas repuesto cutter 18 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Coincidencia directa en repuesto de hojas de cutter de 18mm.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#210</strong> Amoladora angular 115mm</td>
+    <td><strong>L210</strong> Esmeril angular 115 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">12</td>
+    <td class="num">12</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Esmeril angular y amoladora angular de 115mm son la misma máquina herramienta.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#213</strong> Cargador bateria 18V</td>
+    <td><strong>L213</strong> Cargador pack 18 V</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">6</td>
+    <td class="num">6</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Cargador pack 18V es equivalente a cargador de bateria de 18V.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#218</strong> Linterna LED recargable</td>
+    <td><strong>L218</strong> Linterna recargable LED recargable</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">60</td>
+    <td class="num">60</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Mismo producto, linterna LED recargable.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#103</strong> Disco corte inoxidable 115mm</td>
+    <td><strong>L103</strong> Disco de corte inoxidable 115 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">300</td>
+    <td class="num">300</td>
+    <td class="num">-</td>
+    <td class="num">0.99</td>
+    <td class="why">Coincide exactamente en tipo de disco (corte), material (inoxidable) y medida (115 mm).. mismo producto y misma cantidad</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Oferta procesada</h2>
+<p class="sub">Las 225 lineas extraidas del archivo original.</p>
+<div class="scroll">
+<table>
+  <thead>
+    <tr>
+      <th class="num">#</th><th>Codigo</th><th>Descripcion</th><th class="num">Cant.</th>
+      <th>Unidad</th><th class="num">P. unitario</th><th class="num">Subtotal</th><th>Observaciones</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td class="num">1</td>
+    <td><code>SIP-00110</code></td>
+    <td>Conductor flexible 1.5 mm2 rojo</td>
+    <td class="num">1.000</td>
+    <td>metro</td>
+    <td class="num">$ 455,00</td>
+    <td class="num">$ 455.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">2</td>
+    <td><code>SIP-00117</code></td>
+    <td>Conductor flexible 1.5 mm2 azul</td>
+    <td class="num">1.000</td>
+    <td>metro</td>
+    <td class="num">$ 490,00</td>
+    <td class="num">$ 490.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">3</td>
+    <td><code>SIP-00124</code></td>
+    <td>Conductor flexible 1.5 mm2 verde amarillo</td>
+    <td class="num">800</td>
+    <td>metro</td>
+    <td class="num">$ 525,00</td>
+    <td class="num">$ 420.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">4</td>
+    <td><code>SIP-00131</code></td>
+    <td>Conductor flexible 1.5 mm2 negro</td>
+    <td class="num">800</td>
+    <td>metro</td>
+    <td class="num">$ 560,00</td>
+    <td class="num">$ 448.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">5</td>
+    <td><code>SIP-00138</code></td>
+    <td>Conductor flexible 2.5 mm2 rojo</td>
+    <td class="num">1.500</td>
+    <td>metro</td>
+    <td class="num">$ 595,00</td>
+    <td class="num">$ 892.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">6</td>
+    <td><code>SIP-00145</code></td>
+    <td>Conductor flexible 2.5 mm2 azul</td>
+    <td class="num">1.500</td>
+    <td>metro</td>
+    <td class="num">$ 630,00</td>
+    <td class="num">$ 945.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">7</td>
+    <td><code>SIP-00152</code></td>
+    <td>Conductor flexible 2.5 mm2 verde amarillo</td>
+    <td class="num">1.200</td>
+    <td>metro</td>
+    <td class="num">$ 420,00</td>
+    <td class="num">$ 504.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">8</td>
+    <td><code>SIP-00159</code></td>
+    <td>Conductor flexible 2.5 mm2 negro</td>
+    <td class="num">1.200</td>
+    <td>metro</td>
+    <td class="num">$ 455,00</td>
+    <td class="num">$ 546.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">9</td>
+    <td><code>SIP-00166</code></td>
+    <td>Conductor flexible 4 mm2 rojo</td>
+    <td class="num">800</td>
+    <td>metro</td>
+    <td class="num">$ 490,00</td>
+    <td class="num">$ 392.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">10</td>
+    <td><code>SIP-00173</code></td>
+    <td>Conductor flexible 4 mm2 azul</td>
+    <td class="num">800</td>
+    <td>metro</td>
+    <td class="num">$ 525,00</td>
+    <td class="num">$ 420.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">11</td>
+    <td><code>SIP-00180</code></td>
+    <td>Conductor flexible 4 mm2 verde amarillo</td>
+    <td class="num">600</td>
+    <td>metro</td>
+    <td class="num">$ 560,00</td>
+    <td class="num">$ 336.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">12</td>
+    <td><code>SIP-00187</code></td>
+    <td>Ducto polipropileno pasacable 20x10 blanca</td>
+    <td class="num">300</td>
+    <td>metro</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 819.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">13</td>
+    <td><code>SIP-00194</code></td>
+    <td>Ducto polipropileno pasacable 40x20 blanca</td>
+    <td class="num">200</td>
+    <td>metro</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 612.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">14</td>
+    <td><code>SIP-00201</code></td>
+    <td>Caja de paso plastica 10x10</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 508.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">15</td>
+    <td><code>SIP-00208</code></td>
+    <td>Gabinete estanco IP65</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 446.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">16</td>
+    <td><code>SIP-00215</code></td>
+    <td>Interruptor automatico 2 polos 10 A</td>
+    <td class="num">40</td>
+    <td>unidad</td>
+    <td class="num">$ 11.000,00</td>
+    <td class="num">$ 440.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">17</td>
+    <td><code>SIP-00222</code></td>
+    <td>Interruptor automatico 2 polos 16 A</td>
+    <td class="num">60</td>
+    <td>unidad</td>
+    <td class="num">$ 12.200,00</td>
+    <td class="num">$ 732.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">18</td>
+    <td><code>SIP-00229</code></td>
+    <td>Interruptor automatico 2 polos 25 A</td>
+    <td class="num">54</td>
+    <td>unidad</td>
+    <td class="num">$ 13.400,00</td>
+    <td class="num">$ 723.600,00</td>
+    <td class="why">stock parcial</td>
+  </tr>
+  <tr>
+    <td class="num">19</td>
+    <td><code>SIP-00236</code></td>
+    <td>Interruptor automatico 2 polos 32 A</td>
+    <td class="num">40</td>
+    <td>unidad</td>
+    <td class="num">$ 14.600,00</td>
+    <td class="num">$ 584.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">20</td>
+    <td><code>SIP-00243</code></td>
+    <td>Protector diferencial 2 polos 25 A 30 mA</td>
+    <td class="num">35</td>
+    <td>unidad</td>
+    <td class="num">$ 9.800,00</td>
+    <td class="num">$ 343.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">21</td>
+    <td><code>SIP-00250</code></td>
+    <td>Protector diferencial 2 polos 40 A 30 mA</td>
+    <td class="num">25</td>
+    <td>unidad</td>
+    <td class="num">$ 11.000,00</td>
+    <td class="num">$ 275.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">22</td>
+    <td><code>SIP-00257</code></td>
+    <td>Modulo toma electrica doble 10 A blanco</td>
+    <td class="num">250</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 600.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">23</td>
+    <td><code>SIP-00264</code></td>
+    <td>Modulo toma electrica industrial 16 A</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 218.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">24</td>
+    <td><code>SIP-00271</code></td>
+    <td>Plug macho 10 A</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 459.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">25</td>
+    <td><code>SIP-00278</code></td>
+    <td>Conector hembra 10 A</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 508.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">26</td>
+    <td><code>SIP-00285</code></td>
+    <td>Alargue electrico 10 m</td>
+    <td class="num">30</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 111.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">27</td>
+    <td><code>SIP-00292</code></td>
+    <td>Base multiple 6 tomas</td>
+    <td class="num">60</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 243.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">28</td>
+    <td><code>SIP-00299</code></td>
+    <td>Rollo aislante negra</td>
+    <td class="num">300</td>
+    <td>rollo</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 1.314.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">29</td>
+    <td><code>SIP-00306</code></td>
+    <td>Rollo aislante roja</td>
+    <td class="num">80</td>
+    <td>rollo</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 376.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">30</td>
+    <td><code>SIP-00313</code></td>
+    <td>Brida plastica 200 mm</td>
+    <td class="num">220</td>
+    <td>bolsa</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 1.108.800,00</td>
+    <td class="why">bulto minimo</td>
+  </tr>
+  <tr>
+    <td class="num">31</td>
+    <td><code>SIP-00320</code></td>
+    <td>Brida plastica 300 mm</td>
+    <td class="num">150</td>
+    <td>bolsa</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 805.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">32</td>
+    <td><code>SIP-00327</code></td>
+    <td>Regleta de conexion 12 polos 10 mm</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 570.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">33</td>
+    <td><code>SIP-00334</code></td>
+    <td>Terminal anillo aislado rojo</td>
+    <td class="num">1.000</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 2.400.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">34</td>
+    <td><code>SIP-00341</code></td>
+    <td>Terminal faston pala aislado azul</td>
+    <td class="num">1.000</td>
+    <td>unidad</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 2.730.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">35</td>
+    <td><code>SIP-00348</code></td>
+    <td>Tester digital basico</td>
+    <td class="num">12</td>
+    <td>unidad</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 36.720,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">36</td>
+    <td><code>SIP-00355</code></td>
+    <td>Lampara tubular LED T8 18 W luz fria</td>
+    <td class="num">500</td>
+    <td>unidad</td>
+    <td class="num">$ 3.600,00</td>
+    <td class="num">$ 1.800.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">37</td>
+    <td><code>SIP-00362</code></td>
+    <td>Placa luminosa LED 60x60 40 W</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 4.450,00</td>
+    <td class="num">$ 667.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">38</td>
+    <td><code>SIP-00369</code></td>
+    <td>Bulbo LED E27 12 W</td>
+    <td class="num">300</td>
+    <td>unidad</td>
+    <td class="num">$ 5.300,00</td>
+    <td class="num">$ 1.590.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">39</td>
+    <td><code>SIP-00376</code></td>
+    <td>Bulbo LED E27 18 W</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 6.150,00</td>
+    <td class="num">$ 1.230.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">40</td>
+    <td><code>SIP-00383</code></td>
+    <td>Proyector LED uso externo 100 W IP65</td>
+    <td class="num">72</td>
+    <td>unidad</td>
+    <td class="num">$ 7.000,00</td>
+    <td class="num">$ 504.000,00</td>
+    <td class="why">stock parcial</td>
+  </tr>
+  <tr>
+    <td class="num">41</td>
+    <td><code>SIP-00390</code></td>
+    <td>Detector de presencia pared</td>
+    <td class="num">70</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 352.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">42</td>
+    <td><code>SIP-00397</code></td>
+    <td>Celula fotoelectrica uso externo</td>
+    <td class="num">50</td>
+    <td>unidad</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 268.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">43</td>
+    <td><code>SIP-00404</code></td>
+    <td>Portalamp E27</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 9.550,00</td>
+    <td class="num">$ 955.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">44</td>
+    <td><code>SIP-00411</code></td>
+    <td>Fuente para placa LED 40 W</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 10.400,00</td>
+    <td class="num">$ 832.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">45</td>
+    <td><code>SIP-00418</code></td>
+    <td>Luminaria autonoma emergencia LED</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 3.600,00</td>
+    <td class="num">$ 432.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">46</td>
+    <td><code>SIP-00425</code></td>
+    <td>Senal luminosa salida emergencia</td>
+    <td class="num">60</td>
+    <td>unidad</td>
+    <td class="num">$ 4.450,00</td>
+    <td class="num">$ 267.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">47</td>
+    <td><code>SIP-00432</code></td>
+    <td>Tira LED 12 V 5 m</td>
+    <td class="num">40</td>
+    <td>rollo</td>
+    <td class="num">$ 5.300,00</td>
+    <td class="num">$ 212.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">48</td>
+    <td><code>SIP-00439</code></td>
+    <td>Fuente conmutada 12 V 5 A</td>
+    <td class="num">30</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 111.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">49</td>
+    <td><code>SIP-00446</code></td>
+    <td>Canio flexible corrugado liviano 3/4</td>
+    <td class="num">500</td>
+    <td>metro</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 2.025.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">50</td>
+    <td><code>SIP-00453</code></td>
+    <td>Canio flexible corrugado pesado 1 pulgada</td>
+    <td class="num">300</td>
+    <td>metro</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 1.314.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">51</td>
+    <td><code>SIP-00460</code></td>
+    <td>Acople para corrugado 3/4</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 942.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">52</td>
+    <td><code>SIP-00467</code></td>
+    <td>Acople para corrugado 1 pulgada</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 756.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">53</td>
+    <td><code>SIP-00474</code></td>
+    <td>Cable multipolar uso taller 3x2.5 mm2</td>
+    <td class="num">300</td>
+    <td>metro</td>
+    <td class="num">$ 560,00</td>
+    <td class="num">$ 168.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">54</td>
+    <td><code>SIP-00481</code></td>
+    <td>Tecla simple embutir</td>
+    <td class="num">180</td>
+    <td>unidad</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 1.026.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">55</td>
+    <td><code>SIP-00488</code></td>
+    <td>Tecla doble embutir</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 288.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">56</td>
+    <td><code>SIP-00495</code></td>
+    <td>Tuberia PVC presion 1/2</td>
+    <td class="num">300</td>
+    <td>metro</td>
+    <td class="num">$ 1.500,00</td>
+    <td class="num">$ 450.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">57</td>
+    <td><code>SIP-00502</code></td>
+    <td>Tuberia PVC presion 3/4</td>
+    <td class="num">250</td>
+    <td>metro</td>
+    <td class="num">$ 1.930,00</td>
+    <td class="num">$ 482.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">58</td>
+    <td><code>SIP-00509</code></td>
+    <td>Tuberia PVC presion 1 pulgada</td>
+    <td class="num">150</td>
+    <td>metro</td>
+    <td class="num">$ 2.360,00</td>
+    <td class="num">$ 354.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">59</td>
+    <td><code>SIP-00516</code></td>
+    <td>Curva PVC 1/2</td>
+    <td class="num">300</td>
+    <td>unidad</td>
+    <td class="num">$ 2.790,00</td>
+    <td class="num">$ 837.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">60</td>
+    <td><code>SIP-00523</code></td>
+    <td>Curva PVC 3/4</td>
+    <td class="num">250</td>
+    <td>unidad</td>
+    <td class="num">$ 3.220,00</td>
+    <td class="num">$ 805.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">61</td>
+    <td><code>SIP-00530</code></td>
+    <td>T PVC 1/2</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 876.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">62</td>
+    <td><code>SIP-00537</code></td>
+    <td>T PVC 3/4</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 706.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">63</td>
+    <td><code>SIP-00544</code></td>
+    <td>Cupla union PVC 1/2</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 604.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">64</td>
+    <td><code>SIP-00551</code></td>
+    <td>Cupla union PVC 3/4</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 537.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">65</td>
+    <td><code>SIP-00558</code></td>
+    <td>Llave de paso esferica 1/2</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 1.930,00</td>
+    <td class="num">$ 231.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">66</td>
+    <td><code>SIP-00565</code></td>
+    <td>Llave de paso esferica 3/4</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 2.360,00</td>
+    <td class="num">$ 236.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">67</td>
+    <td><code>SIP-00572</code></td>
+    <td>Conexion flexible sanitaria 40 cm</td>
+    <td class="num">180</td>
+    <td>unidad</td>
+    <td class="num">$ 2.790,00</td>
+    <td class="num">$ 502.200,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">68</td>
+    <td><code>SIP-00579</code></td>
+    <td>Conexion flexible sanitaria 60 cm</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 3.220,00</td>
+    <td class="num">$ 386.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">69</td>
+    <td><code>SIP-00586</code></td>
+    <td>Griferia para lavatorio cierre ceramico</td>
+    <td class="num">60</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 203.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">70</td>
+    <td><code>SIP-00593</code></td>
+    <td>Grifo de servicio bronce 1/2</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 297.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">71</td>
+    <td><code>SIP-00600</code></td>
+    <td>Desague sifonado polipropileno lavatorio</td>
+    <td class="num">90</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 364.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">72</td>
+    <td><code>SIP-00607</code></td>
+    <td>Valvula flotante deposito inodoro</td>
+    <td class="num">70</td>
+    <td>unidad</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 306.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">73</td>
+    <td><code>SIP-00614</code></td>
+    <td>Conjunto reparacion mochila inodoro</td>
+    <td class="num">80</td>
+    <td>kit</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 376.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">74</td>
+    <td><code>SIP-00621</code></td>
+    <td>Traba rosca selladora anaerobico</td>
+    <td class="num">60</td>
+    <td>tubo</td>
+    <td class="num">$ 17.100,00</td>
+    <td class="num">$ 1.026.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">75</td>
+    <td><code>SIP-00628</code></td>
+    <td>Rollo PTFE</td>
+    <td class="num">270</td>
+    <td>rollo</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 1.449.900,00</td>
+    <td class="why">stock parcial</td>
+  </tr>
+  <tr>
+    <td class="num">76</td>
+    <td><code>SIP-00635</code></td>
+    <td>Pegamento para PVC 125 ml</td>
+    <td class="num">100</td>
+    <td>pomo</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 570.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">77</td>
+    <td><code>SIP-00642</code></td>
+    <td>Primer limpiador PVC 125 ml</td>
+    <td class="num">80</td>
+    <td>pomo</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 192.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">78</td>
+    <td><code>SIP-00649</code></td>
+    <td>Rejilla de desague acero inoxidable</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 273.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">79</td>
+    <td><code>SIP-00656</code></td>
+    <td>Tapa registro PVC</td>
+    <td class="num">60</td>
+    <td>unidad</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 183.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">80</td>
+    <td><code>SIP-00663</code></td>
+    <td>Manguera tramada 3/4</td>
+    <td class="num">400</td>
+    <td>metro</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 1.356.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">81</td>
+    <td><code>SIP-00670</code></td>
+    <td>Fijacion autoperforante 8x1</td>
+    <td class="num">5.000</td>
+    <td>unidad</td>
+    <td class="num">$ 49,00</td>
+    <td class="num">$ 245.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">82</td>
+    <td><code>SIP-00677</code></td>
+    <td>Fijacion autoperforante 8x1.5</td>
+    <td class="num">5.000</td>
+    <td>unidad</td>
+    <td class="num">$ 56,00</td>
+    <td class="num">$ 280.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">83</td>
+    <td><code>SIP-00684</code></td>
+    <td>Fijacion para madera 6x1</td>
+    <td class="num">4.000</td>
+    <td>unidad</td>
+    <td class="num">$ 63,00</td>
+    <td class="num">$ 252.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">84</td>
+    <td><code>SIP-00691</code></td>
+    <td>Fijacion para madera 8x2</td>
+    <td class="num">4.000</td>
+    <td>unidad</td>
+    <td class="num">$ 28,00</td>
+    <td class="num">$ 112.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">85</td>
+    <td><code>SIP-00698</code></td>
+    <td>Anclaje nylon 6 mm</td>
+    <td class="num">6.000</td>
+    <td>unidad</td>
+    <td class="num">$ 35,00</td>
+    <td class="num">$ 210.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">86</td>
+    <td><code>SIP-00705</code></td>
+    <td>Anclaje nylon 8 mm</td>
+    <td class="num">6.000</td>
+    <td>unidad</td>
+    <td class="num">$ 42,00</td>
+    <td class="num">$ 252.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">87</td>
+    <td><code>SIP-00712</code></td>
+    <td>Anclaje nylon 10 mm</td>
+    <td class="num">3.000</td>
+    <td>unidad</td>
+    <td class="num">$ 49,00</td>
+    <td class="num">$ 147.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">88</td>
+    <td><code>SIP-00719</code></td>
+    <td>Arandela lisa 1/4</td>
+    <td class="num">5.500</td>
+    <td>unidad</td>
+    <td class="num">$ 56,00</td>
+    <td class="num">$ 308.000,00</td>
+    <td class="why">bulto minimo</td>
+  </tr>
+  <tr>
+    <td class="num">89</td>
+    <td><code>SIP-00726</code></td>
+    <td>Tuerca HEX 1/4</td>
+    <td class="num">5.000</td>
+    <td>unidad</td>
+    <td class="num">$ 63,00</td>
+    <td class="num">$ 315.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">90</td>
+    <td><code>SIP-00733</code></td>
+    <td>Esparrago roscado 1/4</td>
+    <td class="num">300</td>
+    <td>unidad</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 918.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">91</td>
+    <td><code>SIP-00740</code></td>
+    <td>Esparrago roscado 3/8</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 678.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">92</td>
+    <td><code>SIP-00747</code></td>
+    <td>Remache aluminio pop 4 mm</td>
+    <td class="num">4.000</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 14.880.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">93</td>
+    <td><code>SIP-00754</code></td>
+    <td>Grapa metalica 1/2</td>
+    <td class="num">1.000</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 4.050.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">94</td>
+    <td><code>SIP-00761</code></td>
+    <td>Grapa metalica 3/4</td>
+    <td class="num">1.000</td>
+    <td>unidad</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 4.380.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">95</td>
+    <td><code>SIP-00768</code></td>
+    <td>Grapa omega 3/4</td>
+    <td class="num">800</td>
+    <td>unidad</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 3.768.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">96</td>
+    <td><code>SIP-00775</code></td>
+    <td>Mecha HSS 4 mm</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 1.008.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">97</td>
+    <td><code>SIP-00782</code></td>
+    <td>Mecha HSS 6 mm</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 1.074.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">98</td>
+    <td><code>SIP-00789</code></td>
+    <td>Mecha HSS 8 mm</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 684.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">99</td>
+    <td><code>SIP-00796</code></td>
+    <td>Mecha widia 6 mm</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 360.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">100</td>
+    <td><code>SIP-00803</code></td>
+    <td>Mecha widia 8 mm</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 409.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">101</td>
+    <td><code>SIP-00810</code></td>
+    <td>Disco de corte metal 115 mm</td>
+    <td class="num">400</td>
+    <td>unidad</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 1.224.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">102</td>
+    <td><code>SIP-00817</code></td>
+    <td>Disco para desbastar metal 115 mm</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 678.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">103</td>
+    <td><code>SIP-00824</code></td>
+    <td>Disco de corte inoxidable 115 mm</td>
+    <td class="num">300</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 1.116.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">104</td>
+    <td><code>SIP-00831</code></td>
+    <td>Sierra manual hoja manual 24T</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 810.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">105</td>
+    <td><code>SIP-00838</code></td>
+    <td>Pliego lija agua grano 120</td>
+    <td class="num">500</td>
+    <td>hoja</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 2.190.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">106</td>
+    <td><code>SIP-00845</code></td>
+    <td>Pliego lija agua grano 220</td>
+    <td class="num">500</td>
+    <td>hoja</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 2.355.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">107</td>
+    <td><code>SIP-00852</code></td>
+    <td>Pliego lija madera grano 80</td>
+    <td class="num">300</td>
+    <td>hoja</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 1.512.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">108</td>
+    <td><code>SIP-00859</code></td>
+    <td>Bisagra standard 2 in</td>
+    <td class="num">300</td>
+    <td>unidad</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 1.611.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">109</td>
+    <td><code>SIP-00866</code></td>
+    <td>Bisagra standard 3 in</td>
+    <td class="num">250</td>
+    <td>unidad</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 1.425.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">110</td>
+    <td><code>SIP-00873</code></td>
+    <td>Cierre candado 40 mm</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 240.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">111</td>
+    <td><code>SIP-00880</code></td>
+    <td>Cierre candado 50 mm</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 218.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">112</td>
+    <td><code>SIP-00887</code></td>
+    <td>Pasador zincado zincado</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 459.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">113</td>
+    <td><code>SIP-00894</code></td>
+    <td>Rueda pivotante 50 mm</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 406.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">114</td>
+    <td><code>SIP-00901</code></td>
+    <td>Rueda rigida 50 mm</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 446.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">115</td>
+    <td><code>SIP-00908</code></td>
+    <td>Angulo escuadra metalico 100x100</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 810.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">116</td>
+    <td><code>SIP-00915</code></td>
+    <td>Latex acrilico uso interno blanca 20 L</td>
+    <td class="num">80</td>
+    <td>lata</td>
+    <td class="num">$ 17.100,00</td>
+    <td class="num">$ 1.368.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">117</td>
+    <td><code>SIP-00922</code></td>
+    <td>Latex acrilico uso interno gris claro 20 L</td>
+    <td class="num">30</td>
+    <td>lata</td>
+    <td class="num">$ 19.000,00</td>
+    <td class="num">$ 570.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">118</td>
+    <td><code>SIP-00929</code></td>
+    <td>Sintetico brillante blanco 4 L</td>
+    <td class="num">72</td>
+    <td>lata</td>
+    <td class="num">$ 20.900,00</td>
+    <td class="num">$ 1.504.800,00</td>
+    <td class="why">stock parcial</td>
+  </tr>
+  <tr>
+    <td class="num">119</td>
+    <td><code>SIP-00936</code></td>
+    <td>Sintetico brillante negro 4 L</td>
+    <td class="num">50</td>
+    <td>lata</td>
+    <td class="num">$ 9.500,00</td>
+    <td class="num">$ 475.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">120</td>
+    <td><code>SIP-00943</code></td>
+    <td>Sintetico brillante amarillo seguridad 4 L</td>
+    <td class="num">40</td>
+    <td>lata</td>
+    <td class="num">$ 11.400,00</td>
+    <td class="num">$ 456.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">121</td>
+    <td><code>SIP-00950</code></td>
+    <td>Sintetico brillante rojo seguridad 4 L</td>
+    <td class="num">30</td>
+    <td>lata</td>
+    <td class="num">$ 13.300,00</td>
+    <td class="num">$ 399.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">122</td>
+    <td><code>SIP-00957</code></td>
+    <td>Revestimiento para demarcar amarilla 10 L</td>
+    <td class="num">40</td>
+    <td>lata</td>
+    <td class="num">$ 15.200,00</td>
+    <td class="num">$ 608.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">123</td>
+    <td><code>SIP-00964</code></td>
+    <td>Convertidor de oxido gris 4 L</td>
+    <td class="num">60</td>
+    <td>lata</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 183.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">124</td>
+    <td><code>SIP-00971</code></td>
+    <td>Masilla enduido 20 kg</td>
+    <td class="num">50</td>
+    <td>balde</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 169.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">125</td>
+    <td><code>SIP-00978</code></td>
+    <td>Masilla poliester multiuso 1 kg</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 297.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">126</td>
+    <td><code>SIP-00985</code></td>
+    <td>Silicona selladora cristal 280 ml</td>
+    <td class="num">200</td>
+    <td>cartucho</td>
+    <td class="num">$ 9.500,00</td>
+    <td class="num">$ 1.900.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">127</td>
+    <td><code>SIP-00992</code></td>
+    <td>Silicona selladora blanco 280 ml</td>
+    <td class="num">200</td>
+    <td>cartucho</td>
+    <td class="num">$ 11.400,00</td>
+    <td class="num">$ 2.280.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">128</td>
+    <td><code>SIP-00999</code></td>
+    <td>Pegamento montaje 300 ml</td>
+    <td class="num">120</td>
+    <td>cartucho</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 565.200,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">129</td>
+    <td><code>SIP-01006</code></td>
+    <td>Adhesivo contacto 1 L</td>
+    <td class="num">70</td>
+    <td>lata</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 352.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">130</td>
+    <td><code>SIP-01013</code></td>
+    <td>Lubricante aerosol multiuso 400 ml</td>
+    <td class="num">220</td>
+    <td>unidad</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 1.181.400,00</td>
+    <td class="why">bulto minimo</td>
+  </tr>
+  <tr>
+    <td class="num">131</td>
+    <td><code>SIP-01020</code></td>
+    <td>Desengrase industrial 5 L</td>
+    <td class="num">100</td>
+    <td>bidon</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 570.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">132</td>
+    <td><code>SIP-01027</code></td>
+    <td>IPA limpieza tecnica 1 L</td>
+    <td class="num">120</td>
+    <td>litro</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 288.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">133</td>
+    <td><code>SIP-01034</code></td>
+    <td>Removedor gel pintura gel 1 L</td>
+    <td class="num">30</td>
+    <td>lata</td>
+    <td class="num">$ 9.500,00</td>
+    <td class="num">$ 285.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">134</td>
+    <td><code>SIP-01041</code></td>
+    <td>Brocha 2 in</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 459.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">135</td>
+    <td><code>SIP-01048</code></td>
+    <td>Brocha 3 in</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 508.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">136</td>
+    <td><code>SIP-01055</code></td>
+    <td>Rodillo pelo lana 22 cm</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 446.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">137</td>
+    <td><code>SIP-01062</code></td>
+    <td>Cubeta pintura plastica</td>
+    <td class="num">60</td>
+    <td>unidad</td>
+    <td class="num">$ 17.100,00</td>
+    <td class="num">$ 1.026.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">138</td>
+    <td><code>SIP-01069</code></td>
+    <td>Cinta de pintor 24 mm</td>
+    <td class="num">500</td>
+    <td>rollo</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 2.190.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">139</td>
+    <td><code>SIP-01076</code></td>
+    <td>Cinta de pintor 48 mm</td>
+    <td class="num">400</td>
+    <td>rollo</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 1.884.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">140</td>
+    <td><code>SIP-01083</code></td>
+    <td>Film protector 4x5 m</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 504.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">141</td>
+    <td><code>SIP-01090</code></td>
+    <td>Limpiador detergente concentrado 5 L</td>
+    <td class="num">120</td>
+    <td>bidon</td>
+    <td class="num">$ 7.100,00</td>
+    <td class="num">$ 852.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">142</td>
+    <td><code>SIP-01097</code></td>
+    <td>Hipoclorito 5 L</td>
+    <td class="num">200</td>
+    <td>bidon</td>
+    <td class="num">$ 8.000,00</td>
+    <td class="num">$ 1.600.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">143</td>
+    <td><code>SIP-01104</code></td>
+    <td>Sanitizante limpiador 5 L</td>
+    <td class="num">160</td>
+    <td>bidon</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 384.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">144</td>
+    <td><code>SIP-01111</code></td>
+    <td>Limpia cristales 5 L</td>
+    <td class="num">80</td>
+    <td>bidon</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 218.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">145</td>
+    <td><code>SIP-01118</code></td>
+    <td>Desengrase cocina 5 L</td>
+    <td class="num">80</td>
+    <td>bidon</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 244.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">146</td>
+    <td><code>SIP-01125</code></td>
+    <td>Jabon para manos 5 L</td>
+    <td class="num">150</td>
+    <td>bidon</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 508.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">147</td>
+    <td><code>SIP-01132</code></td>
+    <td>Gel alcohol 5 L</td>
+    <td class="num">120</td>
+    <td>bidon</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 446.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">148</td>
+    <td><code>SIP-01139</code></td>
+    <td>Higienico jumbo industrial 300 m</td>
+    <td class="num">600</td>
+    <td>rollo</td>
+    <td class="num">$ 5.200,00</td>
+    <td class="num">$ 3.120.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">149</td>
+    <td><code>SIP-01146</code></td>
+    <td>Papel toalla interfoliada</td>
+    <td class="num">300</td>
+    <td>caja</td>
+    <td class="num">$ 5.200,00</td>
+    <td class="num">$ 1.560.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">150</td>
+    <td><code>SIP-01153</code></td>
+    <td>Bolsa basura negra 60x90</td>
+    <td class="num">900</td>
+    <td>paquete</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 4.239.000,00</td>
+    <td class="why">stock parcial</td>
+  </tr>
+  <tr>
+    <td class="num">151</td>
+    <td><code>SIP-01160</code></td>
+    <td>Bolsa basura consorcio 80x110</td>
+    <td class="num">800</td>
+    <td>paquete</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 4.032.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">152</td>
+    <td><code>SIP-01167</code></td>
+    <td>Pano piso algodon</td>
+    <td class="num">500</td>
+    <td>unidad</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 2.685.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">153</td>
+    <td><code>SIP-01174</code></td>
+    <td>Recambio mopa microfibra</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 1.140.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">154</td>
+    <td><code>SIP-01181</code></td>
+    <td>Mango aluminio 1.4 m</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 360.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">155</td>
+    <td><code>SIP-01188</code></td>
+    <td>Escoba uso interno</td>
+    <td class="num">180</td>
+    <td>unidad</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 491.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">156</td>
+    <td><code>SIP-01195</code></td>
+    <td>Escoba patio dura</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 367.200,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">157</td>
+    <td><code>SIP-01202</code></td>
+    <td>Secapiso goma 50 cm</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 406.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">158</td>
+    <td><code>SIP-01209</code></td>
+    <td>Cubeta plastica 12 L</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 372.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">159</td>
+    <td><code>SIP-01216</code></td>
+    <td>Rociador manual 1 L</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 486.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">160</td>
+    <td><code>SIP-01223</code></td>
+    <td>Guante aseo latex talle M</td>
+    <td class="num">300</td>
+    <td>par</td>
+    <td class="num">$ 6.200,00</td>
+    <td class="num">$ 1.860.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">161</td>
+    <td><code>SIP-01230</code></td>
+    <td>Guante aseo latex talle L</td>
+    <td class="num">300</td>
+    <td>par</td>
+    <td class="num">$ 7.100,00</td>
+    <td class="num">$ 2.130.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">162</td>
+    <td><code>SIP-01237</code></td>
+    <td>Esponja fibra abrasiva</td>
+    <td class="num">1.000</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 5.040.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">163</td>
+    <td><code>SIP-01244</code></td>
+    <td>Fibra verde</td>
+    <td class="num">1.000</td>
+    <td>unidad</td>
+    <td class="num">$ 8.900,00</td>
+    <td class="num">$ 8.900.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">164</td>
+    <td><code>SIP-01251</code></td>
+    <td>Cera para pisos alto transito 5 L</td>
+    <td class="num">80</td>
+    <td>bidon</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 456.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">165</td>
+    <td><code>SIP-01258</code></td>
+    <td>Aromatizador ambiente aerosol 360 ml</td>
+    <td class="num">300</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 720.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">166</td>
+    <td><code>SIP-01265</code></td>
+    <td>Guante tejido con puntos talle M</td>
+    <td class="num">600</td>
+    <td>par</td>
+    <td class="num">$ 9.800,00</td>
+    <td class="num">$ 5.880.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">167</td>
+    <td><code>SIP-01272</code></td>
+    <td>Guante tejido con puntos talle L</td>
+    <td class="num">600</td>
+    <td>par</td>
+    <td class="num">$ 10.950,00</td>
+    <td class="num">$ 6.570.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">168</td>
+    <td><code>SIP-01279</code></td>
+    <td>Guante nitrilo examen desc. talle M</td>
+    <td class="num">200</td>
+    <td>caja</td>
+    <td class="num">$ 12.100,00</td>
+    <td class="num">$ 2.420.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">169</td>
+    <td><code>SIP-01286</code></td>
+    <td>Guante nitrilo examen desc. talle L</td>
+    <td class="num">200</td>
+    <td>caja</td>
+    <td class="num">$ 13.250,00</td>
+    <td class="num">$ 2.650.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">170</td>
+    <td><code>SIP-01293</code></td>
+    <td>Guante descarne cuero descarne</td>
+    <td class="num">300</td>
+    <td>par</td>
+    <td class="num">$ 2.900,00</td>
+    <td class="num">$ 870.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">171</td>
+    <td><code>SIP-01300</code></td>
+    <td>Gafa proteccion cristal</td>
+    <td class="num">440</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 1.782.000,00</td>
+    <td class="why">bulto minimo</td>
+  </tr>
+  <tr>
+    <td class="num">172</td>
+    <td><code>SIP-01307</code></td>
+    <td>Gafa proteccion gris</td>
+    <td class="num">200</td>
+    <td>unidad</td>
+    <td class="num">$ 5.200,00</td>
+    <td class="num">$ 1.040.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">173</td>
+    <td><code>SIP-01314</code></td>
+    <td>Proteccion auditiva tipo copa</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 756.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">174</td>
+    <td><code>SIP-01321</code></td>
+    <td>Proteccion auditiva endoaural desc.</td>
+    <td class="num">300</td>
+    <td>caja</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 1.611.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">175</td>
+    <td><code>SIP-01328</code></td>
+    <td>Casco obra blanco</td>
+    <td class="num">120</td>
+    <td>unidad</td>
+    <td class="num">$ 8.650,00</td>
+    <td class="num">$ 1.038.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">176</td>
+    <td><code>SIP-01335</code></td>
+    <td>Casco obra amarillo</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 9.800,00</td>
+    <td class="num">$ 784.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">177</td>
+    <td><code>SIP-01342</code></td>
+    <td>Mascarilla desc. triple capa</td>
+    <td class="num">300</td>
+    <td>caja</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 819.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">178</td>
+    <td><code>SIP-01349</code></td>
+    <td>Semimascara respiratoria</td>
+    <td class="num">30</td>
+    <td>unidad</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 91.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">179</td>
+    <td><code>SIP-01356</code></td>
+    <td>Cartucho filtro particulas P100</td>
+    <td class="num">120</td>
+    <td>par</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 406.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">180</td>
+    <td><code>SIP-01363</code></td>
+    <td>Chaleco alta visibilidad talle M</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 558.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">181</td>
+    <td><code>SIP-01370</code></td>
+    <td>Chaleco alta visibilidad talle L</td>
+    <td class="num">150</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 607.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">182</td>
+    <td><code>SIP-01377</code></td>
+    <td>Calzado de seguridad talle 39</td>
+    <td class="num">30</td>
+    <td>par</td>
+    <td class="num">$ 5.200,00</td>
+    <td class="num">$ 156.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">183</td>
+    <td><code>SIP-01384</code></td>
+    <td>Calzado de seguridad talle 40</td>
+    <td class="num">36</td>
+    <td>par</td>
+    <td class="num">$ 6.350,00</td>
+    <td class="num">$ 228.600,00</td>
+    <td class="why">stock parcial</td>
+  </tr>
+  <tr>
+    <td class="num">184</td>
+    <td><code>SIP-01391</code></td>
+    <td>Calzado de seguridad talle 41</td>
+    <td class="num">50</td>
+    <td>par</td>
+    <td class="num">$ 7.500,00</td>
+    <td class="num">$ 375.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">185</td>
+    <td><code>SIP-01398</code></td>
+    <td>Calzado de seguridad talle 42</td>
+    <td class="num">50</td>
+    <td>par</td>
+    <td class="num">$ 8.650,00</td>
+    <td class="num">$ 432.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">186</td>
+    <td><code>SIP-01405</code></td>
+    <td>Calzado de seguridad talle 43</td>
+    <td class="num">40</td>
+    <td>par</td>
+    <td class="num">$ 9.800,00</td>
+    <td class="num">$ 392.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">187</td>
+    <td><code>SIP-01412</code></td>
+    <td>Maletin primeros auxilios</td>
+    <td class="num">20</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 48.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">188</td>
+    <td><code>SIP-01419</code></td>
+    <td>Reposicion botiquin completa</td>
+    <td class="num">40</td>
+    <td>kit</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 109.200,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">189</td>
+    <td><code>SIP-01426</code></td>
+    <td>Cinta advertencia amarillo negro</td>
+    <td class="num">300</td>
+    <td>rollo</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 918.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">190</td>
+    <td><code>SIP-01433</code></td>
+    <td>Cono transito reflectivo 70 cm</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 339.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">191</td>
+    <td><code>SIP-01440</code></td>
+    <td>Desarmador plano 4 mm</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 297.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">192</td>
+    <td><code>SIP-01447</code></td>
+    <td>Desarmador plano 6 mm</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 324.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">193</td>
+    <td><code>SIP-01454</code></td>
+    <td>Desarmador Phillips PH1</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 350.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">194</td>
+    <td><code>SIP-01461</code></td>
+    <td>Desarmador Phillips PH2</td>
+    <td class="num">80</td>
+    <td>unidad</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 376.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">195</td>
+    <td><code>SIP-01468</code></td>
+    <td>Alicate diagonal diagonal</td>
+    <td class="num">50</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 252.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">196</td>
+    <td><code>SIP-01475</code></td>
+    <td>Pinza combinada</td>
+    <td class="num">50</td>
+    <td>unidad</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 268.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">197</td>
+    <td><code>SIP-01482</code></td>
+    <td>Alicate de punta fina</td>
+    <td class="num">40</td>
+    <td>unidad</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 228.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">198</td>
+    <td><code>SIP-01489</code></td>
+    <td>Llave ajustable 8 in</td>
+    <td class="num">40</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 96.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">199</td>
+    <td><code>SIP-01496</code></td>
+    <td>Llave ajustable 12 in</td>
+    <td class="num">30</td>
+    <td>unidad</td>
+    <td class="num">$ 2.730,00</td>
+    <td class="num">$ 81.900,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">200</td>
+    <td><code>SIP-01503</code></td>
+    <td>Set llaves combinadas 8 a 19 mm</td>
+    <td class="num">25</td>
+    <td>set</td>
+    <td class="num">$ 3.060,00</td>
+    <td class="num">$ 76.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">201</td>
+    <td><code>SIP-01510</code></td>
+    <td>Set llaves Allen metricas</td>
+    <td class="num">30</td>
+    <td>set</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 101.700,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">202</td>
+    <td><code>SIP-01517</code></td>
+    <td>Martillo una 16oz</td>
+    <td class="num">40</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 148.800,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">203</td>
+    <td><code>SIP-01524</code></td>
+    <td>Mazo goma 500g</td>
+    <td class="num">30</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 121.500,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">204</td>
+    <td><code>SIP-01531</code></td>
+    <td>Cuchilla retractil reforzada</td>
+    <td class="num">100</td>
+    <td>unidad</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 438.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">205</td>
+    <td><code>SIP-01538</code></td>
+    <td>Hojas repuesto cutter 18 mm</td>
+    <td class="num">300</td>
+    <td>pack</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 1.413.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">206</td>
+    <td><code>SIP-01545</code></td>
+    <td>Flexometro 5 m</td>
+    <td class="num">88</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 443.520,00</td>
+    <td class="why">bulto minimo</td>
+  </tr>
+  <tr>
+    <td class="num">207</td>
+    <td><code>SIP-01552</code></td>
+    <td>Nivel burbuja 60 cm</td>
+    <td class="num">25</td>
+    <td>unidad</td>
+    <td class="num">$ 5.370,00</td>
+    <td class="num">$ 134.250,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">208</td>
+    <td><code>SIP-01559</code></td>
+    <td>Aplicador cartucho manual</td>
+    <td class="num">30</td>
+    <td>unidad</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 171.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">209</td>
+    <td><code>SIP-01566</code></td>
+    <td>Taladro impacto 650 W</td>
+    <td class="num">12</td>
+    <td>unidad</td>
+    <td class="num">$ 133.000,00</td>
+    <td class="num">$ 1.596.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">210</td>
+    <td><code>SIP-01573</code></td>
+    <td>Esmeril angular 115 mm</td>
+    <td class="num">12</td>
+    <td>unidad</td>
+    <td class="num">$ 151.000,00</td>
+    <td class="num">$ 1.812.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">211</td>
+    <td><code>SIP-01580</code></td>
+    <td>Driver bateria 18 V</td>
+    <td class="num">10</td>
+    <td>unidad</td>
+    <td class="num">$ 169.000,00</td>
+    <td class="num">$ 1.690.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">212</td>
+    <td><code>SIP-01587</code></td>
+    <td>Pack bateria 18 V</td>
+    <td class="num">10</td>
+    <td>unidad</td>
+    <td class="num">$ 3.390,00</td>
+    <td class="num">$ 33.900,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">213</td>
+    <td><code>SIP-01594</code></td>
+    <td>Cargador pack 18 V</td>
+    <td class="num">6</td>
+    <td>unidad</td>
+    <td class="num">$ 3.720,00</td>
+    <td class="num">$ 22.320,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">214</td>
+    <td><code>SIP-01601</code></td>
+    <td>Escalera plegable aluminio 6 escalones</td>
+    <td class="num">12</td>
+    <td>unidad</td>
+    <td class="num">$ 4.050,00</td>
+    <td class="num">$ 48.600,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">215</td>
+    <td><code>SIP-01608</code></td>
+    <td>Escalera telescopica aluminio 24 escalones</td>
+    <td class="num">6</td>
+    <td>unidad</td>
+    <td class="num">$ 4.380,00</td>
+    <td class="num">$ 26.280,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">216</td>
+    <td><code>SIP-01615</code></td>
+    <td>Maleta herramientas plastica 20 in</td>
+    <td class="num">40</td>
+    <td>unidad</td>
+    <td class="num">$ 4.710,00</td>
+    <td class="num">$ 188.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">217</td>
+    <td><code>SIP-01622</code></td>
+    <td>Gabinete herramientas 7 cajones</td>
+    <td class="num">6</td>
+    <td>unidad</td>
+    <td class="num">$ 5.040,00</td>
+    <td class="num">$ 30.240,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">218</td>
+    <td><code>SIP-01629</code></td>
+    <td>Linterna recargable LED recargable</td>
+    <td class="num">60</td>
+    <td>unidad</td>
+    <td class="num">$ 5.300,00</td>
+    <td class="num">$ 318.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">219</td>
+    <td><code>SIP-01636</code></td>
+    <td>Alargue industrial 25 m</td>
+    <td class="num">20</td>
+    <td>unidad</td>
+    <td class="num">$ 5.700,00</td>
+    <td class="num">$ 114.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">220</td>
+    <td><code>SIP-01643</code></td>
+    <td>Soldador lapiz 40 W</td>
+    <td class="num">20</td>
+    <td>unidad</td>
+    <td class="num">$ 2.400,00</td>
+    <td class="num">$ 48.000,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">221</td>
+    <td><code>SIP-88001</code></td>
+    <td>Detector optico de humo 12 V</td>
+    <td class="num">35</td>
+    <td>unidad</td>
+    <td class="num">$ 18.400,00</td>
+    <td class="num">$ 644.000,00</td>
+    <td class="why">adicional sugerido</td>
+  </tr>
+  <tr>
+    <td class="num">222</td>
+    <td><code>SIP-88002</code></td>
+    <td>Baliza industrial LED color ambar</td>
+    <td class="num">20</td>
+    <td>unidad</td>
+    <td class="num">$ 51.200,00</td>
+    <td class="num">$ 1.024.000,00</td>
+    <td class="why">adicional sugerido</td>
+  </tr>
+  <tr>
+    <td class="num">223</td>
+    <td><code>SIP-88003</code></td>
+    <td>Conductor subterraneo tripolar 3x4 mm2</td>
+    <td class="num">200</td>
+    <td>metro</td>
+    <td class="num">$ 2.450,00</td>
+    <td class="num">$ 490.000,00</td>
+    <td class="why">adicional sugerido</td>
+  </tr>
+  <tr>
+    <td class="num">224</td>
+    <td><code>SIP-88004</code></td>
+    <td>Bulbo LED alta potencia E40 60 W</td>
+    <td class="num">70</td>
+    <td>unidad</td>
+    <td class="num">$ 19.800,00</td>
+    <td class="num">$ 1.386.000,00</td>
+    <td class="why">linea alternativa</td>
+  </tr>
+  <tr>
+    <td class="num">225</td>
+    <td><code>SIP-88005</code></td>
+    <td>Kit bridas plasticas colores surtidos</td>
+    <td class="num">40</td>
+    <td>kit</td>
+    <td class="num">$ 6.500,00</td>
+    <td class="num">$ 260.000,00</td>
+    <td class="why">adicional sugerido</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Trazabilidad</h2>
+<h3>Extraccion</h3>
+<div class="meta"><dl>
+      <dt>Estrategia</dt><dd>deterministic</dd>
+      <dt>Modelo</dt><dd>ninguno (deterministico)</dd>
+      <dt>Llamadas al LLM</dt><dd>0 en 0 lotes</dd>
+      <dt>Tokens</dt><dd>0 entrada / 0 salida</dd>
+      <dt>Duracion</dt><dd>43 ms</dd>
+      <dt>SHA-256</dt><dd><code>70ee222e11186b22f13551b7...</code></dd>
+    </dl></div>
+<p class="note">Sin avisos de extraccion.</p>
+<h3>Conciliacion</h3>
+<div class="meta"><dl>
+    <dt>Estrategia</dt><dd><code>cascade-v1</code></dd>
+    <dt>Modelo</dt><dd>gemini-3.6-flash</dd>
+    <dt>Por alias</dt><dd>0</dd>
+    <dt>Por LLM</dt><dd>220</dd>
+    <dt>Por similitud lexica</dt><dd>0</dd>
+    <dt>Conflictos</dt><dd>0</dd>
+    <dt>Tokens</dt><dd>66962 entrada / 42438 salida</dd>
+  </dl></div>
+<h3>Volumen</h3>
+<p>
+    Conciliar 225 lineas contra 220 items por fuerza bruta serian
+    <strong>49.500 comparaciones</strong>.
+    Con el prefiltro vectorial fueron <strong>1 query indexada</strong>
+    (HNSW + coseno, dentro de Postgres) en 1453 ms, y el decisor
+    evaluo 5 candidatos por linea en vez de 220.
+  </p>
+
+<footer>
+  Conciliacion <code>7733bffe-4cf6-4df8-b098-e260610f0aa5</code> &middot;
+  generada el 26/8/2026, 10:22:09 &middot;
+  estrategia <code>cascade-v1</code>
+</footer>
+
+</main>
+</body>
+</html>

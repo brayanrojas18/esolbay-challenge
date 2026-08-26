@@ -1,0 +1,39 @@
+{
+  "name": "esolbay-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Procesamiento y conciliacion de ofertas de proveedores (PDF/XLSX) contra solicitudes de compra",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "seed": "node --env-file-if-exists=.env --import tsx src/cli/seed.ts",
+    "process": "node --env-file-if-exists=.env --import tsx src/cli/process.ts",
+    "reconcile": "node --env-file-if-exists=.env --import tsx src/cli/reconcile.ts",
+    "report": "node --env-file-if-exists=.env --import tsx src/cli/report.ts",
+    "db:migrate": "node --env-file-if-exists=.env --import tsx src/db/migrate.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^4.0.51",
+    "@ai-sdk/openai": "^4.0.47",
+    "ai": "^7.0.79",
+    "csv-parse": "^5.6.0",
+    "drizzle-orm": "^0.45.2",
+    "p-limit": "^6.2.0",
+    "postgres": "^3.4.9",
+    "unpdf": "^1.8.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

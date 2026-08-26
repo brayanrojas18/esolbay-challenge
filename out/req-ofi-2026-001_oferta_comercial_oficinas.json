@@ -1,0 +1,433 @@
+{
+  "reconciliation": {
+    "id": "d01d03ae-394d-4755-ad1d-0630e52d0d82",
+    "createdAt": "2026-08-26T14:19:09.541Z",
+    "strategyVersion": "cascade-v1",
+    "modelUsed": "gemini-3.6-flash"
+  },
+  "requisition": {
+    "code": "REQ-OFI-2026-001",
+    "title": "Compra puntual de insumos administrativos"
+  },
+  "offer": {
+    "id": "43e4f281-67df-4015-a15c-be6c503141ee",
+    "providerName": "Comercial Oficinas del Sur",
+    "quoteCode": "COT-COS-2026-119",
+    "quoteDate": "2026-05-22",
+    "terms": "Propuesta parcial. Un articulo administrativo no se incluye por falta de disponibilidad.",
+    "sourceFilename": "oferta_comercial_oficinas.pdf",
+    "sourceFormat": "pdf",
+    "currency": null,
+    "extractionMeta": {
+      "batches": 1,
+      "llmCalls": 1,
+      "strategy": "llm+deterministic",
+      "warnings": [],
+      "modelUsed": "gemini-3.6-flash",
+      "durationMs": 12938.9081,
+      "sourceHash": "ae8cf44282a44732ab7b85ea862cad3f99ae31c79c06c878b0b4fcb87b56e386",
+      "inputTokens": 500,
+      "outputTokens": 2036,
+      "sourceFormat": "pdf",
+      "sourceFilename": "oferta_comercial_oficinas.pdf"
+    }
+  },
+  "summary": {
+    "covered": 5,
+    "metrics": {
+      "llmCalls": 1,
+      "conflicts": 0,
+      "llmBatches": 1,
+      "offerLines": 6,
+      "inputTokens": 1894,
+      "prefilterMs": 547.9953999999998,
+      "outputTokens": 1102,
+      "resolvedByLlm": 5,
+      "resolvedByAlias": 0,
+      "prefilterQueries": 1,
+      "requisitionItems": 6,
+      "resolvedByLexical": 0,
+      "bruteForceComparisons": 36
+    },
+    "byStatus": {
+      "extra": 1,
+      "match": 3,
+      "partial_quantity": 2,
+      "missing_from_offer": 1
+    },
+    "offerLines": 6,
+    "coveragePct": 83.3,
+    "extrasTotal": 417600,
+    "needsReview": 1,
+    "quotedTotal": 1306020,
+    "overageLines": 0,
+    "ambiguousItems": 0,
+    "shortfallLines": 2,
+    "comparableTotal": 888420,
+    "requisitionItems": 6
+  },
+  "offerItems": [
+    {
+      "lineNo": 1,
+      "supplierCode": "COS-00110",
+      "description": "Paquete de papel blanco tamanio A4 75 gramos",
+      "quantity": 90,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 5044,
+      "subtotal": 453960,
+      "rawNotes": "stock parcial",
+      "flags": [
+        "partial_stock"
+      ]
+    },
+    {
+      "lineNo": 2,
+      "supplierCode": "COS-00117",
+      "description": "Lapicera azul trazo medio economica",
+      "quantity": 450,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 187.2,
+      "subtotal": 84240,
+      "rawNotes": "cantidad menor a la solicitada",
+      "flags": [
+        "partial_stock"
+      ]
+    },
+    {
+      "lineNo": 3,
+      "supplierCode": "COS-00131",
+      "description": "Rotulador indeleble color negro",
+      "quantity": 50,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 988,
+      "subtotal": 49400,
+      "rawNotes": null,
+      "flags": []
+    },
+    {
+      "lineNo": 4,
+      "supplierCode": "COS-00138",
+      "description": "Rollo cinta transparente de embalaje 48 mm",
+      "quantity": 100,
+      "unitOfMeasure": "roll",
+      "rawUnit": "rollo",
+      "unitPrice": 1261,
+      "subtotal": 126100,
+      "rawNotes": null,
+      "flags": []
+    },
+    {
+      "lineNo": 5,
+      "supplierCode": "COS-00145",
+      "description": "Cuaderno A4 con tapa rigida",
+      "quantity": 40,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 4368,
+      "subtotal": 174720,
+      "rawNotes": null,
+      "flags": []
+    },
+    {
+      "lineNo": 6,
+      "supplierCode": "COS-77015",
+      "description": "Cartucho toner negro compatible",
+      "quantity": 12,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 34800,
+      "subtotal": 417600,
+      "rawNotes": "producto adicional no pedido",
+      "flags": [
+        "extra_suggested"
+      ]
+    }
+  ],
+  "reconciledLines": [
+    {
+      "status": "missing_from_offer",
+      "confidence": 1,
+      "quantityDelta": null,
+      "priceTotal": null,
+      "reasoning": "ninguna linea de la oferta corresponde a este item solicitado",
+      "needsReview": true,
+      "decidedBy": "unmatched",
+      "candidates": [],
+      "requisitionLineNo": 3,
+      "requestedDescription": "Carpeta plastica A4",
+      "requestedQuantity": 200,
+      "requestedUnit": "unidad",
+      "offerLineNo": null,
+      "offeredDescription": null,
+      "offeredQuantity": null,
+      "offeredUnit": null
+    },
+    {
+      "status": "partial_quantity",
+      "confidence": 0.92,
+      "quantityDelta": -50,
+      "priceTotal": 84240,
+      "reasoning": "Lapicera azul es sinonimo de boligrafo azul.. el proveedor ofrece 450 de las 500 pedidas (faltan 50)",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8149,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        },
+        {
+          "score": 0.7324,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.7156,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.689,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.669,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        }
+      ],
+      "requisitionLineNo": 2,
+      "requestedDescription": "Boligrafo azul",
+      "requestedQuantity": 500,
+      "requestedUnit": "unidad",
+      "offerLineNo": 2,
+      "offeredDescription": "Lapicera azul trazo medio economica",
+      "offeredQuantity": 450,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "partial_quantity",
+      "confidence": 0.95,
+      "quantityDelta": -10,
+      "priceTotal": 453960,
+      "reasoning": "Equivalencia directa entre paquete de papel y resma A4 de 75g.. el proveedor ofrece 90 de las 100 pedidas (faltan 10)",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8939,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        },
+        {
+          "score": 0.7381,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.7332,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6616,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.6603,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        }
+      ],
+      "requisitionLineNo": 1,
+      "requestedDescription": "Resma papel A4 75g",
+      "requestedQuantity": 100,
+      "requestedUnit": "unidad",
+      "offerLineNo": 1,
+      "offeredDescription": "Paquete de papel blanco tamanio A4 75 gramos",
+      "offeredQuantity": 90,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "extra",
+      "confidence": 0.27,
+      "quantityDelta": null,
+      "priceTotal": 417600,
+      "reasoning": "el LLM determino que ninguno de los candidatos corresponde a esta linea",
+      "needsReview": false,
+      "decidedBy": "unmatched",
+      "candidates": [
+        {
+          "score": 0.7321,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.688,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.6604,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6591,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        },
+        {
+          "score": 0.6439,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        }
+      ],
+      "requisitionLineNo": null,
+      "requestedDescription": null,
+      "requestedQuantity": null,
+      "requestedUnit": null,
+      "offerLineNo": 6,
+      "offeredDescription": "Cartucho toner negro compatible",
+      "offeredQuantity": 12,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 49400,
+      "reasoning": "Rotulador indeleble equivale a marcador permanente negro.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9081,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.7271,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        },
+        {
+          "score": 0.721,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.6847,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6567,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        }
+      ],
+      "requisitionLineNo": 4,
+      "requestedDescription": "Marcador permanente negro",
+      "requestedQuantity": 50,
+      "requestedUnit": "unidad",
+      "offerLineNo": 3,
+      "offeredDescription": "Rotulador indeleble color negro",
+      "offeredQuantity": 50,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 174720,
+      "reasoning": "Tapa rigida equivale a cuaderno tapa dura A4.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9552,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.8175,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.743,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        },
+        {
+          "score": 0.7118,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.6815,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        }
+      ],
+      "requisitionLineNo": 6,
+      "requestedDescription": "Cuaderno tapa dura A4",
+      "requestedQuantity": 40,
+      "requestedUnit": "unidad",
+      "offerLineNo": 5,
+      "offeredDescription": "Cuaderno A4 con tapa rigida",
+      "offeredQuantity": 40,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.98,
+      "quantityDelta": 0,
+      "priceTotal": 126100,
+      "reasoning": "Mismo producto: cinta adhesiva transparente de 48mm.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9551,
+          "lineNo": 5,
+          "description": "Cinta adhesiva transparente 48mm"
+        },
+        {
+          "score": 0.6584,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6496,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        },
+        {
+          "score": 0.611,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.5988,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        }
+      ],
+      "requisitionLineNo": 5,
+      "requestedDescription": "Cinta adhesiva transparente 48mm",
+      "requestedQuantity": 100,
+      "requestedUnit": "rollo",
+      "offerLineNo": 4,
+      "offeredDescription": "Rollo cinta transparente de embalaje 48 mm",
+      "offeredQuantity": 100,
+      "offeredUnit": "rollo"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Finales de linea normalizados: el repo guarda LF y cada quien recibe los de su
+# sistema. Sin esto, clonar en Linux desde un commit hecho en Windows muestra el
+# archivo entero como modificado.
+* text=auto eol=lf
+
+# Binarios: que git no intente normalizarlos.
+*.pdf   binary
+*.xlsx  binary
+*.png   binary
+*.jpg   binary

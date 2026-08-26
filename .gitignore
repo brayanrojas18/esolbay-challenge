@@ -1,0 +1,18 @@
+node_modules/
+
+# Credenciales. NUNCA se commitea: ver .env.example para la plantilla.
+.env
+.env.local
+
+# Cache de embeddings: se regenera solo y pesa.
+.cache/
+
+*.log
+.DS_Store
+Thumbs.db
+
+# out/ SI se versiona a proposito: son los reportes generados de las cuatro
+# ofertas del challenge, para que se puedan leer sin correr nada.
+
+# Archivo de workspace de VS Code: apunta a rutas locales de esta maquina.
+*.code-workspace

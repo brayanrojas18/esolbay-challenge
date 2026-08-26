@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comercial Oficinas del Sur - REQ-OFI-2026-001</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #0f172a; --muted: #64748b; --line: #e2e8f0;
+    --panel: #f8fafc; --accent: #1d4ed8; --warn-bg: #fef3c7; --warn-fg: #92400e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a; --fg: #e2e8f0; --muted: #94a3b8; --line: #1e293b;
+      --panel: #1e293b; --accent: #60a5fa; --warn-bg: #422006; --warn-fg: #fcd34d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 4rem;
+    background: var(--bg); color: var(--fg);
+    font: 15px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 .75rem; padding-bottom: .4rem; border-bottom: 2px solid var(--line); }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .5rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+  .sub { color: var(--muted); margin: 0 0 1.5rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .75rem; margin: 1rem 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; }
+  .card .k { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .card .v { font-size: 1.5rem; font-weight: 650; margin-top: .2rem; letter-spacing: -.02em; }
+  .card .n { font-size: .8rem; color: var(--muted); }
+  .meta { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.25rem; }
+  .meta dl { display: grid; grid-template-columns: max-content 1fr; gap: .35rem 1.25rem; margin: 0; }
+  .meta dt { color: var(--muted); font-size: .85rem; }
+  .meta dd { margin: 0; }
+  .scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; margin: .75rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+  th { background: var(--panel); text-align: left; font-weight: 600; white-space: nowrap;
+       padding: .6rem .7rem; border-bottom: 2px solid var(--line); position: sticky; top: 0; }
+  td { padding: .5rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .badge { display: inline-block; padding: .1rem .5rem; border-radius: 99px; font-size: .72rem;
+           font-weight: 600; white-space: nowrap; color: var(--c); border: 1px solid var(--c);
+           background: color-mix(in srgb, var(--c) 12%, transparent); }
+  .review { background: color-mix(in srgb, #f59e0b 8%, transparent); }
+  .why { color: var(--muted); font-size: .8rem; max-width: 34rem; }
+  .alert { background: var(--warn-bg); color: var(--warn-fg); border-radius: 10px;
+           padding: .8rem 1.1rem; margin: 1rem 0; font-weight: 550; }
+  .note { color: var(--muted); font-size: .85rem; border-left: 3px solid var(--line); padding-left: .9rem; margin: .75rem 0; }
+  code { background: var(--panel); padding: .1rem .35rem; border-radius: 4px; font-size: .85em; }
+  details { margin: .4rem 0; border: 1px solid var(--line); border-radius: 8px; padding: .5rem .8rem; }
+  summary { cursor: pointer; font-size: .85rem; font-weight: 550; }
+  details ul { margin: .5rem 0 .25rem; padding-left: 1.2rem; font-size: .82rem; color: var(--muted); }
+  .chosen { color: var(--fg); font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .8rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Comercial Oficinas del Sur</h1>
+<p class="sub">
+  Cotizacion COT-COS-2026-119 &middot; 2026-05-22 &middot;
+  solicitud <strong>REQ-OFI-2026-001</strong> &ndash; Compra puntual de insumos administrativos
+</p>
+
+<div class="cards">
+  <div class="card">
+    <div class="k">Cobertura</div>
+    <div class="v">83.3%</div>
+    <div class="n">5 de 6 items</div>
+  </div>
+  <div class="card">
+    <div class="k">Total comparable</div>
+    <div class="v">$ 888.420,00</div>
+    <div class="n">sin contar sobrantes</div>
+  </div>
+  <div class="card">
+    <div class="k">A revisar</div>
+    <div class="v">1</div>
+    <div class="n">lineas requieren decision</div>
+  </div>
+  <div class="card">
+    <div class="k">No cotizados</div>
+    <div class="v">1</div>
+    <div class="n">items sin oferta</div>
+  </div>
+</div>
+
+<div class="meta">
+  <dl>
+    <dt>Archivo</dt><dd><code>oferta_comercial_oficinas.pdf</code> (PDF)</dd>
+    <dt>Condiciones</dt><dd>Propuesta parcial. Un articulo administrativo no se incluye por falta de disponibilidad.</dd>
+    <dt>Total cotizado</dt><dd>$ 1.306.020,00</dd>
+    <dt>Sobrantes</dt><dd>$ 417.600,00</dd>
+  </dl>
+</div>
+
+<p class="note">
+  El <strong>total comparable</strong> es el que sirve para poner a este proveedor contra otro:
+  los sobrantes no se pidieron y sumarlos inflaria la comparacion.
+</p>
+
+<h2>Desglose por estado</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th>Estado</th><th class="num">Lineas</th><th>Que significa</th></tr></thead>
+  <tbody>
+  <tr><td><span class="badge" style="--c:#16a34a">Coincidencia</span></td><td class="num">3</td><td class="why">mismo producto y misma cantidad</td></tr>
+  <tr><td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td><td class="num">2</td><td class="why">mismo producto, cantidad distinta a la pedida</td></tr>
+  <tr><td><span class="badge" style="--c:#dc2626">No cotizado</span></td><td class="num">1</td><td class="why">pedido pero no cotizado</td></tr>
+  <tr><td><span class="badge" style="--c:#64748b">Sobrante</span></td><td class="num">1</td><td class="why">cotizado pero no pedido</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Alertas</h2>
+<div class="alert">1 linea(s) requieren revision del comprador.</div>
+<h3>No cotizados (1)</h3>
+<div class="scroll"><table><thead><tr><th>Item</th><th class="num">Cantidad</th></tr></thead><tbody>
+<tr><td><strong>#3</strong> Carpeta plastica A4</td><td class="num">200 unidad</td></tr>
+</tbody></table></div>
+<h3>Cotizados por debajo de lo pedido (2)</h3>
+<div class="scroll"><table><thead><tr><th>Item</th><th class="num">Pedido</th><th class="num">Ofrecido</th><th class="num">Falta</th></tr></thead><tbody>
+<tr><td><strong>#2</strong> Boligrafo azul</td><td class="num">500</td><td class="num">450</td><td class="num">50</td></tr>
+<tr><td><strong>#1</strong> Resma papel A4 75g</td><td class="num">100</td><td class="num">90</td><td class="num">10</td></tr>
+</tbody></table></div>
+
+<h2>Tabla conciliada</h2>
+<p class="sub">Ordenada poniendo primero lo que requiere atencion.</p>
+<div class="scroll">
+<table>
+  <thead>
+    <tr>
+      <th>Item pedido</th><th>Linea ofertada</th><th>Estado</th>
+      <th class="num">Pedida</th><th class="num">Ofrecida</th><th class="num">&Delta;</th>
+      <th class="num">Conf.</th><th>Motivo</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr class="review">
+    <td><strong>#3</strong> Carpeta plastica A4</td>
+    <td><span style="color:var(--muted)">&mdash;</span></td>
+    <td><span class="badge" style="--c:#dc2626">No cotizado</span></td>
+    <td class="num">200</td>
+    <td class="num">-</td>
+    <td class="num">-</td>
+    <td class="num">1.00</td>
+    <td class="why">ninguna linea de la oferta corresponde a este item solicitado</td>
+  </tr>
+  <tr>
+    <td><strong>#2</strong> Boligrafo azul</td>
+    <td><strong>L2</strong> Lapicera azul trazo medio economica</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">500</td>
+    <td class="num">450</td>
+    <td class="num">-50</td>
+    <td class="num">0.92</td>
+    <td class="why">Lapicera azul es sinonimo de boligrafo azul.. el proveedor ofrece 450 de las 500 pedidas (faltan 50)</td>
+  </tr>
+  <tr>
+    <td><strong>#1</strong> Resma papel A4 75g</td>
+    <td><strong>L1</strong> Paquete de papel blanco tamanio A4 75 gramos</td>
+    <td><span class="badge" style="--c:#d97706">Cantidad parcial</span></td>
+    <td class="num">100</td>
+    <td class="num">90</td>
+    <td class="num">-10</td>
+    <td class="num">0.95</td>
+    <td class="why">Equivalencia directa entre paquete de papel y resma A4 de 75g.. el proveedor ofrece 90 de las 100 pedidas (faltan 10)</td>
+  </tr>
+  <tr>
+    <td><span style="color:var(--muted)">&mdash;</span></td>
+    <td><strong>L6</strong> Cartucho toner negro compatible</td>
+    <td><span class="badge" style="--c:#64748b">Sobrante</span></td>
+    <td class="num">-</td>
+    <td class="num">12</td>
+    <td class="num">-</td>
+    <td class="num">0.27</td>
+    <td class="why">el LLM determino que ninguno de los candidatos corresponde a esta linea</td>
+  </tr>
+  <tr>
+    <td><strong>#4</strong> Marcador permanente negro</td>
+    <td><strong>L3</strong> Rotulador indeleble color negro</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">50</td>
+    <td class="num">50</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Rotulador indeleble equivale a marcador permanente negro.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#6</strong> Cuaderno tapa dura A4</td>
+    <td><strong>L5</strong> Cuaderno A4 con tapa rigida</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">40</td>
+    <td class="num">40</td>
+    <td class="num">-</td>
+    <td class="num">0.95</td>
+    <td class="why">Tapa rigida equivale a cuaderno tapa dura A4.. mismo producto y misma cantidad</td>
+  </tr>
+  <tr>
+    <td><strong>#5</strong> Cinta adhesiva transparente 48mm</td>
+    <td><strong>L4</strong> Rollo cinta transparente de embalaje 48 mm</td>
+    <td><span class="badge" style="--c:#16a34a">Coincidencia</span></td>
+    <td class="num">100</td>
+    <td class="num">100</td>
+    <td class="num">-</td>
+    <td class="num">0.98</td>
+    <td class="why">Mismo producto: cinta adhesiva transparente de 48mm.. mismo producto y misma cantidad</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Oferta procesada</h2>
+<p class="sub">Las 6 lineas extraidas del archivo original.</p>
+<div class="scroll">
+<table>
+  <thead>
+    <tr>
+      <th class="num">#</th><th>Codigo</th><th>Descripcion</th><th class="num">Cant.</th>
+      <th>Unidad</th><th class="num">P. unitario</th><th class="num">Subtotal</th><th>Observaciones</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td class="num">1</td>
+    <td><code>COS-00110</code></td>
+    <td>Paquete de papel blanco tamanio A4 75 gramos</td>
+    <td class="num">90</td>
+    <td>unidad</td>
+    <td class="num">$ 5.044,00</td>
+    <td class="num">$ 453.960,00</td>
+    <td class="why">stock parcial</td>
+  </tr>
+  <tr>
+    <td class="num">2</td>
+    <td><code>COS-00117</code></td>
+    <td>Lapicera azul trazo medio economica</td>
+    <td class="num">450</td>
+    <td>unidad</td>
+    <td class="num">$ 187,20</td>
+    <td class="num">$ 84.240,00</td>
+    <td class="why">stock parcial</td>
+  </tr>
+  <tr>
+    <td class="num">3</td>
+    <td><code>COS-00131</code></td>
+    <td>Rotulador indeleble color negro</td>
+    <td class="num">50</td>
+    <td>unidad</td>
+    <td class="num">$ 988,00</td>
+    <td class="num">$ 49.400,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">4</td>
+    <td><code>COS-00138</code></td>
+    <td>Rollo cinta transparente de embalaje 48 mm</td>
+    <td class="num">100</td>
+    <td>rollo</td>
+    <td class="num">$ 1.261,00</td>
+    <td class="num">$ 126.100,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">5</td>
+    <td><code>COS-00145</code></td>
+    <td>Cuaderno A4 con tapa rigida</td>
+    <td class="num">40</td>
+    <td>unidad</td>
+    <td class="num">$ 4.368,00</td>
+    <td class="num">$ 174.720,00</td>
+    <td class="why"></td>
+  </tr>
+  <tr>
+    <td class="num">6</td>
+    <td><code>COS-77015</code></td>
+    <td>Cartucho toner negro compatible</td>
+    <td class="num">12</td>
+    <td>unidad</td>
+    <td class="num">$ 34.800,00</td>
+    <td class="num">$ 417.600,00</td>
+    <td class="why">adicional sugerido</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Trazabilidad</h2>
+<h3>Extraccion</h3>
+<div class="meta"><dl>
+      <dt>Estrategia</dt><dd>llm+deterministic</dd>
+      <dt>Modelo</dt><dd>gemini-3.6-flash</dd>
+      <dt>Llamadas al LLM</dt><dd>1 en 1 lotes</dd>
+      <dt>Tokens</dt><dd>500 entrada / 2036 salida</dd>
+      <dt>Duracion</dt><dd>12939 ms</dd>
+      <dt>SHA-256</dt><dd><code>ae8cf44282a44732ab7b85ea...</code></dd>
+    </dl></div>
+<p class="note">Sin avisos de extraccion.</p>
+<h3>Conciliacion</h3>
+<div class="meta"><dl>
+    <dt>Estrategia</dt><dd><code>cascade-v1</code></dd>
+    <dt>Modelo</dt><dd>gemini-3.6-flash</dd>
+    <dt>Por alias</dt><dd>0</dd>
+    <dt>Por LLM</dt><dd>5</dd>
+    <dt>Por similitud lexica</dt><dd>0</dd>
+    <dt>Conflictos</dt><dd>0</dd>
+    <dt>Tokens</dt><dd>1894 entrada / 1102 salida</dd>
+  </dl></div>
+<h3>Volumen</h3>
+<p>
+    Conciliar 6 lineas contra 6 items por fuerza bruta serian
+    <strong>36 comparaciones</strong>.
+    Con el prefiltro vectorial fueron <strong>1 query indexada</strong>
+    (HNSW + coseno, dentro de Postgres) en 548 ms, y el decisor
+    evaluo 5 candidatos por linea en vez de 6.
+  </p>
+
+<footer>
+  Conciliacion <code>d01d03ae-394d-4755-ad1d-0630e52d0d82</code> &middot;
+  generada el 26/8/2026, 10:19:09 &middot;
+  estrategia <code>cascade-v1</code>
+</footer>
+
+</main>
+</body>
+</html>

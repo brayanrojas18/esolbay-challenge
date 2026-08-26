@@ -1,0 +1,468 @@
+{
+  "reconciliation": {
+    "id": "3c993459-621c-461f-9819-e6ccbd04fd38",
+    "createdAt": "2026-08-26T14:18:40.110Z",
+    "strategyVersion": "cascade-v1",
+    "modelUsed": "gemini-3.6-flash"
+  },
+  "requisition": {
+    "code": "REQ-OFI-2026-001",
+    "title": "Compra puntual de insumos administrativos"
+  },
+  "offer": {
+    "id": "e3fb5f4e-9bf0-4f2b-b5c8-76fab16d0877",
+    "providerName": "Oficenter Norte SA",
+    "quoteCode": "COT-OFN-2026-051",
+    "quoteDate": "2026-05-20",
+    "terms": "Entrega estimada dentro de 7 dias habiles. Valores unitarios sujetos a stock al momento de la orden.",
+    "sourceFilename": "oferta_oficenter_norte.xlsx",
+    "sourceFormat": "xlsx",
+    "currency": null,
+    "extractionMeta": {
+      "batches": 0,
+      "llmCalls": 0,
+      "strategy": "deterministic",
+      "warnings": [],
+      "modelUsed": null,
+      "durationMs": 23.344600000000355,
+      "sourceHash": "d4bb3b0cc0cbde18c05ff5195da12fa7d2f44351ac984e32c35f9bd33a3ca16c",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "sourceFormat": "xlsx",
+      "sourceFilename": "oferta_oficenter_norte.xlsx"
+    }
+  },
+  "summary": {
+    "covered": 6,
+    "metrics": {
+      "llmCalls": 1,
+      "conflicts": 0,
+      "llmBatches": 1,
+      "offerLines": 7,
+      "inputTokens": 2124,
+      "prefilterMs": 555.6296999999995,
+      "outputTokens": 1601,
+      "resolvedByLlm": 6,
+      "resolvedByAlias": 0,
+      "prefilterQueries": 1,
+      "requisitionItems": 6,
+      "resolvedByLexical": 0,
+      "bruteForceComparisons": 42
+    },
+    "byStatus": {
+      "extra": 1,
+      "match": 5,
+      "partial_quantity": 1
+    },
+    "offerLines": 7,
+    "coveragePct": 100,
+    "extrasTotal": 53400,
+    "needsReview": 0,
+    "quotedTotal": 1182900,
+    "overageLines": 1,
+    "ambiguousItems": 0,
+    "shortfallLines": 0,
+    "comparableTotal": 1129500,
+    "requisitionItems": 6
+  },
+  "offerItems": [
+    {
+      "lineNo": 1,
+      "supplierCode": "OFN-00110",
+      "description": "Paquete de papel blanco tamanio A4 75 gramos",
+      "quantity": 100,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 5200,
+      "subtotal": 520000,
+      "rawNotes": null,
+      "flags": []
+    },
+    {
+      "lineNo": 2,
+      "supplierCode": "OFN-00117",
+      "description": "Lapicera tinta azul punta media",
+      "quantity": 500,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 180,
+      "subtotal": 90000,
+      "rawNotes": null,
+      "flags": []
+    },
+    {
+      "lineNo": 3,
+      "supplierCode": "OFN-00124",
+      "description": "Folder plastico para hojas A4",
+      "quantity": 200,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 740,
+      "subtotal": 148000,
+      "rawNotes": null,
+      "flags": []
+    },
+    {
+      "lineNo": 4,
+      "supplierCode": "OFN-00131",
+      "description": "Rotulador indeleble color negro",
+      "quantity": 50,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 950,
+      "subtotal": 47500,
+      "rawNotes": null,
+      "flags": []
+    },
+    {
+      "lineNo": 5,
+      "supplierCode": "OFN-00138",
+      "description": "Rollo cinta transparente de embalaje 48 mm",
+      "quantity": 120,
+      "unitOfMeasure": "roll",
+      "rawUnit": "rollo",
+      "unitPrice": 1300,
+      "subtotal": 156000,
+      "rawNotes": "presentacion comercial superior",
+      "flags": [
+        "min_order_qty"
+      ]
+    },
+    {
+      "lineNo": 6,
+      "supplierCode": "OFN-00145",
+      "description": "Cuaderno A4 con tapa rigida",
+      "quantity": 40,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 4200,
+      "subtotal": 168000,
+      "rawNotes": null,
+      "flags": []
+    },
+    {
+      "lineNo": 7,
+      "supplierCode": "OFN-88001",
+      "description": "Corrector liquido formato lapicera 7 ml",
+      "quantity": 60,
+      "unitOfMeasure": "unit",
+      "rawUnit": "unidad",
+      "unitPrice": 890,
+      "subtotal": 53400,
+      "rawNotes": "producto adicional sugerido",
+      "flags": [
+        "extra_suggested"
+      ]
+    }
+  ],
+  "reconciledLines": [
+    {
+      "status": "partial_quantity",
+      "confidence": 0.95,
+      "quantityDelta": 20,
+      "priceTotal": 156000,
+      "reasoning": "Coincide plenamente en tipo de cinta, transparencia y medida de 48mm.. el proveedor ofrece 120 contra 100 pedidas (20 de mas, probable presentacion comercial)",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9551,
+          "lineNo": 5,
+          "description": "Cinta adhesiva transparente 48mm"
+        },
+        {
+          "score": 0.6584,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6496,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        },
+        {
+          "score": 0.611,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.5988,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        }
+      ],
+      "requisitionLineNo": 5,
+      "requestedDescription": "Cinta adhesiva transparente 48mm",
+      "requestedQuantity": 100,
+      "requestedUnit": "rollo",
+      "offerLineNo": 5,
+      "offeredDescription": "Rollo cinta transparente de embalaje 48 mm",
+      "offeredQuantity": 120,
+      "offeredUnit": "rollo"
+    },
+    {
+      "status": "extra",
+      "confidence": 0.3,
+      "quantityDelta": null,
+      "priceTotal": 53400,
+      "reasoning": "el LLM determino que ninguno de los candidatos corresponde a esta linea",
+      "needsReview": false,
+      "decidedBy": "unmatched",
+      "candidates": [
+        {
+          "score": 0.6974,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.657,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        },
+        {
+          "score": 0.642,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6413,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.629,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        }
+      ],
+      "requisitionLineNo": null,
+      "requestedDescription": null,
+      "requestedQuantity": null,
+      "requestedUnit": null,
+      "offerLineNo": 7,
+      "offeredDescription": "Corrector liquido formato lapicera 7 ml",
+      "offeredQuantity": 60,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.92,
+      "quantityDelta": 0,
+      "priceTotal": 90000,
+      "reasoning": "Lapicera de tinta azul equivale exactamente a boligrafo azul.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8347,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        },
+        {
+          "score": 0.7532,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.7221,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.6898,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6644,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        }
+      ],
+      "requisitionLineNo": 2,
+      "requestedDescription": "Boligrafo azul",
+      "requestedQuantity": 500,
+      "requestedUnit": "unidad",
+      "offerLineNo": 2,
+      "offeredDescription": "Lapicera tinta azul punta media",
+      "offeredQuantity": 500,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 520000,
+      "reasoning": "El paquete de papel blanco A4 de 75g equivale a la resma de papel A4 de 75g.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.8939,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        },
+        {
+          "score": 0.7381,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.7332,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6616,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.6603,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        }
+      ],
+      "requisitionLineNo": 1,
+      "requestedDescription": "Resma papel A4 75g",
+      "requestedQuantity": 100,
+      "requestedUnit": "unidad",
+      "offerLineNo": 1,
+      "offeredDescription": "Paquete de papel blanco tamanio A4 75 gramos",
+      "offeredQuantity": 100,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 148000,
+      "reasoning": "Folder plastico para hojas A4 es sinonimo de carpeta plastica A4.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.93,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.8133,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.7345,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        },
+        {
+          "score": 0.6958,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        },
+        {
+          "score": 0.6946,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        }
+      ],
+      "requisitionLineNo": 3,
+      "requestedDescription": "Carpeta plastica A4",
+      "requestedQuantity": 200,
+      "requestedUnit": "unidad",
+      "offerLineNo": 3,
+      "offeredDescription": "Folder plastico para hojas A4",
+      "offeredQuantity": 200,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 47500,
+      "reasoning": "Rotulador indeleble negro es equivalente a marcador permanente negro.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9081,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.7271,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        },
+        {
+          "score": 0.721,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.6847,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.6567,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        }
+      ],
+      "requisitionLineNo": 4,
+      "requestedDescription": "Marcador permanente negro",
+      "requestedQuantity": 50,
+      "requestedUnit": "unidad",
+      "offerLineNo": 4,
+      "offeredDescription": "Rotulador indeleble color negro",
+      "offeredQuantity": 50,
+      "offeredUnit": "unidad"
+    },
+    {
+      "status": "match",
+      "confidence": 0.95,
+      "quantityDelta": 0,
+      "priceTotal": 168000,
+      "reasoning": "Cuaderno A4 con tapa rigida equivale a cuaderno tapa dura A4.. mismo producto y misma cantidad",
+      "needsReview": false,
+      "decidedBy": "vector+llm",
+      "candidates": [
+        {
+          "score": 0.9552,
+          "lineNo": 6,
+          "description": "Cuaderno tapa dura A4"
+        },
+        {
+          "score": 0.8175,
+          "lineNo": 3,
+          "description": "Carpeta plastica A4"
+        },
+        {
+          "score": 0.743,
+          "lineNo": 1,
+          "description": "Resma papel A4 75g"
+        },
+        {
+          "score": 0.7118,
+          "lineNo": 4,
+          "description": "Marcador permanente negro"
+        },
+        {
+          "score": 0.6815,
+          "lineNo": 2,
+          "description": "Boligrafo azul"
+        }
+      ],
+      "requisitionLineNo": 6,
+      "requestedDescription": "Cuaderno tapa dura A4",
+      "requestedQuantity": 40,
+      "requestedUnit": "unidad",
+      "offerLineNo": 6,
+      "offeredDescription": "Cuaderno A4 con tapa rigida",
+      "offeredQuantity": 40,
+      "offeredUnit": "unidad"
+    }
+  ]
+}
