@@ -16,12 +16,54 @@ Necesitás **Node 20+**. Nada más: las credenciales de la base y de Gemini vien
 ```bash
 npm install
 npm run seed      # crea las tablas y carga los CSV (6 y 220 ítems)
+```
+
+A partir de acá hay dos caminos. Los dos hacen lo mismo.
+
+### Camino corto — ver que funciona
+
+```bash
 npm run demo      # procesa las 4 ofertas y genera los reportes en out/
 ```
 
-Los reportes quedan en `out/`. El `.html` se abre con doble clic.
+Tarda unos 5 minutos porque llama al modelo de verdad. Al terminar imprime una tabla con
+las cuatro ofertas y deja los reportes en `out/`. El `.html` se abre con doble clic.
 
-Para correr los tests:
+### Camino largo — ver cómo funciona
+
+Las mismas etapas, una por una, para poder mirar el estado en el medio.
+
+```bash
+# 1. Extraer una oferta y guardarla. Imprime el ID de la oferta.
+npm run process -- --file challenge/case-simple/offers/oferta_oficenter_norte.xlsx --requisition REQ-OFI-2026-001
+
+# 2. Ver qué quedó guardado
+npm run sql -- "select line_no, supplier_code, offered_description, offered_quantity, unit_price, flags from offer_items order by line_no"
+
+# 3. Conciliar. Imprime el ID de la conciliación.
+npm run reconcile -- --offer <id de la oferta>
+
+# 4. Ver las relaciones que propuso
+npm run sql -- "select status, count(*) from reconciliation_lines group by status order by 2 desc"
+
+# 5. Generar los reportes
+npm run report -- --reconciliation <id de la conciliación>
+```
+
+Si perdés un ID, `npm run list` te muestra todo lo que hay cargado con sus identificadores.
+
+Conviene empezar por esa oferta: son 7 líneas contra 6 ítems y se verifica a ojo. Después
+el PDF del mismo escenario, y recién al final las dos del `case-complex`, que son 225 y 177
+líneas contra 220 ítems.
+
+Dos cosas que vale la pena comparar mientras probás:
+
+- El log del **Excel** dice `llamadasLlm=0`; el del **PDF** no. Es la decisión de usar
+  código donde alcanza y modelo donde aporta, visible en la salida.
+- Agregando `--dry-run` al `process`, el PDF se extrae **sin llamar a ninguna API**. Hay un
+  parser determinístico atrás que además sirve de verificador.
+
+### Tests
 
 ```bash
 npm test          # 82 tests
@@ -52,22 +94,25 @@ para las cuatro ofertas.
 |---|---|
 | `npm run seed` | crea las tablas y carga los CSV |
 | `npm run demo` | corre todo el flujo sobre las 4 ofertas |
+| `npm run process` | extrae y guarda una oferta |
+| `npm run reconcile` | concilia una oferta contra su solicitud |
+| `npm run report` | genera los reportes de una conciliación |
+| `npm run list` | muestra qué hay cargado, con los IDs |
+| `npm run sql` | corre una consulta contra la base |
 | `npm test` | los 82 tests |
 | `npm run db:reset` | vacía la base (con `-- --hard` borra las tablas) |
 
-Para procesar una oferta sola, paso a paso:
+Los cuatro archivos de oferta:
 
-```bash
-npm run process -- --file challenge/case-simple/offers/oferta_oficenter_norte.xlsx --requisition REQ-OFI-2026-001
-npm run reconcile -- --offer <id que imprime el paso anterior>
-npm run report -- --reconciliation <id que imprime el paso anterior>
+```
+challenge/case-simple/offers/oferta_oficenter_norte.xlsx          → REQ-OFI-2026-001
+challenge/case-simple/offers/oferta_comercial_oficinas.pdf        → REQ-OFI-2026-001
+challenge/case-complex/offers/oferta_suministros_industriales.xlsx → REQ-MOP-2026-001
+challenge/case-complex/offers/oferta_mantenimiento_integral.pdf    → REQ-MOP-2026-001
 ```
 
-Las ofertas de `case-simple` van con `REQ-OFI-2026-001` y las de `case-complex` con
-`REQ-MOP-2026-001`.
-
-Flags útiles: `--dry-run` (no llama a ninguna API), `--top-k N` (candidatos por línea,
-5 por defecto), `--format md|json|html|all`.
+Flags: `--dry-run` (no llama a ninguna API), `--top-k N` (candidatos por línea, 5 por
+defecto), `--format md|json|html|all`.
 
 ---
 

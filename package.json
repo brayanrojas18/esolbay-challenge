@@ -12,9 +12,11 @@
     "process": "tsx src/cli/process.ts",
     "reconcile": "tsx src/cli/reconcile.ts",
     "report": "tsx src/cli/report.ts",
+    "demo": "tsx scripts/run-all.mts",
+    "list": "tsx src/cli/list.ts",
+    "sql": "tsx src/cli/sql.ts",
     "db:migrate": "tsx src/db/migrate.ts",
     "db:reset": "tsx src/cli/reset.ts",
-    "demo": "tsx scripts/run-all.mts",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
