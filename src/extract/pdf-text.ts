@@ -3,12 +3,10 @@ import { ExtractionError } from '../core/errors.js';
 import { stripAccents } from './normalize.js';
 
 /**
- * Lectura del texto del PDF y limpieza previa a cualquier parseo.
+ * Lectura y limpieza del texto del PDF, antes de cualquier parseo.
  *
- * Se mantiene separado del parseo porque tanto el camino deterministico como el
- * del LLM consumen exactamente el mismo texto limpio. Asi las dos estrategias
- * son comparables: si difieren, la diferencia esta en la interpretacion, no en
- * la entrada.
+ * Separado a proposito: el camino deterministico y el del LLM consumen el mismo
+ * texto, asi que si difieren, la diferencia esta en la interpretacion.
  */
 
 export interface PdfText {

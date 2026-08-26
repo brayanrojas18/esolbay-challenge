@@ -4,10 +4,8 @@ import { FLAGS, UNITS } from './normalize.js';
 /**
  * Contrato unico de extraccion.
  *
- * PDF y XLSX recorren caminos distintos (uno por LLM, el otro deterministico)
- * pero ambos tienen que terminar en esta misma estructura validada. Todo lo que
- * viene despues -- persistencia, embeddings, conciliacion, reportes -- trabaja
- * contra esto y no sabe de que formato salio.
+ * PDF y XLSX van por caminos distintos pero terminan en esta misma estructura.
+ * Todo lo que sigue trabaja contra esto y no sabe de que formato salio.
  */
 
 export const unitSchema = z.enum(UNITS);

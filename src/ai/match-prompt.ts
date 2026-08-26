@@ -7,16 +7,12 @@ import { languageModel, tokenCounts } from './client.js';
 import type { Candidate } from '../reconcile/candidates.js';
 
 /**
- * Nivel 2 de la cascada: el LLM elige, entre los 5 candidatos que trajo el
- * prefiltro vectorial, cual corresponde a cada linea ofertada.
+ * Nivel 2 de la cascada: el LLM elige, entre los 5 candidatos del prefiltro,
+ * cual corresponde a cada linea ofertada.
  *
- * Por que 5 y no 220: el prefiltro ya hizo el trabajo pesado dentro de Postgres.
- * Pasarle al modelo los 220 items solicitados en cada llamada costaria unas 40
- * veces mas tokens para decidir lo mismo, y con peor precision: un contexto
- * largo lleno de candidatos irrelevantes empeora la decision.
- *
- * Por que en lotes de 10 lineas: amortiza el prompt de sistema entre varias
- * decisiones sin que la respuesta se vuelva larga y descuidada.
+ * Cinco y no 220 porque el prefiltro ya hizo el trabajo pesado: mandar los 220
+ * costaria 40 veces mas tokens y decidiria peor, con el contexto lleno de
+ * candidatos irrelevantes. En lotes de 10 para amortizar el prompt de sistema.
  */
 
 const decisionSchema = z.object({

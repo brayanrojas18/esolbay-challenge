@@ -7,16 +7,11 @@ import { ConfigError } from '../core/errors.js';
 /**
  * Punto unico de acceso al proveedor de IA.
  *
- * Todo el resto del codigo pide "el modelo de lenguaje" o "el de embeddings" y
- * no sabe quien esta del otro lado. Cambiar de proveedor es cambiar ESTE
- * archivo y una variable de entorno: es la razon concreta por la que se eligio
- * el Vercel AI SDK por sobre el cliente oficial de cada proveedor.
+ * El resto del codigo pide "el modelo de lenguaje" y no sabe quien esta del
+ * otro lado. Cambiar de proveedor es tocar este archivo y una variable de
+ * entorno: por eso se uso el AI SDK y no el cliente de cada proveedor.
  *
- * Soportados hoy: OpenAI y Google. Agregar Anthropic, Mistral o un modelo local
- * por Ollama es sumar un caso al switch.
- *
- * Salvedad honesta: Anthropic no tiene API de embeddings, asi que usar Claude
- * para el matching igual requeriria otro proveedor para el prefiltro vectorial.
+ * Hoy soporta OpenAI y Google. Sumar otro es agregar un caso al switch.
  */
 
 type Provider =
@@ -57,11 +52,9 @@ export function embeddingModel(): EmbeddingModel {
 }
 
 /**
- * Opciones especificas del proveedor para la llamada de embeddings.
- *
- * Google permite pedir la dimension de salida; OpenAI la fija por modelo. Se le
- * pide explicitamente la dimension configurada para que los vectores entren en
- * las columnas vector() sin migrar nada al cambiar de proveedor.
+ * Google deja elegir la dimension de salida, OpenAI la fija por modelo. Se le
+ * pide la configurada para que los vectores entren en las columnas sin migrar
+ * nada al cambiar de proveedor.
  */
 export function embeddingProviderOptions():
   | Record<string, Record<string, number>>

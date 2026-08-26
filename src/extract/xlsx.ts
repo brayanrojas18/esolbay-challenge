@@ -19,26 +19,14 @@ import {
 } from './schemas.js';
 
 /**
- * Extraccion de ofertas en XLSX: 100% deterministica, sin LLM.
+ * Extraccion de ofertas en XLSX, sin LLM.
  *
- * La planilla es tabular y regular, asi que mandarla a un modelo seria pagar
- * tokens para obtener un resultado peor: 225 filas no entran comodas en una
- * llamada, y cualquier alucinacion sobre un precio es un error que nadie
- * detecta despues. Codigo donde alcanza, IA donde aporta.
+ * La planilla es tabular y regular: mandarla a un modelo seria pagar tokens
+ * para obtener un resultado peor. Codigo donde alcanza, IA donde aporta.
  *
- * Estructura observada en los dos XLSX del challenge:
- *
- *   fila 1   A: "Cotizacion COT-OFN-2026-051"
- *   fila 2   A: "Proveedor"     B: "Oficenter Norte SA"
- *   fila 3   A: "Fecha"         B: "2026-05-20"
- *   fila 4   A: "Condiciones"   B: "Entrega estimada dentro de..."
- *   fila 5   (vacia)
- *   fila 6   headers: line_no | supplier_code | offered_description |
- *                     offered_quantity | unit | unit_price | notes
- *   fila 7+  datos
- *
- * Igual no se asume: la fila de headers se busca, y las etiquetas se resuelven
- * por sinonimos para aguantar una planilla en castellano o con otro orden.
+ * No se asume la posicion de las cosas: la fila de headers se busca y las
+ * columnas se resuelven por sinonimos, asi aguanta una planilla en castellano
+ * o con otro orden.
  */
 
 /** Sinonimos por campo, normalizados a minusculas sin espacios ni guiones. */
@@ -55,12 +43,9 @@ const COLUMN_SYNONYMS: Record<string, readonly string[]> = {
 const HEADER_SEARCH_DEPTH = 25;
 
 /**
- * Codigo de cotizacion: sigla en mayusculas seguida de al menos dos grupos
- * separados por guion ("COT-OFN-2026-051").
- *
- * Es sensible a mayusculas a proposito. Con el flag /i, "COT" matchea las tres
- * primeras letras de "Cotizacion" y el codigo extraido termina siendo la propia
- * etiqueta de la fila.
+ * Codigo de cotizacion: "COT-OFN-2026-051".
+ * Sensible a mayusculas a proposito: con /i, "COT" matchea el arranque de
+ * "Cotizacion" y termina capturando la etiqueta en vez del codigo.
  */
 const QUOTE_CODE = /\b[A-Z][A-Z0-9]{1,5}(?:-[A-Z0-9]+){2,}\b/;
 

@@ -1,15 +1,12 @@
 import { z } from 'zod';
 import { ConfigError } from './errors.js';
+import { loadEnvFiles } from './env.js';
 
 /**
  * Configuracion del proceso, validada una sola vez al arrancar.
  *
- * El proveedor de IA es intercambiable. El resto del codigo pide "el modelo de
- * lenguaje" o "el de embeddings" y no sabe quien esta del otro lado: eso es lo
- * que aporta el Vercel AI SDK y es la razon por la que se eligio.
- *
  * Las credenciales son opcionales a proposito: sin ninguna, el pipeline corre
- * igual con los proveedores locales deterministicos (--dry-run).
+ * igual con los proveedores locales (--dry-run).
  */
 
 export const AI_PROVIDERS = ['openai', 'google'] as const;
@@ -59,6 +56,7 @@ let cached: Config | undefined;
 
 export function config(): Config {
   if (cached) return cached;
+  loadEnvFiles();
 
   const parsed = envSchema.safeParse({
     DATABASE_URL: process.env['DATABASE_URL'],

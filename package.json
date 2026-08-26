@@ -8,11 +8,13 @@
     "node": ">=20"
   },
   "scripts": {
-    "seed": "node --env-file-if-exists=.env --import tsx src/cli/seed.ts",
-    "process": "node --env-file-if-exists=.env --import tsx src/cli/process.ts",
-    "reconcile": "node --env-file-if-exists=.env --import tsx src/cli/reconcile.ts",
-    "report": "node --env-file-if-exists=.env --import tsx src/cli/report.ts",
-    "db:migrate": "node --env-file-if-exists=.env --import tsx src/db/migrate.ts",
+    "seed": "tsx src/cli/seed.ts",
+    "process": "tsx src/cli/process.ts",
+    "reconcile": "tsx src/cli/reconcile.ts",
+    "report": "tsx src/cli/report.ts",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:reset": "tsx src/cli/reset.ts",
+    "demo": "tsx scripts/run-all.mts",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"

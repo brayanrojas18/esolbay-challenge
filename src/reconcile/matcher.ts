@@ -15,18 +15,14 @@ import {
 } from './status.js';
 
 /**
- * Conciliacion en cascada, de lo barato a lo caro.
+ * Conciliacion en cascada, de lo barato a lo caro. Cada nivel resuelve lo que
+ * puede y le pasa al siguiente solo lo que quedo sin decidir.
  *
- *   Nivel 0  Alias confirmado por un comprador  -> gratis, confianza 1.0
- *   Nivel 1  Prefiltro vectorial en Postgres    -> 1 query, top-5 por linea
- *   Nivel 2  Decision (LLM o lexica)            -> sobre 5 candidatos, no 220
- *   Nivel 3  Resolucion de conflictos           -> ningun duplicado silencioso
- *   Nivel 4  Barrido de faltantes               -> lo pedido y no cotizado
- *
- * El orden no es arbitrario: cada nivel resuelve lo que puede y le pasa al
- * siguiente solo lo que quedo sin decidir. En una segunda cotizacion del mismo
- * proveedor, el nivel 0 se lleva la mayoria de las lineas y el LLM casi no se
- * usa: el sistema se abarata con el uso.
+ *   0  Alias ya confirmado por un comprador   gratis, confianza 1.0
+ *   1  Prefiltro vectorial                    1 query, top-5 por linea
+ *   2  Decision del LLM (o lexica)            sobre 5 candidatos, no 220
+ *   3  Resolucion de conflictos               ningun duplicado silencioso
+ *   4  Barrido de faltantes                   lo pedido y no cotizado
  */
 
 export const STRATEGY_VERSION = 'cascade-v1';
@@ -294,10 +290,8 @@ export async function reconcileOffer({
     const target = requisitionById.get(decision.requisitionItemId);
     if (!target) continue;
 
-    // Perdio un conflicto: queda como `alternative` (competidora creible para
-    // el mismo item) o como `ambiguous` (no se puede determinar a que
-    // corresponde). En los dos casos conserva el vinculo, pero NO reclama el
-    // item: solo una linea puede cubrirlo con confianza.
+    // Perdio un conflicto: conserva el vinculo pero no cubre el item, porque
+    // ya lo cubre la ganadora.
     if (conflict && conflict.status !== null) {
       lines.push({
         requisitionItemId: target.id,
@@ -323,11 +317,8 @@ export async function reconcileOffer({
       confidence: decision.confidence,
     });
 
-    // El item queda reclamado incluso si la linea es ambigua: si no, el mismo
-    // item apareceria ademas como `missing_from_offer`, y el comprador leeria
-    // "no cotizado" justo al lado de una linea que propone cotizarlo. La
-    // cobertura del resumen igual excluye las ambiguas: quedan en su propio
-    // grupo, ni cubiertas ni faltantes.
+    // Tambien reclama el item si quedo ambigua, para que no aparezca ademas
+    // como faltante. La cobertura del resumen igual las excluye.
     claimedItems.add(target.id);
 
     lines.push({
@@ -406,23 +397,12 @@ type LexicalOutcome =
   | { readonly kind: 'extra'; readonly reason: string };
 
 /**
- * Sobre el umbral, medido en el case-complex:
+ * Decision sin LLM, para --dry-run.
  *
- *   top-1 correcto   n=151  min 0.353  mediana 0.748
- *   top-1 incorrecto n=13   min 0.301  mediana 0.505
- *   extras reales    n=5    0.271, 0.386, 0.411, 0.475, 0.485
- *
- * Las distribuciones se SOLAPAN: no existe un corte por score que separe un
- * extra de un match correcto. Insistir con un umbral seria fingir precision.
- *
- * Lo que si funciona es una senial que ya esta en los datos: el proveedor anota
- * esas lineas como "adicional no pedido" o "adicional sugerido", y eso llega
- * como flag `extra_suggested`. Se usa como evidencia, no como veredicto: solo
- * decide cuando la similitud vectorial no la contradice con fuerza.
- *
- * Limitacion conocida y documentada: una oferta real que no anote sus extras
- * no se beneficia de esto y los va a dejar en `ambiguous`. Es el caso donde el
- * LLM, que puede responder "ninguno de los 5 corresponde", gana de verdad.
+ * No hay umbral de score que separe un extra de un match correcto: medidas las
+ * distribuciones en el case-complex, se solapan. Se usa entonces una senial de
+ * los datos -- que el proveedor anote la linea como adicional -- pero solo
+ * cuando la similitud no la contradice.
  */
 function decideLexically(line: OfferLine, candidates: readonly Candidate[]): LexicalOutcome {
   const best = candidates[0];
@@ -438,9 +418,9 @@ function decideLexically(line: OfferLine, candidates: readonly Candidate[]): Lex
     };
   }
 
-  // Piso general. Un solo umbral alto resultaba enganioso: lineas como
-  // "Rollo PTFE" (0.353 contra "Cinta teflon") caian a `extra`, o sea el
-  // sistema afirmaba que el comprador no habia pedido eso. Falso.
+  // Piso bajo a proposito: por encima se propone el candidato con poca
+  // confianza y termina en `ambiguous`. `extra` afirma que no se pidio, y eso
+  // solo se dice cuando no hay nada parecido.
   const PROPOSE_FLOOR = 0.25;
   if (best.score < PROPOSE_FLOOR) {
     return {

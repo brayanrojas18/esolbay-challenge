@@ -1,12 +1,9 @@
 import type { ReportData } from './data.js';
 
 /**
- * Reporte en JSON.
- *
- * Es la salida completa y sin recortes: incluye los candidatos evaluados de
- * TODAS las lineas, no solo las no triviales como el markdown. Sirve para
- * inspeccionar una decision puntual o para que otro sistema consuma el
- * resultado.
+ * Reporte en JSON: la salida completa, con los candidatos de todas las lineas y
+ * no solo las dudosas. Para inspeccionar una decision puntual o para que otro
+ * sistema lo consuma.
  */
 export function renderJson(data: ReportData): string {
   return JSON.stringify(

@@ -4,17 +4,9 @@ import { resolve } from 'node:path';
 /**
  * Lector de `reconciliation_guide.md`.
  *
- * ============================================================================
- * ESTE ARCHIVO VIVE EN tests/ A PROPOSITO Y NO DEBE IMPORTARSE DESDE src/.
- *
- * El enunciado del challenge dice, textual: "Tu aplicacion no deberia depender
- * de ese archivo como input automatico". La guia es la referencia contra la
- * cual se valida el resultado, no una fuente de datos del sistema. Usarla en
- * runtime seria hacer trampa.
- * ============================================================================
- *
- * Vocabulario de la guia (distinto del que propone cualquier spec externa):
- *   match | partial_quantity | semantic_match | missing_from_offer | extra
+ * Vive en tests/ a proposito y no se importa desde src/. El enunciado dice que
+ * la aplicacion no debe depender de la guia como input: es la referencia contra
+ * la que se valida el resultado, no una fuente de datos.
  */
 
 export type GuideRelation =

@@ -9,14 +9,11 @@ import { db, schema } from '../db/client.js';
 import { normalizeUnit, parseArgNumber } from '../extract/normalize.js';
 
 /**
- * Carga inicial de la base a partir de los CSV del challenge.
+ * Carga inicial de la base a partir de los CSV.
  *
- * El enunciado aclara que la importacion de CSV no tiene que ser una
- * funcionalidad de la app: alcanza con un seed. Por eso vive aparte del
- * pipeline y no se invoca desde `process`.
- *
- * Es idempotente: correrlo dos veces no duplica nada. La clave es
- * (requisition_id, line_no) para los items y el codigo para la requisicion.
+ * Vive aparte del pipeline porque el enunciado aclara que importar los CSV no
+ * tiene que ser una funcionalidad de la app. Es idempotente: correrlo dos veces
+ * no duplica nada.
  */
 
 const requestRow = z.object({
@@ -63,12 +60,11 @@ async function readCsv<T>(path: string, schema_: z.ZodType<T>): Promise<T[]> {
 }
 
 /**
- * Carga un escenario completo (`case-simple` o `case-complex`).
+ * Carga un escenario completo.
  *
  * Cada linea del CSV genera dos registros: uno en `items` (catalogo maestro) y
- * uno en `requisition_items` (lo que se pide en esta requisicion puntual). Esa
- * separacion es la que hace posible el aprendizaje por alias: el codigo de un
- * proveedor se ata al item del catalogo, que sobrevive a la compra.
+ * otro en `requisition_items`. Esa separacion es la que permite que un alias de
+ * proveedor sobreviva a la compra.
  */
 export async function seedScenario(scenarioDir: string): Promise<SeedResult> {
   const requests = await readCsv(resolve(scenarioDir, 'purchase_requests.csv'), requestRow);

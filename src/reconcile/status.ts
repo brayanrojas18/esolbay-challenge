@@ -3,20 +3,10 @@ import type { Flag } from '../extract/normalize.js';
 /**
  * Estados de conciliacion.
  *
- * El enunciado dice textual: "No imponemos estados especificos de conciliacion.
- * Esperamos que disenies una forma clara de representar el resultado y
- * justificarlo". Se eligio el vocabulario de la guia de los escenarios --
- * match, partial_quantity, semantic_match, missing_from_offer, extra -- porque
- * es el que ya usa el material del challenge, y asi el test de regresion
- * compara uno a uno sin tabla de traduccion.
- *
- * Se agregan dos estados propios:
- *   - `alternative`: el proveedor cotiza DOS lineas para el mismo item pedido.
- *     La guia no lo contempla porque etiqueta esas lineas como `extra`, pero
- *     para el comprador no es lo mismo un producto que no pidio que una segunda
- *     opcion para algo que si pidio.
- *   - `ambiguous`: el sistema no pudo decidir. No es un fallo: un sistema que
- *     admite que no sabe le sirve mas a un comprador que uno que inventa.
+ * El enunciado no impone ninguno. Se tomo el vocabulario de la guia de los
+ * escenarios, asi el test de regresion compara sin tabla de traduccion, y se
+ * agregaron dos: `alternative` para cuando el proveedor cotiza dos lineas del
+ * mismo item, y `ambiguous` para cuando el sistema no puede decidir.
  */
 export const STATUSES = [
   'match',
@@ -78,13 +68,9 @@ export interface StatusOutcome {
 }
 
 /**
- * Decide el estado de una linea que YA fue matcheada con un item solicitado.
- *
- * Precedencia, verificada contra la guia de los dos escenarios:
- *   1. Cantidad distinta -> partial_quantity. Siempre gana: en las 34 filas de
- *      la guia con cantidad distinta, ninguna esta etiquetada de otra forma.
- *   2. Equivalente tecnico -> semantic_match.
- *   3. Resto -> match.
+ * Estado de una linea ya matcheada. La precedencia esta verificada contra las
+ * dos guias: cantidad distinta siempre gana, despues equivalente tecnico, y el
+ * resto es match.
  */
 export function resolveStatus({
   requestedQuantity,
@@ -103,9 +89,8 @@ export function resolveStatus({
   }
 
   if (quantityDelta !== 0) {
-    // El signo importa y no es un detalle: que el proveedor tenga MENOS del que
-    // se pidio es un problema de abastecimiento; que redondee hacia ARRIBA por
-    // presentacion comercial es neutro o hasta conveniente.
+    // El signo importa: menos stock del pedido es un problema; redondear hacia
+    // arriba por presentacion comercial no lo es.
     const short = quantityDelta < 0;
     const detail = short
       ? `el proveedor ofrece ${offeredQuantity} de las ${requestedQuantity} pedidas (faltan ${Math.abs(quantityDelta)})`

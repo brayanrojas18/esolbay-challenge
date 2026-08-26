@@ -11,24 +11,17 @@ import type { ExtractedOfferHeader, ExtractedOfferItem, ExtractionWarning } from
 /**
  * Parseo deterministico del PDF, sin LLM.
  *
- * Cumple dos funciones distintas y ambas valen:
+ * Sirve para dos cosas: es el modo --dry-run, y es la segunda opinion contra
+ * la que se compara la salida del modelo.
  *
- *  1. Es el camino de --dry-run: permite desarrollar, testear y correr el
- *     pipeline entero sin API key y sin gastar un centavo.
- *  2. Es el oraculo de los tests del camino con LLM. Tener una segunda
- *     implementacion independiente sobre el mismo texto es la unica forma
- *     barata de detectar que el modelo alucino un precio.
- *
- * No reemplaza al LLM en produccion: esta afinado al layout de ESTE PDF. Una
- * oferta real llega con otra diagramacion y el LLM la absorbe sin tocar codigo.
- * Ver docs/DECISIONS.md.
+ * Esta afinado al layout de estos PDF, asi que no reemplaza al LLM: otra
+ * diagramacion lo rompe.
  */
 
 /**
- * Vocabulario de unidades tal como aparecen en el PDF. Es la ancla del parseo:
- * en la fila "... rojo 1000 metro 441,35", "metro" es lo unico que separa sin
- * ambiguedad la descripcion (que contiene numeros como "1.5 mm2") de la
- * cantidad y el precio.
+ * La unidad es el ancla del parseo: en "... rojo 1000 metro 441,35" es lo unico
+ * que separa sin ambiguedad la descripcion -- que trae numeros como "1.5 mm2"
+ * -- de la cantidad y el precio.
  */
 const UNIT_WORDS = [
   'unidad', 'unidades', 'metro', 'metros', 'rollo', 'rollos', 'caja', 'cajas',
@@ -39,11 +32,10 @@ const UNIT_WORDS = [
 ] as const;
 
 /**
- * Fila completa de la tabla:
- *   linea | codigo | descripcion | cantidad | unidad | precio | notas?
+ * linea | codigo | descripcion | cantidad | unidad | precio | notas?
  *
  * La descripcion es no-greedy y la cantidad tiene que estar pegada a la unidad,
- * asi una descripcion que empieza con "Rollo" (linea 176) no se confunde con la
+ * para que una descripcion que empieza con "Rollo" no se confunda con la
  * columna de unidad.
  */
 const ROW = new RegExp(

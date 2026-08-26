@@ -2,21 +2,14 @@ import { sqlConnection } from '../db/client.js';
 import { toPgVector } from '../ai/embeddings.js';
 
 /**
- * Prefiltro vectorial: por cada linea ofertada, los K items solicitados mas
- * parecidos.
+ * Prefiltro vectorial: por cada linea ofertada, los K items mas parecidos.
  *
- * ESTE ES EL PUNTO DE VOLUMEN DEL CHALLENGE.
+ * Resuelve el problema de volumen. Comparar todo contra todo en el escenario
+ * grande son 49.500 comparaciones; asi es una busqueda indexada dentro de
+ * Postgres, y el LLM decide sobre 5 candidatos en vez de 220.
  *
- * Fuerza bruta con el case-complex son 220 items x 225 lineas = 49.500
- * comparaciones, y ademas habria que traerse los 220 items a memoria de Node
- * para calcular coseno a mano. Con el prefiltro son 225 queries indexadas que
- * resuelve Postgres con HNSW, y cada una devuelve 5 filas.
- *
- * El costo del LLM cae en la misma proporcion: en vez de razonar sobre 220
- * candidatos por linea, razona sobre 5.
- *
- * La query corre DENTRO de Postgres. El operador <=> es distancia coseno de
- * pgvector y usa el indice HNSW; la similitud que se reporta es 1 - distancia.
+ * `<=>` es distancia coseno de pgvector y usa el indice HNSW. La similitud
+ * que se devuelve es 1 - distancia.
  */
 
 export interface Candidate {
@@ -77,20 +70,13 @@ export async function findCandidates(
 }
 
 /**
- * Todo el prefiltro de una oferta en UNA SOLA query.
+ * Todo el prefiltro de una oferta en una sola query.
  *
- * Este es el camino que usa el pipeline, y la diferencia no es cosmetica:
- * emitir una query por linea son 177 viajes de ida y vuelta a Supabase, que
- * medidos dieron 650 ms cada uno -- casi dos minutos de pura latencia de red
- * para un trabajo que Postgres hace en milisegundos.
+ * Como los dos lados viven en la misma base, el CROSS JOIN LATERAL calcula el
+ * top-K de cada linea sin que ningun vector salga del servidor. Cada iteracion
+ * usa el indice HNSW porque oi.embedding es constante dentro de la subconsulta.
  *
- * Como los dos lados ya viven en la misma base, el CROSS JOIN LATERAL calcula
- * el top-K de cada linea ofertada sin que los vectores salgan del servidor.
- * Cada iteracion del lateral sigue usando el indice HNSW, porque oi.embedding
- * es constante dentro de la subconsulta.
- *
- * Resultado sobre el case-complex: 1 query en lugar de 177, y 0 vectores de
- * 1536 dimensiones viajando por la red.
+ * Una query por linea eran 177 viajes a Supabase: 107 s contra 1 s.
  */
 export async function findCandidatesForOffer(
   offerId: string,

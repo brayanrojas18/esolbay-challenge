@@ -9,12 +9,9 @@ import type { ExtractedOffer } from '../extract/schemas.js';
 /**
  * Persistencia de una oferta extraida, con sus embeddings.
  *
- * Extraccion y conciliacion son etapas independientes y re-ejecutables: esta
- * funcion cierra la primera. Guardar antes de conciliar significa que un bug
- * del matcher no obliga a re-extraer (ni a re-pagar el PDF).
- *
- * Idempotencia: la clave es (requisition_id, source_hash). Reprocesar el mismo
- * archivo actualiza la cabecera y reemplaza las lineas, no duplica la oferta.
+ * Guardar antes de conciliar hace que un bug del matcher no obligue a
+ * re-extraer, ni a re-pagar el PDF. La clave de idempotencia es
+ * (requisition_id, source_hash).
  */
 
 export interface PersistResult {
@@ -142,11 +139,9 @@ export async function persistOffer(
 }
 
 /**
- * Genera los embeddings de los items solicitados que todavia no los tienen.
- *
- * Se hace una sola vez por requisicion y modelo: 220 items no cambian entre
- * corridas. Si se cambia de proveedor de embeddings hay que forzar el refresco,
- * porque los vectores de dos modelos distintos no son comparables entre si.
+ * Genera los embeddings de los items que todavia no los tienen. Se hace una vez
+ * por requisicion: los 220 items no cambian entre corridas. Al cambiar de
+ * modelo hay que forzar el refresco, porque los vectores no son comparables.
  */
 export async function ensureRequisitionEmbeddings(
   requisitionCode: string,

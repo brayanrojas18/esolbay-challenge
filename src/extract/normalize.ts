@@ -5,21 +5,14 @@ import { ExtractionError } from '../core/errors.js';
 /* -------------------------------------------------------------------------- */
 
 /**
- * Convierte un numero escrito a la argentina ("2.839,20") a number (2839.2).
+ * "2.839,20" -> 2839.2
  *
- * Este es el punto clasico de bugs silenciosos del pipeline: si se interpreta
- * "2.839,20" con parseFloat, da 2 y nadie se entera hasta que el total del
- * comparativo esta mil veces mal. Por eso es una funcion dedicada y testeada.
+ * parseFloat da 2 y nadie se entera hasta que el total esta mil veces mal. Por
+ * eso es una funcion aparte y con tests.
  *
- * Reglas:
- *  - Si aparecen "." y ",": manda el ULTIMO como separador decimal.
- *  - Si aparece solo ",": es decimal ("47,53" -> 47.53).
- *  - Si aparece solo ".": es ambiguo. Se resuelve por la cantidad de digitos a
- *    la derecha: exactamente 3 => separador de miles ("129.010" -> 129010);
- *    cualquier otra cantidad => decimal ("1.5" -> 1.5).
- *
- * El caso ambiguo real del dataset son los precios, que siempre traen dos
- * decimales, asi que la heuristica nunca decide sobre ellos.
+ * Si estan los dos separadores, manda el ultimo. Si solo hay coma, es decimal.
+ * Si solo hay punto es ambiguo, y se resuelve por los digitos de la derecha:
+ * tres son miles ("129.010"), cualquier otra cantidad es decimal ("1.5").
  */
 export function parseArgNumber(raw: string | number | null | undefined): number | null {
   if (raw === null || raw === undefined) return null;
@@ -232,15 +225,12 @@ export interface DescriptionParseResult {
 }
 
 /**
- * Algunas lineas del PDF de Mantenimiento Integral llevan el marcador dentro de
- * la descripcion en vez de en la columna de notas:
+ * Algunas lineas traen el marcador dentro de la descripcion en vez de en las
+ * notas: "Equivalente tecnico Conductor flexible 4 mm2".
  *
- *   "Equivalente tecnico Conductor flexible 4 mm2 verde amarillo"
- *   "Interruptor automatico 2 polos 16 A linea alternativa"
- *
- * Hay que sacarlos antes de generar el embedding: si no, el vector queda
- * contaminado por un texto que se repite en 26 lineas distintas y que no dice
- * nada del producto. El marcador no se pierde, se convierte en flag.
+ * Hay que sacarlo antes de embeber, o el vector queda contaminado por un texto
+ * que se repite en 26 lineas y no dice nada del producto. El marcador no se
+ * pierde: se convierte en flag.
  */
 export function parseDescription(raw: string): DescriptionParseResult {
   let description = raw.replace(/\s+/g, ' ').trim();

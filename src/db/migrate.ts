@@ -7,26 +7,18 @@ import { log } from '../core/logger.js';
 import { closeDb, sqlConnection } from './client.js';
 
 /**
- * Runner de migraciones propio, en vez de `drizzle-kit migrate`.
- *
- * Dos motivos concretos:
- *  - Las migraciones son SQL a mano (ver 0000_init.sql), que es mas legible
- *    para quien evalua el modelo de datos que un diff generado.
- *  - drizzle-kit toma un advisory lock de sesion, y el transaction pooler de
- *    Supabase no mantiene estado entre statements. Este runner usa una tabla de
- *    control, que funciona igual en los dos modos de pooling.
+ * Runner de migraciones propio en vez de `drizzle-kit migrate`, por dos cosas:
+ * las migraciones son SQL a mano y se leen mejor que un diff generado, y
+ * drizzle-kit toma un advisory lock de sesion que el transaction pooler de
+ * Supabase no sostiene. Este usa una tabla de control.
  */
 
 const MIGRATIONS_DIR = resolve(import.meta.dirname, 'migrations');
 
 /**
- * La dimension del vector se sustituye al aplicar la migracion.
- *
- * No es configurabilidad porque si: distintos proveedores de embeddings
- * devuelven distinta cantidad de dimensiones (OpenAI text-embedding-3-small da
- * 1536, los de Google 768 por defecto), y la columna tiene que declararla fija.
- * El hash de control se calcula sobre la PLANTILLA, no sobre el SQL sustituido,
- * asi cambiar de proveedor no marca la migracion como modificada.
+ * La dimension del vector se sustituye al aplicar la migracion, porque cada
+ * proveedor de embeddings devuelve una distinta y la columna la declara fija.
+ * El hash de control se calcula sobre la plantilla, no sobre el SQL final.
  */
 const DIMENSION_PLACEHOLDER = /\{\{EMBEDDING_DIM\}\}/g;
 
@@ -76,12 +68,8 @@ export async function migrate(): Promise<void> {
 }
 
 /**
- * Comprueba que la dimension de las columnas vector() coincida con la
- * configurada.
- *
- * Sin esto, cambiar de proveedor de embeddings sobre una base ya migrada falla
- * recien al insertar, con un error de Postgres que no dice que hacer. Aca falla
- * temprano y con instrucciones.
+ * Sin esto, cambiar de proveedor sobre una base ya migrada falla recien al
+ * insertar, con un error de Postgres que no dice que hacer.
  */
 export async function verifyEmbeddingDimension(): Promise<void> {
   const sql = sqlConnection();

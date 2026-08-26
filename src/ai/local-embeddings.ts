@@ -4,24 +4,12 @@ import { stripAccents } from '../extract/normalize.js';
 /**
  * Embeddings locales deterministicos, para correr sin API key.
  *
- * QUE ES: un baseline lexico. Proyecta el texto a las mismas 1536 dimensiones
- * que text-embedding-3-small usando hashing de tokens y trigramas, asi todo el
- * resto del pipeline -- la columna vector, el indice HNSW, la query de
- * candidatos -- funciona sin cambiar una linea.
+ * Es un baseline lexico: proyecta el texto a las mismas 1536 dimensiones
+ * usando hashing de tokens y trigramas, asi el resto del pipeline -- la columna
+ * vector, el indice HNSW, la query de candidatos -- funciona igual.
  *
- * QUE NO ES: un modelo semantico. Acierta cuando el proveedor y la requisicion
- * comparten vocabulario:
- *
- *   "Cable unipolar 1.5mm2 rojo" ~ "Conductor flexible 1.5 mm2 rojo"   -> OK
- *      (comparten "1.5", "mm", "2", "rojo")
- *
- * y falla cuando no lo comparten, que es justamente el caso interesante:
- *
- *   "Precinto plastico 200mm" ~ "Brida plastica 200 mm"                -> parcial
- *   "Canaleta PVC 20x10"      ~ "Ducto polipropileno pasacable 20x10"  -> pobre
- *
- * Esa brecha es medible y esta reportada en el README: es la diferencia de
- * cobertura entre correr con --dry-run y correr con embeddings reales.
+ * No es semantico. Acierta cuando comparten vocabulario y falla cuando no, que
+ * es justo el caso interesante. La brecha esta medida en el README.
  */
 
 /** Tokens: corridas de letras y numeros (con decimal), por separado.

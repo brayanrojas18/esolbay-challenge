@@ -24,12 +24,9 @@ const EMBEDDING_DIMENSIONS = config().embeddingDimensions;
 /**
  * Modelo de datos.
  *
- * El vocabulario sigue el de la API publica de Esolbay, no el de los CSV del
- * challenge: `requisition` en vez de "purchase request", `provider` en vez de
- * "supplier", `item` como catalogo maestro. Es una decision deliberada: el
- * challenge esta inspirado en un flujo que Esolbay ya resuelve, y un modelo que
- * habla el idioma de su dominio se enchufa a su producto sin traducciones.
- * Ver docs/DECISIONS.md.
+ * El vocabulario sigue el de la API publica de Esolbay y no el de los CSV:
+ * `requisition` en vez de "purchase request", `provider` en vez de "supplier",
+ * `item` como catalogo maestro.
  */
 
 /* -------------------------------------------------------------------------- */

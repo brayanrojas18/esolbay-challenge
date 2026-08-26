@@ -13,12 +13,11 @@ import {
 import type { ReconciliationStatus } from '../reconcile/status.js';
 
 /**
- * Reporte en Markdown.
+ * Reporte en Markdown, escrito para un comprador y no para un dev.
  *
- * Esta escrito para un comprador, no para un dev. El orden lo dice todo:
- * primero el resumen ejecutivo con las alertas accionables, despues el detalle,
- * y la trazabilidad tecnica al final. Quien tiene que adjudicar no deberia
- * scrollear para encontrar los problemas.
+ * El orden importa: primero el resumen con las alertas, despues el detalle y la
+ * trazabilidad al final. Quien adjudica no deberia scrollear para encontrar los
+ * problemas.
  */
 export function renderMarkdown(data: ReportData): string {
   const out: string[] = [];

@@ -36,10 +36,9 @@ export function summarize(outcome: ReconcileOutcome): ReconciliationSummary {
     byStatus[line.status] = (byStatus[line.status] ?? 0) + 1;
   }
 
-  // Cobertura = items que estan cotizados CON CONFIANZA. Las lineas ambiguas y
-  // las alternativas no cuentan: la primera porque el sistema no pudo afirmar a
-  // que item corresponde, la segunda porque es una segunda opcion de un item
-  // que ya cubre otra linea.
+  // Cobertura = items cotizados con confianza. Las ambiguas no cuentan porque
+  // no se pudo afirmar a que item corresponden, y las alternativas tampoco
+  // porque el item ya lo cubre otra linea.
   const coveredItems = new Set(
     outcome.lines
       .filter(
@@ -101,20 +100,10 @@ export async function persistReconciliation(
   const sql = sqlConnection();
   const summary = summarize(outcome);
 
-  // Sobre el jsonb: se manda SIEMPRE como texto con doble cast `::text::jsonb`.
-  //
-  // Verificado contra la base. Las otras formas fallan o corrompen:
-  //   `${JSON.stringify(x)}::jsonb`  -> guarda un jsonb de tipo `string`, con el
-  //                                     JSON escapado adentro. Al leerlo vuelve
-  //                                     texto en vez de objeto.
-  //   objeto crudo o `sql.json(x)`   -> funcionan en aislamiento pero rompen el
-  //                                     Bind segun como quede tipado el
-  //                                     parametro (postgres.js busca el
-  //                                     serializer por OID y `json` esta
-  //                                     registrado bajo 114, no bajo 3802).
-  //
-  // Con `::text` el parametro viaja como texto plano y es Postgres quien parsea
-  // el JSON. Es la unica forma que no depende del tipado del driver.
+  // El jsonb va como texto con doble cast `::text::jsonb`, para que el
+  // parametro viaje plano y sea Postgres quien parsee. Con `::jsonb` a secas,
+  // postgres.js lo serializa de nuevo y queda un jsonb de tipo string con el
+  // JSON escapado adentro.
   const [reconciliation] = await sql<{ id: string }[]>`
     INSERT INTO reconciliations (offer_id, requisition_id, strategy_version, model_used, summary)
     VALUES (${offerId}, ${requisitionId}, ${STRATEGY_VERSION}, ${outcome.modelUsed},

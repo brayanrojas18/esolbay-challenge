@@ -13,19 +13,14 @@ import { llmOfferItemsSchema, type ExtractedOfferItem, type ExtractionWarning } 
 import { languageModel, tokenCounts } from './client.js';
 
 /**
- * Extraccion de las lineas de una oferta en PDF usando el LLM, por lotes.
+ * Extraccion de las lineas de un PDF con el LLM, por lotes.
  *
- * Por que en lotes y no de una: las 177 lineas del PDF de Mantenimiento
- * Integral en una sola llamada chocan contra el limite de tokens de SALIDA del
- * modelo. Aunque entraran, la calidad se degrada notoriamente sobre el final de
- * una generacion larga: el modelo empieza a saltear campos y a abreviar
- * descripciones. Lotes de 40 mantienen cada generacion en un tamanio donde el
- * modelo es confiable, y ademas permiten paralelizar.
+ * En lotes porque 177 lineas en una sola llamada chocan contra el limite de
+ * tokens de salida, y aun entrando la calidad se cae sobre el final: el modelo
+ * empieza a saltear campos. De a 40 se mantiene confiable y ademas paralelizan.
  *
- * Por que la conversion numerica NO la hace el modelo: se le pide el precio como
- * texto ("2.839,20") y lo convierte parseArgNumber, que esta testeado. Un LLM
- * convirtiendo formato es-AR es una fuente silenciosa de errores de tres ordenes
- * de magnitud.
+ * El precio se le pide como texto y lo convierte parseArgNumber. Un LLM
+ * convirtiendo formato es-AR es una fuente silenciosa de errores.
  */
 
 const SYSTEM_PROMPT = `Sos un asistente de un area de compras (procurement) argentina.

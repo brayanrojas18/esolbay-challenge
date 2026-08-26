@@ -16,16 +16,10 @@ import {
 /**
  * Extraccion de ofertas en PDF.
  *
- * A diferencia del XLSX, un PDF no tiene estructura garantizada: el layout lo
- * decide quien lo genero. Por eso el camino principal es el LLM, que absorbe
- * variaciones de diagramacion sin tocar codigo.
- *
- * El parser deterministico convive con el, no como plan B improvisado sino con
- * dos usos concretos:
- *   - Es el camino de --dry-run (sin API key, sin costo).
- *   - Es el oraculo de verificacion: cuando corren los dos, se comparan y toda
- *     discrepancia queda como warning en la trazabilidad. Es la unica forma
- *     barata de enterarse de que el modelo alucino un precio.
+ * Un PDF no tiene estructura garantizada, asi que el camino principal es el
+ * LLM. El parser deterministico corre en paralelo con dos usos: es el modo
+ * --dry-run sin API, y es el verificador -- si los dos leen distinto un precio,
+ * queda como warning en la trazabilidad.
  */
 
 export interface PdfExtractionOptions {
@@ -59,8 +53,7 @@ export async function extractFromPdf({
     });
   }
 
-  // La cabecera es deterministica en ambos casos: son cuatro lineas
-  // "Etiqueta: valor". Mandarlas al LLM seria pagar por adivinar lo obvio.
+  // La cabecera son cuatro lineas "Etiqueta: valor": no necesita LLM.
   const fallbackName = filename.replace(/\.[^.]+$/, '').replace(/^oferta[_-]/i, '').replace(/[_-]+/g, ' ');
   const header = parsePdfHeader(text.headerBlock, fallbackName);
   if (header.providerName === fallbackName) {
@@ -125,10 +118,7 @@ export async function extractFromPdf({
 
 /**
  * Compara la salida del LLM contra la del parser deterministico.
- *
- * No se corrige nada automaticamente: se reporta. Elegir cual de las dos tiene
- * razon es justamente el tipo de decision que el enunciado quiere que quede
- * visible para el comprador en vez de escondida en el codigo.
+ * No corrige nada: reporta. Cual de las dos tiene razon lo decide una persona.
  */
 export function crossCheck(
   llmItems: readonly ExtractedOfferItem[],

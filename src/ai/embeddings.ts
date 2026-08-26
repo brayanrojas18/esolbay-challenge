@@ -10,13 +10,8 @@ import { localEmbedding } from './local-embeddings.js';
 /**
  * Generacion de embeddings, con dos implementaciones detras de la misma firma.
  *
- * Decisiones:
- *  - Se batchea de a 100 textos por llamada, que es lo que soporta la API. Con
- *    622 textos entre las dos requisiciones y las cuatro ofertas, son 7 llamadas
- *    en vez de 622.
- *  - Se cachea por hash del texto en disco. Reprocesar la misma oferta no
- *    re-paga los embeddings, que es la diferencia entre iterar gratis y pagar
- *    cada vez que se corrige un bug del matcher.
+ * Se batchea de a 100 por llamada y se cachea en disco por hash del texto, asi
+ * reprocesar la misma oferta no vuelve a pagarlos.
  */
 
 const CACHE_DIR = resolve(process.cwd(), '.cache');

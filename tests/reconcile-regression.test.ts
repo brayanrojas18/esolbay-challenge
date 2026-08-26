@@ -12,34 +12,13 @@ import { readGuideFor, type GuideRelation } from './fixtures/reconciliation-guid
 /**
  * Test de regresion: la conciliacion del case-simple contra la guia.
  *
- * Es la validacion mas fuerte del proyecto. Corre el pipeline COMPLETO --
- * extraccion, embeddings, prefiltro vectorial, matching, conflictos, barrido de
- * faltantes -- y compara relacion por relacion contra `reconciliation_guide.md`.
+ * Corre el pipeline completo -- extraccion, embeddings, prefiltro, matching,
+ * conflictos y faltantes -- y compara relacion por relacion.
  *
- * La guia se lee SOLO aca. La aplicacion nunca la toca: ver el comentario en
- * tests/fixtures/reconciliation-guide.ts.
- *
- * ---------------------------------------------------------------------------
- * QUE EXIGE EL TEST, Y POR QUE ESO Y NO OTRA COSA
- *
- * Corre en dry-run (matcher lexico local, sin API, reproducible y gratis). En
- * ese modo el sistema identifica bien QUE item corresponde a cada linea, pero a
- * veces no alcanza la confianza para afirmarlo y devuelve `ambiguous`.
- *
- * Entonces el test exige dos cosas distintas:
- *
- *   1. IDENTIFICACION DEL ITEM: exacta, siempre, en los dos modos. Es el nucleo
- *      de la conciliacion y no admite degradacion.
- *
- *   2. ESTADO: exacto cuando decide el LLM. En dry-run se acepta `ambiguous`
- *      como degradacion, porque `ambiguous` significa "no puedo afirmarlo" y
- *      eso nunca es una respuesta incorrecta: es una respuesta mas debil. Un
- *      estado equivocado si hace fallar el test.
- *
- * Ademas se verifica una invariante exacta que vale en los dos modos:
- *      cubiertos + ambiguos == cubiertos segun la guia
- * o sea, ninguna relacion se pierde: o se afirma o se marca para revision.
- * ---------------------------------------------------------------------------
+ * Exige dos cosas distintas: el item identificado tiene que ser exacto
+ * siempre, y el estado exacto cuando decide el LLM. Sin LLM se acepta
+ * `ambiguous` como degradacion, porque significa "no puedo afirmarlo" y eso
+ * nunca es una respuesta incorrecta; un estado equivocado si falla.
  */
 
 const CHALLENGE = resolve(import.meta.dirname, '..', 'challenge');

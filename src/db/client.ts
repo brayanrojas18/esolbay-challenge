@@ -6,11 +6,9 @@ import * as schema from './schema.js';
 /**
  * Cliente de Postgres.
  *
- * prepare:false no es opcional: la connection string de Supabase que funciona
- * desde esta red es la del transaction pooler (6543), y ese modo no soporta
- * prepared statements. Con el session pooler (5432) se podria activar, pero
- * dejarlo en false funciona en los dos y evita un fallo dificil de diagnosticar
- * para quien clone el repo. Ver docs/DECISIONS.md.
+ * prepare:false porque la connection string es la del transaction pooler de
+ * Supabase (6543), que no soporta prepared statements. Con el session pooler se
+ * podria activar, pero en false anda con los dos.
  */
 
 let sqlClient: ReturnType<typeof postgres> | undefined;

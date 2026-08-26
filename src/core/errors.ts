@@ -1,9 +1,8 @@
 /**
  * Errores de dominio tipados.
  *
- * Regla del pipeline: un error de una linea nunca puede tumbar la corrida de
- * 230. Por eso los errores llevan el contexto suficiente (archivo, linea) para
- * degradar esa linea sola y seguir.
+ * Llevan contexto (archivo, linea) porque la regla del pipeline es que una
+ * linea mala se degrada sola y la corrida sigue.
  */
 
 export type ErrorContext = Record<string, string | number | undefined>;
